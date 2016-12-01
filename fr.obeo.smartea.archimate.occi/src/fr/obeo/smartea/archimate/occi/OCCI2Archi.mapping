@@ -1,0 +1,6 @@
+#Archi EClass name = OCCI Kind scheme
+
+# Infrastructure default mapping
+http\://schemas.ogf.org/occi/infrastructure#network=Network
+
+

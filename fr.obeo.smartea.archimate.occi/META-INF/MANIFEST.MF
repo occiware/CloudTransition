@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Occi
+Bundle-SymbolicName: fr.obeo.smartea.archimate.occi
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.occiware.clouddesigner.occi;bundle-version="0.1.0";visibility:=reexport,
+ fr.obeo.smartea.archimate;visibility:=reexport,
+ com.google.guava;bundle-version="15.0.0"
+Export-Package: fr.obeo.smartea.archimate.occi,
+ fr.obeo.smartea.archimate.occi.conf

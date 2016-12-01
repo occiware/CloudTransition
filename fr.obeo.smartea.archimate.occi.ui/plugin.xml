@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="fr.obeo.smartea.archimate.occi.ui.contribution1"
+            nameFilter="*.occic"
+            objectClass="org.eclipse.core.resources.IFile">
+         <menu
+               label="OCCI / Archi bridge"
+               path="additions"
+               id="fr.obeo.smartea.archimate.occi.ui.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               class="fr.obeo.smartea.archimate.occi.ui.popup.actions.OCCI2ArchiAction"
+               enablesFor="1"
+               id="fr.obeo.smartea.archimate.occi.ui.newAction"
+               label="Convert to Archi"
+               menubarPath="fr.obeo.smartea.archimate.occi.ui.menu1/group1">
+         </action>
+      </objectContribution>
+      <objectContribution
+            id="fr.obeo.smartea.archimate.occi.ui.contribution2"
+            nameFilter="*.semantic"
+            objectClass="org.eclipse.core.resources.IFile">
+         <menu
+               id="fr.obeo.smartea.archimate.occi.ui.menu2"
+               label="Archi / OCCI bridge"
+               path="additions">
+            <separator
+                  name="group2">
+            </separator>
+         </menu>
+         <action
+               class="fr.obeo.smartea.archimate.occi.ui.popup.actions.Archi2OCCIAction"
+               enablesFor="1"
+               id="fr.obeo.smartea.archimate.occi.ui.newAction1"
+               label="Convert to OCCI"
+               menubarPath="fr.obeo.smartea.archimate.occi.ui.menu2/group2">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

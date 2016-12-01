@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: fr.obeo.smartea.archimate.infrastructure.design
+Bundle-SymbolicName: fr.obeo.smartea.archimate.infrastructure.design;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: fr.obeo.smartea.archimate.infrastructure.design.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.sirius,
+ org.eclipse.sirius.common.acceleo.aql,
+ fr.obeo.smartea.core.basemm,
+ fr.obeo.smartea.archimate
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

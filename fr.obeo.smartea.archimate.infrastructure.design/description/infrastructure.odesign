@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="infrastructure" version="10.1.3.201511131800">
+  <ownedViewpoints name="infrastructure" label="Infrastructure">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="infrastructure.view" label="Infrastructure View" domainClass="Folder" enablePopupBars="true">
+      <metamodel href="http://www.obeo.fr/smartea/basemm/2.0.0#/"/>
+      <metamodel href="http://www.obeo.fr/smartea/archimate/3.0#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="SystemSoftware" domainClass="archimate.SystemSoftware">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/SystemSoftware.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Windows XP')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/Windows_XP_logo.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Windows 7')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/windows-7-logo.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Elastic Search')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/Elasticsearch-Logo-Color-V.jpg.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Chrome')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/Google_Chrome_icon_(2011).svg.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Nagios')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/Nagios-Logo.jpg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Oracle')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="4" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/Oracle-logo.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('OwnCloud')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/owncloud-icon-2561.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('OpenLDAP')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/open_ldap_plain_caterpillar-999px.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('MySQL')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/MySQL.svg.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Sage ERP X3')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/sage-erp-x3-whitepaper-short.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Sugar CRM')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/logo_sugarcrm.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('RedHat')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/169958-redhat_logo_5_slide.jpg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Bash')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/Bash-new.sh-600x600.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Google App Engine')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/google-app-engine-1.jpg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('WebSphere')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/websphere-application-server.jpg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Java')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/K85ZWV2F_400x400.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Android')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/logo-de-boot-android_634639.jpg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Apache Tomcat')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/logos/tomcat007.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+        </nodeMappings>
+        <nodeMappings name="Device" domainClass="archimate.Device">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/Device.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Server')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/Server.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Tablet')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/Tablet.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.contains('Smartphone')">
+            <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/Smartphone.svg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+        </nodeMappings>
+        <nodeMappings name="Network" domainClass="archimate.CommunicationNetwork">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/Network.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Path" domainClass="archimate.Path">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/CommunicationPath.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Service" domainClass="archimate.TechnologyService">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/Service.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Function" domainClass="archimate.TechnologyFunction">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/Function.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Interface" domainClass="archimate.TechnologyInterface">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/Interface.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="Association" sourceMapping="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Path'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Device'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Function'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Service'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Network'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='SystemSoftware'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Interface']" targetMapping="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Path'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Device'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Function'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Interface'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Network'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Service'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='SystemSoftware']" targetFinderExpression="feature:end2" sourceFinderExpression="feature:end1" domainClass="archimate.AssociationRelationship" useDomainElement="true">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Realization" sourceMapping="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Path'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Device'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Function'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Service'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Network'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='SystemSoftware'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Interface']" targetMapping="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Path'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Device'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Function'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Service'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Network'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='SystemSoftware'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Interface']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="archimate.RealizationRelationship" useDomainElement="true">
+          <style lineStyle="dash" targetArrow="InputClosedArrow" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Aggregation" sourceMapping="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Path'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Device'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Function'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Service'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Network'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='SystemSoftware'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Interface']" targetMapping="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Path'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Device'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Function'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Service'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Network'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='SystemSoftware'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Interface']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="archimate.AggregationRelationship" useDomainElement="true">
+          <style sourceArrow="Diamond" targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Serving" sourceMapping="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Path'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Device'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Function'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Service'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Network'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='SystemSoftware'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Interface']" targetMapping="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Path'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Device'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Function'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Service'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Network'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='SystemSoftware'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Interface']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="archimate.ServingRelationship" useDomainElement="true">
+          <style sourceArrow="InputArrow" targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Assignment" sourceMapping="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Path'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Device'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Function'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Service'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Network'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='SystemSoftware'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Interface']" targetMapping="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Path'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Device'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Function'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Interface'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Network'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Service'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='SystemSoftware']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="archimate.AssignmentRelationship" useDomainElement="true">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Composition" sourceMapping="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Path'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Device'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Function'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Service'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Network'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='SystemSoftware'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Interface']" targetMapping="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Path'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Device'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Function'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Service'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Network'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='SystemSoftware'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Interface']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="archimate.CompositionRelationship" useDomainElement="true">
+          <style sourceArrow="FillDiamond" targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="Node" preconditionExpression="aql:self.oclIsTypeOf(archimate::Node)" semanticCandidatesExpression="aql:self.getSemanticCandidates()" domainClass="archimate.Node" reusedContainerMappings="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node']">
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Artifact" semanticCandidatesExpression="aql:self.getSemanticCandidates()" domainClass="archimate.Artifact" reusedContainerMappings="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact']">
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="fr.obeo.smartea.archimate.infrastructure.design.DesignServices"/>
+  </ownedViewpoints>
+</description:Group>
