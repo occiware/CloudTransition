@@ -23,6 +23,10 @@ import fr.obeo.smartea.core.basemm.Property;
 
 public class OCCI2Archi {
 
+	public static final String ROOT_FOLDER_NAME = "RootFolder";
+
+	public static final String TECHNICAL_LAYER_NAME = "Technical Layer";
+
 	private PropertiesContainer container;
 
 	public Folder convert(Configuration configuration) {
@@ -36,11 +40,11 @@ public class OCCI2Archi {
 		Map<Link, Relationship> linksTraces = new HashMap<>();
 
 		Folder rootFolder = BaseFactory.eINSTANCE.createFolder();
-		rootFolder.setName("RootFolder");
+		rootFolder.setName(ROOT_FOLDER_NAME);
 		rootFolder.getElements().add(container);
 
 		Folder techFolder = BaseFactory.eINSTANCE.createFolder();
-		techFolder.setName("Technical Layer");
+		techFolder.setName(TECHNICAL_LAYER_NAME);
 		rootFolder.getFolders().add(techFolder);
 
 		// NOTE unused: configuration.use
@@ -48,12 +52,8 @@ public class OCCI2Archi {
 			EClass elementType = mappingConfig.getArchiType(resource.getKind());
 			ArchimateElement element = (ArchimateElement) ArchimateFactory.eINSTANCE.create(elementType);
 			element.setDocumentation(resource.getKind().getScheme() + resource.getKind().getTerm());
-			for (AttributeState as : resource.getAttributes()) {
-				if (as.getName().equals("name")) {
-					element.setName(as.getValue());
-				}
-				element.setId(resource.getId());
-			}
+			element.setName(resource.getTitle());
+			element.setId(resource.getId());
 
 			techFolder.getElements().add(element);
 			resourcesTraces.put(resource, element);
