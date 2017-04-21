@@ -1,0 +1,1530 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.obeo.fr/smartea/archimate/3.0" xmlns:basemm="http://www.obeo.fr/smartea/basemm/2.0.0" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL-XMI" xmlns:ext="http://www.obeo.fr/smartea/archimate/extension/3.0">
+  <basemm:Folder name="Business">
+    <folders name="Actors">
+      <folders name="Agencies">
+        <elements xsi:type="archimate:BusinessActor" id="_eujXIIyeEea5AaeaY4nyjA" name="Lyon Agency"/>
+        <elements xsi:type="archimate:BusinessActor" id="_ujRXoIyfEea5AaeaY4nyjA" name="Bordeaux Agency"/>
+        <elements xsi:type="archimate:BusinessActor" id="_uoq1AIyfEea5AaeaY4nyjA" name="Toulouse Agency"/>
+        <elements xsi:type="archimate:BusinessActor" id="_u0BJYIyfEea5AaeaY4nyjA" name="Marseille Agency"/>
+        <elements xsi:type="archimate:BusinessActor" id="_u62xMIyfEea5AaeaY4nyjA" name="Lille Agency"/>
+        <elements xsi:type="archimate:BusinessActor" id="_vDehsIyfEea5AaeaY4nyjA" name="Strasbourg Agency"/>
+        <elements xsi:type="archimate:BusinessActor" id="_vSywEIyfEea5AaeaY4nyjA" name="Lens Agency"/>
+        <elements xsi:type="archimate:BusinessActor" id="_vaALUIyfEea5AaeaY4nyjA" name="Nantes Agency"/>
+        <elements xsi:type="archimate:BusinessActor" id="_vKvnUIyfEea5AaeaY4nyjA" name="Nice Agency"/>
+        <elements xsi:type="archimate:BusinessActor" id="_iFjT0PjpEeaNjKlasyq_QQ" name="Orleans Agency"/>
+        <elements xsi:type="archimate:BusinessActor" id="_p5u3cPkNEeaNjKlasyq_QQ" name="Paris II Agency"/>
+        <elements xsi:type="archimate:BusinessActor" id="_v-aY8PhYEeaRitsTCQp4FA" name="Paris VI Agency"/>
+        <elements xsi:type="archimate:BusinessActor" id="_qpQ28PkNEeaNjKlasyq_QQ" name="Paris VIII Agency"/>
+        <elements xsi:type="archimate:BusinessActor" id="_ret6gPhYEeaRitsTCQp4FA" name="Paris XIV Agency"/>
+        <elements xsi:type="archimate:BusinessActor" id="_utlKMIyfEea5AaeaY4nyjA" name="Paris XVI Agency"/>
+      </folders>
+      <folders name="Departments">
+        <elements xsi:type="archimate:BusinessActor" id="d204c343" name="Marketing Department" documentation="Department in charge of offers">
+          <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_u1S10PeJEeaqyKszd1NY9g" target="_jrH9EPeBEeaZ2Z92FXs5MA"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_vMwTkPeJEeaqyKszd1NY9g" target="_wybi0PeHEeaqyKszd1NY9g"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_511pwAsfEeeCu6lUSKfiKw" target="_MCio4AmuEeejovDXyN8bdA"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_58LiUAsfEeeCu6lUSKfiKw" target="_PYPZYAmuEeejovDXyN8bdA"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_6B6W4AsfEeeCu6lUSKfiKw" target="_GkWh4AmuEeejovDXyN8bdA"/>
+        </elements>
+        <elements xsi:type="archimate:BusinessActor" id="36d6d75f" name="Sales Department">
+          <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uX431HXGEea2X4upo99BTg" target="f1440585"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uX9JRHXGEea2X4upo99BTg" target="f1440585"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_okGAkPkVEeaNjKlasyq_QQ" target="eb94fcb1"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_AbclcAsYEeeCu6lUSKfiKw" target="_7O7tAPd-EeaZ2Z92FXs5MA"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_AmcUgAsYEeeCu6lUSKfiKw" target="_Lj7soPqMEeaI4cnZDQRlbw"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_AvneoAsYEeeCu6lUSKfiKw" target="_YnPTcPqjEeaI4cnZDQRlbw"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_JUyksAsYEeeCu6lUSKfiKw" target="_NdAKgPeAEeaZ2Z92FXs5MA"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_mNCeMAsfEeeCu6lUSKfiKw" target="417d210a"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_zt_hwAsfEeeCu6lUSKfiKw" target="_C6zo8PqzEeaI4cnZDQRlbw"/>
+        </elements>
+        <elements xsi:type="archimate:BusinessActor" id="fd674b00" name="Financial Department">
+          <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_uX3psnXGEea2X4upo99BTg" target="4223e1aa"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_uX4QwHXGEea2X4upo99BTg" target="d0381d5b"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uX4303XGEea2X4upo99BTg" target="ff075e4a"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uX-XYHXGEea2X4upo99BTg" target="ff075e4a"/>
+        </elements>
+        <elements xsi:type="archimate:BusinessActor" id="_4EY8AJtaEeaAE6S5Lmimng" name="IT Department">
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_X6MEoPeMEeaqyKszd1NY9g" target="_6iGJQPeLEeaqyKszd1NY9g"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_Z6TiQPeMEeaqyKszd1NY9g" target="_G6UqMPeMEeaqyKszd1NY9g"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_artKAPeMEeaqyKszd1NY9g" target="_NGAJUPeMEeaqyKszd1NY9g"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_cSsV8PeMEeaqyKszd1NY9g" target="_CsL10PeMEeaqyKszd1NY9g"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_o9yg0AsaEeeCu6lUSKfiKw" target="_Vuu5sPeMEeaqyKszd1NY9g"/>
+        </elements>
+        <elements xsi:type="archimate:BusinessActor" id="_7O7tAPd-EeaZ2Z92FXs5MA" name="B2B Sales Unit">
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_GucAwPeAEeaZ2Z92FXs5MA" target="_9ksOAPd_EeaZ2Z92FXs5MA"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_eCqi0PkNEeaNjKlasyq_QQ" target="1c6d4aa1"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_r_CuQPqmEeaI4cnZDQRlbw" target="_rtWhUPqmEeaI4cnZDQRlbw"/>
+        </elements>
+        <elements xsi:type="archimate:BusinessActor" id="_4OhQAPd-EeaZ2Z92FXs5MA" name="Customer Care Department">
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_5yMMwPd_EeaZ2Z92FXs5MA" target="_08iFYPd_EeaZ2Z92FXs5MA"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_fdZy4AseEeeCu6lUSKfiKw" target="d7c77918"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_gJv7gAseEeeCu6lUSKfiKw" target="_jv4eAPqyEeaI4cnZDQRlbw"/>
+        </elements>
+        <elements xsi:type="archimate:BusinessActor" id="_jrH9EPeBEeaZ2Z92FXs5MA" name="Offers Management Unit">
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_9Bz-4PeJEeaqyKszd1NY9g" target="___wzMPeIEeaqyKszd1NY9g"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_uX3psXXGEea2X4upo99BTg" target="7cc0eee0"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_cejyIPkVEeaNjKlasyq_QQ" target="d5918502"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_7fCtAAfOEeexEa8m-v4sDQ" target="_7Pa8oAfOEeexEa8m-v4sDQ"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_kUDeAAfXEeexEa8m-v4sDQ"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_cfGKsAjZEeeBGY_3j2VC-A" target="_cOI9kAjZEeeBGY_3j2VC-A"/>
+        </elements>
+        <elements xsi:type="archimate:BusinessActor" id="_wybi0PeHEeaqyKszd1NY9g" name="Communication Unit">
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="__d4_wPeJEeaqyKszd1NY9g" target="_K3yFoPeJEeaqyKszd1NY9g"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_ABeN8PeKEeaqyKszd1NY9g" target="_pRE_UPeJEeaqyKszd1NY9g"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_Ai5gAPeKEeaqyKszd1NY9g" target="_rJBYYPeJEeaqyKszd1NY9g"/>
+        </elements>
+        <elements xsi:type="archimate:BusinessActor" id="_YnPTcPqjEeaI4cnZDQRlbw" name="Agencies Network">
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_rdzw0PqjEeaI4cnZDQRlbw" target="_rJVVoPqjEeaI4cnZDQRlbw"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_xgngcPqmEeaI4cnZDQRlbw" target="_xTGo4PqmEeaI4cnZDQRlbw"/>
+        </elements>
+      </folders>
+      <elements xsi:type="archimate:BusinessActor" id="1c6d4aa1" name="Commercial Advisor">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uX_lg3XGEea2X4upo99BTg" target="eb94fcb1"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYAzoHXGEea2X4upo99BTg" target="60fb86bb"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessActor" id="7cc0eee0" name="Offers Manager">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYBasXXGEea2X4upo99BTg" target="d5918502"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessActor" id="4223e1aa" name="Suppliers Manager">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_gRDaEPkaEeaNjKlasyq_QQ" target="88bb7c5"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_guC4EPkaEeaNjKlasyq_QQ" target="_08aIkPeKEeaqyKszd1NY9g"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessActor" id="d0381d5b" name="Accountant">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYDP4HXGEea2X4upo99BTg" target="48278bde"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_UHBtMPkaEeaNjKlasyq_QQ" target="_3lqp0PeKEeaqyKszd1NY9g"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessActor" id="11c3ee2d" name="Travel Partner">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYD28HXGEea2X4upo99BTg" target="57e92e22"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_9ncP0PkbEeaNjKlasyq_QQ" target="_9XAnIPkbEeaNjKlasyq_QQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_hxxzsPkfEeaNjKlasyq_QQ" target="_hiW3oPkfEeaNjKlasyq_QQ"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessActor" id="_7Am3IAjXEeeBGY_3j2VC-A" name="Client">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_8Lq8EAjXEeeBGY_3j2VC-A" target="_zyN90AjXEeeBGY_3j2VC-A"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="__b79gAjYEeeBGY_3j2VC-A" target="__HdiUAjYEeeBGY_3j2VC-A"/>
+      </elements>
+    </folders>
+    <folders name="Locations">
+      <elements xsi:type="archimate:Location" id="bf3f5821" name="Lyon" documentation="Located in the Part Dieu business center">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYXY8XXGEea2X4upo99BTg" target="ec6626d8"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYXY83XGEea2X4upo99BTg" target="7585c61b"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYYAAXXGEea2X4upo99BTg" target="8fa0c972"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYYAAnXGEea2X4upo99BTg" target="68bff7e5"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYYnEHXGEea2X4upo99BTg" target="11f676a3"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYYnEXXGEea2X4upo99BTg" target="80416b89"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYYnEnXGEea2X4upo99BTg" target="d1a36629"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_SXye8KvQEeaUQPSGShOftg" target="_SCQT0KvQEeaUQPSGShOftg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_BjoTMPkJEeaNjKlasyq_QQ" target="_4EY8AJtaEeaAE6S5Lmimng"/>
+      </elements>
+      <elements xsi:type="archimate:Location" id="ec3d51f3" name="Bordeaux">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uX6F83XGEea2X4upo99BTg" target="fd674b00"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_XFLgEIygEea5AaeaY4nyjA" target="_ujRXoIyfEea5AaeaY4nyjA"/>
+      </elements>
+      <elements xsi:type="archimate:Location" id="e757c9ff" name="Toulouse" documentation="These premises host the marketing service">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uX4QwnXGEea2X4upo99BTg" target="7cc0eee0"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYbDUXXGEea2X4upo99BTg" target="52c68a12"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYbDUnXGEea2X4upo99BTg" target="e487be34"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYbDU3XGEea2X4upo99BTg" target="3b309569"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYbqYHXGEea2X4upo99BTg" target="17dc6d24"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYbqYXXGEea2X4upo99BTg" target="2c77e02"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYbqYnXGEea2X4upo99BTg" target="c53f4bcd"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYcRcHXGEea2X4upo99BTg" target="433b08e0"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uYcRcXXGEea2X4upo99BTg" target="80416b89"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_UTUXgKvQEeaUQPSGShOftg" target="_UGrpsKvQEeaUQPSGShOftg"/>
+      </elements>
+      <elements xsi:type="archimate:Location" id="_nTcJUIyeEea5AaeaY4nyjA" name="Paris">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_ruWR8PhYEeaRitsTCQp4FA" target="_ret6gPhYEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_wO0zgPhYEeaRitsTCQp4FA" target="_v-aY8PhYEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_f5yEMPkHEeaNjKlasyq_QQ" target="fd674b00"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_hRGccPkHEeaNjKlasyq_QQ" target="36d6d75f"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_qJ1I8PkNEeaNjKlasyq_QQ" target="_p5u3cPkNEeaNjKlasyq_QQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_q27fgPkNEeaNjKlasyq_QQ" target="_qpQ28PkNEeaNjKlasyq_QQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_RdnVwPksEeaNjKlasyq_QQ" target="68bff7e5"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_WfEdcPksEeaNjKlasyq_QQ" target="1db3b931"/>
+      </elements>
+      <elements xsi:type="archimate:Location" id="_n-USUIyeEea5AaeaY4nyjA" name="Marseille">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_Y8veoIygEea5AaeaY4nyjA" target="_u0BJYIyfEea5AaeaY4nyjA"/>
+      </elements>
+      <elements xsi:type="archimate:Location" id="_tbj-IIyeEea5AaeaY4nyjA" name="Lille">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_ZYJoQIygEea5AaeaY4nyjA" target="_u62xMIyfEea5AaeaY4nyjA"/>
+      </elements>
+      <elements xsi:type="archimate:Location" id="_uBtYIIyeEea5AaeaY4nyjA" name="Strasbourg">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_ZwUQoIygEea5AaeaY4nyjA" target="_vDehsIyfEea5AaeaY4nyjA"/>
+      </elements>
+      <elements xsi:type="archimate:Location" id="_u4pAIIyeEea5AaeaY4nyjA" name="Nice">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_aJ-t0IygEea5AaeaY4nyjA" target="_vKvnUIyfEea5AaeaY4nyjA"/>
+      </elements>
+      <elements xsi:type="archimate:Location" id="_vZKTQIyeEea5AaeaY4nyjA" name="Lens">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_anGusIygEea5AaeaY4nyjA" target="_vSywEIyfEea5AaeaY4nyjA"/>
+      </elements>
+      <elements xsi:type="archimate:Location" id="_zma94IyeEea5AaeaY4nyjA" name="Nantes">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_bEspoIygEea5AaeaY4nyjA" target="_vaALUIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_ZMI24AsjEeeCu6lUSKfiKw" target="_4OhQAPd-EeaZ2Z92FXs5MA"/>
+      </elements>
+      <elements xsi:type="archimate:Location" id="_0268cIyeEea5AaeaY4nyjA" name="Orleans">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_cHNPgIygEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_ip26wPjpEeaNjKlasyq_QQ" target="_iFjT0PjpEeaNjKlasyq_QQ"/>
+      </elements>
+    </folders>
+    <folders name="Services">
+      <elements xsi:type="archimate:BusinessService" id="417d210a" name="Trips Selling" foreignBidirectionalRelationships="_uYIvcHXGEea2X4upo99BTg">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYIvcXXGEea2X4upo99BTg" end2="c2ee4389"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_uYIIYnXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_uYPdInXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_kSFl0HmSEeav56em3zGr9w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_lACQ8HmSEeav56em3zGr9w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_mJCgYHmSEeav56em3zGr9w"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessService" id="d7c77918" name="Managing Trips">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYJ9kXXGEea2X4upo99BTg" end2="7534f8f9"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_uYJWg3XGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_uYJ9kHXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_iDbV4HmSEeav56em3zGr9w"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessService" id="_jv4eAPqyEeaI4cnZDQRlbw" name="Client Supporting"/>
+      <elements xsi:type="archimate:BusinessService" id="_C6zo8PqzEeaI4cnZDQRlbw" name="Trips Advising">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_9YPiMAmuEeejovDXyN8bdA" target="_32C8UApbEee0sPoCtVEmzQ"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessService" id="_btqpIPq0EeaI4cnZDQRlbw" name="Trips providing">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_YamyYPqzEeaI4cnZDQRlbw" target="_jv4eAPqyEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_1WZzUPqzEeaI4cnZDQRlbw" target="d7c77918"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_g3WfwPq0EeaI4cnZDQRlbw" target="417d210a"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_azkN0PqzEeaI4cnZDQRlbw" target="_C6zo8PqzEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_m82TMAmuEeejovDXyN8bdA" target="_PYPZYAmuEeejovDXyN8bdA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_noGPoAmuEeejovDXyN8bdA" target="_MCio4AmuEeejovDXyN8bdA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_oI6dsAmuEeejovDXyN8bdA" target="_GkWh4AmuEeejovDXyN8bdA"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessService" id="_GkWh4AmuEeejovDXyN8bdA" name="Partners Selecting">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_sk45wAmuEeejovDXyN8bdA" target="_QsDUoPgpEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessService" id="_MCio4AmuEeejovDXyN8bdA" name="Trips Building">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_2o2SAAmuEeejovDXyN8bdA" target="_z5IBgApgEee8McM9ziqbDw"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessService" id="_PYPZYAmuEeejovDXyN8bdA" name="Trips Promoting">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_8yjbMAmuEeejovDXyN8bdA" target="_32C8UApbEee0sPoCtVEmzQ"/>
+      </elements>
+    </folders>
+    <folders name="Events">
+      <elements xsi:type="archimate:BusinessEvent" id="_aEhsoPg5EeaS2cOhq1F_7w" name="Client has requested a trip">
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_OcVsEPg6EeaS2cOhq1F_7w" target="_YmjD0PqLEeaI4cnZDQRlbw"/>
+      </elements>
+    </folders>
+    <folders name="Interactions">
+      <elements xsi:type="archimate:BusinessInteraction" id="_Ca9_APp2EeaI4cnZDQRlbw" name="Book trip to the partner">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_hvzKgPqPEeaI4cnZDQRlbw" target="_lKad8PqUEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_MnBzcPqvEeaI4cnZDQRlbw" target="_GcUW8PqqEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_YYIqAPqvEeaI4cnZDQRlbw" target="_0ko8APg-EeaS2cOhq1F_7w"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessInteraction" id="_YmjD0PqLEeaI4cnZDQRlbw" name="Propose trips">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_JKG6EPqCEeaI4cnZDQRlbw" target="_KSZdMPqVEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_fLG9APqLEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_C1F_UPqvEeaI4cnZDQRlbw" target="_9oeiwPqpEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_EavKoPqzEeaI4cnZDQRlbw" target="_C6zo8PqzEeaI4cnZDQRlbw"/>
+      </elements>
+    </folders>
+    <folders name="Functions">
+      <elements xsi:type="archimate:BusinessFunction" id="ff075e4a" name="Invoicing Clients">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uYDP43XGEea2X4upo99BTg" target="d0381d5b"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uYFsIXXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_uYGTMHXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_uYSgcHXGEea2X4upo99BTg"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessFunction" id="f1440585" name="Clients Needs Identification ">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uYAzoXXGEea2X4upo99BTg" target="1c6d4aa1"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uYFFEnXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_uYGTM3XGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_uYQrQHXGEea2X4upo99BTg"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessFunction" id="_s0sLkPqgEeaI4cnZDQRlbw" name="Claims Management">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="__LXiwPqyEeaI4cnZDQRlbw" target="_jv4eAPqyEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessFunction" id="_FaRaMPqhEeaI4cnZDQRlbw" name="Clients Follow-up"/>
+      <elements xsi:type="archimate:BusinessFunction" id="_RvK6UPqhEeaI4cnZDQRlbw" name="Best Matching Trips Search"/>
+      <elements xsi:type="archimate:BusinessFunction" id="_cb1RUPqhEeaI4cnZDQRlbw" name="Sale Closing"/>
+      <elements xsi:type="archimate:BusinessFunction" id="__ahsAPqlEeaI4cnZDQRlbw" name="First Level Support">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_-wQ7IPqyEeaI4cnZDQRlbw" target="_jv4eAPqyEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessFunction" id="_YIx5APqnEeaI4cnZDQRlbw" name="Develop Partnerships with Enterprises"/>
+      <elements xsi:type="archimate:BusinessFunction" id="_f0jR4PqnEeaI4cnZDQRlbw" name="Organize Local Promotional Events"/>
+      <elements xsi:type="archimate:BusinessFunction" id="_Gqli0PqyEeaI4cnZDQRlbw" name="Premium Services">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="__tmtIPqyEeaI4cnZDQRlbw" target="_jv4eAPqyEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessFunction" id="_gROBEAVuEeefls8NENXj2Q" name="Paying Trips to Partners"/>
+    </folders>
+    <folders name="Processes">
+      <folders name="BPMN">
+        <elements xsi:type="bpmn:Definitions" id="bpmnmodel" name="BPMN">
+          <rootElements xsi:type="bpmn:Process" id="EAPK_C9ED868D_FDAC_44ee_9073_294A633162CE" name="Trip Management">
+            <flowElements xsi:type="bpmn:CallActivity" id="_Xk5DEHjlEeaK6qE50Wuy0w" name="Booking a trip" calledElementRef="_VgLhQKjBEeK_xvwrSf5u4w"/>
+            <flowElements xsi:type="bpmn:CallActivity" id="EAID_FB163AC0_9B90_45bf_97B4_4CB3CAB425A0-CALL_ACTIVITY" name="Cancelling a trip"/>
+            <laneSets id="EAPK_C9ED868D_FDAC_44ee_9073_294A633162CE-LANESET" name="Trip Management">
+              <lanes id="EAPK_C9ED868D_FDAC_44ee_9073_294A633162CE-LANE" flowNodeRefs="_Xk5DEHjlEeaK6qE50Wuy0w EAID_FB163AC0_9B90_45bf_97B4_4CB3CAB425A0-CALL_ACTIVITY"/>
+            </laneSets>
+            <decomposedBy id="_VgLhQKjBEeK_xvwrSf5u4w" name="Booking a trip">
+              <flowElements xsi:type="bpmn:Task" id="_yJjVcKjBEeK_xvwrSf5u4w" name="Chose alternative" boundaryEventRefs="_7e0soKjKEeKSNoCYL5SGfQ"/>
+              <flowElements xsi:type="bpmn:SendTask" id="_yp_JAKjBEeK_xvwrSf5u4w" name="Send credit card information" boundaryEventRefs="_mePoEKjFEeKByZYE3SKnNQ"/>
+              <flowElements xsi:type="bpmn:StartEvent" id="_5F1LEKjBEeK_xvwrSf5u4w" name="" outgoing="_6Y-N8KjBEeK_xvwrSf5u4w _9drVEKjBEeK_xvwrSf5u4w">
+                <eventDefinitions xsi:type="bpmn:MessageEventDefinition" id="_5lGhAKjBEeK_xvwrSf5u4w"/>
+              </flowElements>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_6Y-N8KjBEeK_xvwrSf5u4w" sourceRef="_5F1LEKjBEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:ParallelGateway" id="_9dquAKjBEeK_xvwrSf5u4w" outgoing="__M1lkKjBEeK_xvwrSf5u4w __vF-EKjBEeK_xvwrSf5u4w" incoming="_9drVEKjBEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_9drVEKjBEeK_xvwrSf5u4w" targetRef="_9dquAKjBEeK_xvwrSf5u4w" sourceRef="_5F1LEKjBEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:ManualTask" id="__M0-gKjBEeK_xvwrSf5u4w" name="Search hotel room" outgoing="_JAR1kKjCEeK_xvwrSf5u4w" incoming="__M1lkKjBEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="__M1lkKjBEeK_xvwrSf5u4w" targetRef="__M0-gKjBEeK_xvwrSf5u4w" sourceRef="_9dquAKjBEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:ManualTask" id="__vFXAKjBEeK_xvwrSf5u4w" name="Search flight" outgoing="_GvYJ8KjCEeK_xvwrSf5u4w" incoming="__vF-EKjBEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="__vF-EKjBEeK_xvwrSf5u4w" targetRef="__vFXAKjBEeK_xvwrSf5u4w" sourceRef="_9dquAKjBEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:ManualTask" id="_GvXi4KjCEeK_xvwrSf5u4w" name="Evaluate flight within customer criteria" outgoing="_H5jeEKjCEeK_xvwrSf5u4w" incoming="_GvYJ8KjCEeK_xvwrSf5u4w" boundaryEventRefs="_9F0foKjKEeKSNoCYL5SGfQ"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_GvYJ8KjCEeK_xvwrSf5u4w" targetRef="_GvXi4KjCEeK_xvwrSf5u4w" sourceRef="__vFXAKjBEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:ParallelGateway" id="_H5i3AKjCEeK_xvwrSf5u4w" outgoing="_QD8FkKjCEeK_xvwrSf5u4w" incoming="_H5jeEKjCEeK_xvwrSf5u4w _Lmr3IKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_H5jeEKjCEeK_xvwrSf5u4w" targetRef="_H5i3AKjCEeK_xvwrSf5u4w" sourceRef="_GvXi4KjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:ManualTask" id="_JAQncKjCEeK_xvwrSf5u4w" name="Evaluate hotels within customer criteria" outgoing="_Lmr3IKjCEeK_xvwrSf5u4w" incoming="_JAR1kKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_JAR1kKjCEeK_xvwrSf5u4w" targetRef="_JAQncKjCEeK_xvwrSf5u4w" sourceRef="__M0-gKjBEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_Lmr3IKjCEeK_xvwrSf5u4w" targetRef="_H5i3AKjCEeK_xvwrSf5u4w" sourceRef="_JAQncKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:ManualTask" id="_QD63cKjCEeK_xvwrSf5u4w" name="Package flights and hotels for customer review" outgoing="_REj1EKjCEeK_xvwrSf5u4w" incoming="_QD8FkKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_QD8FkKjCEeK_xvwrSf5u4w" targetRef="_QD63cKjCEeK_xvwrSf5u4w" sourceRef="_H5i3AKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:ManualTask" id="_REim8KjCEeK_xvwrSf5u4w" name="Present flights and hotels to customer" outgoing="_VNq_gajCEeK_xvwrSf5u4w _nVHtEKjCEeK_xvwrSf5u4w" incoming="_REj1EKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_REj1EKjCEeK_xvwrSf5u4w" targetRef="_REim8KjCEeK_xvwrSf5u4w" sourceRef="_QD63cKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_VNq_gajCEeK_xvwrSf5u4w" sourceRef="_REim8KjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:StartEvent" id="_fl4wgKjCEeK_xvwrSf5u4w" outgoing="_wHPqAKjCEeK_xvwrSf5u4w" incoming="_fl5XkKjCEeK_xvwrSf5u4w _n03kIKjCEeK_xvwrSf5u4w">
+                <eventDefinitions xsi:type="bpmn:MessageEventDefinition" id="_1pBQgKjCEeK_xvwrSf5u4w"/>
+              </flowElements>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_fl5XkKjCEeK_xvwrSf5u4w" targetRef="_fl4wgKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:StartEvent" id="_gLpI8KjCEeK_xvwrSf5u4w" outgoing="_zJMYEKjCEeK_xvwrSf5u4w" incoming="_gLpwAKjCEeK_xvwrSf5u4w _onOOIKjCEeK_xvwrSf5u4w">
+                <eventDefinitions xsi:type="bpmn:MessageEventDefinition" id="_2nV58KjCEeK_xvwrSf5u4w"/>
+              </flowElements>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_gLpwAKjCEeK_xvwrSf5u4w" targetRef="_gLpI8KjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:StartEvent" id="_gsrZcKjCEeK_xvwrSf5u4w" outgoing="_xgIvkKjCEeK_xvwrSf5u4w" incoming="_gssAgKjCEeK_xvwrSf5u4w _oNSrMKjCEeK_xvwrSf5u4w">
+                <eventDefinitions xsi:type="bpmn:TimerEventDefinition" id="_2KgM8KjCEeK_xvwrSf5u4w"/>
+              </flowElements>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_gssAgKjCEeK_xvwrSf5u4w" targetRef="_gsrZcKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:EventBasedGateway" id="_mKHSgKjCEeK_xvwrSf5u4w" outgoing="_n03kIKjCEeK_xvwrSf5u4w _oNSrMKjCEeK_xvwrSf5u4w _onOOIKjCEeK_xvwrSf5u4w" incoming="_nVHtEKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_nVHtEKjCEeK_xvwrSf5u4w" targetRef="_mKHSgKjCEeK_xvwrSf5u4w" sourceRef="_REim8KjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_n03kIKjCEeK_xvwrSf5u4w" targetRef="_fl4wgKjCEeK_xvwrSf5u4w" sourceRef="_mKHSgKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_oNSrMKjCEeK_xvwrSf5u4w" targetRef="_gsrZcKjCEeK_xvwrSf5u4w" sourceRef="_mKHSgKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_onOOIKjCEeK_xvwrSf5u4w" targetRef="_gLpI8KjCEeK_xvwrSf5u4w" sourceRef="_mKHSgKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:ManualTask" id="_wHPC8KjCEeK_xvwrSf5u4w" name="Request credit card information" outgoing="_6bgIEKjCEeK_xvwrSf5u4w" incoming="_wHPqAKjCEeK_xvwrSf5u4w" boundaryEventRefs="_G5c2gKjDEeK_xvwrSf5u4w _vjRoAKjHEeKfxP_htjREQQ"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_wHPqAKjCEeK_xvwrSf5u4w" targetRef="_wHPC8KjCEeK_xvwrSf5u4w" sourceRef="_fl4wgKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:ServiceTask" id="_xgIIgKjCEeK_xvwrSf5u4w" name="Notify customer to start again" outgoing="_LKKcwKjOEeKSNoCYL5SGfQ" incoming="_xgIvkKjCEeK_xvwrSf5u4w _NNqmkKjDEeK_xvwrSf5u4w" boundaryEventRefs="_e_FH0KjFEeKByZYE3SKnNQ"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_xgIvkKjCEeK_xvwrSf5u4w" targetRef="_xgIIgKjCEeK_xvwrSf5u4w" sourceRef="_gsrZcKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:ScriptTask" id="_zJLxAKjCEeK_xvwrSf5u4w" name="Update  record customer" outgoing="_4iGWcKjCEeK_xvwrSf5u4w" incoming="_zJMYEKjCEeK_xvwrSf5u4w _LKKcwKjOEeKSNoCYL5SGfQ"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_zJMYEKjCEeK_xvwrSf5u4w" targetRef="_zJLxAKjCEeK_xvwrSf5u4w" sourceRef="_gLpI8KjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:EndEvent" id="_4iFvYKjCEeK_xvwrSf5u4w" incoming="_4iGWcKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_4iGWcKjCEeK_xvwrSf5u4w" targetRef="_4iFvYKjCEeK_xvwrSf5u4w" sourceRef="_zJLxAKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:StartEvent" id="_6bfhAKjCEeK_xvwrSf5u4w" incoming="_6bgIEKjCEeK_xvwrSf5u4w">
+                <eventDefinitions xsi:type="bpmn:LinkEventDefinition" id="_7pEucKjCEeK_xvwrSf5u4w"/>
+              </flowElements>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_6bgIEKjCEeK_xvwrSf5u4w" targetRef="_6bfhAKjCEeK_xvwrSf5u4w" sourceRef="_wHPC8KjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:EndEvent" id="__GfQgKjCEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:BoundaryEvent" id="_G5c2gKjDEeK_xvwrSf5u4w" outgoing="_NNqmkKjDEeK_xvwrSf5u4w" attachedToRef="_wHPC8KjCEeK_xvwrSf5u4w">
+                <eventDefinitions xsi:type="bpmn:TimerEventDefinition" id="_KEJ38KjDEeK_xvwrSf5u4w"/>
+              </flowElements>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_NNqmkKjDEeK_xvwrSf5u4w" targetRef="_xgIIgKjCEeK_xvwrSf5u4w" sourceRef="_G5c2gKjDEeK_xvwrSf5u4w"/>
+              <flowElements xsi:type="bpmn:BoundaryEvent" id="_e_FH0KjFEeKByZYE3SKnNQ" attachedToRef="_xgIIgKjCEeK_xvwrSf5u4w">
+                <eventDefinitions xsi:type="bpmn:MessageEventDefinition" id="_f9mlkKjFEeKByZYE3SKnNQ"/>
+              </flowElements>
+              <flowElements xsi:type="bpmn:BoundaryEvent" id="_mePoEKjFEeKByZYE3SKnNQ" attachedToRef="_yp_JAKjBEeK_xvwrSf5u4w">
+                <eventDefinitions xsi:type="bpmn:MessageEventDefinition" id="_oUjXgKjHEeKfxP_htjREQQ"/>
+              </flowElements>
+              <flowElements xsi:type="bpmn:BoundaryEvent" id="_vjRoAKjHEeKfxP_htjREQQ" attachedToRef="_wHPC8KjCEeK_xvwrSf5u4w">
+                <eventDefinitions xsi:type="bpmn:MessageEventDefinition" id="_wZXigKjHEeKfxP_htjREQQ"/>
+              </flowElements>
+              <flowElements xsi:type="bpmn:BoundaryEvent" id="_7e0soKjKEeKSNoCYL5SGfQ" attachedToRef="_yJjVcKjBEeK_xvwrSf5u4w">
+                <eventDefinitions xsi:type="bpmn:MessageEventDefinition" id="_8Yp3oKjKEeKSNoCYL5SGfQ"/>
+              </flowElements>
+              <flowElements xsi:type="bpmn:BoundaryEvent" id="_9F0foKjKEeKSNoCYL5SGfQ" attachedToRef="_GvXi4KjCEeK_xvwrSf5u4w">
+                <eventDefinitions xsi:type="bpmn:MessageEventDefinition" id="_91khkKjKEeKSNoCYL5SGfQ"/>
+              </flowElements>
+              <flowElements xsi:type="bpmn:StartEvent" id="_5Jf-kKjLEeKSNoCYL5SGfQ" outgoing="_52aH4KjLEeKSNoCYL5SGfQ"/>
+              <flowElements xsi:type="bpmn:Task" id="_52XEkKjLEeKSNoCYL5SGfQ" name="Request a trip" incoming="_52aH4KjLEeKSNoCYL5SGfQ" boundaryEventRefs="_9_kVoKjLEeKSNoCYL5SGfQ"/>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_52aH4KjLEeKSNoCYL5SGfQ" targetRef="_52XEkKjLEeKSNoCYL5SGfQ" sourceRef="_5Jf-kKjLEeKSNoCYL5SGfQ"/>
+              <flowElements xsi:type="bpmn:BoundaryEvent" id="_9_kVoKjLEeKSNoCYL5SGfQ" attachedToRef="_52XEkKjLEeKSNoCYL5SGfQ">
+                <eventDefinitions xsi:type="bpmn:MessageEventDefinition" id="_-ZlYIKjLEeKSNoCYL5SGfQ"/>
+              </flowElements>
+              <flowElements xsi:type="bpmn:SequenceFlow" id="_LKKcwKjOEeKSNoCYL5SGfQ" targetRef="_zJLxAKjCEeK_xvwrSf5u4w" sourceRef="_xgIIgKjCEeK_xvwrSf5u4w"/>
+              <laneSets id="_bnUeoKjBEeK_xvwrSf5u4w" name="Travel booking">
+                <lanes id="_bnYJAKjBEeK_xvwrSf5u4w" name="Customer" flowNodeRefs="_yJjVcKjBEeK_xvwrSf5u4w _yp_JAKjBEeK_xvwrSf5u4w __GfQgKjCEeK_xvwrSf5u4w _5Jf-kKjLEeKSNoCYL5SGfQ _52XEkKjLEeKSNoCYL5SGfQ"/>
+              </laneSets>
+              <laneSets id="_gxuG8KjBEeK_xvwrSf5u4w" name="Travel">
+                <lanes id="_gxuuAKjBEeK_xvwrSf5u4w" name="Travel Agency" flowNodeRefs="_5F1LEKjBEeK_xvwrSf5u4w _9dquAKjBEeK_xvwrSf5u4w __M0-gKjBEeK_xvwrSf5u4w __vFXAKjBEeK_xvwrSf5u4w _GvXi4KjCEeK_xvwrSf5u4w _H5i3AKjCEeK_xvwrSf5u4w _JAQncKjCEeK_xvwrSf5u4w _QD63cKjCEeK_xvwrSf5u4w _REim8KjCEeK_xvwrSf5u4w _fl4wgKjCEeK_xvwrSf5u4w _gLpI8KjCEeK_xvwrSf5u4w _gsrZcKjCEeK_xvwrSf5u4w _mKHSgKjCEeK_xvwrSf5u4w _wHPC8KjCEeK_xvwrSf5u4w _xgIIgKjCEeK_xvwrSf5u4w _zJLxAKjCEeK_xvwrSf5u4w _4iFvYKjCEeK_xvwrSf5u4w _6bfhAKjCEeK_xvwrSf5u4w"/>
+              </laneSets>
+            </decomposedBy>
+          </rootElements>
+          <rootElements xsi:type="bpmn:Collaboration" id="_mzUyIKjDEeK_xvwrSf5u4w">
+            <messageFlows id="_7LA_0KjKEeKSNoCYL5SGfQ" sourceRef="_9F0foKjKEeKSNoCYL5SGfQ" targetRef="_yJjVcKjBEeK_xvwrSf5u4w"/>
+            <messageFlows id="_CF0OwKjLEeKSNoCYL5SGfQ" sourceRef="_yJjVcKjBEeK_xvwrSf5u4w" targetRef="_GvXi4KjCEeK_xvwrSf5u4w"/>
+            <messageFlows id="_Ns60wKjLEeKSNoCYL5SGfQ" sourceRef="_vjRoAKjHEeKfxP_htjREQQ" targetRef="_yp_JAKjBEeK_xvwrSf5u4w"/>
+            <messageFlows id="_Oci64KjLEeKSNoCYL5SGfQ" sourceRef="_mePoEKjFEeKByZYE3SKnNQ" targetRef="_wHPC8KjCEeK_xvwrSf5u4w"/>
+            <messageFlows id="_YXW-MKjLEeKSNoCYL5SGfQ" sourceRef="_e_FH0KjFEeKByZYE3SKnNQ" targetRef="__GfQgKjCEeK_xvwrSf5u4w"/>
+            <messageFlows id="__TvTQKjLEeKSNoCYL5SGfQ" sourceRef="_9_kVoKjLEeKSNoCYL5SGfQ" targetRef="_5F1LEKjBEeK_xvwrSf5u4w"/>
+          </rootElements>
+        </elements>
+      </folders>
+      <elements xsi:type="ext:ExtendedBusinessProcess" id="60fb86bb" name="Cancel a trip">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_uYSgcnXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_uYWx4XXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_aYHS0PqxEeaI4cnZDQRlbw" target="_ubLesPqUEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_-7zSMPqxEeaI4cnZDQRlbw" target="d7c77918"/>
+      </elements>
+      <elements xsi:type="ext:ExtendedBusinessProcess" id="_YLdnUPg7EeaS2cOhq1F_7w" name="Charge an advance">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_Juv4MPqCEeaI4cnZDQRlbw" target="_Ca9_APp2EeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_QVMHQPqvEeaI4cnZDQRlbw" target="_zqXsIPg-EeaS2cOhq1F_7w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_TdtXYPqvEeaI4cnZDQRlbw" target="_0ko8APg-EeaS2cOhq1F_7w"/>
+      </elements>
+      <elements xsi:type="ext:ExtendedBusinessProcess" id="_Na3koPqCEeaI4cnZDQRlbw" name="Request satisfaction">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_qpQQ8PqvEeaI4cnZDQRlbw" target="_zqXsIPg-EeaS2cOhq1F_7w"/>
+      </elements>
+      <elements xsi:type="ext:ExtendedBusinessProcess" id="_NGu0wPqPEeaI4cnZDQRlbw" name="Charge pending amount">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_iUjdYPqPEeaI4cnZDQRlbw" target="_Na3koPqCEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_gB6e0PqvEeaI4cnZDQRlbw" target="_0ko8APg-EeaS2cOhq1F_7w"/>
+      </elements>
+      <elements xsi:type="ext:ExtendedBusinessProcess" id="_ubLesPqUEeaI4cnZDQRlbw" name="Manage pending amount"/>
+      <elements xsi:type="ext:ExtendedBusinessProcess" id="_NJWcMPqVEeaI4cnZDQRlbw" name="Send promotional offers"/>
+      <elements xsi:type="ext:ExtendedBusinessProcess" id="_ktMOEPqiEeaI4cnZDQRlbw" name="Trip Selling">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_uEkNIPqiEeaI4cnZDQRlbw" target="_NGu0wPqPEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_uQABEPqiEeaI4cnZDQRlbw" target="_YLdnUPg7EeaS2cOhq1F_7w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_uU6WQPqiEeaI4cnZDQRlbw" target="_YmjD0PqLEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_ueM1IPqiEeaI4cnZDQRlbw" target="_NJWcMPqVEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_uiamwPqiEeaI4cnZDQRlbw" target="_ubLesPqUEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_umkuAPqiEeaI4cnZDQRlbw" target="_Ca9_APp2EeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_K3dSEPgkEeaS2cOhq1F_7w" target="417d210a"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_XlPikPqxEeaI4cnZDQRlbw" target="60fb86bb"/>
+      </elements>
+    </folders>
+    <folders name="Interfaces">
+      <elements xsi:type="archimate:BusinessInterface" id="_FXpCYPd_EeaZ2Z92FXs5MA" name="Support Website">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_v5XL0AsaEeeCu6lUSKfiKw" target="_zyN90AjXEeeBGY_3j2VC-A"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessInterface" id="_KqZfAPeLEeaqyKszd1NY9g" name="VD Website">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_BSy6sAfXEeexEa8m-v4sDQ" target="_RfMMkPeLEeaqyKszd1NY9g"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_Lgqc4AfXEeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_WiQboAsEEeedCKrWYNTuUQ" target="_FXpCYPd_EeaZ2Z92FXs5MA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_2ma-4AsIEeedCKrWYNTuUQ" target="_2R8jsAsIEeedCKrWYNTuUQ"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessInterface" id="_RfMMkPeLEeaqyKszd1NY9g" name="Corporate Website">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_cm9uEAsaEeeCu6lUSKfiKw" target="__HdiUAjYEeeBGY_3j2VC-A"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessInterface" id="_TVK2wPeLEeaqyKszd1NY9g" name="Social Media" documentation="The main social media used are:&#xD;&#xA; - LinkedIn&#xD;&#xA; - Facebook&#xD;&#xA; - Twitter&#xD;&#xA; - TripAdvisor">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_RXAcwAsaEeeCu6lUSKfiKw" target="__HdiUAjYEeeBGY_3j2VC-A"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessInterface" id="_Vuu5sPeMEeaqyKszd1NY9g" name="HelpDesk">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_hoCT4AsdEeeCu6lUSKfiKw" target="d204c343"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_iGcuMAsdEeeCu6lUSKfiKw" target="_4OhQAPd-EeaZ2Z92FXs5MA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_isL4gAsdEeeCu6lUSKfiKw" target="36d6d75f"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_jnoNEAsdEeeCu6lUSKfiKw" target="_4EY8AJtaEeaAE6S5Lmimng"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessInterface" id="_2R8jsAsIEeedCKrWYNTuUQ" name="Booking Website">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_buoX4AsaEeeCu6lUSKfiKw" target="__HdiUAjYEeeBGY_3j2VC-A"/>
+      </elements>
+    </folders>
+    <folders name="Objects">
+      <elements xsi:type="archimate:BusinessObject" id="_0ko8APg-EeaS2cOhq1F_7w" name="Trip">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_TdQoQPqrEeaI4cnZDQRlbw" end2="_9oeiwPqpEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_wdJJ4PqpEeaI4cnZDQRlbw" target="_pI-YsPqpEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_xCi9APqpEeaI4cnZDQRlbw" target="_hARMMPqpEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_xgby4PqpEeaI4cnZDQRlbw" target="_h_RyIPqpEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_x95K8PqpEeaI4cnZDQRlbw" target="_nqqnoPqpEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_X2TFEPqrEeaI4cnZDQRlbw" target="_vT0xYPqpEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:Representation" id="_MBx74Pg_EeaS2cOhq1F_7w" name="User Account">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_xZeZ0PqqEeaI4cnZDQRlbw" target="_zqXsIPg-EeaS2cOhq1F_7w"/>
+      </elements>
+      <elements xsi:type="archimate:Representation" id="_Xx3ewPg_EeaS2cOhq1F_7w" name="Trip summary">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_ZlG-APg_EeaS2cOhq1F_7w" target="_0ko8APg-EeaS2cOhq1F_7w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_fyQcwPg_EeaS2cOhq1F_7w" target="_cu9q4Pg_EeaS2cOhq1F_7w"/>
+      </elements>
+      <elements xsi:type="archimate:Representation" id="_aV0CMPg_EeaS2cOhq1F_7w" name="Confirmation message">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_cEo7gPg_EeaS2cOhq1F_7w" target="_0ko8APg-EeaS2cOhq1F_7w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_kulz4Pg_EeaS2cOhq1F_7w" target="_hZW9cPg_EeaS2cOhq1F_7w"/>
+      </elements>
+      <elements xsi:type="archimate:Contract" id="_cu9q4Pg_EeaS2cOhq1F_7w" name="Bill"/>
+      <elements xsi:type="archimate:Contract" id="_hZW9cPg_EeaS2cOhq1F_7w" name="Trip Confirmation"/>
+      <elements xsi:type="archimate:BusinessObject" id="_0S0WwPg_EeaS2cOhq1F_7w" name="Website user">
+        <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_HMkD8PhAEeaS2cOhq1F_7w" target="_zqXsIPg-EeaS2cOhq1F_7w"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessObject" id="_5-cc0Pg_EeaS2cOhq1F_7w" name="B2B Client">
+        <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_HniIsPhAEeaS2cOhq1F_7w" target="_zqXsIPg-EeaS2cOhq1F_7w"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessObject" id="_zqXsIPg-EeaS2cOhq1F_7w" name="Client">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_XaYvsPqsEeaI4cnZDQRlbw" target="_0ko8APg-EeaS2cOhq1F_7w"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessObject" id="_hARMMPqpEeaI4cnZDQRlbw" name="Travel"/>
+      <elements xsi:type="archimate:BusinessObject" id="_h_RyIPqpEeaI4cnZDQRlbw" name="Accomodation"/>
+      <elements xsi:type="archimate:BusinessObject" id="_nqqnoPqpEeaI4cnZDQRlbw" name="Activity"/>
+      <elements xsi:type="archimate:BusinessObject" id="_pI-YsPqpEeaI4cnZDQRlbw" name="Equipment"/>
+      <elements xsi:type="archimate:BusinessObject" id="_vT0xYPqpEeaI4cnZDQRlbw" name="Insurance"/>
+      <elements xsi:type="archimate:BusinessObject" id="_5t2gQPqpEeaI4cnZDQRlbw" name="Season" foreignBidirectionalRelationships="_-FPsYPqrEeaI4cnZDQRlbw"/>
+      <elements xsi:type="archimate:BusinessObject" id="_9oeiwPqpEeaI4cnZDQRlbw" name="Trip Destination" foreignBidirectionalRelationships="_TdQoQPqrEeaI4cnZDQRlbw">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_Ph0tcPqrEeaI4cnZDQRlbw" target="_On4NsPqrEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_dS1mQPqrEeaI4cnZDQRlbw" target="_K0t6kPqqEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_6BjNcPqrEeaI4cnZDQRlbw" target="_5t2gQPqpEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessObject" id="_GcUW8PqqEeaI4cnZDQRlbw" name="Travel Service Provider">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_FTSncPqsEeaI4cnZDQRlbw" target="_On4NsPqrEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessObject" id="_K0t6kPqqEeaI4cnZDQRlbw" name="Promotional Offer"/>
+      <elements xsi:type="archimate:BusinessObject" id="_Q45DgPqqEeaI4cnZDQRlbw" name="Agency Client">
+        <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_nDxKQPqqEeaI4cnZDQRlbw" target="_zqXsIPg-EeaS2cOhq1F_7w"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessObject" id="_3nT1EPqqEeaI4cnZDQRlbw" name="Offers Catalog">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_LdeHMPqrEeaI4cnZDQRlbw" target="_9oeiwPqpEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessObject" id="_On4NsPqrEeaI4cnZDQRlbw" name="Trip Service">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_-FPsYPqrEeaI4cnZDQRlbw" end2="_5t2gQPqpEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:Representation" id="_H_9MkPqtEeaI4cnZDQRlbw" name="Paper Catalog">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_Loic0PqtEeaI4cnZDQRlbw" target="_3nT1EPqqEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:Representation" id="_JZfLUPqtEeaI4cnZDQRlbw" name="Online Catalog">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_LHm6APqtEeaI4cnZDQRlbw" target="_3nT1EPqqEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:Contract" id="_jVhPgPqtEeaI4cnZDQRlbw" name="Partnership"/>
+      <elements xsi:type="archimate:Representation" id="_N8xlIAmnEeejovDXyN8bdA" name="Signed Partnership Agreement">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_URIfIAmnEeejovDXyN8bdA" target="_GcUW8PqqEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_U5bOMAmnEeejovDXyN8bdA" target="_jVhPgPqtEeaI4cnZDQRlbw"/>
+      </elements>
+    </folders>
+    <folders name="Roles">
+      <folders name="Internal">
+        <elements xsi:type="archimate:BusinessRole" id="_6iGJQPeLEeaqyKszd1NY9g" name="IT Support"/>
+        <elements xsi:type="archimate:BusinessRole" id="_CsL10PeMEeaqyKszd1NY9g" name="IT Subcontractors Management"/>
+        <elements xsi:type="archimate:BusinessRole" id="_G6UqMPeMEeaqyKszd1NY9g" name="IT Infrastructure Management"/>
+        <elements xsi:type="archimate:BusinessRole" id="_NGAJUPeMEeaqyKszd1NY9g" name="R&amp;D"/>
+      </folders>
+      <elements xsi:type="archimate:BusinessRole" id="48278bde" name="Billing Management">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uYGTMXXGEea2X4upo99BTg" target="ff075e4a"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessRole" id="eb94fcb1" name="Clients Management">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_tPbm0PqgEeaI4cnZDQRlbw" target="_s0sLkPqgEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_FuKmkPqhEeaI4cnZDQRlbw" target="_FaRaMPqhEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessRole" id="d5918502" name="Travel Services Selection">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uYEeA3XGEea2X4upo99BTg"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessRole" id="57e92e22" name="Travel Service Offering">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uYG6RHXGEea2X4upo99BTg"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessRole" id="88bb7c5" name="Suppliers Payment">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_gfBzkAVuEeefls8NENXj2Q" target="_gROBEAVuEeefls8NENXj2Q"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessRole" id="_08iFYPd_EeaZ2Z92FXs5MA" name="24-24 Customer Support">
+        <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_PdMJQPqkEeaI4cnZDQRlbw" target="eb94fcb1"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="__oiS0PqlEeaI4cnZDQRlbw" target="__ahsAPqlEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_G6u3oPqyEeaI4cnZDQRlbw" target="_Gqli0PqyEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_uENoEAsaEeeCu6lUSKfiKw" target="_FXpCYPd_EeaZ2Z92FXs5MA"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessRole" id="_9ksOAPd_EeaZ2Z92FXs5MA" name="Trip Sales to Enterprises">
+        <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_P5n98PeAEeaZ2Z92FXs5MA" target="_NdAKgPeAEeaZ2Z92FXs5MA"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessRole" id="_NdAKgPeAEeaZ2Z92FXs5MA" name="Trips Sales">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_hPnl4PqgEeaI4cnZDQRlbw" target="ff075e4a"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_ZUhssPqiEeaI4cnZDQRlbw" target="_cb1RUPqhEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessRole" id="___wzMPeIEeaqyKszd1NY9g" name="Trip Offers Packaging"/>
+      <elements xsi:type="archimate:BusinessRole" id="_K3yFoPeJEeaqyKszd1NY9g" name="Offers Publishing"/>
+      <elements xsi:type="archimate:BusinessRole" id="_pRE_UPeJEeaqyKszd1NY9g" name="Corporate Communication">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_KTnSgAsaEeeCu6lUSKfiKw" target="_TVK2wPeLEeaqyKszd1NY9g"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_YbjdkAsaEeeCu6lUSKfiKw" target="_RfMMkPeLEeaqyKszd1NY9g"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessRole" id="_rJBYYPeJEeaqyKszd1NY9g" name="Internal Communication"/>
+      <elements xsi:type="archimate:BusinessRole" id="_08aIkPeKEeaqyKszd1NY9g" name="Suppliers Audit"/>
+      <elements xsi:type="archimate:BusinessRole" id="_3lqp0PeKEeaqyKszd1NY9g" name="Accounting Management"/>
+      <elements xsi:type="archimate:BusinessRole" id="_9XAnIPkbEeaNjKlasyq_QQ" name="Travel Service Delivery"/>
+      <elements xsi:type="archimate:BusinessRole" id="_hiW3oPkfEeaNjKlasyq_QQ" name="Travel Service Seller"/>
+      <elements xsi:type="archimate:BusinessRole" id="_Lj7soPqMEeaI4cnZDQRlbw" name="Trips Advising">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_PDaUIPqgEeaI4cnZDQRlbw" target="f1440585"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_R-RtUPqhEeaI4cnZDQRlbw" target="_RvK6UPqhEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_Cz3uAAsbEeeCu6lUSKfiKw" target="eb94fcb1"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessRole" id="_rJVVoPqjEeaI4cnZDQRlbw" name="Trip Sales in Agency">
+        <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_B3g9wPqkEeaI4cnZDQRlbw" target="_NdAKgPeAEeaZ2Z92FXs5MA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_Pg69gAsdEeeCu6lUSKfiKw" target="_JUsEwAsdEeeCu6lUSKfiKw"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessRole" id="_rtWhUPqmEeaI4cnZDQRlbw" name="Enterprises Prospection">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_YXQZ4PqnEeaI4cnZDQRlbw" target="_YIx5APqnEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessRole" id="_xTGo4PqmEeaI4cnZDQRlbw" name="Local Prospection">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_gBycoPqnEeaI4cnZDQRlbw" target="_f0jR4PqnEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessRole" id="_7Pa8oAfOEeexEa8m-v4sDQ" name="Online Sales">
+        <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_n22ikAjYEeeBGY_3j2VC-A" target="_NdAKgPeAEeaZ2Z92FXs5MA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_afQasAsaEeeCu6lUSKfiKw" target="_2R8jsAsIEeedCKrWYNTuUQ"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessRole" id="_zyN90AjXEeeBGY_3j2VC-A" name="Trip Management"/>
+      <elements xsi:type="archimate:BusinessRole" id="__HdiUAjYEeeBGY_3j2VC-A" name="Trip Buying"/>
+      <elements xsi:type="archimate:BusinessRole" id="_cOI9kAjZEeeBGY_3j2VC-A" name="Customer Satisfaction Follow Up"/>
+    </folders>
+    <folders name="POS Zones">
+      <elements xsi:type="archimate:Grouping" id="_1uvW8HpjEeap95DL0AV-zw" name="Exchange">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_B-DocIVlEea1k6jq6u42GQ" target="_HIzU4Hp2Eeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_CQn_IIVlEea1k6jq6u42GQ" target="_M92csHp2Eeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_CgMFIIVlEea1k6jq6u42GQ" target="_RlIw4Hp2Eeap95DL0AV-zw"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_4CuLwHpjEeap95DL0AV-zw" name="Management">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_C4WtgIVlEea1k6jq6u42GQ" target="_f_7t4HpzEeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_DIur0IVlEea1k6jq6u42GQ" target="_qT_-sHpzEeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_DaETcIVlEea1k6jq6u42GQ" target="_3CrQwHpzEeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_DvDsAIVlEea1k6jq6u42GQ" target="_vOzr0HpzEeap95DL0AV-zw"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_DJBx0HpkEeap95DL0AV-zw" name="Shared data">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_G7ucUIVlEea1k6jq6u42GQ" target="_LIXm8HpkEeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_Hcp_IIVlEea1k6jq6u42GQ" target="_OIYbUHpkEeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_HwsVcIVlEea1k6jq6u42GQ" target="_2V8bsHp1Eeap95DL0AV-zw"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_LIXm8HpkEeap95DL0AV-zw" name="Customers"/>
+      <elements xsi:type="archimate:Grouping" id="_OIYbUHpkEeap95DL0AV-zw" name="Internal Organization"/>
+      <elements xsi:type="archimate:Grouping" id="_f_7t4HpzEeap95DL0AV-zw" name="Strategy"/>
+      <elements xsi:type="archimate:Grouping" id="_qT_-sHpzEeap95DL0AV-zw" name="Modernization"/>
+      <elements xsi:type="archimate:Grouping" id="_vOzr0HpzEeap95DL0AV-zw" name="Audit"/>
+      <elements xsi:type="archimate:Grouping" id="_3CrQwHpzEeap95DL0AV-zw" name="Coordination"/>
+      <elements xsi:type="archimate:Grouping" id="_DZKFQHp0Eeap95DL0AV-zw" name="Resources &amp; support">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_IGyhQIVlEea1k6jq6u42GQ" target="_GNRysHp0Eeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_IW2WgIVlEea1k6jq6u42GQ" target="_IADX4Hp0Eeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_JHr9kIVlEea1k6jq6u42GQ" target="_JxvX8Hp0Eeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_JZ8yQIVlEea1k6jq6u42GQ" target="_NN580Hp0Eeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_JrdZAIVlEea1k6jq6u42GQ" target="_Sx1fcHp0Eeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_KARycIVlEea1k6jq6u42GQ" target="_bKksAHp0Eeap95DL0AV-zw"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_GNRysHp0Eeap95DL0AV-zw" name="Human resources"/>
+      <elements xsi:type="archimate:Grouping" id="_IADX4Hp0Eeap95DL0AV-zw" name="Financial">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_KyJmkAmDEeefDcrCXHhbSw" target="5e9141e9"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_CiC8IAmEEeefDcrCXHhbSw" target="48278bde"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_1Jo7IAmEEeefDcrCXHhbSw" target="_3lqp0PeKEeaqyKszd1NY9g"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_JxvX8Hp0Eeap95DL0AV-zw" name="Buying">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_KR7Y8AmEEeefDcrCXHhbSw" target="88bb7c5"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_yj_HgAmEEeefDcrCXHhbSw" target="_08aIkPeKEeaqyKszd1NY9g"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_NN580Hp0Eeap95DL0AV-zw" name="Security"/>
+      <elements xsi:type="archimate:Grouping" id="_Sx1fcHp0Eeap95DL0AV-zw" name="Communication">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_ZftKsAmEEeefDcrCXHhbSw" target="_K3yFoPeJEeaqyKszd1NY9g"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_snt9YAmEEeefDcrCXHhbSw" target="_pRE_UPeJEeaqyKszd1NY9g"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_vcytEAmEEeefDcrCXHhbSw" target="_rJBYYPeJEeaqyKszd1NY9g"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_bKksAHp0Eeap95DL0AV-zw" name="IT"/>
+      <elements xsi:type="archimate:Grouping" id="_2V8bsHp1Eeap95DL0AV-zw" name="Offers"/>
+      <elements xsi:type="archimate:Grouping" id="_HIzU4Hp2Eeap95DL0AV-zw" name="Access &amp; authorization"/>
+      <elements xsi:type="archimate:Grouping" id="_M92csHp2Eeap95DL0AV-zw" name="Partners management"/>
+      <elements xsi:type="archimate:Grouping" id="_RlIw4Hp2Eeap95DL0AV-zw" name="Customer relations"/>
+      <elements xsi:type="archimate:Grouping" id="_speg8Hp2Eeap95DL0AV-zw" name="Offers">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_EibCoIVlEea1k6jq6u42GQ" target="_MUzYUHp5Eeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_MhNPsAfeEeexEa8m-v4sDQ" target="_JAZbYAfeEeexEa8m-v4sDQ"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_tjyNEHp2Eeap95DL0AV-zw" name="Delivery">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_xIcSUAfeEeexEa8m-v4sDQ" target="_AU4psHp5Eeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_4j-PwAfeEeexEa8m-v4sDQ" target="_4QU7AAfeEeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_A_S2QAffEeexEa8m-v4sDQ" target="_AwrLcAffEeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_PjFwkAmEEeefDcrCXHhbSw" target="eb94fcb1"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_0SmOcHp2Eeap95DL0AV-zw" name="Sales">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_F5uMwIVlEea1k6jq6u42GQ" target="__8oXMHp3Eeap95DL0AV-zw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_Xf7WMAmCEeefDcrCXHhbSw" target="_q3RPMAfeEeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_YZSAEAmCEeefDcrCXHhbSw" target="_uVoMcAfeEeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_HJSpgAmDEeefDcrCXHhbSw" target="c132de98"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_4tGa0AmEEeefDcrCXHhbSw" target="_Lj7soPqMEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_3CSVUAslEeeCu6lUSKfiKw" target="_NdAKgPeAEeaZ2Z92FXs5MA"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="__8oXMHp3Eeap95DL0AV-zw" name="B2B">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_Un7jcAmEEeefDcrCXHhbSw" target="_9ksOAPd_EeaZ2Z92FXs5MA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_9uROoAmEEeefDcrCXHhbSw" target="_rtWhUPqmEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_AU4psHp5Eeap95DL0AV-zw" name="Claims"/>
+      <elements xsi:type="archimate:Grouping" id="_MUzYUHp5Eeap95DL0AV-zw" name="Offers Definition">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_MrtJMAmDEeefDcrCXHhbSw" target="cde7412a"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_HffGgAmEEeefDcrCXHhbSw" target="d5918502"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_WvS4kAmEEeefDcrCXHhbSw" target="___wzMPeIEeaqyKszd1NY9g"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_JAZbYAfeEeexEa8m-v4sDQ" name="Offers Promotion"/>
+      <elements xsi:type="archimate:Grouping" id="_q3RPMAfeEeexEa8m-v4sDQ" name="Agency Sales">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_WfsLwAmDEeefDcrCXHhbSw" target="_x9CasIydEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_7LVX0AmEEeefDcrCXHhbSw" target="_rJVVoPqjEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_uFFL4AmHEeefDcrCXHhbSw" target="_xTGo4PqmEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_uVoMcAfeEeexEa8m-v4sDQ" name="Online Sales">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_aLE4YAmDEeefDcrCXHhbSw" target="_dcxBoK14EeaG0cy0fb0b9w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_cF1U4AmDEeefDcrCXHhbSw" target="_lFlNIK14EeaG0cy0fb0b9w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_vPQgAAmHEeefDcrCXHhbSw" target="_7Pa8oAfOEeexEa8m-v4sDQ"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_4QU7AAfeEeexEa8m-v4sDQ" name="Loyalty">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_TNkTsAmDEeefDcrCXHhbSw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_0C51MAmHEeefDcrCXHhbSw" target="_cOI9kAjZEeeBGY_3j2VC-A"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_AwrLcAffEeexEa8m-v4sDQ" name="Assistance">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_Mar1MAmEEeefDcrCXHhbSw" target="_08iFYPd_EeaZ2Z92FXs5MA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_89LokAmHEeefDcrCXHhbSw" target="_zyN90AjXEeeBGY_3j2VC-A"/>
+      </elements>
+    </folders>
+    <folders name="Misc">
+      <elements xsi:type="archimate:OrJunction" id="_lKad8PqUEeaI4cnZDQRlbw" name="Or Junction">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_sphT0PqUEeaI4cnZDQRlbw" name="withdrawal period ended" target="_NGu0wPqPEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_2OBv8PqUEeaI4cnZDQRlbw" name="trip canceled" target="60fb86bb"/>
+      </elements>
+      <elements xsi:type="archimate:OrJunction" id="_KSZdMPqVEeaI4cnZDQRlbw" name="Or Junction">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_MIJd4PqVEeaI4cnZDQRlbw" name="trip selected" target="_YLdnUPg7EeaS2cOhq1F_7w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_XOguUPqVEeaI4cnZDQRlbw" name="no trip selected" target="_NJWcMPqVEeaI4cnZDQRlbw"/>
+      </elements>
+    </folders>
+    <folders name="Collaborations">
+      <elements xsi:type="archimate:BusinessCollaboration" id="_B0QLUPkYEeaNjKlasyq_QQ">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_EqW1wPkYEeaNjKlasyq_QQ" target="_7Pa8oAfOEeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_HswPwPkYEeaNjKlasyq_QQ" target="_K3yFoPeJEeaqyKszd1NY9g"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessCollaboration" id="_YebdMPkYEeaNjKlasyq_QQ">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_agmJQPkYEeaNjKlasyq_QQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_bFBsAPkYEeaNjKlasyq_QQ" target="d5918502"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_REXfYPkYEeaNjKlasyq_QQ" target="57e92e22"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessCollaboration" id="_x8vDkPkYEeaNjKlasyq_QQ">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_0LbvwPkYEeaNjKlasyq_QQ" target="_NdAKgPeAEeaZ2Z92FXs5MA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_0kRGgPkYEeaNjKlasyq_QQ" target="88bb7c5"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessCollaboration" id="_AQzmIPkZEeaNjKlasyq_QQ">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_BPD-IPkZEeaNjKlasyq_QQ" target="88bb7c5"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_B_Pd4PkZEeaNjKlasyq_QQ" target="_08aIkPeKEeaqyKszd1NY9g"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessCollaboration" id="_UdzD4PkZEeaNjKlasyq_QQ">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_XTUfgPkZEeaNjKlasyq_QQ" target="eb94fcb1"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_XwVysPkZEeaNjKlasyq_QQ" target="_NdAKgPeAEeaZ2Z92FXs5MA"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessCollaboration" id="_SVO4EPkdEeaNjKlasyq_QQ">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_VfRLIPkdEeaNjKlasyq_QQ" target="88bb7c5"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_WE_uYPkdEeaNjKlasyq_QQ" target="48278bde"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessCollaboration" id="_h1cdoPkdEeaNjKlasyq_QQ">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_krQNIPkdEeaNjKlasyq_QQ" target="eb94fcb1"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_mFgkoPkdEeaNjKlasyq_QQ" target="48278bde"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessCollaboration" id="_QUNmEPkeEeaNjKlasyq_QQ">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_9DFeMPkeEeaNjKlasyq_QQ" target="48278bde"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_950R4PkeEeaNjKlasyq_QQ" target="_9XAnIPkbEeaNjKlasyq_QQ"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessCollaboration" id="_Fu04QPp9EeaI4cnZDQRlbw" name="Trip confirmation">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_CDOJMPp9EeaI4cnZDQRlbw" target="_Ca9_APp2EeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_JGySkPp9EeaI4cnZDQRlbw" target="_hiW3oPkfEeaNjKlasyq_QQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_YPNLwPqUEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_HDeGQPqZEeaI4cnZDQRlbw" target="_NdAKgPeAEeaZ2Z92FXs5MA"/>
+      </elements>
+      <elements xsi:type="archimate:BusinessCollaboration" id="_v5nhsPqLEeaI4cnZDQRlbw" name="Trip matching">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_eJN60PqOEeaI4cnZDQRlbw" target="_YmjD0PqLEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_e0-NkPqOEeaI4cnZDQRlbw" target="57e92e22"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_fc1e0PqOEeaI4cnZDQRlbw" target="_Lj7soPqMEeaI4cnZDQRlbw"/>
+      </elements>
+    </folders>
+    <elements xsi:type="archimate:BusinessInterface" id="_JUsEwAsdEeeCu6lUSKfiKw" name="Agency Desk">
+      <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_S6rHkAsdEeeCu6lUSKfiKw" target="__HdiUAjYEeeBGY_3j2VC-A"/>
+    </elements>
+  </basemm:Folder>
+  <basemm:Folder name="Application">
+    <folders name="Components">
+      <folders name="Cloud">
+        <elements xsi:type="ext:ExtendedApplicationComponent" id="_dcxBoK14EeaG0cy0fb0b9w" name="Booking Management Mobile App">
+          <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_iQoZQK14EeaG0cy0fb0b9w" target="_-2IMoAjWEeeBGY_3j2VC-A"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_j0KzoAQfEeebvMcNwo03lg"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_WedPYAQiEeebvMcNwo03lg"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_sQuogAsrEee10_xlkIQ74g" target="_o0smgAsrEee10_xlkIQ74g"/>
+        </elements>
+        <elements xsi:type="ext:ExtendedApplicationComponent" id="_lFlNIK14EeaG0cy0fb0b9w" name="Booking Management Website">
+          <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_qQ3mQK14EeaG0cy0fb0b9w" target="_-2IMoAjWEeeBGY_3j2VC-A"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_s3jLkAQSEeeGzZ4vmmTTZw"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_tVB-IAsrEee10_xlkIQ74g" target="_o0smgAsrEee10_xlkIQ74g"/>
+        </elements>
+        <elements xsi:type="ext:ExtendedApplicationComponent" id="_w6BrkK14EeaG0cy0fb0b9w" name="Booking Management Backend">
+          <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_a5NDQK15EeaG0cy0fb0b9w" end2="_TTM7MK15EeaG0cy0fb0b9w"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_1R-jQK14EeaG0cy0fb0b9w" target="a72ad22c"/>
+          <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="__SYGoPkmEeaNjKlasyq_QQ" target="_ZXd1oPkmEeaNjKlasyq_QQ"/>
+        </elements>
+      </folders>
+      <elements xsi:type="ext:ExtendedApplicationComponent" id="c132de98" name="CRM">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_uXXTYXXGEea2X4upo99BTg" target="2014ea78"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_Bzn7YPknEeaNjKlasyq_QQ" target="_q7Y00PklEeaNjKlasyq_QQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_j8_VcPztEeafrah1Tnd2hw" target="_TjLOYPztEeafrah1Tnd2hw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_3zygwPztEeafrah1Tnd2hw" target="_2Dfn0PztEeafrah1Tnd2hw"/>
+      </elements>
+      <elements xsi:type="ext:ExtendedApplicationComponent" id="9385cc72" name="Partner IT System">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_uXXTZHXGEea2X4upo99BTg" target="98167a14"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_uXXTZXXGEea2X4upo99BTg" target="49c1ca52"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_uXX6cHXGEea2X4upo99BTg" target="878176f5"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_98wXgPkmEeaNjKlasyq_QQ" target="_DAiP4PkmEeaNjKlasyq_QQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_ivVfEAQKEeeGzZ4vmmTTZw" target="_gkDTQAQKEeeGzZ4vmmTTZw"/>
+      </elements>
+      <elements xsi:type="ext:ExtendedApplicationComponent" id="5e9141e9" name="General Accounting">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_uXX6c3XGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_uXYhgHXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_uXYhgXXGEea2X4upo99BTg" target="7dcde31a"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_uXYhgnXGEea2X4upo99BTg" target="2014ea78"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_uXYhg3XGEea2X4upo99BTg" target="7534f8f9"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_mUS88AjTEeeBGY_3j2VC-A" target="_A9fDQAQMEeeGzZ4vmmTTZw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_m4sqgAjTEeeBGY_3j2VC-A" target="_c5CjcAjTEeeBGY_3j2VC-A"/>
+      </elements>
+      <elements xsi:type="ext:ExtendedApplicationComponent" id="cde7412a" name="Offers Management System">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_uXZIk3XGEea2X4upo99BTg" target="878176f5"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_uXZIlHXGEea2X4upo99BTg" target="c2ee4389"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_t3PQAPknEeaNjKlasyq_QQ" target="_oxAWAPknEeaNjKlasyq_QQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_GRYywPzuEeafrah1Tnd2hw" target="_934xMPztEeafrah1Tnd2hw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_Ofrp4PzuEeafrah1Tnd2hw" target="_LgD3EPzuEeafrah1Tnd2hw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_jYls4AQJEeeGzZ4vmmTTZw" target="_fve4MAQJEeeGzZ4vmmTTZw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_131PYAQJEeeGzZ4vmmTTZw" target="_z7yZcAQJEeeGzZ4vmmTTZw"/>
+      </elements>
+      <elements xsi:type="ext:ExtendedApplicationComponent" id="a72ad22c" name="Booking Management System">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_-UxWQK10EeaG0cy0fb0b9w" end2="_h4JkoK10EeaG0cy0fb0b9w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_uXZvoHXGEea2X4upo99BTg" target="5470b9d8"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_uXZvoXXGEea2X4upo99BTg" target="e441dff6"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_uXZvonXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_uXZvo3XGEea2X4upo99BTg" target="49c1ca52"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_uXZvpHXGEea2X4upo99BTg" target="7534f8f9"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_uXZvpXXGEea2X4upo99BTg" target="c2ee4389"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_-3AZQPkmEeaNjKlasyq_QQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_pejjUI-OEeaQwoSMUDwHLQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_zIM7YPztEeafrah1Tnd2hw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_onYLgPzuEeafrah1Tnd2hw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_uXX6cnXGEea2X4upo99BTg" target="91eccea9"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_L9fL0AjUEeeBGY_3j2VC-A" target="_mNrjUAQMEeeGzZ4vmmTTZw"/>
+      </elements>
+      <elements xsi:type="ext:ExtendedApplicationComponent" id="_x9CasIydEea5AaeaY4nyjA" name="Agency Trip Selling App">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="__7mCwPkmEeaNjKlasyq_QQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_QeADcAQPEeeGzZ4vmmTTZw" target="_mNrjUAQMEeeGzZ4vmmTTZw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_eKvfQAQaEeebvMcNwo03lg" target="a72ad22c"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_JrN8IAsiEeeV0aXlJyaSDA" target="_mNrjUAQMEeeGzZ4vmmTTZw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_0Zgz4AszEeenE7M-mESSiQ" target="_vpmvMAszEeenE7M-mESSiQ"/>
+      </elements>
+      <elements xsi:type="ext:ExtendedApplicationComponent" id="_-2IMoAjWEeeBGY_3j2VC-A" name="Online Booking Management">
+        <ownedUnidirectionalRelationships xsi:type="archimate:SpecializationRelationship" id="_SIspgAjXEeeBGY_3j2VC-A" target="a72ad22c"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_SRWd0ApZEee0sPoCtVEmzQ" target="_bBzvcAmsEeejovDXyN8bdA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_UCKUIApZEee0sPoCtVEmzQ" target="_r1OHgAjWEeeBGY_3j2VC-A"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_VTVoIApZEee0sPoCtVEmzQ" target="_aGEIsAjXEeeBGY_3j2VC-A"/>
+      </elements>
+      <elements xsi:type="ext:ExtendedApplicationComponent" id="_o0smgAsrEee10_xlkIQ74g" name="Customer Satisfaction Tracking"/>
+    </folders>
+    <folders name="Collaborations">
+      <elements xsi:type="archimate:ApplicationCollaboration" id="_bkJIkAfMEeexEa8m-v4sDQ" name="Trip Selection">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_X-rK0AfZEeexEa8m-v4sDQ" target="cde7412a"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_7Wo98AfZEeexEa8m-v4sDQ" target="_w6BrkK14EeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationCollaboration" id="_V12AoAfaEeexEa8m-v4sDQ" name="Trip Purchase">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_f7QxcAfaEeexEa8m-v4sDQ" target="_w6BrkK14EeaG0cy0fb0b9w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_h-cKIAfaEeexEa8m-v4sDQ" target="9385cc72"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_Lmkl0AjCEee-xMZkqoj2TA" target="c132de98"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_TMlZIAssEee10_xlkIQ74g" target="_o0smgAsrEee10_xlkIQ74g"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationCollaboration" id="_x9caIAf-EeeXbZ-ovKMayA" name="Partners Payment">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_7iSNcAf-EeeXbZ-ovKMayA" target="5e9141e9"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_9FoPgAf-EeeXbZ-ovKMayA" target="_w6BrkK14EeaG0cy0fb0b9w"/>
+      </elements>
+    </folders>
+    <folders name="Objects">
+      <elements xsi:type="archimate:DataObject" id="49c1ca52" name="Trip" foreignBidirectionalRelationships="_uYiYEHXGEea2X4upo99BTg _uYi_IXXGEea2X4upo99BTg">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYNn8XXGEea2X4upo99BTg"/>
+      </elements>
+      <elements xsi:type="archimate:DataObject" id="7534f8f9" name="Reservation" foreignBidirectionalRelationships="_uYJ9kXXGEea2X4upo99BTg _uYi_IHXGEea2X4upo99BTg _uYjmMXXGEea2X4upo99BTg">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYIvcHXGEea2X4upo99BTg" end2="417d210a"/>
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYiYEHXGEea2X4upo99BTg" end2="49c1ca52"/>
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYiYEXXGEea2X4upo99BTg" end2="2014ea78"/>
+      </elements>
+      <elements xsi:type="archimate:DataObject" id="7dcde31a" name="Invoice">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYOPAnXGEea2X4upo99BTg"/>
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYiYEnXGEea2X4upo99BTg" end2="2014ea78"/>
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYi_IHXGEea2X4upo99BTg" end2="7534f8f9"/>
+      </elements>
+      <elements xsi:type="archimate:DataObject" id="2014ea78" name="Client" foreignBidirectionalRelationships="_uYiYEXXGEea2X4upo99BTg _uYiYEnXGEea2X4upo99BTg _uYjmMHXGEea2X4upo99BTg">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYPdIHXGEea2X4upo99BTg"/>
+      </elements>
+      <elements xsi:type="archimate:DataObject" id="878176f5" name="Partner" foreignBidirectionalRelationships="_uYi_InXGEea2X4upo99BTg">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYNA4nXGEea2X4upo99BTg"/>
+      </elements>
+      <elements xsi:type="archimate:DataObject" id="c2ee4389" name="Offer" foreignBidirectionalRelationships="_uYIvcXXGEea2X4upo99BTg">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYMZ0HXGEea2X4upo99BTg"/>
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYi_IXXGEea2X4upo99BTg" end2="49c1ca52"/>
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYi_InXGEea2X4upo99BTg" end2="878176f5"/>
+      </elements>
+      <elements xsi:type="archimate:DataObject" id="91e599f6" name="Affair">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYjmMHXGEea2X4upo99BTg" end2="2014ea78"/>
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_uYjmMXXGEea2X4upo99BTg" end2="7534f8f9"/>
+      </elements>
+    </folders>
+    <folders name="Interfaces">
+      <elements xsi:type="archimate:ApplicationInterface" id="_q7Y00PklEeaNjKlasyq_QQ" name="CRM Web Service">
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_ctjLMPknEeaNjKlasyq_QQ" target="_w6BrkK14EeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationInterface" id="_DAiP4PkmEeaNjKlasyq_QQ" name="Secured API">
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_kI_pEPknEeaNjKlasyq_QQ" target="cde7412a"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_HoQL8PzWEeaSzp4PfhKI1g" target="_w6BrkK14EeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationInterface" id="_ZXd1oPkmEeaNjKlasyq_QQ" name="Booking Web Service">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_cF-fQPzUEeaSzp4PfhKI1g" target="_x9CasIydEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_IzeiEAfQEeexEa8m-v4sDQ" target="_lFlNIK14EeaG0cy0fb0b9w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_JmO0sAfQEeexEa8m-v4sDQ" target="_dcxBoK14EeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationInterface" id="_oxAWAPknEeaNjKlasyq_QQ" name="Offers Management API">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_whTpkPknEeaNjKlasyq_QQ" target="_w6BrkK14EeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_Le3U0PkrEeaNjKlasyq_QQ" name="External"/>
+    </folders>
+    <folders name="Services">
+      <elements xsi:type="archimate:ApplicationService" id="91eccea9" name="Invoicing Trip">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uXdaAXXGEea2X4upo99BTg" target="d0381d5b"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uXdaAnXGEea2X4upo99BTg" target="ff075e4a"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_uXdaA3XGEea2X4upo99BTg" target="7dcde31a"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_uXeBEHXGEea2X4upo99BTg" target="2014ea78"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AccessRelationship" id="_uXeBEXXGEea2X4upo99BTg" target="7534f8f9"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uXeBEnXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_vcVGMAjYEeeBGY_3j2VC-A" target="_NdAKgPeAEeaZ2Z92FXs5MA"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="5470b9d8" name="Booking Trip">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uXeBE3XGEea2X4upo99BTg" target="1c6d4aa1"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uXeBFHXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uXeoIHXGEea2X4upo99BTg" target="417d210a"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_tjiYkAjYEeeBGY_3j2VC-A" target="_NdAKgPeAEeaZ2Z92FXs5MA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_HghfAAjZEeeBGY_3j2VC-A" target="__HdiUAjYEeeBGY_3j2VC-A"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_o5_csAmrEeejovDXyN8bdA" target="_Okd9EPgpEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_pVFdQAmrEeejovDXyN8bdA" target="_No5FoPgpEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_TNvgwAmtEeejovDXyN8bdA"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="e441dff6" name="Cancelling Reservation">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uXeoIXXGEea2X4upo99BTg" target="1c6d4aa1"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uXeoInXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uXeoI3XGEea2X4upo99BTg" target="d7c77918"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_DF3HAAjYEeeBGY_3j2VC-A" target="_zyN90AjXEeeBGY_3j2VC-A"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="98167a14" name="Checking Trip Availability">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uXfPMnXGEea2X4upo99BTg" target="4223e1aa"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uXfPM3XGEea2X4upo99BTg" target="1c6d4aa1"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uXf2QHXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uXf2QXXGEea2X4upo99BTg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_iDxmIAjXEeeBGY_3j2VC-A" target="57e92e22"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_TjLOYPztEeafrah1Tnd2hw" name="Managing Clients">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_BN4D8AjTEeeBGY_3j2VC-A" target="eb94fcb1"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_EU_l4AjTEeeBGY_3j2VC-A" target="_xTGo4PqmEeaI4cnZDQRlbw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_m3FJwAmrEeejovDXyN8bdA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_scQnUApgEee8McM9ziqbDw" target="_VXzCoApfEee8McM9ziqbDw"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_2Dfn0PztEeafrah1Tnd2hw" name="Managing Sales">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_uVLQ4AjYEeeBGY_3j2VC-A" target="_NdAKgPeAEeaZ2Z92FXs5MA"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_934xMPztEeafrah1Tnd2hw" name="Managing Partners">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_EfolEAjSEeeBGY_3j2VC-A" target="___wzMPeIEeaqyKszd1NY9g"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_LgD3EPzuEeafrah1Tnd2hw" name="Managing Trip Destinations">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_D3oJ4AjSEeeBGY_3j2VC-A" target="___wzMPeIEeaqyKszd1NY9g"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_mNrjUAQMEeeGzZ4vmmTTZw" name="Searching Available Trips">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_IrrDgAjZEeeBGY_3j2VC-A" target="__HdiUAjYEeeBGY_3j2VC-A"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_GwnsAAmdEeePkceg3i5PiQ" target="_NdAKgPeAEeaZ2Z92FXs5MA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_v0Y4UAsyEeenE7M-mESSiQ" target="_Lj7soPqMEeaI4cnZDQRlbw"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_fve4MAQJEeeGzZ4vmmTTZw" name="Managing Trip Options">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_DS0zsAjSEeeBGY_3j2VC-A" target="___wzMPeIEeaqyKszd1NY9g"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_z7yZcAQJEeeGzZ4vmmTTZw" name="Managing Promotional Offers">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_FHeoMAjSEeeBGY_3j2VC-A" target="___wzMPeIEeaqyKszd1NY9g"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_rTkjMAmrEeejovDXyN8bdA" target="_tqo0wPgyEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_gkDTQAQKEeeGzZ4vmmTTZw" name="Providing Travel Services Descriptions">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_f8zSkAjXEeeBGY_3j2VC-A" target="57e92e22"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_HNahgAQSEeeGzZ4vmmTTZw" name="Managing Review Campaign">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_hxG24AjZEeeBGY_3j2VC-A" target="_cOI9kAjZEeeBGY_3j2VC-A"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_neJJwAmrEeejovDXyN8bdA" target="_SFt2QPgpEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_A9fDQAQMEeeGzZ4vmmTTZw" name="Paying Partners">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_RUvBgAjNEeeBGY_3j2VC-A" target="_08aIkPeKEeaqyKszd1NY9g"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_OJtBMAjTEeeBGY_3j2VC-A" target="88bb7c5"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_oiPNoAQREeeGzZ4vmmTTZw" name="Collecting Reviews">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_iTcu8AjZEeeBGY_3j2VC-A" target="_cOI9kAjZEeeBGY_3j2VC-A"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_G7r5QAmtEeejovDXyN8bdA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_ps8hYApgEee8McM9ziqbDw" target="_KBUSkApfEee8McM9ziqbDw"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_c5CjcAjTEeeBGY_3j2VC-A" name="Billing">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_in3ugAjTEeeBGY_3j2VC-A" target="48278bde"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_aGEIsAjXEeeBGY_3j2VC-A" name="Customer Support">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_jBpjoAjXEeeBGY_3j2VC-A" target="_08iFYPd_EeaZ2Z92FXs5MA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_n8RQMAmrEeejovDXyN8bdA" target="_0gsX0ApgEee8McM9ziqbDw"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_r1OHgAjWEeeBGY_3j2VC-A" name="Promoting Offers">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_3XDzAAjWEeeBGY_3j2VC-A" target="_K3yFoPeJEeaqyKszd1NY9g"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_q4kCMAmrEeejovDXyN8bdA" target="_E1kt0ApcEee0sPoCtVEmzQ"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_bBzvcAmsEeejovDXyN8bdA" name="Selling Online">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_lJBQAAmsEeejovDXyN8bdA" target="_7Pa8oAfOEeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_1JjUYAmsEeejovDXyN8bdA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_pCvt0ApgEee8McM9ziqbDw" target="_A5zUcApfEee8McM9ziqbDw"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationService" id="_vpmvMAszEeenE7M-mESSiQ" name="Selling in Agency">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_2U8l0AszEeenE7M-mESSiQ" target="_rJVVoPqjEeaI4cnZDQRlbw"/>
+      </elements>
+    </folders>
+    <folders name="Processes">
+      <elements xsi:type="archimate:ApplicationProcess" id="_G5D5cAplEeeLX6u06zbg7A" name="Suggest destinations adapted to the customer account">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_rNXTYArxEeeQCaSL78PSeg" target="_mRWFUArxEeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationProcess" id="_xv7TYArvEeeQCaSL78PSeg" name="Trip creation">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_-JcNwArvEeeQCaSL78PSeg" target="5470b9d8"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_CdDYAArwEeeQCaSL78PSeg" target="_G5D5cAplEeeLX6u06zbg7A"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_Gy9oUArwEeeQCaSL78PSeg" target="_GknqUArwEeeQCaSL78PSeg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_pxH-4ArxEeeQCaSL78PSeg" target="_pjBRcArxEeeQCaSL78PSeg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_an51oAr0EeeQCaSL78PSeg" target="_aZ1kcAr0EeeQCaSL78PSeg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_HoUCUAr4EeeQCaSL78PSeg" target="_HT4DYAr4EeeQCaSL78PSeg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_RvzPsAr4EeeQCaSL78PSeg" target="_RQsR0Ar4EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationProcess" id="_GknqUArwEeeQCaSL78PSeg" name="Suggest most visited destinations">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_pPs3YAryEeeQCaSL78PSeg" target="_mRWFUArxEeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationProcess" id="_pjBRcArxEeeQCaSL78PSeg" name="Define additional options for the trip">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_NIRD4Ar4EeeQCaSL78PSeg" target="_GBZu4Ar4EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationProcess" id="_aZ1kcAr0EeeQCaSL78PSeg" name="Validate trip">
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_i4R68Ar1EeeQCaSL78PSeg" target="_biUaAAr1EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationProcess" id="_HT4DYAr4EeeQCaSL78PSeg" name="User account creation">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_BiF1gAr5EeeQCaSL78PSeg" target="_WvRaYAr4EeeQCaSL78PSeg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_VkvHoAr9EeeQCaSL78PSeg" target="_VXLMwAr9EeeQCaSL78PSeg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_mBem4Ar9EeeQCaSL78PSeg" target="_l0JVgAr9EeeQCaSL78PSeg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_wtF1AAr9EeeQCaSL78PSeg" target="_whV4AAr9EeeQCaSL78PSeg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_5dtWEAr9EeeQCaSL78PSeg" target="_5RVuAAr9EeeQCaSL78PSeg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_7JoFUAr9EeeQCaSL78PSeg" target="_68TbAAr9EeeQCaSL78PSeg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_dJwi0Ar-EeeQCaSL78PSeg" target="_c6D58Ar-EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationProcess" id="_RQsR0Ar4EeeQCaSL78PSeg" name="User log in">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_6om1MAr4EeeQCaSL78PSeg" target="_WvRaYAr4EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationProcess" id="_RQADYAr6EeeQCaSL78PSeg" name="Trip Purchasing">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_UHoX0Ar6EeeQCaSL78PSeg" target="5470b9d8"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationProcess" id="_VXLMwAr9EeeQCaSL78PSeg" name="Collect user information" documentation="Required data are:&#xA; * Full name&#xA; * Address&#xA; * Email&#xA; * Age&#xA; * Nationality">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_KAqyEAr-EeeQCaSL78PSeg" target="_ouC60Ar9EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationProcess" id="_l0JVgAr9EeeQCaSL78PSeg" name="Register account in the booking system">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_L-bfQAr-EeeQCaSL78PSeg" target="_1eaO8Ar9EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationProcess" id="_whV4AAr9EeeQCaSL78PSeg" name="Send a confirmation mail to the user">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_K_vCYAr-EeeQCaSL78PSeg" target="_1eaO8Ar9EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationProcess" id="_5RVuAAr9EeeQCaSL78PSeg" name="Drop user account"/>
+      <elements xsi:type="archimate:ApplicationProcess" id="_68TbAAr9EeeQCaSL78PSeg" name="Finalize user account creation">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_j7ptYAr-EeeQCaSL78PSeg" target="_c6D58Ar-EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationProcess" id="_c6D58Ar-EeeQCaSL78PSeg" name="Perform an automatic login  process">
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_O0gUgAr-EeeQCaSL78PSeg" target="_-LDO8Ar9EeeQCaSL78PSeg"/>
+      </elements>
+    </folders>
+    <folders name="Events">
+      <elements xsi:type="archimate:ApplicationEvent" id="_RWfXEApkEeeLX6u06zbg7A" name="Customer starts a travel search">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_FAHa0AplEeeLX6u06zbg7A" target="_DteHMAplEeeLX6u06zbg7A"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationEvent" id="_biUaAAr1EeeQCaSL78PSeg" name="A customer validated a trip">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_tmNZEAr8EeeQCaSL78PSeg" target="_RQADYAr6EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationEvent" id="_rpRxgAssEee10_xlkIQ74g" name="A user need an account">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_yDcYkAssEee10_xlkIQ74g" target="_HT4DYAr4EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:ApplicationEvent" id="_-LDO8Ar9EeeQCaSL78PSeg" name="User account created"/>
+    </folders>
+    <folders name="Misc">
+      <elements xsi:type="archimate:OrJunction" id="_DteHMAplEeeLX6u06zbg7A" name="Or Junction">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_H4TfwArwEeeQCaSL78PSeg" name="User is logged" target="_G5D5cAplEeeLX6u06zbg7A"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_YDcRoArwEeeQCaSL78PSeg" name="User is not logged" target="_GknqUArwEeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:OrJunction" id="_mRWFUArxEeeQCaSL78PSeg" name="Or Junction">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_VQhhQAr0EeeQCaSL78PSeg" target="_pjBRcArxEeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:OrJunction" id="_GBZu4Ar4EeeQCaSL78PSeg" name="Or Junction">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_Ll-xwAr4EeeQCaSL78PSeg" name="User is not logged" target="_VstKIAr4EeeQCaSL78PSeg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_rNoU8Ar4EeeQCaSL78PSeg" name="User is logged" target="_XD6NoAr4EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:OrJunction" id="_VstKIAr4EeeQCaSL78PSeg" name="Or Junction">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_xwDgIAr4EeeQCaSL78PSeg" name="User already has an account" target="_RQsR0Ar4EeeQCaSL78PSeg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_BCpgcAr5EeeQCaSL78PSeg" name="User hasn't an account" target="_HT4DYAr4EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:OrJunction" id="_WvRaYAr4EeeQCaSL78PSeg" name="Or Junction">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_8q1LoAr4EeeQCaSL78PSeg" target="_XD6NoAr4EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:OrJunction" id="_XD6NoAr4EeeQCaSL78PSeg" name="Or Junction">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_sBsPIAr4EeeQCaSL78PSeg" target="_aZ1kcAr0EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:AndJunction" id="_ouC60Ar9EeeQCaSL78PSeg" name="And Junction">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_KXwcYAr-EeeQCaSL78PSeg" target="_whV4AAr9EeeQCaSL78PSeg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_KtAToAr-EeeQCaSL78PSeg" target="_l0JVgAr9EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:AndJunction" id="_1eaO8Ar9EeeQCaSL78PSeg" name="And Junction">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_MkcWYAr-EeeQCaSL78PSeg" target="_21vOQAr9EeeQCaSL78PSeg"/>
+      </elements>
+      <elements xsi:type="archimate:OrJunction" id="_21vOQAr9EeeQCaSL78PSeg" name="Or Junction">
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_NDHPYAr-EeeQCaSL78PSeg" target="_68TbAAr9EeeQCaSL78PSeg"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:FlowRelationship" id="_OSS_UAr-EeeQCaSL78PSeg" target="_5RVuAAr9EeeQCaSL78PSeg"/>
+      </elements>
+    </folders>
+  </basemm:Folder>
+  <basemm:Folder name="Technology">
+    <folders name="Artifacts">
+      <elements xsi:type="archimate:Artifact" id="ec6626d8" name="Voyage Discount Sugar CRM configuration">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_uXXTYnXGEea2X4upo99BTg" target="c132de98"/>
+      </elements>
+      <elements xsi:type="archimate:Artifact" id="2121ed04" name="Offers Mgt System - War">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_uYwagnXGEea2X4upo99BTg" target="433b08e0"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_ysQ38ATdEeeYd6m2jy02EA" target="cde7412a"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_zPAGcAV-EeexEa8m-v4sDQ" target="2add7178"/>
+      </elements>
+      <elements xsi:type="archimate:Artifact" id="7585c61b" name="Trips Mgt System - War">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_0dchQK1zEeaG0cy0fb0b9w" target="_w6BrkK14EeaG0cy0fb0b9w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_yNBFAAV-EeexEa8m-v4sDQ" target="604acf86"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_D2otQAfTEeexEa8m-v4sDQ" target="_rMl1YAfSEeexEa8m-v4sDQ"/>
+      </elements>
+      <elements xsi:type="archimate:Artifact" id="_A-rCoK1zEeaG0cy0fb0b9w" name="Trips Mgt System - APK">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_zR_awK1zEeaG0cy0fb0b9w" target="_dcxBoK14EeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:Artifact" id="_AvGwIASoEeeUv86BV4VDWQ" name="Trips Mgt System - Desktop">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_ER3FMASoEeeUv86BV4VDWQ" target="_x9CasIydEea5AaeaY4nyjA"/>
+      </elements>
+      <elements xsi:type="archimate:Artifact" id="_Lg3aII4mEeadNs2DCuzLFA" name="LDAP Setup.sh">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_dtQ5II4mEeadNs2DCuzLFA" end2="_3kub0I4lEeadNs2DCuzLFA"/>
+      </elements>
+      <elements xsi:type="archimate:Artifact" id="_S9HJQI4mEeadNs2DCuzLFA" name="Fileserver Setup.sh">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_FavT8I4nEeadNs2DCuzLFA" end2="_CsQ7gI4nEeadNs2DCuzLFA"/>
+      </elements>
+      <elements xsi:type="archimate:Artifact" id="604acf86" name="Trip database schema">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_09VtQATeEeeYd6m2jy02EA" target="_w6BrkK14EeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:Artifact" id="2add7178" name="Offers database schema">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_wiPQYATdEeeYd6m2jy02EA" target="cde7412a"/>
+      </elements>
+      <elements xsi:type="archimate:Artifact" id="_O2UOcAWEEeexEa8m-v4sDQ" name="Trips Mgt System - iOS App">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_3WmEkAWXEeexEa8m-v4sDQ" target="_dcxBoK14EeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:Artifact" id="_coNvsAWSEeexEa8m-v4sDQ" name="VD Joomla Archive">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_v7SwoAWXEeexEa8m-v4sDQ" target="_lFlNIK14EeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_pcqEsASkEeeUv86BV4VDWQ" name="Cloud">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_raKTMASkEeeUv86BV4VDWQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_sxIGIASkEeeUv86BV4VDWQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_tGlYwASkEeeUv86BV4VDWQ" target="_w6BrkK14EeaG0cy0fb0b9w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_tVORsASkEeeUv86BV4VDWQ" target="_lFlNIK14EeaG0cy0fb0b9w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_OALPgASmEeeUv86BV4VDWQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_ld_dYAVtEeefls8NENXj2Q" target="5e9141e9"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_Ikdl8ApSEee0sPoCtVEmzQ" target="_x9caIAf-EeeXbZ-ovKMayA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_p16L4AsrEee10_xlkIQ74g" target="_o0smgAsrEee10_xlkIQ74g"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_Q8IqUASmEeeUv86BV4VDWQ" name="Internal IT">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_SajwIASmEeeUv86BV4VDWQ" target="c132de98"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_UZfiAASmEeeUv86BV4VDWQ" target="_x9CasIydEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_iKyHoASmEeeUv86BV4VDWQ" target="cde7412a"/>
+      </elements>
+      <elements xsi:type="archimate:Grouping" id="_-TfewASmEeeUv86BV4VDWQ" name="External IT">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_AbxZ4ASnEeeUv86BV4VDWQ" target="9385cc72"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_DRYVEASnEeeUv86BV4VDWQ" target="_pcqEsASkEeeUv86BV4VDWQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_UU9jEApTEee0sPoCtVEmzQ" target="_dcxBoK14EeaG0cy0fb0b9w"/>
+      </elements>
+    </folders>
+    <folders name="Devices">
+      <elements xsi:type="archimate:Device" id="_cxtrMAToEeeYd6m2jy02EA" name="VD Server">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_QSffgATqEeeYd6m2jy02EA" target="_y_ua8ATnEeeYd6m2jy02EA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_QrnxMATqEeeYd6m2jy02EA" target="_b7MfQKzKEeaGGNpad20Csw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_mNSZEAV9EeexEa8m-v4sDQ" target="_XGDUMAV9EeexEa8m-v4sDQ"/>
+      </elements>
+      <elements xsi:type="archimate:Device" id="_F-GpIATrEeeYd6m2jy02EA" name="Agency Desktop">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_HbfNIATrEeeYd6m2jy02EA" target="_ohcW0ATqEeeYd6m2jy02EA"/>
+      </elements>
+      <elements xsi:type="archimate:Device" id="_e5ea8AWCEeexEa8m-v4sDQ" name="iPhone">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_i-iL0AWCEeexEa8m-v4sDQ" target="_gr0iUAWCEeexEa8m-v4sDQ"/>
+      </elements>
+      <elements xsi:type="archimate:Device" id="_YZlUcAWEEeexEa8m-v4sDQ" name="iPad">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_a-_QcAWEEeexEa8m-v4sDQ" target="_gr0iUAWCEeexEa8m-v4sDQ"/>
+      </elements>
+      <elements xsi:type="archimate:Device" id="_Mjr38AWZEeexEa8m-v4sDQ" name="Office Desktop">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_fVejAAWZEeexEa8m-v4sDQ" target="_Ij9N4ATnEeeYd6m2jy02EA"/>
+      </elements>
+      <elements xsi:type="archimate:Device" id="_F-KeoK13EeaG0cy0fb0b9w" name="Android Smartphone">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_O_BlsK14EeaG0cy0fb0b9w" target="_Pz_UQK13EeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:Device" id="_1VK2oK13EeaG0cy0fb0b9w" name="Android Tablet">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_PoYEsK14EeaG0cy0fb0b9w" target="_Pz_UQK13EeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:Device" id="_nkaPc7YdEeaL2OecCIhakg" name="Server HP-L10"/>
+      <elements xsi:type="archimate:Device" id="_SCQT0KvQEeaUQPSGShOftg" name="Server HP-L12"/>
+      <elements xsi:type="archimate:Device" id="_UGrpsKvQEeaUQPSGShOftg" name="Server Dell-T16">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_M5jpwKvSEeaUQPSGShOftg" target="_b7MfQKzKEeaGGNpad20Csw"/>
+      </elements>
+      <elements xsi:type="archimate:Device" id="_0KNSULYdEeaL2OecCIhakg" name="Server IBM-A05"/>
+      <elements xsi:type="archimate:Device" id="_7pB0U7YdEeaL2OecCIhakg" name="Server IBM-A06"/>
+      <elements xsi:type="archimate:CommunicationNetwork" id="_-kjx4KzIEeaGGNpad20Csw" name="Internet">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_kKAo4KzMEeaGGNpad20Csw" target="_f55ekKzMEeaGGNpad20Csw"/>
+      </elements>
+      <elements xsi:type="archimate:Path" id="_f55ekKzMEeaGGNpad20Csw" name="Gb Network">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_ozofYKzMEeaGGNpad20Csw" end2="_SbJh0KzJEeaGGNpad20Csw"/>
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_sGFoELGBEea0WcweEUsbGA" end2="_b7MfQKzKEeaGGNpad20Csw"/>
+      </elements>
+    </folders>
+    <folders name="Functions">
+      <elements xsi:type="archimate:TechnologyFunction" id="_FQrZsKzLEeaGGNpad20Csw" name="Secure connexions">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_XPX-cKzMEeaGGNpad20Csw" end2="_xQoj0K1vEeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:TechnologyFunction" id="_iylGcKzNEeaGGNpad20Csw" name="Search Plain Text in heterogeouns datasource">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_pW9ZcKzNEeaGGNpad20Csw" end2="_oMYqMK1xEeaG0cy0fb0b9w"/>
+      </elements>
+    </folders>
+    <folders name="Interfaces">
+      <elements xsi:type="archimate:TechnologyInterface" id="_xQoj0K1vEeaG0cy0fb0b9w" name="LDAP" foreignBidirectionalRelationships="_XPX-cKzMEeaGGNpad20Csw">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_iHBuIK10EeaG0cy0fb0b9w" target="_h4JkoK10EeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:TechnologyInterface" id="_rMl1YAfSEeexEa8m-v4sDQ" name="VD RESTful API">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_HvgcQAfTEeexEa8m-v4sDQ" target="_O2UOcAWEEeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_Ia90EAfTEeexEa8m-v4sDQ" target="_A-rCoK1zEeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:TechnologyInterface" id="_Ox9LUAfTEeexEa8m-v4sDQ" name="VPN Interface"/>
+    </folders>
+    <folders name="Nodes">
+      <elements xsi:type="archimate:Node" id="_Ij9N4ATnEeeYd6m2jy02EA" name="Office desktop configuration">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_LwA6MATnEeeYd6m2jy02EA" target="1db3b931"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_Mrec4ATnEeeYd6m2jy02EA" target="68bff7e5"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_sz444ATpEeeYd6m2jy02EA" target="3b309569"/>
+      </elements>
+      <elements xsi:type="archimate:Node" id="_y_ua8ATnEeeYd6m2jy02EA" name="Sugar CRM VM">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_0i4PwATnEeeYd6m2jy02EA" target="d1a36629"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_0x_CwATnEeeYd6m2jy02EA" target="17dc6d24"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_025_AATnEeeYd6m2jy02EA" target="_HLFoYATlEeeYd6m2jy02EA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_xq3XAAV6EeexEa8m-v4sDQ" target="80416b89"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_RAbrsAV7EeexEa8m-v4sDQ" target="_QdkPMAV7EeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_2_Da8AsAEeedCKrWYNTuUQ" target="ec6626d8"/>
+      </elements>
+      <elements xsi:type="archimate:Node" id="_ohcW0ATqEeeYd6m2jy02EA" name="Agency Desktop Configuration">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_xFIPIATqEeeYd6m2jy02EA" target="2c77e02"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_HTR_AAV9EeexEa8m-v4sDQ" target="_G7lQsAV9EeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_SnGtYAfSEeexEa8m-v4sDQ" target="_Ij9N4ATnEeeYd6m2jy02EA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_zKbSwAsAEeedCKrWYNTuUQ" target="_AvGwIASoEeeUv86BV4VDWQ"/>
+      </elements>
+      <elements xsi:type="archimate:Node" id="_AuPSwAV_EeexEa8m-v4sDQ" name="Web Hosting Cloud">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_EhIVkAV_EeexEa8m-v4sDQ" target="_EFqhkAV_EeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_XaCVQAV_EeexEa8m-v4sDQ" target="_W_UvMAV_EeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_bx6UcAV_EeexEa8m-v4sDQ" target="_bV0OUAV_EeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_gsL2EAV_EeexEa8m-v4sDQ" target="_gTgQUAV_EeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_FGACkAWSEeexEa8m-v4sDQ" target="_EhUoMAWSEeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_Qs6bUAWSEeexEa8m-v4sDQ" target="_PzWWEAWSEeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_6IaYkAsAEeedCKrWYNTuUQ" target="_coNvsAWSEeexEa8m-v4sDQ"/>
+      </elements>
+      <elements xsi:type="archimate:Node" id="109e37fc" name="Relational Database"/>
+      <elements xsi:type="archimate:Node" id="3c12853b" name="Application Server"/>
+      <elements xsi:type="archimate:Node" id="bb21e530" name="Desktop OS"/>
+      <elements xsi:type="archimate:Node" id="ce989029" name="Java Runtime Environment (JRE)"/>
+      <elements xsi:type="archimate:Node" id="f8e4df29" name="Server OS"/>
+      <elements xsi:type="archimate:Node" id="dee8ac2a" name="Web Browser"/>
+      <elements xsi:type="archimate:Node" id="_SbJh0KzJEeaGGNpad20Csw" name="Private Cloud" foreignBidirectionalRelationships="_ozofYKzMEeaGGNpad20Csw">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_UZNxAKzJEeaGGNpad20Csw" target="_Tib6AKzJEeaGGNpad20Csw"/>
+      </elements>
+      <elements xsi:type="archimate:Node" id="_Tib6AKzJEeaGGNpad20Csw" name="VD Instance">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_kQ-Q0AWSEeexEa8m-v4sDQ" target="8fa0c972"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_n_6nwAWSEeexEa8m-v4sDQ" target="e487be34"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_rwqDkAWUEeexEa8m-v4sDQ" target="_oMYqMK1xEeaG0cy0fb0b9w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_GzKx4AlqEeepkc1WQGRSzA" target="_uZNWsAlkEeepkc1WQGRSzA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_8f7CgAsAEeedCKrWYNTuUQ" target="7585c61b"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_73z5oAsAEeedCKrWYNTuUQ" target="604acf86"/>
+      </elements>
+      <elements xsi:type="archimate:Node" id="_b7MfQKzKEeaGGNpad20Csw" name="Offers VM" foreignBidirectionalRelationships="_sGFoELGBEea0WcweEUsbGA">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_14LWsK1vEeaG0cy0fb0b9w" target="_xQoj0K1vEeaG0cy0fb0b9w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_KvPsMK1wEeaG0cy0fb0b9w" target="_3kub0I4lEeadNs2DCuzLFA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_ZbT6oATpEeeYd6m2jy02EA" target="c53f4bcd"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_b53nwATpEeeYd6m2jy02EA" target="52c68a12"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_lCziMATpEeeYd6m2jy02EA" target="11f676a3"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_7oh3sAlkEeepkc1WQGRSzA" target="_ymWskAlkEeepkc1WQGRSzA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_sU920AsAEeedCKrWYNTuUQ" target="2add7178"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_vORmQAsAEeedCKrWYNTuUQ" target="2121ed04"/>
+      </elements>
+      <elements xsi:type="archimate:Node" id="_to7NkAfVEeexEa8m-v4sDQ" name="Satisfaction Saas">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_S8hm8AfWEeexEa8m-v4sDQ" target="_kq8l8AfVEeexEa8m-v4sDQ"/>
+      </elements>
+      <elements xsi:type="archimate:Node" id="_1ZqmAAfVEeexEa8m-v4sDQ" name="Accounting Saas">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_QA6KYAfWEeexEa8m-v4sDQ" target="_BiC-AAVuEeefls8NENXj2Q"/>
+      </elements>
+      <elements xsi:type="archimate:Node" id="_iyzUQAlkEeepkc1WQGRSzA" name="LDAP">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_vPcbIAlkEeepkc1WQGRSzA" target="_uZNWsAlkEeepkc1WQGRSzA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_8nsOoAlkEeepkc1WQGRSzA" target="80416b89"/>
+      </elements>
+    </folders>
+    <folders name="Services">
+      <elements xsi:type="archimate:TechnologyService" id="_h4JkoK10EeaG0cy0fb0b9w" name="Authentification" foreignBidirectionalRelationships="_-UxWQK10EeaG0cy0fb0b9w"/>
+      <elements xsi:type="archimate:TechnologyService" id="_YageIK13EeaG0cy0fb0b9w" name="PlayStore">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_92Eg4AWAEeexEa8m-v4sDQ" target="_A-rCoK1zEeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:TechnologyService" id="_TTM7MK15EeaG0cy0fb0b9w" name="Trips Search" foreignBidirectionalRelationships="_a5NDQK15EeaG0cy0fb0b9w">
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_vd0cEAlpEeepkc1WQGRSzA" target="7585c61b"/>
+      </elements>
+      <elements xsi:type="archimate:TechnologyService" id="_BiC-AAVuEeefls8NENXj2Q" name="Online Accounting Solution">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_EI09kAVvEeefls8NENXj2Q" target="5e9141e9"/>
+      </elements>
+      <elements xsi:type="archimate:TechnologyService" id="_lXlG0AWCEeexEa8m-v4sDQ" name="iTunes Store">
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_SqY9AAWEEeexEa8m-v4sDQ" target="_O2UOcAWEEeexEa8m-v4sDQ"/>
+      </elements>
+      <elements xsi:type="archimate:TechnologyService" id="_kq8l8AfVEeexEa8m-v4sDQ" name="Online Satisfaction Tracker Solution">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_py4wIAfVEeexEa8m-v4sDQ"/>
+      </elements>
+      <elements xsi:type="archimate:TechnologyService" id="_GHXOEAllEeepkc1WQGRSzA" name="User Authentication">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_jHeHQAllEeepkc1WQGRSzA" target="cde7412a"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_jyuqwAllEeepkc1WQGRSzA" target="c132de98"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_khf1QAllEeepkc1WQGRSzA" target="_x9CasIydEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_0iKfsAlpEeepkc1WQGRSzA" target="2121ed04"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_5cqDwAlpEeepkc1WQGRSzA" target="ec6626d8"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_6_SUIAlpEeepkc1WQGRSzA" target="_AvGwIASoEeeUv86BV4VDWQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_NOWsoAlqEeepkc1WQGRSzA" target="7585c61b"/>
+      </elements>
+    </folders>
+    <folders name="System Softwares">
+      <elements xsi:type="archimate:SystemSoftware" id="52c68a12" name="Oracle 10 G">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_wMuzMI4oEeadNs2DCuzLFA" target="_dlWoYI4oEeadNs2DCuzLFA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_c09-EATpEeeYd6m2jy02EA" target="2add7178"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="e487be34" name="Oracle 12.1">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_DQzmEAWTEeexEa8m-v4sDQ" target="604acf86"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="c53f4bcd" name="Apache Tomcat 7">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_5CHwUATpEeeYd6m2jy02EA" target="2121ed04"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="8fa0c972" name="WebSphere AS 7">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_qZkrMATsEeeYd6m2jy02EA" target="7585c61b"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="80416b89" name="Linux RedHat ES 4.3" documentation="This version does not allow to deploy applications in cluster mode. This has a direct impact on the global system availability.&lt;/p>&lt;p>A new version of Redhat (RHEL 6) includes an &lt;i>high availability&lt;/i> add on that might be integrated (see chapter 1.2 of this &lt;a href='/demo/archimate/RedHat6-HighAvailability-AddOn.pdf'>document&lt;/a> for more details)."/>
+      <elements xsi:type="archimate:SystemSoftware" id="11f676a3" name="Java 7">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_e2q-0ATjEeeYd6m2jy02EA" target="_AvGwIASoEeeUv86BV4VDWQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_R3CHEAV8EeexEa8m-v4sDQ" target="c53f4bcd"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="68bff7e5" name="Windows 10"/>
+      <elements xsi:type="archimate:SystemSoftware" id="3b309569" name="Chrome"/>
+      <elements xsi:type="archimate:SystemSoftware" id="17dc6d24" name="MySQL 5.0">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_wdgyUATmEeeYd6m2jy02EA" target="d1a36629"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="2c77e02" name="Java 6">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_0konkI4oEeadNs2DCuzLFA" target="_dlWoYI4oEeadNs2DCuzLFA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_79zo4ATqEeeYd6m2jy02EA" target="_AvGwIASoEeeUv86BV4VDWQ"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="1db3b931" name="Office">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_rnLAYATkEeeYd6m2jy02EA"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="d1a36629" name="Sugar CRM 6.5">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_RDeicAToEeeYd6m2jy02EA" target="ec6626d8"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="433b08e0" name="Windows 7">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_xprScIygEea5AaeaY4nyjA" target="_vDehsIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_yfaAkIygEea5AaeaY4nyjA" target="_u62xMIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_zBjEUIygEea5AaeaY4nyjA" target="_u0BJYIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_ziM6UIygEea5AaeaY4nyjA" target="_utlKMIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_z5R9kIygEea5AaeaY4nyjA" target="_uoq1AIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_0T-VgIygEea5AaeaY4nyjA" target="_ujRXoIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_027RkIygEea5AaeaY4nyjA" target="_eujXIIyeEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_1VbLcIygEea5AaeaY4nyjA" target="_vKvnUIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_3APugIygEea5AaeaY4nyjA" target="_vSywEIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_3msqgIygEea5AaeaY4nyjA" target="_vaALUIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_vQqXMIyhEea5AaeaY4nyjA" target="_esmvAIyhEea5AaeaY4nyjA"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="_CsQ7gI4nEeadNs2DCuzLFA" name="OwnCloud" foreignBidirectionalRelationships="_FavT8I4nEeadNs2DCuzLFA">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_EHKMMI4nEeadNs2DCuzLFA"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="_dlWoYI4oEeadNs2DCuzLFA" name="VD IT Check">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_sjO88I4oEeadNs2DCuzLFA"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="_3kub0I4lEeadNs2DCuzLFA" name="OpenLDAP" foreignBidirectionalRelationships="_dtQ5II4mEeadNs2DCuzLFA">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_cCQI0I4mEeadNs2DCuzLFA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_ccX5AI4mEeadNs2DCuzLFA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_G9an8LZFEeaL2OecCIhakg" target="_xQoj0K1vEeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="_oMYqMK1xEeaG0cy0fb0b9w" name="Elastic Search" foreignBidirectionalRelationships="_pW9ZcKzNEeaGGNpad20Csw">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_FNPWMAWWEeexEa8m-v4sDQ" target="7585c61b"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_aGArwK15EeaG0cy0fb0b9w" target="_TTM7MK15EeaG0cy0fb0b9w"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="_Pz_UQK13EeaG0cy0fb0b9w" name="Android">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_Ym2RAK13EeaG0cy0fb0b9w" target="_YageIK13EeaG0cy0fb0b9w"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_nOPiMATtEeeYd6m2jy02EA"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="_esmvAIyhEea5AaeaY4nyjA" name="VD TripSellor">
+        <properties name="Version" id="__EwiEIyhEea5AaeaY4nyjA" value="4.3"/>
+        <properties name="Support" id="_AUTeYIyiEea5AaeaY4nyjA" value="Internal"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_sLiZUIyhEea5AaeaY4nyjA" target="_x9CasIydEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_yR1pMIyhEea5AaeaY4nyjA" target="_ujRXoIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_y15YgIyhEea5AaeaY4nyjA" target="_uoq1AIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_zCoM8IyhEea5AaeaY4nyjA" target="_utlKMIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_zMwZUIyhEea5AaeaY4nyjA" target="_u0BJYIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_zXqo0IyhEea5AaeaY4nyjA" target="_u62xMIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_zkp78IyhEea5AaeaY4nyjA" target="_vDehsIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_z1AFEIyhEea5AaeaY4nyjA" target="_vKvnUIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_0FZ4kIyhEea5AaeaY4nyjA" target="_vSywEIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_0Xo4EIyhEea5AaeaY4nyjA" target="_vaALUIyfEea5AaeaY4nyjA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_11XaUIyhEea5AaeaY4nyjA" target="_eujXIIyeEea5AaeaY4nyjA"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="_sISNsI4lEeadNs2DCuzLFA" name="Nagios"/>
+      <elements xsi:type="archimate:SystemSoftware" id="_EdpPAI4mEeadNs2DCuzLFA" name="Bash">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_kR7gAI4mEeadNs2DCuzLFA" target="_Lg3aII4mEeadNs2DCuzLFA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_k-sfYI4mEeadNs2DCuzLFA" target="_S9HJQI4mEeadNs2DCuzLFA"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="_QdkPMAV7EeexEa8m-v4sDQ" name="Apache 2.4">
+        <ownedUnidirectionalRelationships xsi:type="archimate:TriggeringRelationship" id="_88hcAAV7EeexEa8m-v4sDQ" target="d1a36629"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="_G7lQsAV9EeexEa8m-v4sDQ" name="VPN Client"/>
+      <elements xsi:type="archimate:SystemSoftware" id="_XGDUMAV9EeexEa8m-v4sDQ" name="VPN Server">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_ROp3QAfTEeexEa8m-v4sDQ" target="_Ox9LUAfTEeexEa8m-v4sDQ"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="_EFqhkAV_EeexEa8m-v4sDQ" name="Joomla 3">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AggregationRelationship" id="_UJ6tsAWSEeexEa8m-v4sDQ" target="_PzWWEAWSEeexEa8m-v4sDQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_hKg2MAWSEeexEa8m-v4sDQ" target="_coNvsAWSEeexEa8m-v4sDQ"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="_W_UvMAV_EeexEa8m-v4sDQ" name="Apache 2.2"/>
+      <elements xsi:type="archimate:SystemSoftware" id="_bV0OUAV_EeexEa8m-v4sDQ" name="PostgreSQL 9.1"/>
+      <elements xsi:type="archimate:SystemSoftware" id="_gr0iUAWCEeexEa8m-v4sDQ" name="iOS">
+        <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_TiV4sAWEEeexEa8m-v4sDQ" target="_lXlG0AWCEeexEa8m-v4sDQ"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="_PzWWEAWSEeexEa8m-v4sDQ" name="Booking Joomla Plugin"/>
+      <elements xsi:type="archimate:SystemSoftware" id="_HLFoYATlEeeYd6m2jy02EA" name="PHP 5.2">
+        <ownedUnidirectionalRelationships xsi:type="archimate:ServingRelationship" id="_x9bF4ATmEeeYd6m2jy02EA" target="d1a36629"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="_uZNWsAlkEeepkc1WQGRSzA" name="OpenLDAP">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_IaHT0AllEeepkc1WQGRSzA" target="_GHXOEAllEeepkc1WQGRSzA"/>
+      </elements>
+      <elements xsi:type="archimate:SystemSoftware" id="_ymWskAlkEeepkc1WQGRSzA" name="LinuxRedHat ES 6"/>
+    </folders>
+    <folders name="Collaborations">
+      <elements xsi:type="archimate:TechnologyCollaboration" id="_gTgQUAV_EeexEa8m-v4sDQ" name="PHP 5.6"/>
+      <elements xsi:type="archimate:TechnologyCollaboration" id="_EhUoMAWSEeexEa8m-v4sDQ" name="Angular JS"/>
+    </folders>
+  </basemm:Folder>
+  <basemm:Folder name="Motivation">
+    <folders name="Goals">
+      <elements xsi:type="archimate:Goal" id="_QWL5sPgmEeaRitsTCQp4FA" name="Increase Margin">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_i1Xe4PgzEeaRitsTCQp4FA" target="_iktzwPgzEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_kthK8PhBEeaRitsTCQp4FA" target="_kcba8PhBEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Goal" id="_RuABMPgmEeaRitsTCQp4FA" name="Retain Customers">
+        <ownedUnidirectionalRelationships xsi:type="archimate:InfluenceRelationship" id="_EwmIEPhREeaRitsTCQp4FA" target="_kigJYPgjEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Goal" id="_kROZ4PgoEeaRitsTCQp4FA" name="Increase Number of Customers">
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_RzdAkPg0EeaRitsTCQp4FA" target="_RkWNkPg0EeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_nYi5sPg0EeaRitsTCQp4FA" target="_RuABMPgmEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_vdvfMPg0EeaRitsTCQp4FA" target="_vNuGMPg0EeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Goal" id="_iktzwPgzEeaRitsTCQp4FA" name="Reduce Buying Prices">
+        <ownedUnidirectionalRelationships xsi:type="archimate:InfluenceRelationship" id="_NAjMEPhREeaRitsTCQp4FA" target="_l0Z2IPgjEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Goal" id="_RkWNkPg0EeaRitsTCQp4FA" name="Improve Online Booking Process">
+        <ownedUnidirectionalRelationships xsi:type="archimate:InfluenceRelationship" id="_sIWKgPhREeaRitsTCQp4FA" target="_kigJYPgjEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:InfluenceRelationship" id="_vIb3YPhREeaRitsTCQp4FA" target="_l0Z2IPgjEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Goal" id="_vNuGMPg0EeaRitsTCQp4FA" name="Improve Offers Catalog">
+        <ownedUnidirectionalRelationships xsi:type="archimate:InfluenceRelationship" id="_wt_f8PhREeaRitsTCQp4FA" target="_kigJYPgjEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Goal" id="_kcba8PhBEeaRitsTCQp4FA" name="Increase Value of Offers">
+        <ownedUnidirectionalRelationships xsi:type="archimate:InfluenceRelationship" id="_MHZ9kPhREeaRitsTCQp4FA" target="_kigJYPgjEeaRitsTCQp4FA"/>
+      </elements>
+    </folders>
+    <folders name="Objectives"/>
+    <folders name="Principles">
+      <elements xsi:type="archimate:Principle" id="_NB63IPgnEeaRitsTCQp4FA" name="Provide efficient online booking process">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_761IcPgoEeaRitsTCQp4FA" target="_RkWNkPg0EeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Principle" id="_b6U10PgnEeaRitsTCQp4FA" name="Elaborate campaigns on much demanded destinations">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_8_4E8PgoEeaRitsTCQp4FA" target="_RuABMPgmEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_MF-FEPhPEeaRitsTCQp4FA" target="_iktzwPgzEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Principle" id="_FBJMsPgpEeaRitsTCQp4FA" name="Provide exciting rewards">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_HdFDoPgpEeaRitsTCQp4FA" target="_RuABMPgmEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Principle" id="_BoueYPg0EeaRitsTCQp4FA" name="Develop a rich network of partners">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_FYLLoPg0EeaRitsTCQp4FA" target="_iktzwPgzEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_F9EocPg0EeaRitsTCQp4FA" target="_kROZ4PgoEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="__8JV4Pg1EeaRitsTCQp4FA" target="_vNuGMPg0EeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_ojTwwPhBEeaRitsTCQp4FA" target="_kcba8PhBEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Principle" id="_1dsjkPhBEeaRitsTCQp4FA" name="Satisfy customers">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_6jdjgPhBEeaRitsTCQp4FA" target="_RuABMPgmEeaRitsTCQp4FA"/>
+      </elements>
+    </folders>
+    <folders name="Drivers">
+      <elements xsi:type="archimate:Driver" id="_gyy9cPgjEeaRitsTCQp4FA" name="Market Share" foreignBidirectionalRelationships="_FhprAPgkEeaRitsTCQp4FA">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_nUFgMPgjEeaRitsTCQp4FA" end2="_VqfzUPgjEeaRitsTCQp4FA"/>
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_pTfzMPgjEeaRitsTCQp4FA" end2="_ZG7d8PgjEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Driver" id="_ixSqcPgjEeaRitsTCQp4FA" name="Profitability" foreignBidirectionalRelationships="_7fozgPgjEeaRitsTCQp4FA">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_nzR9oPgjEeaRitsTCQp4FA" end2="_ZfP3UPgjEeaRitsTCQp4FA"/>
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_ovXycPgjEeaRitsTCQp4FA" end2="_ZG7d8PgjEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_qlUncPgjEeaRitsTCQp4FA" target="_kigJYPgjEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_rHKJMPgjEeaRitsTCQp4FA" target="_l0Z2IPgjEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Driver" id="_kigJYPgjEeaRitsTCQp4FA" name="Revenue" foreignBidirectionalRelationships="_-k6iYPgjEeaRitsTCQp4FA"/>
+      <elements xsi:type="archimate:Driver" id="_l0Z2IPgjEeaRitsTCQp4FA" name="Costs" foreignBidirectionalRelationships="_6yVooPgjEeaRitsTCQp4FA"/>
+    </folders>
+    <folders name="Requirements">
+      <elements xsi:type="archimate:Requirement" id="_No5FoPgpEeaRitsTCQp4FA" name="Selling service availability > 95% ">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_WhrEMPgpEeaRitsTCQp4FA" target="_NB63IPgnEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Requirement" id="_Okd9EPgpEeaRitsTCQp4FA" name="Reservation time &lt; 1h00">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_WHLgkPgpEeaRitsTCQp4FA" target="_NB63IPgnEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Requirement" id="_QsDUoPgpEeaRitsTCQp4FA" name="Minimum of 10 partners">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_JicMoPg0EeaRitsTCQp4FA" target="_BoueYPg0EeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Requirement" id="_SFt2QPgpEeaRitsTCQp4FA" name="Customer satisfaction > 80%">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_7SxgkPhBEeaRitsTCQp4FA" target="_1dsjkPhBEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="__DlHwApgEee8McM9ziqbDw" target="_z5IBgApgEee8McM9ziqbDw"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="__eHusApgEee8McM9ziqbDw" target="_0gsX0ApgEee8McM9ziqbDw"/>
+      </elements>
+      <elements xsi:type="archimate:Requirement" id="_tqo0wPgyEeaRitsTCQp4FA" name="50% of customers re-order within 2 years">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_q3aE4PhCEeaRitsTCQp4FA" target="_b6U10PgnEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_IRDWMApcEee0sPoCtVEmzQ" target="_32C8UApbEee0sPoCtVEmzQ"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:CompositionRelationship" id="_IwtGoApcEee0sPoCtVEmzQ" target="_E1kt0ApcEee0sPoCtVEmzQ"/>
+      </elements>
+      <elements xsi:type="archimate:Requirement" id="_32C8UApbEee0sPoCtVEmzQ" name="Phone call to agency customers within 1 year"/>
+      <elements xsi:type="archimate:Requirement" id="_E1kt0ApcEee0sPoCtVEmzQ" name="Email to online customers within 1 year"/>
+      <elements xsi:type="archimate:Requirement" id="_A5zUcApfEee8McM9ziqbDw" name="Mobile access">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_E_ySYApfEee8McM9ziqbDw" target="_NB63IPgnEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Requirement" id="_KBUSkApfEee8McM9ziqbDw" name="Offer loyalty points">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_PISMYApfEee8McM9ziqbDw" target="_FBJMsPgpEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Requirement" id="_VXzCoApfEee8McM9ziqbDw" name="Store customers preferences">
+        <ownedUnidirectionalRelationships xsi:type="archimate:RealizationRelationship" id="_aEn-IApfEee8McM9ziqbDw" target="_b6U10PgnEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Requirement" id="_z5IBgApgEee8McM9ziqbDw" name="Provide exciting trips"/>
+      <elements xsi:type="archimate:Requirement" id="_0gsX0ApgEee8McM9ziqbDw" name="Assist customer"/>
+    </folders>
+    <folders name="Stakeholders">
+      <elements xsi:type="archimate:Stakeholder" id="_VqfzUPgjEeaRitsTCQp4FA" name="Chief Marketing Officer (CMO)" foreignBidirectionalRelationships="_nUFgMPgjEeaRitsTCQp4FA"/>
+      <elements xsi:type="archimate:Stakeholder" id="_ZG7d8PgjEeaRitsTCQp4FA" name="Chief Executive Officer (CEO)" foreignBidirectionalRelationships="_ovXycPgjEeaRitsTCQp4FA _pTfzMPgjEeaRitsTCQp4FA"/>
+      <elements xsi:type="archimate:Stakeholder" id="_ZfP3UPgjEeaRitsTCQp4FA" name="Chief Financial Officer (CFO)" foreignBidirectionalRelationships="_nzR9oPgjEeaRitsTCQp4FA"/>
+    </folders>
+    <folders name="Assessments">
+      <elements xsi:type="archimate:Assessment" id="_uWX3MPgjEeaRitsTCQp4FA" name="Market Share Is Declining">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_FhprAPgkEeaRitsTCQp4FA" end2="_gyy9cPgjEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:InfluenceRelationship" id="_V1g7EPgkEeaRitsTCQp4FA" target="_xSwv0PgjEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Assessment" id="_xSwv0PgjEeaRitsTCQp4FA" name="Revenue Is Declining">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_-k6iYPgjEeaRitsTCQp4FA" end2="_kigJYPgjEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:InfluenceRelationship" id="_Xih2gPgkEeaRitsTCQp4FA" target="_zukq8PgjEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Assessment" id="_zukq8PgjEeaRitsTCQp4FA" name="Profitability Is Declining">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_7fozgPgjEeaRitsTCQp4FA" end2="_ixSqcPgjEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Assessment" id="_2StboPgjEeaRitsTCQp4FA" name="Cost Of Acquiring New Customers Is Increasing">
+        <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_6yVooPgjEeaRitsTCQp4FA" end2="_l0Z2IPgjEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:InfluenceRelationship" id="_YFrm4PgkEeaRitsTCQp4FA" target="_zukq8PgjEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Assessment" id="_HCLpoPgkEeaRitsTCQp4FA" name="Competitors Are Including Advanced Features In Their Service Models">
+        <ownedUnidirectionalRelationships xsi:type="archimate:InfluenceRelationship" id="_TVcLAPgkEeaRitsTCQp4FA" target="_uWX3MPgjEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:InfluenceRelationship" id="_iR9NoPgkEeaRitsTCQp4FA" target="_cXJcEPgkEeaRitsTCQp4FA"/>
+      </elements>
+      <elements xsi:type="archimate:Assessment" id="_cXJcEPgkEeaRitsTCQp4FA" name="Discounts Provided To Remain Competitive">
+        <ownedUnidirectionalRelationships xsi:type="archimate:InfluenceRelationship" id="_gQ4GsPgkEeaRitsTCQp4FA" target="_xSwv0PgjEeaRitsTCQp4FA"/>
+        <ownedUnidirectionalRelationships xsi:type="archimate:InfluenceRelationship" id="_hPu7oPgkEeaRitsTCQp4FA" target="_uWX3MPgjEeaRitsTCQp4FA"/>
+      </elements>
+    </folders>
+  </basemm:Folder>
+  <basemm:Folder name="Implementation &amp; migration"/>
+  <basemm:Folder name="bpmn2" hidden="true">
+    <folders name="Process" hidden="true">
+      <folders name="EAPK_C9ED868D_FDAC_44ee_9073_294A633162CE" hidden="true">
+        <folders name="sirius" hidden="true">
+          <folders name="bpmn2.Process" hidden="true">
+            <folders name="Process/ProcessDiagram" hidden="true"/>
+          </folders>
+        </folders>
+      </folders>
+    </folders>
+  </basemm:Folder>
+  <basemm:Folder name="Impact analysis"/>
+  <basemm:Folder name="Representations">
+    <folders name="Old"/>
+  </basemm:Folder>
+</xmi:XMI>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<basemm:Folder xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.obeo.fr/smartea/archimate/3.0" xmlns:basemm="http://www.obeo.fr/smartea/basemm/2.0.0" name="Technical Layer">
+  <folders name="Nodes">
+    <elements xsi:type="archimate:Node" id="_Tib6AKzJEeaGGNpad20Csw" name="VD Deploy Instance 1" documentation="http://schemas.ogf.org/occi/infrastructure#compute" foreignBidirectionalRelationships="_UZNxAKzJEeaGGNpad20Csw">
+      <properties name="occi.core.id" id="_IdPogSZ-Eee9u5vr5Feh2Q" value="_Tib6AKzJEeaGGNpad20Csw"/>
+      <properties name="occi.core.title" id="_IdPogiZ-Eee9u5vr5Feh2Q" value="VD Deploy Instance 1"/>
+      <properties name="hostname" id="_IdPogyZ-Eee9u5vr5Feh2Q" value="vdinstance1"/>
+    </elements>
+    <elements xsi:type="archimate:Node" id="_SbJh0KzJEeaGGNpad20Csw" name="Google Cloud" documentation="http://schemas.ogf.org/occi/infrastructure#compute">
+      <properties name="occi.core.id" id="_IdPohSZ-Eee9u5vr5Feh2Q" value="_SbJh0KzJEeaGGNpad20Csw"/>
+      <properties name="occi.core.title" id="_IdPohiZ-Eee9u5vr5Feh2Q" value="Google Cloud"/>
+      <properties name="hostname" id="_IdPohyZ-Eee9u5vr5Feh2Q" value="googlecloud"/>
+      <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_UZNxAKzJEeaGGNpad20Csw" name="link1" documentation="http://schemas.ogf.org/occi/core#link" end2="_Tib6AKzJEeaGGNpad20Csw">
+        <properties name="occi.core.id" id="_IdPoiSZ-Eee9u5vr5Feh2Q" value="_UZNxAKzJEeaGGNpad20Csw"/>
+        <properties name="occi.core.title" id="_IdPoiiZ-Eee9u5vr5Feh2Q" value="link1"/>
+      </ownedBidirectionalRelationships>
+    </elements>
+    <elements xsi:type="archimate:Node" id="169fc822-290b-48a3-adf2-c7ccc110f340" name="VD instance 2" documentation="http://schemas.ogf.org/occi/infrastructure#compute">
+      <properties name="occi.core.id" id="_IdPojCZ-Eee9u5vr5Feh2Q" value="169fc822-290b-48a3-adf2-c7ccc110f340"/>
+      <properties name="occi.core.title" id="_IdPojSZ-Eee9u5vr5Feh2Q" value="VD instance 2"/>
+    </elements>
+  </folders>
+</basemm:Folder>

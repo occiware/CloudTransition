@@ -6,6 +6,7 @@ import java.util.Map;
 import org.eclipse.emf.ecore.EClass;
 import org.occiware.clouddesigner.occi.AttributeState;
 import org.occiware.clouddesigner.occi.Configuration;
+import org.occiware.clouddesigner.occi.Entity;
 import org.occiware.clouddesigner.occi.Link;
 import org.occiware.clouddesigner.occi.Resource;
 
@@ -16,46 +17,35 @@ import fr.obeo.smartea.archimate.BidirectionalRelationship;
 import fr.obeo.smartea.archimate.Relationship;
 import fr.obeo.smartea.archimate.UnidirectionalRelationship;
 import fr.obeo.smartea.archimate.occi.conf.MappingConfig;
+import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
 import fr.obeo.smartea.core.basemm.BaseFactory;
 import fr.obeo.smartea.core.basemm.Folder;
-import fr.obeo.smartea.core.basemm.PropertiesContainer;
 import fr.obeo.smartea.core.basemm.Property;
 
 public class OCCI2Archi {
 
-	public static final String ROOT_FOLDER_NAME = "RootFolder";
-
 	public static final String TECHNICAL_LAYER_NAME = "Technical Layer";
-
-	private PropertiesContainer container;
 
 	public Folder convert(Configuration configuration) {
 		return convert(configuration, new MappingConfig());
 	}
 
 	public Folder convert(Configuration configuration, MappingConfig mappingConfig) {
-		container = BaseFactory.eINSTANCE.createFolder();
-
 		Map<Resource, ArchimateElement> resourcesTraces = new HashMap<>();
 		Map<Link, Relationship> linksTraces = new HashMap<>();
 
-		Folder rootFolder = BaseFactory.eINSTANCE.createFolder();
-		rootFolder.setName(ROOT_FOLDER_NAME);
-		rootFolder.getElements().add(container);
-
 		Folder techFolder = BaseFactory.eINSTANCE.createFolder();
 		techFolder.setName(TECHNICAL_LAYER_NAME);
-		rootFolder.getFolders().add(techFolder);
+
+		Folder nodesFolder = BaseFactory.eINSTANCE.createFolder();
+		nodesFolder.setName(ModelUtils.NODES_FOLDER_NAME);
+		techFolder.getFolders().add(nodesFolder);
 
 		// NOTE unused: configuration.use
 		for (Resource resource : configuration.getResources()) {
 			EClass elementType = mappingConfig.getArchiType(resource.getKind());
-			ArchimateElement element = (ArchimateElement) ArchimateFactory.eINSTANCE.create(elementType);
-			element.setDocumentation(resource.getKind().getScheme() + resource.getKind().getTerm());
-			element.setName(resource.getTitle());
-			element.setId(resource.getId());
-
-			techFolder.getElements().add(element);
+			ArchimateElement element = (ArchimateElement) createArchimateComponentFrom(resource, elementType);
+			ModelUtils.getFolderFor(techFolder, element).getElements().add(element);
 			resourcesTraces.put(resource, element);
 			for (AttributeState attributeState : resource.getAttributes()) {
 				convertAttributeState(element, attributeState);
@@ -65,7 +55,7 @@ public class OCCI2Archi {
 				if (relationshipType == null) {
 					throw new UnsupportedOperationException(link.getKind().getTerm());
 				}
-				Relationship relationship = (Relationship) ArchimateFactory.eINSTANCE.create(relationshipType);
+				Relationship relationship = (Relationship) createArchimateComponentFrom(link, relationshipType);
 				linksTraces.put(link, relationship);
 				for (AttributeState attributeState : link.getAttributes()) {
 					convertAttributeState(relationship, attributeState);
@@ -87,13 +77,21 @@ public class OCCI2Archi {
 				br.setEnd2(target);
 			}
 		}
-		return rootFolder;
+		return techFolder;
+	}
+
+	private ArchimateComponent createArchimateComponentFrom(Entity entity, EClass elementType) {
+		ArchimateComponent element = (ArchimateComponent) ArchimateFactory.eINSTANCE.create(elementType);
+		element.setDocumentation(entity.getKind().getScheme() + entity.getKind().getTerm());
+		element.setName(entity.getTitle());
+		element.setId(entity.getId());
+		return element;
 	}
 
 	private void convertAttributeState(ArchimateComponent component, AttributeState attributeState) {
 		Property property = BaseFactory.eINSTANCE.createProperty();
 		String key = attributeState.getName();
-		container.getProperties().add(property);
+		component.getProperties().add(property);
 		property.setName(key);
 		property.setValue(attributeState.getValue());
 		component.getProperties().add(property);

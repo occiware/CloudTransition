@@ -8,4 +8,6 @@ Require-Bundle: org.occiware.clouddesigner.occi;bundle-version="0.1.0";visibilit
  fr.obeo.smartea.archimate;visibility:=reexport,
  com.google.guava;bundle-version="15.0.0"
 Export-Package: fr.obeo.smartea.archimate.occi,
- fr.obeo.smartea.archimate.occi.conf
+ fr.obeo.smartea.archimate.occi.conf,
+ fr.obeo.smartea.archimate.occi.reconciler,
+ fr.obeo.smartea.archimate.occi.utils
