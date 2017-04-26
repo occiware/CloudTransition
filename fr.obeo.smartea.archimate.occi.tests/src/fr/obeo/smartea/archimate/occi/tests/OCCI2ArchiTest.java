@@ -43,8 +43,8 @@ public class OCCI2ArchiTest implements ITestsConstants {
 		assertNotNull(object2);
 		AssociationRelationship link = (AssociationRelationship) TestUtils.getArchimateComponent(output, LINK_ID);
 		assertNotNull(link);
-		assertEquals(link.getEnd1(), object2);
-		assertEquals(link.getEnd2(), object1);
+		assertEquals(link.getSourceElement(), object2);
+		assertEquals(link.getTargetElement(), object1);
 	}
 
 }

@@ -76,8 +76,8 @@ public class SyncTest extends TestCase implements ITestsConstants {
 	private AssociationRelationship createArchimateLink(String end1ID, String end2ID) {
 		AssociationRelationship link = ArchimateFactory.eINSTANCE.createAssociationRelationship();
 		ArchimateComponent end1 = getArchimateComponent(end1ID);
-		link.setEnd1(end1);
-		link.setEnd2(getArchimateComponent(end2ID));
+		link.setSourceElement(end1);
+		link.setTargetElement(getArchimateComponent(end2ID));
 		end1.getOwnedBidirectionalRelationships().add(link);
 		return link;
 	}
@@ -123,8 +123,8 @@ public class SyncTest extends TestCase implements ITestsConstants {
 		synchronize();
 		AssociationRelationship archiLink = (AssociationRelationship) getArchimateComponent(link.getId());
 		assertNotNull(archiLink);
-		assertEquals(archiLink.getEnd1(), getArchimateComponent(RESOURCE1_ID));
-		assertEquals(archiLink.getEnd2(), getArchimateComponent(RESOURCE2_ID));
+		assertEquals(archiLink.getSourceElement(), getArchimateComponent(RESOURCE1_ID));
+		assertEquals(archiLink.getTargetElement(), getArchimateComponent(RESOURCE2_ID));
 
 	}
 
@@ -148,8 +148,8 @@ public class SyncTest extends TestCase implements ITestsConstants {
 		assertNotNull(archiNew2);
 		AssociationRelationship archiLink = (AssociationRelationship) getArchimateComponent(occiLink.getId());
 		assertNotNull(archiLink);
-		assertEquals(archiLink.getEnd1(), archiNew1);
-		assertEquals(archiLink.getEnd2(), archiNew2);
+		assertEquals(archiLink.getSourceElement(), archiNew1);
+		assertEquals(archiLink.getTargetElement(), archiNew2);
 	}
 
 	/**
@@ -214,8 +214,8 @@ public class SyncTest extends TestCase implements ITestsConstants {
 		synchronize();
 		AssociationRelationship archiLink = (AssociationRelationship) getArchimateComponent(linkId);
 		assertNotNull(archiLink);
-		assertEquals(archiLink.getEnd1(), unmanaged);
-		assertEquals(archiLink.getEnd2(), getArchimateComponent(RESOURCE1_ID));
+		assertEquals(archiLink.getSourceElement(), unmanaged);
+		assertEquals(archiLink.getTargetElement(), getArchimateComponent(RESOURCE1_ID));
 	}
 
 	/**

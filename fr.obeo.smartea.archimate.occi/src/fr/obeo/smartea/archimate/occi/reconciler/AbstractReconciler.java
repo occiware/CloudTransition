@@ -8,7 +8,6 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
-import fr.obeo.smartea.archimate.Relationship;
 import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
 
 public abstract class AbstractReconciler {
@@ -19,7 +18,6 @@ public abstract class AbstractReconciler {
 		for (Iterator<EObject> iterator = target.eAllContents(); iterator.hasNext();) {
 			EObject targetElement = (EObject) iterator.next();
 			if (isManagedElement(targetElement)) {
-				System.err.println(targetElement);
 				EObject sourceElement = ModelUtils.findExisting(source, targetElement);
 				if (sourceElement == null) {
 					toDelete.add(targetElement);

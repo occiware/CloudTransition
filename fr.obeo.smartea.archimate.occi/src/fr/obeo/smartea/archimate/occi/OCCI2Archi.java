@@ -73,8 +73,8 @@ public class OCCI2Archi {
 			} else if (relationship instanceof BidirectionalRelationship) {
 				BidirectionalRelationship br = (BidirectionalRelationship) relationship;
 				source.getOwnedBidirectionalRelationships().add(br);
-				br.setEnd1(source);
-				br.setEnd2(target);
+				br.setSourceElement(source);
+				br.setTargetElement(target);
 			}
 		}
 		return techFolder;
