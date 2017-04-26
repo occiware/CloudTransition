@@ -26,7 +26,7 @@ public class OCCIReconciler extends AbstractReconciler {
 
 	@Override
 	protected void delete(EObject eObject) {
-		EcoreUtil.delete(eObject);
+		EcoreUtil.remove(eObject);
 	}
 
 	@Override

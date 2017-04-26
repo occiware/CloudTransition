@@ -14,7 +14,7 @@ import fr.obeo.smartea.core.basemm.Folder;
 import fr.obeo.smartea.core.basemm.Identified;
 
 public class ModelUtils {
-
+	public static final String TECHNOLOGY_FOLDER_NAME = "Technology";
 	public static final String OCCI_TITLE_ATTR_NAME = "occi.core.title";
 	public static final String OCCI_ID_ATTR_NAME = "occi.core.id";
 	public static final String NODES_FOLDER_NAME = "Nodes";
@@ -36,12 +36,23 @@ public class ModelUtils {
 		return EcoreUtil.getID(element);
 	}
 
-	public static Folder getSubFolder(EObject object, String name) {
-		for (EObject content : object.eContents()) {
-			if (content instanceof Folder) {
-				Folder folder = (Folder) content;
-				if (name.equals(folder.getName())) {
-					return folder;
+	public static Folder getSubFolder(Notifier object, String name) {
+		if (object instanceof Resource) {
+			for (EObject content : ((Resource) object).getContents()) {
+				if (content instanceof Folder) {
+					Folder folder = (Folder) content;
+					if (name.equals(folder.getName())) {
+						return folder;
+					}
+				}
+			}
+		} else {
+			for (EObject content : ((EObject) object).eContents()) {
+				if (content instanceof Folder) {
+					Folder folder = (Folder) content;
+					if (name.equals(folder.getName())) {
+						return folder;
+					}
 				}
 			}
 		}

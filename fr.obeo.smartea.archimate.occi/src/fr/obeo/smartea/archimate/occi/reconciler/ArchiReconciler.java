@@ -69,7 +69,9 @@ public class ArchiReconciler extends AbstractReconciler {
 					toAdd.add(sourceProperty);
 				}
 			}
-			((PropertiesContainer) targetElement).getProperties().addAll(toAdd);
+			for (Property property : toAdd) {
+				((PropertiesContainer) targetElement).getProperties().add(EcoreUtil.copy(property));
+			}
 		}
 	}
 

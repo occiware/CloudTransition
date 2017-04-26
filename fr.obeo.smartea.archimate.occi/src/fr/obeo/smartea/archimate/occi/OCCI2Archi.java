@@ -24,8 +24,6 @@ import fr.obeo.smartea.core.basemm.Property;
 
 public class OCCI2Archi {
 
-	public static final String TECHNICAL_LAYER_NAME = "Technical Layer";
-
 	public Folder convert(Configuration configuration) {
 		return convert(configuration, new MappingConfig());
 	}
@@ -35,7 +33,7 @@ public class OCCI2Archi {
 		Map<Link, Relationship> linksTraces = new HashMap<>();
 
 		Folder techFolder = BaseFactory.eINSTANCE.createFolder();
-		techFolder.setName(TECHNICAL_LAYER_NAME);
+		techFolder.setName(ModelUtils.TECHNOLOGY_FOLDER_NAME);
 
 		Folder nodesFolder = BaseFactory.eINSTANCE.createFolder();
 		nodesFolder.setName(ModelUtils.NODES_FOLDER_NAME);
