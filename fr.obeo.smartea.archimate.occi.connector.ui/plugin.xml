@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="fr.obeo.smartea.archimate.occi.connector.ui.contribution1"
+            nameFilter="*.occic"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               class="fr.obeo.smartea.archimate.occi.connector.ui.popup.actions.ExportToSmartEAAction"
+               enablesFor="1"
+               id="fr.obeo.smartea.archimate.occi.connector.ui.exportAction"
+               label="Export To SmartEA"
+               menubarPath="fr.obeo.smartea.archimate.occi.ui.menu1/group1">
+         </action>
+         <action
+               class="fr.obeo.smartea.archimate.occi.connector.ui.popup.actions.ImportFromSmartEAAction"
+               enablesFor="1"
+               id="fr.obeo.smartea.archimate.occi.connector.ui.importAction"
+               label="Import From SmartEA"
+               menubarPath="fr.obeo.smartea.archimate.occi.ui.menu1/group1">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
