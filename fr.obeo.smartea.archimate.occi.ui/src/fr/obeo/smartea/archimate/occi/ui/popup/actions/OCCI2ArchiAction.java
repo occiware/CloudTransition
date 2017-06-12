@@ -23,6 +23,7 @@ import org.occiware.clouddesigner.occi.Configuration;
 import fr.obeo.smartea.archimate.occi.OCCI2Archi;
 import fr.obeo.smartea.archimate.occi.conf.MappingConfig;
 import fr.obeo.smartea.archimate.occi.ui.Activator;
+import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
 import fr.obeo.smartea.core.basemm.Folder;
 
 public class OCCI2ArchiAction implements IObjectActionDelegate {
@@ -54,7 +55,7 @@ public class OCCI2ArchiAction implements IObjectActionDelegate {
 		}
 	}
 
-	private void convertToArchi(IFile occicFile) throws IOException {
+	private void convertToArchi(IFile configFile) throws IOException {
 		MappingConfig mapping = new MappingConfig();
 		Properties props = new Properties();
 		InputStream is = OCCI2Archi.class.getResourceAsStream("OCCI2Archi.mapping");
@@ -63,16 +64,15 @@ public class OCCI2ArchiAction implements IObjectActionDelegate {
 		is.close();
 
 		ResourceSet resourceSet = new ResourceSetImpl();
-		Resource resource = resourceSet.getResource(URI.createFileURI(occicFile.getLocation().toString()), true);
-
-		Configuration configuration = (Configuration) resource.getContents().get(0);
+		Configuration configuration = ModelUtils.getOCCIConfiguration(configFile.getLocation().toString(), resourceSet);
 		Folder folder = new OCCI2Archi().convert(configuration, mapping);
 		Resource output = resourceSet.createResource(
-				URI.createFileURI(occicFile.getLocation().removeFileExtension().addFileExtension("archi").toString()));
+				URI.createFileURI(configFile.getLocation().removeFileExtension().addFileExtension("archi").toString()));
 		output.getContents().add(folder);
 
 		output.save(Collections.EMPTY_MAP);
 	}
+
 
 	/**
 	 * @see IActionDelegate#selectionChanged(IAction, ISelection)

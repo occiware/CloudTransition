@@ -6,7 +6,7 @@
          point="org.eclipse.ui.popupMenus">
       <objectContribution
             id="fr.obeo.smartea.archimate.occi.connector.ui.contribution1"
-            nameFilter="*.occic"
+            nameFilter="*"
             objectClass="org.eclipse.core.resources.IFile">
          <action
                class="fr.obeo.smartea.archimate.occi.connector.ui.popup.actions.ExportToSmartEAAction"

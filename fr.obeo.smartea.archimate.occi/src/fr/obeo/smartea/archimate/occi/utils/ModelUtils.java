@@ -3,11 +3,14 @@ package fr.obeo.smartea.archimate.occi.utils;
 import java.util.Iterator;
 
 import org.eclipse.emf.common.notify.Notifier;
+import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.occiware.clouddesigner.occi.Configuration;
 import org.occiware.clouddesigner.occi.Entity;
+import org.occiware.clouddesigner.occi.emfgen.Ecore2OCCI;
 
 import fr.obeo.smartea.archimate.Node;
 import fr.obeo.smartea.core.basemm.Folder;
@@ -78,5 +81,19 @@ public class ModelUtils {
 			}
 		}
 		return null;
+	}
+
+	public static Configuration getOCCIConfiguration(String configFile, ResourceSet resourceSet) {
+		Configuration configuration = null;
+		if (configFile.endsWith(".docker")) {
+			EObject root = resourceSet.getResource(URI.createFileURI(configFile), true).getContents().get(0);
+			configuration = new Ecore2OCCI().convertConfig((Configuration) root);
+			Resource resource = resourceSet.createResource(URI.createURI("tmp-occic"));
+			resource.getContents().add(configuration);
+		} else {
+			Resource resource = resourceSet.getResource(URI.createFileURI(configFile), true);
+			configuration = (Configuration) resource.getContents().get(0);
+		}
+		return configuration;
 	}
 }

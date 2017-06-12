@@ -7,7 +7,6 @@ import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.emf.cdo.common.branch.CDOBranch;
 import org.eclipse.emf.cdo.common.revision.CDORevision;
 import org.eclipse.emf.cdo.eresource.CDOResource;
-import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
@@ -17,9 +16,12 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import org.occiware.clouddesigner.occi.Configuration;
 
+import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
+import fr.obeo.smartea.core.server.api.IUserProviderExtension;
 import fr.obeo.smartea.core.server.api.db.DbProjectContentTx;
 import fr.obeo.smartea.core.server.client.SmartEAClient;
 import fr.obeo.smartea.core.server.client.SmartEAProjectClient;
+import fr.obeo.smartea.core.server.inject.AbstractSmartEAModule;
 
 public abstract class ConnectionWizard extends Wizard {
 	private boolean readonly;
@@ -68,8 +70,7 @@ public abstract class ConnectionWizard extends Wizard {
 	protected boolean internalWork(IProgressMonitor monitor) {
 		monitor.beginTask("Working...", 5);
 		ResourceSet resourceSet = new ResourceSetImpl();
-		Resource resource = resourceSet.getResource(URI.createFileURI(file.getLocation().toString()), true);
-		Configuration configuration = (Configuration) resource.getContents().get(0);
+		Configuration configuration = ModelUtils.getOCCIConfiguration(file.getLocation().toString(), resourceSet);
 		monitor.worked(1);
 		try {
 			connect(readonly);
@@ -97,10 +98,29 @@ public abstract class ConnectionWizard extends Wizard {
 		return true;
 	}
 
+	private static class DummyUserProvider implements IUserProviderExtension {
+
+		@Override
+		public boolean authenticate(String login, String password) {
+			return true;
+		}
+
+		@Override
+		public UserInfo getUserInfo(String login) {
+			return new UserInfo(login, login, login);
+		}
+
+	}
+
 	private void connect(boolean readonly) throws IOException {
 		client = new SmartEAClient(connectionInfos.protocol, connectionInfos.host, connectionInfos.port,
 				connectionInfos.user, connectionInfos.password, true);
-		projectClient = client.newProjectClient(connectionInfos.project, readonly);
+		projectClient = client.newProjectClient(connectionInfos.project, false, new AbstractSmartEAModule() {
+			@Override
+			protected void configure() {
+				magicBindImpl(DummyUserProvider.class);
+			}
+		});
 		for (CDOBranch branch : projectClient.getProjectContentCtx().getBranches()) {
 			if (connectionInfos.branch.equals(branch.getName())) {
 				DbProjectContentTx tx = projectClient.getProjectContentCtx().getTx(branch);

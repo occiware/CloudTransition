@@ -12,7 +12,6 @@ Require-Bundle: org.eclipse.ui,
  org.junit;bundle-version="4.12.0",
  fr.obeo.smartea.core.server.artifacts;bundle-version="3.0.1",
  fr.obeo.smartea.core.server.cdo;bundle-version="3.0.1",
- fr.obeo.smartea.core.server.ext;bundle-version="3.0.1",
- fr.obeo.smartea.demo.archimate.ext;bundle-version="3.0.1"
+ fr.obeo.smartea.core.server.ext;bundle-version="3.0.1"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-Activator: fr.obeo.smartea.archimate.occi.connector.ui.Activator

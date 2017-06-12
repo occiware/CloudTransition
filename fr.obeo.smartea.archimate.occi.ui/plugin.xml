@@ -6,7 +6,7 @@
          point="org.eclipse.ui.popupMenus">
       <objectContribution
             id="fr.obeo.smartea.archimate.occi.ui.contribution1"
-            nameFilter="*.occic"
+            nameFilter="*"
             objectClass="org.eclipse.core.resources.IFile">
          <menu
                label="OCCI / Archi bridge"
@@ -26,7 +26,7 @@
       </objectContribution>
       <objectContribution
             id="fr.obeo.smartea.archimate.occi.ui.contribution2"
-            nameFilter="*.semantic"
+            nameFilter="*"
             objectClass="org.eclipse.core.resources.IFile">
          <menu
                id="fr.obeo.smartea.archimate.occi.ui.menu2"
