@@ -49,7 +49,7 @@ public class ArchiReconciler extends AbstractReconciler {
 
 	@Override
 	protected void updateElement(EObject sourceElement, EObject targetElement) {
-		if (sourceElement instanceof Nameable
+		if (sourceElement instanceof Nameable && ((Nameable) sourceElement).getName() != null
 				&& !((Nameable) sourceElement).getName().equals(((Nameable) targetElement).getName())) {
 			((Nameable) targetElement).setName(((Nameable) sourceElement).getName());
 		}

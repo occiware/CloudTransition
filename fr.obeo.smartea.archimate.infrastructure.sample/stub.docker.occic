@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<occi:Configuration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:occi="http://schemas.ogf.org/occi/core/ecore">
+  <use href="http://occiware.org/occi/docker#/"/>
+  <resources id="_SbJh0KzJEeaGGNpad20Csw" title="Google Cloud">
+    <kind href="http://occiware.org/occi/docker#//@kinds[term='machine_Google_Compute_Engine']"/>
+    <attributes name="occi.core.id" value="_SbJh0KzJEeaGGNpad20Csw"/>
+    <attributes name="occi.core.title" value="Google Cloud"/>
+    <links id="_UZNxAKzJEeaGGNpad20Csw" target="//@resources.1">
+      <kind href="http://occiware.org/occi/docker#//@kinds[term='contains']"/>
+      <attributes name="occi.core.id" value="_UZNxAKzJEeaGGNpad20Csw"/>
+    </links>
+  </resources>
+  <resources id="_Tib6AKzJEeaGGNpad20Csw" title="VD Instance 1">
+    <kind href="http://occiware.org/occi/docker#//@kinds[term='container']"/>
+    <attributes name="occi.core.id" value="_Tib6AKzJEeaGGNpad20Csw"/>
+    <attributes name="occi.core.title" value="VD Instance 1"/>
+  </resources>
+</occi:Configuration>

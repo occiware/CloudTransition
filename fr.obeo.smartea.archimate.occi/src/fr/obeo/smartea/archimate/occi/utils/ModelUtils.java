@@ -20,7 +20,7 @@ public class ModelUtils {
 	public static final String TECHNOLOGY_FOLDER_NAME = "Technology";
 	public static final String OCCI_TITLE_ATTR_NAME = "occi.core.title";
 	public static final String OCCI_ID_ATTR_NAME = "occi.core.id";
-	public static final String NODES_FOLDER_NAME = "Nodes";
+	public static final String NODES_FOLDER_NAME = "Logical Technology Components";
 
 	public static Folder getFolderFor(Folder targetTechFolder, EObject element) {
 		if (element instanceof Node) {
