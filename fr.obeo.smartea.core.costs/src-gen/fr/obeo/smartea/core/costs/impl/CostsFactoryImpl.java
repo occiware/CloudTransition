@@ -74,7 +74,6 @@ public class CostsFactoryImpl extends EFactoryImpl implements CostsFactory {
 		switch (eClass.getClassifierID()) {
 			case CostsPackage.COSTS_CONTAINER: return (EObject)createCostsContainer();
 			case CostsPackage.COST: return (EObject)createCost();
-			case CostsPackage.TIME_ELEMENT: return (EObject)createTimeElement();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier"); //$NON-NLS-1$ //$NON-NLS-2$
 		}
@@ -128,16 +127,6 @@ public class CostsFactoryImpl extends EFactoryImpl implements CostsFactory {
 	public Cost createCost() {
 		CostImpl cost = new CostImpl();
 		return cost;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public TimeElement createTimeElement() {
-		TimeElementImpl timeElement = new TimeElementImpl();
-		return timeElement;
 	}
 
 	/**

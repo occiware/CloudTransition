@@ -32,7 +32,7 @@ import org.eclipse.emf.cdo.CDOObject;
  * </ul>
  *
  * @see fr.obeo.smartea.core.costs.CostsPackage#getTimeElement()
- * @model
+ * @model abstract="true"
  * @extends CDOObject
  * @generated
  */

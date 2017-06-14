@@ -133,29 +133,6 @@ public class CostsItemProviderAdapterFactory extends CostsAdapterFactory impleme
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link fr.obeo.smartea.core.costs.TimeElement} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected TimeElementItemProvider timeElementItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link fr.obeo.smartea.core.costs.TimeElement}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createTimeElementAdapter() {
-		if (timeElementItemProvider == null) {
-			timeElementItemProvider = new TimeElementItemProvider(this);
-		}
-
-		return timeElementItemProvider;
-	}
-
-	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -256,7 +233,6 @@ public class CostsItemProviderAdapterFactory extends CostsAdapterFactory impleme
 	public void dispose() {
 		if (costsContainerItemProvider != null) costsContainerItemProvider.dispose();
 		if (costItemProvider != null) costItemProvider.dispose();
-		if (timeElementItemProvider != null) timeElementItemProvider.dispose();
 	}
 
 }

@@ -31,7 +31,7 @@
     <genClasses image="false" ecoreClass="costs.ecore#//CostElement">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute costs.ecore#//CostElement/currency"/>
     </genClasses>
-    <genClasses ecoreClass="costs.ecore#//TimeElement">
+    <genClasses image="false" ecoreClass="costs.ecore#//TimeElement">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute costs.ecore#//TimeElement/timeUnit"/>
     </genClasses>
   </genPackages>

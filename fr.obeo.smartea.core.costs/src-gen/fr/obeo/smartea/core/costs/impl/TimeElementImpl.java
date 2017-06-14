@@ -38,7 +38,7 @@ import org.eclipse.emf.internal.cdo.CDOObjectImpl;
  *
  * @generated
  */
-public class TimeElementImpl extends CDOObjectImpl implements TimeElement {
+public abstract class TimeElementImpl extends CDOObjectImpl implements TimeElement {
 	/**
 	 * The default value of the '{@link #getTimeUnit() <em>Time Unit</em>}' attribute.
 	 * <!-- begin-user-doc -->

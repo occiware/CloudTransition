@@ -55,15 +55,6 @@ public interface CostsFactory extends EFactory {
 	Cost createCost();
 
 	/**
-	 * Returns a new object of class '<em>Time Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Time Element</em>'.
-	 * @generated
-	 */
-	TimeElement createTimeElement();
-
-	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

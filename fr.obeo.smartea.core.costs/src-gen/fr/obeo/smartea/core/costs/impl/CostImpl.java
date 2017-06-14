@@ -37,14 +37,14 @@ import org.eclipse.emf.internal.cdo.CDOObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getDocumentation <em>Documentation</em>}</li>
- * <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getId <em>Id</em>}</li>
- * <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getName <em>Name</em>}</li>
- * <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getCurrency <em>Currency</em>}</li>
- * <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getTimeUnit <em>Time Unit</em>}</li>
- * <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getRef <em>Ref</em>}</li>
- * <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getValue <em>Value</em>}</li>
- * <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getFrequency <em>Frequency</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getDocumentation <em>Documentation</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getId <em>Id</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getName <em>Name</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getCurrency <em>Currency</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getTimeUnit <em>Time Unit</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getRef <em>Ref</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getFrequency <em>Frequency</em>}</li>
  * </ul>
  *
  * @generated
@@ -61,9 +61,9 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 	protected static final String DOCUMENTATION_EDEFAULT = ""; //$NON-NLS-1$
 
 	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @see #getId()
 	 * @generated
 	 * @ordered
@@ -71,9 +71,9 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 	protected static final String ID_EDEFAULT = null;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @see #getName()
 	 * @generated
 	 * @ordered
@@ -81,9 +81,9 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 	protected static final String NAME_EDEFAULT = ""; //$NON-NLS-1$
 
 	/**
-	 * The default value of the '{@link #getCurrency() <em>Currency</em>}' attribute. <!-- begin-user-doc -->
+	 * The default value of the '{@link #getCurrency() <em>Currency</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
 	 * @see #getCurrency()
 	 * @generated
 	 * @ordered
@@ -91,9 +91,9 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 	protected static final String CURRENCY_EDEFAULT = "euro"; //$NON-NLS-1$
 
 	/**
-	 * The default value of the '{@link #getTimeUnit() <em>Time Unit</em>}' attribute. <!-- begin-user-doc -->
+	 * The default value of the '{@link #getTimeUnit() <em>Time Unit</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
 	 * @see #getTimeUnit()
 	 * @generated
 	 * @ordered
@@ -101,9 +101,9 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 	protected static final TimeUnit TIME_UNIT_EDEFAULT = TimeUnit.YEAR;
 
 	/**
-	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @see #getValue()
 	 * @generated
 	 * @ordered
@@ -111,9 +111,9 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 	protected static final int VALUE_EDEFAULT = 1;
 
 	/**
-	 * The default value of the '{@link #getFrequency() <em>Frequency</em>}' attribute. <!-- begin-user-doc
+	 * The default value of the '{@link #getFrequency() <em>Frequency</em>}' attribute.
+	 * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
 	 * @see #getFrequency()
 	 * @generated
 	 * @ordered
@@ -132,7 +132,6 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -142,7 +141,6 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -152,27 +150,22 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public String getDocumentation() {
-		return (String)eDynamicGet(CostsPackage.COST__DOCUMENTATION,
-				BasePackage.Literals.DOCUMENTABLE__DOCUMENTATION, true, true);
+		return (String)eDynamicGet(CostsPackage.COST__DOCUMENTATION, BasePackage.Literals.DOCUMENTABLE__DOCUMENTATION, true, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setDocumentation(String newDocumentation) {
-		eDynamicSet(CostsPackage.COST__DOCUMENTATION, BasePackage.Literals.DOCUMENTABLE__DOCUMENTATION,
-				newDocumentation);
+		eDynamicSet(CostsPackage.COST__DOCUMENTATION, BasePackage.Literals.DOCUMENTABLE__DOCUMENTATION, newDocumentation);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public String getId() {
@@ -181,7 +174,6 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setId(String newId) {
@@ -190,7 +182,6 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public String getName() {
@@ -199,7 +190,6 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setName(String newName) {
@@ -208,17 +198,14 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public String getCurrency() {
-		return (String)eDynamicGet(CostsPackage.COST__CURRENCY, CostsPackage.Literals.COST_ELEMENT__CURRENCY,
-				true, true);
+		return (String)eDynamicGet(CostsPackage.COST__CURRENCY, CostsPackage.Literals.COST_ELEMENT__CURRENCY, true, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setCurrency(String newCurrency) {
@@ -227,17 +214,14 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public TimeUnit getTimeUnit() {
-		return (TimeUnit)eDynamicGet(CostsPackage.COST__TIME_UNIT,
-				CostsPackage.Literals.TIME_ELEMENT__TIME_UNIT, true, true);
+		return (TimeUnit)eDynamicGet(CostsPackage.COST__TIME_UNIT, CostsPackage.Literals.TIME_ELEMENT__TIME_UNIT, true, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setTimeUnit(TimeUnit newTimeUnit) {
@@ -246,7 +230,6 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public EObject getRef() {
@@ -255,7 +238,6 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public EObject basicGetRef() {
@@ -264,7 +246,6 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setRef(EObject newRef) {
@@ -273,7 +254,6 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public int getValue() {
@@ -282,7 +262,6 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setValue(int newValue) {
@@ -291,17 +270,14 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public int getFrequency() {
-		return (Integer)eDynamicGet(CostsPackage.COST__FREQUENCY, CostsPackage.Literals.COST__FREQUENCY, true,
-				true);
+		return (Integer)eDynamicGet(CostsPackage.COST__FREQUENCY, CostsPackage.Literals.COST__FREQUENCY, true, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setFrequency(int newFrequency) {
@@ -310,7 +286,6 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -327,8 +302,7 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 			case CostsPackage.COST__TIME_UNIT:
 				return getTimeUnit();
 			case CostsPackage.COST__REF:
-				if (resolve)
-					return getRef();
+				if (resolve) return getRef();
 				return basicGetRef();
 			case CostsPackage.COST__VALUE:
 				return getValue();
@@ -340,7 +314,6 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -376,7 +349,6 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -412,22 +384,19 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case CostsPackage.COST__DOCUMENTATION:
-				return DOCUMENTATION_EDEFAULT == null ? getDocumentation() != null
-						: !DOCUMENTATION_EDEFAULT.equals(getDocumentation());
+				return DOCUMENTATION_EDEFAULT == null ? getDocumentation() != null : !DOCUMENTATION_EDEFAULT.equals(getDocumentation());
 			case CostsPackage.COST__ID:
 				return ID_EDEFAULT == null ? getId() != null : !ID_EDEFAULT.equals(getId());
 			case CostsPackage.COST__NAME:
 				return NAME_EDEFAULT == null ? getName() != null : !NAME_EDEFAULT.equals(getName());
 			case CostsPackage.COST__CURRENCY:
-				return CURRENCY_EDEFAULT == null ? getCurrency() != null
-						: !CURRENCY_EDEFAULT.equals(getCurrency());
+				return CURRENCY_EDEFAULT == null ? getCurrency() != null : !CURRENCY_EDEFAULT.equals(getCurrency());
 			case CostsPackage.COST__TIME_UNIT:
 				return getTimeUnit() != TIME_UNIT_EDEFAULT;
 			case CostsPackage.COST__REF:
@@ -442,41 +411,32 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
 		if (baseClass == Identified.class) {
 			switch (derivedFeatureID) {
-				case CostsPackage.COST__ID:
-					return BasePackage.IDENTIFIED__ID;
-				default:
-					return -1;
+				case CostsPackage.COST__ID: return BasePackage.IDENTIFIED__ID;
+				default: return -1;
 			}
 		}
 		if (baseClass == Nameable.class) {
 			switch (derivedFeatureID) {
-				case CostsPackage.COST__NAME:
-					return BasePackage.NAMEABLE__NAME;
-				default:
-					return -1;
+				case CostsPackage.COST__NAME: return BasePackage.NAMEABLE__NAME;
+				default: return -1;
 			}
 		}
 		if (baseClass == CostElement.class) {
 			switch (derivedFeatureID) {
-				case CostsPackage.COST__CURRENCY:
-					return CostsPackage.COST_ELEMENT__CURRENCY;
-				default:
-					return -1;
+				case CostsPackage.COST__CURRENCY: return CostsPackage.COST_ELEMENT__CURRENCY;
+				default: return -1;
 			}
 		}
 		if (baseClass == TimeElement.class) {
 			switch (derivedFeatureID) {
-				case CostsPackage.COST__TIME_UNIT:
-					return CostsPackage.TIME_ELEMENT__TIME_UNIT;
-				default:
-					return -1;
+				case CostsPackage.COST__TIME_UNIT: return CostsPackage.TIME_ELEMENT__TIME_UNIT;
+				default: return -1;
 			}
 		}
 		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
@@ -484,41 +444,32 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
 		if (baseClass == Identified.class) {
 			switch (baseFeatureID) {
-				case BasePackage.IDENTIFIED__ID:
-					return CostsPackage.COST__ID;
-				default:
-					return -1;
+				case BasePackage.IDENTIFIED__ID: return CostsPackage.COST__ID;
+				default: return -1;
 			}
 		}
 		if (baseClass == Nameable.class) {
 			switch (baseFeatureID) {
-				case BasePackage.NAMEABLE__NAME:
-					return CostsPackage.COST__NAME;
-				default:
-					return -1;
+				case BasePackage.NAMEABLE__NAME: return CostsPackage.COST__NAME;
+				default: return -1;
 			}
 		}
 		if (baseClass == CostElement.class) {
 			switch (baseFeatureID) {
-				case CostsPackage.COST_ELEMENT__CURRENCY:
-					return CostsPackage.COST__CURRENCY;
-				default:
-					return -1;
+				case CostsPackage.COST_ELEMENT__CURRENCY: return CostsPackage.COST__CURRENCY;
+				default: return -1;
 			}
 		}
 		if (baseClass == TimeElement.class) {
 			switch (baseFeatureID) {
-				case CostsPackage.TIME_ELEMENT__TIME_UNIT:
-					return CostsPackage.COST__TIME_UNIT;
-				default:
-					return -1;
+				case CostsPackage.TIME_ELEMENT__TIME_UNIT: return CostsPackage.COST__TIME_UNIT;
+				default: return -1;
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
