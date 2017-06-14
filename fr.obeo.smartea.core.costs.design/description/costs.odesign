@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/table/description/1.1.0" name="costs" version="11.1.1.201610211630">
+  <ownedViewpoints name="costs">
+    <ownedRepresentations xsi:type="description_1:EditionTableDescription" name="costs_table" label="Costs Table" domainClass="costs.CostsContainer">
+      <metamodel href="http://www.obeo.fr/smartea/costs/2.0.0#/"/>
+      <ownedLineMappings name="cost" label="Cost" domainClass="costs.Cost" headerLabelExpression="feature:name"/>
+      <ownedLineMappings name="Total" domainClass="CostsContainer" semanticCandidatesExpression="var:container" headerLabelExpression="Total">
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+        </defaultBackground>
+      </ownedLineMappings>
+      <ownedColumnMappings name="ref" headerLabelExpression="Attached to" featureName="ref"/>
+      <ownedColumnMappings name="documentation" headerLabelExpression="Documentation" featureName="documentation" labelExpression="feature:documentation"/>
+      <ownedColumnMappings name="value" headerLabelExpression="Value" featureName="value"/>
+      <ownedColumnMappings name="currency" headerLabelExpression="Currency" featureName="currency"/>
+      <ownedColumnMappings name="frequency" headerLabelExpression="Frequency" featureName="frequency"/>
+      <ownedColumnMappings name="timeUnit" headerLabelExpression="Time Unit" featureName="timeUnit"/>
+      <ownedColumnMappings name="cost" headerLabelExpression="Cost (in common currency)" featureName="currency" labelExpression="service:computeCost()"/>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="fr.obeo.smartea.core.costs.design.DesignServices"/>
+  </ownedViewpoints>
+</description:Group>

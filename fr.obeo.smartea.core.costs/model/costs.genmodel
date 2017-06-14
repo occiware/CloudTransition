@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2016 Obeo. All Rights Reserved.&#xD;&#xA;&#xD;&#xA;This software and the attached documentation are the exclusive ownership&#xD;&#xA;of its authors and was conceded to the profit of Obeo SARL.&#xD;&#xA;This software and the attached documentation are protected under the rights&#xD;&#xA;of intellectual ownership, including the section &quot;Titre II  Droits des auteurs (Articles L121-1 L123-12)&quot;&#xD;&#xA;By installing this software, you acknowledge being aware of this rights and&#xD;&#xA;accept them, and as a consequence you must:&#xD;&#xA;- be in possession of a valid license of use conceded by Obeo only.&#xD;&#xA;- agree that you have read, understood, and will comply with the license terms and conditions.&#xD;&#xA;- agree not to do anything that could conflict with intellectual ownership owned by Obeo or its beneficiaries&#xD;&#xA;or the authors of this software&#xD;&#xA;&#xD;&#xA;Should you not agree with these terms, you must stop to use this software and give it back to its legitimate owner.&#xD;&#xA;"
+    modelDirectory="/fr.obeo.smartea.core.costs/src-gen" creationIcons="false" editDirectory="/fr.obeo.smartea.core.costs.edit/src-gen"
+    editorDirectory="/fr.obeo.smartea.core.costs.editor/src-gen" modelPluginID="fr.obeo.smartea.core.costs"
+    modelName="Costs" editPluginClass="fr.obeo.smartea.core.costs.provider.CostsEditPlugin"
+    editorPluginClass="fr.obeo.smartea.core.costs.presentation.CostsEditorPlugin"
+    nonNLSMarkers="true" rootExtendsInterface="org.eclipse.emf.cdo.CDOObject" rootExtendsClass="org.eclipse.emf.internal.cdo.CDOObjectImpl"
+    testsDirectory="" testSuiteClass="fr.obeo.smartea.core.costs.tests.CostsAllTests"
+    importerID="org.eclipse.emf.importer.cdo" featureDelegation="Dynamic" complianceLevel="7.0"
+    copyrightFields="false" editPluginID="fr.obeo.smartea.core.costs.edit" editorPluginID="fr.obeo.smartea.core.costs.editor"
+    testsPluginID="fr.obeo.smartea.core.costs.tests" optimizedHasChildren="true" language=""
+    usedGenPackages="../../fr.obeo.smartea.core.basemm/model/basemm.genmodel#//basemm ../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore"
+    importOrganizing="true">
+  <foreignModel>costs.ecore</foreignModel>
+  <modelPluginVariables>CDO=org.eclipse.emf.cdo</modelPluginVariables>
+  <genPackages prefix="Costs" basePackage="fr.obeo.smartea.core" disposableProviderFactory="true"
+      ecorePackage="costs.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="costs.ecore#//TimeUnit">
+      <genEnumLiterals ecoreEnumLiteral="costs.ecore#//TimeUnit/Month"/>
+      <genEnumLiterals ecoreEnumLiteral="costs.ecore#//TimeUnit/Year"/>
+    </genEnums>
+    <genClasses ecoreClass="costs.ecore#//CostsContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference costs.ecore#//CostsContainer/costs"/>
+    </genClasses>
+    <genClasses ecoreClass="costs.ecore#//Cost">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference costs.ecore#//Cost/ref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute costs.ecore#//Cost/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute costs.ecore#//Cost/frequency"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="costs.ecore#//CostElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute costs.ecore#//CostElement/currency"/>
+    </genClasses>
+    <genClasses ecoreClass="costs.ecore#//TimeElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute costs.ecore#//TimeElement/timeUnit"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

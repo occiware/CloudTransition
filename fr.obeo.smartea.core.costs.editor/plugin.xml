@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ Copyright (c) 2016 Obeo. All Rights Reserved.
+ 
+ This software and the attached documentation are the exclusive ownership
+ of its authors and was conceded to the profit of Obeo SARL.
+ This software and the attached documentation are protected under the rights
+ of intellectual ownership, including the section "Titre II  Droits des auteurs (Articles L121-1 L123-12)"
+ By installing this software, you acknowledge being aware of this rights and
+ accept them, and as a consequence you must:
+ - be in possession of a valid license of use conceded by Obeo only.
+ - agree that you have read, understood, and will comply with the license terms and conditions.
+ - agree not to do anything that could conflict with intellectual ownership owned by Obeo or its beneficiaries
+ or the authors of this software
+ 
+ Should you not agree with these terms, you must stop to use this software and give it back to its legitimate owner.
+ 
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated costs -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.obeo.smartea.core.costs.presentation.CostsModelWizardID"
+            name="%_UI_CostsModelWizard_label"
+            class="fr.obeo.smartea.core.costs.presentation.CostsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CostsModelFile.gif">
+         <description>%_UI_CostsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated costs -->
+      <editor
+            id="fr.obeo.smartea.core.costs.presentation.CostsEditorID"
+            name="%_UI_CostsEditor_label"
+            icon="icons/full/obj16/CostsModelFile.gif"
+            extensions="costs"
+            class="fr.obeo.smartea.core.costs.presentation.CostsEditor"
+            contributorClass="fr.obeo.smartea.core.costs.presentation.CostsActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

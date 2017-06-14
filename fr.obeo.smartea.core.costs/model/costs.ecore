@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="costs" nsURI="http://www.obeo.fr/smartea/costs/2.0.0" nsPrefix="costs">
+  <eClassifiers xsi:type="ecore:EClass" name="CostsContainer" eSuperTypes="../../fr.obeo.smartea.core.basemm/model/basemm.ecore#//Identified #//CostElement #//TimeElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="costs" upperBound="-1"
+        eType="#//Cost" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Cost" eSuperTypes="../../fr.obeo.smartea.core.basemm/model/basemm.ecore#//Documentable ../../fr.obeo.smartea.core.basemm/model/basemm.ecore#//Identified ../../fr.obeo.smartea.core.basemm/model/basemm.ecore#//Nameable #//CostElement #//TimeElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ref" lowerBound="1" eType="ecore:EClass ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EInt"
+        defaultValueLiteral="1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="frequency" eType="ecore:EDataType ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EInt"
+        defaultValueLiteral="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CostElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="currency" lowerBound="1"
+        eType="ecore:EDataType ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EString"
+        defaultValueLiteral="euro"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TimeElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeUnit" eType="#//TimeUnit"
+        defaultValueLiteral="YEAR"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TimeUnit">
+    <eLiterals name="Month" value="5" literal="MONTH"/>
+    <eLiterals name="Year" value="6" literal="YEAR"/>
+  </eClassifiers>
+</ecore:EPackage>

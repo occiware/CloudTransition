@@ -10,6 +10,8 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.sirius,
  org.eclipse.sirius.common.acceleo.aql,
  fr.obeo.smartea.core.basemm,
- fr.obeo.smartea.archimate
+ fr.obeo.smartea.archimate,
+ fr.obeo.smartea.core.costs;bundle-version="3.0.0",
+ fr.obeo.smartea.archimate.edit;bundle-version="3.0.1"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6

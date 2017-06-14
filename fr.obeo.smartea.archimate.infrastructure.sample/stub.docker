@@ -1,16 +1,2 @@
 <?xml version="1.0" encoding="ASCII"?>
-<occi:Configuration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:docker="http://occiware.org/occi/docker/ecore" xmlns:occi="http://schemas.ogf.org/occi/core/ecore">
-  <resources xsi:type="docker:Machine_Google_Compute_Engine" id="0c8582aa-868d-4d34-942c-8f159573af6c" name="Google Cloud">
-    <kind href="http://occiware.org/occi/docker#//@kinds[term='machine_Google_Compute_Engine']"/>
-    <attributes name="occi.core.id" value="0c8582aa-868d-4d34-942c-8f159573af6c"/>
-    <attributes name="name" value="Google Cloud"/>
-    <links xsi:type="docker:Contains" id="47802c7a-5006-4ae2-b29d-554041c9306b" target="//@resources.1">
-      <kind href="http://occiware.org/occi/docker#//@kinds[term='contains']"/>
-    </links>
-  </resources>
-  <resources xsi:type="docker:Container" id="2e61305f-c919-4958-896b-4f50c4429e21" name="VD Instance 1">
-    <kind href="http://occiware.org/occi/docker#//@kinds[term='container']"/>
-    <attributes name="occi.core.id" value="2e61305f-c919-4958-896b-4f50c4429e21"/>
-    <attributes name="name" value="VD Instance 1"/>
-  </resources>
-</occi:Configuration>
+<occi:Configuration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:occi="http://schemas.ogf.org/occi/core/ecore"/>
