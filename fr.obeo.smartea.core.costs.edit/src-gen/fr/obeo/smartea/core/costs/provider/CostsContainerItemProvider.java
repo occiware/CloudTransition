@@ -218,14 +218,15 @@ public class CostsContainerItemProvider
 	 * This returns the label text for the adapted class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((CostsContainer)object).getId();
-		return label == null || label.length() == 0 ?
-			getString("_UI_CostsContainer_type") : //$NON-NLS-1$
-			getString("_UI_CostsContainer_type") + " " + label; //$NON-NLS-1$ //$NON-NLS-2$
+//		String label = ((CostsContainer)object).getId();
+//		return label == null || label.length() == 0 ?
+//			getString("_UI_CostsContainer_type") : //$NON-NLS-1$
+//			getString("_UI_CostsContainer_type") + " " + label; //$NON-NLS-1$ //$NON-NLS-2$
+		return "Costs Model";
 	}
 	
 
