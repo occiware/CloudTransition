@@ -166,6 +166,7 @@ public class CostsContainerItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(CostsPackage.Literals.COSTS_CONTAINER__COSTS);
+			childrenFeatures.add(CostsPackage.Literals.COSTS_CONTAINER__CATEGORIES);
 		}
 		return childrenFeatures;
 	}
@@ -218,15 +219,14 @@ public class CostsContainerItemProvider
 	 * This returns the label text for the adapted class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated NOT
+	 * @generated
 	 */
 	@Override
 	public String getText(Object object) {
-//		String label = ((CostsContainer)object).getId();
-//		return label == null || label.length() == 0 ?
-//			getString("_UI_CostsContainer_type") : //$NON-NLS-1$
-//			getString("_UI_CostsContainer_type") + " " + label; //$NON-NLS-1$ //$NON-NLS-2$
-		return "Costs Model";
+		String label = ((CostsContainer)object).getId();
+		return label == null || label.length() == 0 ?
+			getString("_UI_CostsContainer_type") : //$NON-NLS-1$
+			getString("_UI_CostsContainer_type") + " " + label; //$NON-NLS-1$ //$NON-NLS-2$
 	}
 	
 
@@ -248,6 +248,7 @@ public class CostsContainerItemProvider
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case CostsPackage.COSTS_CONTAINER__COSTS:
+			case CostsPackage.COSTS_CONTAINER__CATEGORIES:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -269,6 +270,11 @@ public class CostsContainerItemProvider
 			(createChildParameter
 				(CostsPackage.Literals.COSTS_CONTAINER__COSTS,
 				 CostsFactory.eINSTANCE.createCost()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CostsPackage.Literals.COSTS_CONTAINER__CATEGORIES,
+				 CostsFactory.eINSTANCE.createCategory()));
 	}
 
 	/**

@@ -19,6 +19,10 @@ package fr.obeo.smartea.core.costs;
 
 public final class CostUtils {
 
+	public static final String DOLLAR = "dollar";
+
+	public static final String EURO = "euro";
+
 	private static final double CONVERSION_RATE = 1.12;
 
 	public static double computeCost(Cost cost) {
@@ -34,23 +38,29 @@ public final class CostUtils {
 		if (!cost.getTimeUnit().equals(timeUnit)) {
 			res = convert(res, cost.getTimeUnit(), timeUnit);
 		}
-		res *= cost.getFrequency();
 		return res;
 	}
 
-	public static double computeCost(CostsContainer costContainer, String currency, TimeUnit timeUnit) {
+	public static double computeCosts(CostsContainer costContainer) {
+		return computeCosts(costContainer, null);
+	}
+
+	public static double computeCosts(CostsContainer costContainer, Category category) {
 		double res = 0;
 		for (Cost cost : costContainer.getCosts()) {
-			res += computeCost(cost, currency, timeUnit);
+			if ((category == null && cost.getCategory() == null)
+					|| (category != null && category.equals(cost.getCategory()))) {
+				res += computeCost(cost, costContainer.getCurrency(), costContainer.getTimeUnit());
+			}
 		}
 		return res;
 	}
 
 	private static double convert(double value, String sourceCurrency, String targetCurrency) {
 		double res = value;
-		if (sourceCurrency.equals("euro") && targetCurrency.equals("dollar")) {
+		if (sourceCurrency.equals(EURO) && targetCurrency.equals(DOLLAR)) {
 			res *= CONVERSION_RATE;
-		} else if (sourceCurrency.equals("dollar") && targetCurrency.equals("euro")) {
+		} else if (sourceCurrency.equals(DOLLAR) && targetCurrency.equals(EURO)) {
 			res /= CONVERSION_RATE;
 		}
 		return res;
@@ -82,4 +92,5 @@ public final class CostUtils {
 		}
 		return res;
 	}
+
 }

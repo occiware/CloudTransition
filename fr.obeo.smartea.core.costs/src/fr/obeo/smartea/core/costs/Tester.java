@@ -19,6 +19,14 @@ package fr.obeo.smartea.core.costs;
 
 public class Tester {
 
+	private static final String CATEGORY_1 = "First year";
+
+	private static Category cat;
+	static {
+		cat = CostsFactory.eINSTANCE.createCategory();
+		cat.setName(CATEGORY_1);
+	}
+
 	private static CostsContainer createModel() {
 		CostsContainer res = CostsFactory.eINSTANCE.createCostsContainer();
 		Cost cost1 = CostsFactory.eINSTANCE.createCost();
@@ -28,18 +36,20 @@ public class Tester {
 		cost2.setValue(100);
 		cost1.setTimeUnit(TimeUnit.YEAR);
 		Cost cost3 = CostsFactory.eINSTANCE.createCost();
-		cost3.setValue(100);
-		cost3.setFrequency(5);
-		cost3.setCurrency("euro");
-		// res.getCosts().add(cost1);
-		// res.getCosts().add(cost2);
+		cost3.setValue(111);
+		cost3.setCurrency(CostUtils.EURO);
+
+		cost3.setCategory(cat);
+		res.getCosts().add(cost1);
+		res.getCosts().add(cost2);
 		res.getCosts().add(cost3);
 		return res;
 	}
 
 	public static void main(String[] args) {
-		System.err.println(CostUtils.computeCost(createModel(), "euro", TimeUnit.YEAR) + " per year");
-		System.err.println(CostUtils.computeCost(createModel(), "euro", TimeUnit.MONTH) + " per month");
+		CostsContainer model = createModel();
+		System.err.println(CostUtils.computeCosts(model));
+		System.err.println(CostUtils.computeCosts(model, cat));
 	}
 
 }

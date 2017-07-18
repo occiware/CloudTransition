@@ -19,6 +19,7 @@ package fr.obeo.smartea.core.costs.impl;
 
 import fr.obeo.smartea.core.basemm.BasePackage;
 
+import fr.obeo.smartea.core.costs.Category;
 import fr.obeo.smartea.core.costs.Cost;
 import fr.obeo.smartea.core.costs.CostElement;
 import fr.obeo.smartea.core.costs.CostsContainer;
@@ -70,6 +71,13 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 * @generated
 	 */
 	private EClass timeElementEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass categoryEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -165,6 +173,15 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getCostsContainer_Categories() {
+		return (EReference)costsContainerEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getCost() {
 		return costEClass;
 	}
@@ -184,7 +201,7 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 * @generated
 	 */
 	public EAttribute getCost_Value() {
-		return (EAttribute)costEClass.getEStructuralFeatures().get(1);
+		return (EAttribute)costEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -192,8 +209,8 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCost_Frequency() {
-		return (EAttribute)costEClass.getEStructuralFeatures().get(2);
+	public EReference getCost_Category() {
+		return (EReference)costEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -237,6 +254,15 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getCategory() {
+		return categoryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getTimeUnit() {
 		return timeUnitEEnum;
 	}
@@ -271,17 +297,20 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 		// Create classes and their features
 		costsContainerEClass = createEClass(COSTS_CONTAINER);
 		createEReference(costsContainerEClass, COSTS_CONTAINER__COSTS);
+		createEReference(costsContainerEClass, COSTS_CONTAINER__CATEGORIES);
 
 		costEClass = createEClass(COST);
 		createEReference(costEClass, COST__REF);
+		createEReference(costEClass, COST__CATEGORY);
 		createEAttribute(costEClass, COST__VALUE);
-		createEAttribute(costEClass, COST__FREQUENCY);
 
 		costElementEClass = createEClass(COST_ELEMENT);
 		createEAttribute(costElementEClass, COST_ELEMENT__CURRENCY);
 
 		timeElementEClass = createEClass(TIME_ELEMENT);
 		createEAttribute(timeElementEClass, TIME_ELEMENT__TIME_UNIT);
+
+		categoryEClass = createEClass(CATEGORY);
 
 		// Create enums
 		timeUnitEEnum = createEEnum(TIME_UNIT);
@@ -327,21 +356,27 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 		costEClass.getESuperTypes().add(theBasePackage.getNameable());
 		costEClass.getESuperTypes().add(this.getCostElement());
 		costEClass.getESuperTypes().add(this.getTimeElement());
+		categoryEClass.getESuperTypes().add(theBasePackage.getDocumentable());
+		categoryEClass.getESuperTypes().add(theBasePackage.getIdentified());
+		categoryEClass.getESuperTypes().add(theBasePackage.getNameable());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(costsContainerEClass, CostsContainer.class, "CostsContainer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 		initEReference(getCostsContainer_Costs(), this.getCost(), null, "costs", null, 0, -1, CostsContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
+		initEReference(getCostsContainer_Categories(), this.getCategory(), null, "categories", null, 0, -1, CostsContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(costEClass, Cost.class, "Cost", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 		initEReference(getCost_Ref(), theEcorePackage.getEObject(), null, "ref", null, 1, 1, Cost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
+		initEReference(getCost_Category(), this.getCategory(), null, "category", null, 0, 1, Cost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
 		initEAttribute(getCost_Value(), theEcorePackage.getEInt(), "value", "1", 1, 1, Cost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$ //$NON-NLS-2$
-		initEAttribute(getCost_Frequency(), theEcorePackage.getEInt(), "frequency", "1", 0, 1, Cost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$ //$NON-NLS-2$
 
 		initEClass(costElementEClass, CostElement.class, "CostElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 		initEAttribute(getCostElement_Currency(), theEcorePackage.getEString(), "currency", "euro", 1, 1, CostElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$ //$NON-NLS-2$
 
 		initEClass(timeElementEClass, TimeElement.class, "TimeElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 		initEAttribute(getTimeElement_TimeUnit(), this.getTimeUnit(), "timeUnit", "YEAR", 0, 1, TimeElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$ //$NON-NLS-2$
+
+		initEClass(categoryEClass, Category.class, "Category", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 
 		// Initialize enums and add enum literals
 		initEEnum(timeUnitEEnum, TimeUnit.class, "TimeUnit"); //$NON-NLS-1$

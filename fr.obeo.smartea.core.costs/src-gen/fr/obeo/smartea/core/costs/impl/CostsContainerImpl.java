@@ -18,6 +18,7 @@
 package fr.obeo.smartea.core.costs.impl;
 
 import fr.obeo.smartea.core.basemm.BasePackage;
+import fr.obeo.smartea.core.costs.Category;
 import fr.obeo.smartea.core.costs.Cost;
 import fr.obeo.smartea.core.costs.CostElement;
 import fr.obeo.smartea.core.costs.CostsContainer;
@@ -46,6 +47,7 @@ import org.eclipse.emf.internal.cdo.CDOObjectImpl;
  *   <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getCurrency <em>Currency</em>}</li>
  *   <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getTimeUnit <em>Time Unit</em>}</li>
  *   <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getCosts <em>Costs</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getCategories <em>Categories</em>}</li>
  * </ul>
  *
  * @generated
@@ -167,6 +169,16 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public EList<Category> getCategories() {
+		return (EList<Category>)eDynamicGet(CostsPackage.COSTS_CONTAINER__CATEGORIES, CostsPackage.Literals.COSTS_CONTAINER__CATEGORIES, true, true);
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -175,6 +187,8 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 		switch (featureID) {
 			case CostsPackage.COSTS_CONTAINER__COSTS:
 				return ((InternalEList<?>)getCosts()).basicRemove(otherEnd, msgs);
+			case CostsPackage.COSTS_CONTAINER__CATEGORIES:
+				return ((InternalEList<?>)getCategories()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -194,6 +208,8 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 				return getTimeUnit();
 			case CostsPackage.COSTS_CONTAINER__COSTS:
 				return getCosts();
+			case CostsPackage.COSTS_CONTAINER__CATEGORIES:
+				return getCategories();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -219,6 +235,10 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 				getCosts().clear();
 				getCosts().addAll((Collection<? extends Cost>)newValue);
 				return;
+			case CostsPackage.COSTS_CONTAINER__CATEGORIES:
+				getCategories().clear();
+				getCategories().addAll((Collection<? extends Category>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -242,6 +262,9 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 			case CostsPackage.COSTS_CONTAINER__COSTS:
 				getCosts().clear();
 				return;
+			case CostsPackage.COSTS_CONTAINER__CATEGORIES:
+				getCategories().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -261,6 +284,8 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 				return getTimeUnit() != TIME_UNIT_EDEFAULT;
 			case CostsPackage.COSTS_CONTAINER__COSTS:
 				return !getCosts().isEmpty();
+			case CostsPackage.COSTS_CONTAINER__CATEGORIES:
+				return !getCategories().isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

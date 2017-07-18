@@ -55,6 +55,15 @@ public interface CostsFactory extends EFactory {
 	Cost createCost();
 
 	/**
+	 * Returns a new object of class '<em>Category</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Category</em>'.
+	 * @generated
+	 */
+	Category createCategory();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

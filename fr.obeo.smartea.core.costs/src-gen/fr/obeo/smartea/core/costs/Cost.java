@@ -33,8 +33,8 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link fr.obeo.smartea.core.costs.Cost#getRef <em>Ref</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.Cost#getCategory <em>Category</em>}</li>
  *   <li>{@link fr.obeo.smartea.core.costs.Cost#getValue <em>Value</em>}</li>
- *   <li>{@link fr.obeo.smartea.core.costs.Cost#getFrequency <em>Frequency</em>}</li>
  * </ul>
  *
  * @see fr.obeo.smartea.core.costs.CostsPackage#getCost()
@@ -96,30 +96,29 @@ public interface Cost extends Documentable, Identified, Nameable, CostElement, T
 	void setValue(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Frequency</b></em>' attribute.
-	 * The default value is <code>"1"</code>.
+	 * Returns the value of the '<em><b>Category</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Frequency</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Category</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Frequency</em>' attribute.
-	 * @see #setFrequency(int)
-	 * @see fr.obeo.smartea.core.costs.CostsPackage#getCost_Frequency()
-	 * @model default="1"
+	 * @return the value of the '<em>Category</em>' reference.
+	 * @see #setCategory(Category)
+	 * @see fr.obeo.smartea.core.costs.CostsPackage#getCost_Category()
+	 * @model
 	 * @generated
 	 */
-	int getFrequency();
+	Category getCategory();
 
 	/**
-	 * Sets the value of the '{@link fr.obeo.smartea.core.costs.Cost#getFrequency <em>Frequency</em>}' attribute.
+	 * Sets the value of the '{@link fr.obeo.smartea.core.costs.Cost#getCategory <em>Category</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Frequency</em>' attribute.
-	 * @see #getFrequency()
+	 * @param value the new value of the '<em>Category</em>' reference.
+	 * @see #getCategory()
 	 * @generated
 	 */
-	void setFrequency(int value);
+	void setCategory(Category value);
 
 } // Cost

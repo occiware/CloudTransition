@@ -20,6 +20,7 @@ package fr.obeo.smartea.core.costs.impl;
 import fr.obeo.smartea.core.basemm.BasePackage;
 import fr.obeo.smartea.core.basemm.Identified;
 import fr.obeo.smartea.core.basemm.Nameable;
+import fr.obeo.smartea.core.costs.Category;
 import fr.obeo.smartea.core.costs.Cost;
 import fr.obeo.smartea.core.costs.CostElement;
 import fr.obeo.smartea.core.costs.CostsPackage;
@@ -43,8 +44,8 @@ import org.eclipse.emf.internal.cdo.CDOObjectImpl;
  *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getCurrency <em>Currency</em>}</li>
  *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getTimeUnit <em>Time Unit</em>}</li>
  *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getRef <em>Ref</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getCategory <em>Category</em>}</li>
  *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getValue <em>Value</em>}</li>
- *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getFrequency <em>Frequency</em>}</li>
  * </ul>
  *
  * @generated
@@ -109,16 +110,6 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 	 * @ordered
 	 */
 	protected static final int VALUE_EDEFAULT = 1;
-
-	/**
-	 * The default value of the '{@link #getFrequency() <em>Frequency</em>}' attribute.
-	 * <!-- begin-user-doc
-	 * --> <!-- end-user-doc -->
-	 * @see #getFrequency()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final int FREQUENCY_EDEFAULT = 1;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -269,19 +260,30 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public int getFrequency() {
-		return (Integer)eDynamicGet(CostsPackage.COST__FREQUENCY, CostsPackage.Literals.COST__FREQUENCY, true, true);
+	public Category getCategory() {
+		return (Category)eDynamicGet(CostsPackage.COST__CATEGORY, CostsPackage.Literals.COST__CATEGORY, true, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setFrequency(int newFrequency) {
-		eDynamicSet(CostsPackage.COST__FREQUENCY, CostsPackage.Literals.COST__FREQUENCY, newFrequency);
+	public Category basicGetCategory() {
+		return (Category)eDynamicGet(CostsPackage.COST__CATEGORY, CostsPackage.Literals.COST__CATEGORY, false, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setCategory(Category newCategory) {
+		eDynamicSet(CostsPackage.COST__CATEGORY, CostsPackage.Literals.COST__CATEGORY, newCategory);
 	}
 
 	/**
@@ -304,10 +306,11 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 			case CostsPackage.COST__REF:
 				if (resolve) return getRef();
 				return basicGetRef();
+			case CostsPackage.COST__CATEGORY:
+				if (resolve) return getCategory();
+				return basicGetCategory();
 			case CostsPackage.COST__VALUE:
 				return getValue();
-			case CostsPackage.COST__FREQUENCY:
-				return getFrequency();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -337,11 +340,11 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 			case CostsPackage.COST__REF:
 				setRef((EObject)newValue);
 				return;
+			case CostsPackage.COST__CATEGORY:
+				setCategory((Category)newValue);
+				return;
 			case CostsPackage.COST__VALUE:
 				setValue((Integer)newValue);
-				return;
-			case CostsPackage.COST__FREQUENCY:
-				setFrequency((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -372,11 +375,11 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 			case CostsPackage.COST__REF:
 				setRef((EObject)null);
 				return;
+			case CostsPackage.COST__CATEGORY:
+				setCategory((Category)null);
+				return;
 			case CostsPackage.COST__VALUE:
 				setValue(VALUE_EDEFAULT);
-				return;
-			case CostsPackage.COST__FREQUENCY:
-				setFrequency(FREQUENCY_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -401,10 +404,10 @@ public class CostImpl extends CDOObjectImpl implements Cost {
 				return getTimeUnit() != TIME_UNIT_EDEFAULT;
 			case CostsPackage.COST__REF:
 				return basicGetRef() != null;
+			case CostsPackage.COST__CATEGORY:
+				return basicGetCategory() != null;
 			case CostsPackage.COST__VALUE:
 				return getValue() != VALUE_EDEFAULT;
-			case CostsPackage.COST__FREQUENCY:
-				return getFrequency() != FREQUENCY_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

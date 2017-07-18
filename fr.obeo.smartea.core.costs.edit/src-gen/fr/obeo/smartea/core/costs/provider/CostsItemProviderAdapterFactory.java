@@ -133,6 +133,29 @@ public class CostsItemProviderAdapterFactory extends CostsAdapterFactory impleme
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link fr.obeo.smartea.core.costs.Category} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected CategoryItemProvider categoryItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link fr.obeo.smartea.core.costs.Category}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createCategoryAdapter() {
+		if (categoryItemProvider == null) {
+			categoryItemProvider = new CategoryItemProvider(this);
+		}
+
+		return categoryItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -233,6 +256,7 @@ public class CostsItemProviderAdapterFactory extends CostsAdapterFactory impleme
 	public void dispose() {
 		if (costsContainerItemProvider != null) costsContainerItemProvider.dispose();
 		if (costItemProvider != null) costItemProvider.dispose();
+		if (categoryItemProvider != null) categoryItemProvider.dispose();
 	}
 
 }

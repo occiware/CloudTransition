@@ -18,9 +18,10 @@
 package fr.obeo.smartea.core.costs.provider;
 
 
+import fr.obeo.smartea.core.basemm.BasePackage;
+
+import fr.obeo.smartea.core.costs.Category;
 import fr.obeo.smartea.core.costs.CostsPackage;
-import fr.obeo.smartea.core.costs.TimeElement;
-import fr.obeo.smartea.core.costs.TimeUnit;
 
 import java.util.Collection;
 import java.util.List;
@@ -42,12 +43,12 @@ import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
- * This is the item provider adapter for a {@link fr.obeo.smartea.core.costs.TimeElement} object.
+ * This is the item provider adapter for a {@link fr.obeo.smartea.core.costs.Category} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class TimeElementItemProvider 
+public class CategoryItemProvider 
 	extends ItemProviderAdapter
 	implements
 		IEditingDomainItemProvider,
@@ -61,7 +62,7 @@ public class TimeElementItemProvider
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimeElementItemProvider(AdapterFactory adapterFactory) {
+	public CategoryItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -76,25 +77,71 @@ public class TimeElementItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addTimeUnitPropertyDescriptor(object);
+			addDocumentationPropertyDescriptor(object);
+			addIdPropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Time Unit feature.
+	 * This adds a property descriptor for the Documentation feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addTimeUnitPropertyDescriptor(Object object) {
+	protected void addDocumentationPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_TimeElement_timeUnit_feature"), //$NON-NLS-1$
-				 getString("_UI_PropertyDescriptor_description", "_UI_TimeElement_timeUnit_feature", "_UI_TimeElement_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
-				 CostsPackage.Literals.TIME_ELEMENT__TIME_UNIT,
+				 getString("_UI_Documentable_documentation_feature"), //$NON-NLS-1$
+				 getString("_UI_PropertyDescriptor_description", "_UI_Documentable_documentation_feature", "_UI_Documentable_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+				 BasePackage.Literals.DOCUMENTABLE__DOCUMENTATION,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Id feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addIdPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Identified_id_feature"), //$NON-NLS-1$
+				 getString("_UI_PropertyDescriptor_description", "_UI_Identified_id_feature", "_UI_Identified_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+				 BasePackage.Literals.IDENTIFIED__ID,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Nameable_name_feature"), //$NON-NLS-1$
+				 getString("_UI_PropertyDescriptor_description", "_UI_Nameable_name_feature", "_UI_Nameable_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+				 BasePackage.Literals.NAMEABLE__NAME,
 				 true,
 				 false,
 				 false,
@@ -111,6 +158,17 @@ public class TimeElementItemProvider
 	@Override
 	public boolean hasChildren(Object object) {
 		return hasChildren(object, true);
+	}
+
+	/**
+	 * This returns Category.gif.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object getImage(Object object) {
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/Category")); //$NON-NLS-1$
 	}
 
 	/**
@@ -131,11 +189,10 @@ public class TimeElementItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		TimeUnit labelValue = ((TimeElement)object).getTimeUnit();
-		String label = labelValue == null ? null : labelValue.toString();
+		String label = ((Category)object).getName();
 		return label == null || label.length() == 0 ?
-			getString("_UI_TimeElement_type") : //$NON-NLS-1$
-			getString("_UI_TimeElement_type") + " " + label; //$NON-NLS-1$ //$NON-NLS-2$
+			getString("_UI_Category_type") : //$NON-NLS-1$
+			getString("_UI_Category_type") + " " + label; //$NON-NLS-1$ //$NON-NLS-2$
 	}
 	
 
@@ -150,8 +207,10 @@ public class TimeElementItemProvider
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(TimeElement.class)) {
-			case CostsPackage.TIME_ELEMENT__TIME_UNIT:
+		switch (notification.getFeatureID(Category.class)) {
+			case CostsPackage.CATEGORY__DOCUMENTATION:
+			case CostsPackage.CATEGORY__ID:
+			case CostsPackage.CATEGORY__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

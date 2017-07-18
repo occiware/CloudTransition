@@ -1,0 +1,2 @@
+Move the site.xml to a new folder before build.
+Otherwise artifacts/content.jar will be corrupted by old versions.

@@ -83,8 +83,8 @@ public class CostItemProvider
 			addCurrencyPropertyDescriptor(object);
 			addTimeUnitPropertyDescriptor(object);
 			addRefPropertyDescriptor(object);
+			addCategoryPropertyDescriptor(object);
 			addValuePropertyDescriptor(object);
-			addFrequencyPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -222,6 +222,28 @@ public class CostItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Category feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addCategoryPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Cost_category_feature"), //$NON-NLS-1$
+				 getString("_UI_PropertyDescriptor_description", "_UI_Cost_category_feature", "_UI_Cost_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+				 CostsPackage.Literals.COST__CATEGORY,
+				 true,
+				 false,
+				 false,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This adds a property descriptor for the Value feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -235,28 +257,6 @@ public class CostItemProvider
 				 getString("_UI_Cost_value_feature"), //$NON-NLS-1$
 				 getString("_UI_PropertyDescriptor_description", "_UI_Cost_value_feature", "_UI_Cost_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 				 CostsPackage.Literals.COST__VALUE,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Frequency feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addFrequencyPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Cost_frequency_feature"), //$NON-NLS-1$
-				 getString("_UI_PropertyDescriptor_description", "_UI_Cost_frequency_feature", "_UI_Cost_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
-				 CostsPackage.Literals.COST__FREQUENCY,
 				 true,
 				 false,
 				 false,
@@ -328,8 +328,8 @@ public class CostItemProvider
 			case CostsPackage.COST__NAME:
 			case CostsPackage.COST__CURRENCY:
 			case CostsPackage.COST__TIME_UNIT:
+			case CostsPackage.COST__CATEGORY:
 			case CostsPackage.COST__VALUE:
-			case CostsPackage.COST__FREQUENCY:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

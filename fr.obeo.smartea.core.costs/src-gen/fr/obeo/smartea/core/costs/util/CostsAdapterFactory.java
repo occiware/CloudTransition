@@ -103,6 +103,10 @@ public class CostsAdapterFactory extends AdapterFactoryImpl {
 				return createTimeElementAdapter();
 			}
 			@Override
+			public Adapter caseCategory(Category object) {
+				return createCategoryAdapter();
+			}
+			@Override
 			public Adapter caseIdentified(Identified object) {
 				return createIdentifiedAdapter();
 			}
@@ -187,6 +191,20 @@ public class CostsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createTimeElementAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link fr.obeo.smartea.core.costs.Category <em>Category</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see fr.obeo.smartea.core.costs.Category
+	 * @generated
+	 */
+	public Adapter createCategoryAdapter() {
 		return null;
 	}
 
