@@ -91,20 +91,28 @@ public class CostsAdapterFactory extends AdapterFactoryImpl {
 				return createCostsContainerAdapter();
 			}
 			@Override
+			public Adapter caseAbstractCost(AbstractCost object) {
+				return createAbstractCostAdapter();
+			}
+			@Override
+			public Adapter caseInitialCost(InitialCost object) {
+				return createInitialCostAdapter();
+			}
+			@Override
 			public Adapter caseCost(Cost object) {
 				return createCostAdapter();
 			}
 			@Override
-			public Adapter caseCostElement(CostElement object) {
-				return createCostElementAdapter();
+			public Adapter caseIssue(Issue object) {
+				return createIssueAdapter();
+			}
+			@Override
+			public Adapter caseCurrencyElement(CurrencyElement object) {
+				return createCurrencyElementAdapter();
 			}
 			@Override
 			public Adapter caseTimeElement(TimeElement object) {
 				return createTimeElementAdapter();
-			}
-			@Override
-			public Adapter caseCategory(Category object) {
-				return createCategoryAdapter();
 			}
 			@Override
 			public Adapter caseIdentified(Identified object) {
@@ -153,6 +161,34 @@ public class CostsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link fr.obeo.smartea.core.costs.AbstractCost <em>Abstract Cost</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see fr.obeo.smartea.core.costs.AbstractCost
+	 * @generated
+	 */
+	public Adapter createAbstractCostAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link fr.obeo.smartea.core.costs.InitialCost <em>Initial Cost</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see fr.obeo.smartea.core.costs.InitialCost
+	 * @generated
+	 */
+	public Adapter createInitialCostAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link fr.obeo.smartea.core.costs.Cost <em>Cost</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -167,16 +203,30 @@ public class CostsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.obeo.smartea.core.costs.CostElement <em>Cost Element</em>}'.
+	 * Creates a new adapter for an object of class '{@link fr.obeo.smartea.core.costs.Issue <em>Issue</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see fr.obeo.smartea.core.costs.CostElement
+	 * @see fr.obeo.smartea.core.costs.Issue
 	 * @generated
 	 */
-	public Adapter createCostElementAdapter() {
+	public Adapter createIssueAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link fr.obeo.smartea.core.costs.CurrencyElement <em>Currency Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see fr.obeo.smartea.core.costs.CurrencyElement
+	 * @generated
+	 */
+	public Adapter createCurrencyElementAdapter() {
 		return null;
 	}
 
@@ -191,20 +241,6 @@ public class CostsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createTimeElementAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link fr.obeo.smartea.core.costs.Category <em>Category</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see fr.obeo.smartea.core.costs.Category
-	 * @generated
-	 */
-	public Adapter createCategoryAdapter() {
 		return null;
 	}
 

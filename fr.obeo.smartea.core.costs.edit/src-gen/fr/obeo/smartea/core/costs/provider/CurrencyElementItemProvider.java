@@ -18,10 +18,8 @@
 package fr.obeo.smartea.core.costs.provider;
 
 
-import fr.obeo.smartea.core.basemm.BasePackage;
-
-import fr.obeo.smartea.core.costs.Category;
 import fr.obeo.smartea.core.costs.CostsPackage;
+import fr.obeo.smartea.core.costs.CurrencyElement;
 
 import java.util.Collection;
 import java.util.List;
@@ -43,12 +41,12 @@ import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
- * This is the item provider adapter for a {@link fr.obeo.smartea.core.costs.Category} object.
+ * This is the item provider adapter for a {@link fr.obeo.smartea.core.costs.CurrencyElement} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class CategoryItemProvider 
+public class CurrencyElementItemProvider 
 	extends ItemProviderAdapter
 	implements
 		IEditingDomainItemProvider,
@@ -62,7 +60,7 @@ public class CategoryItemProvider
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CategoryItemProvider(AdapterFactory adapterFactory) {
+	public CurrencyElementItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -77,71 +75,25 @@ public class CategoryItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addDocumentationPropertyDescriptor(object);
-			addIdPropertyDescriptor(object);
-			addNamePropertyDescriptor(object);
+			addCurrencyPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Documentation feature.
+	 * This adds a property descriptor for the Currency feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addDocumentationPropertyDescriptor(Object object) {
+	protected void addCurrencyPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Documentable_documentation_feature"), //$NON-NLS-1$
-				 getString("_UI_PropertyDescriptor_description", "_UI_Documentable_documentation_feature", "_UI_Documentable_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
-				 BasePackage.Literals.DOCUMENTABLE__DOCUMENTATION,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Id feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addIdPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Identified_id_feature"), //$NON-NLS-1$
-				 getString("_UI_PropertyDescriptor_description", "_UI_Identified_id_feature", "_UI_Identified_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
-				 BasePackage.Literals.IDENTIFIED__ID,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Nameable_name_feature"), //$NON-NLS-1$
-				 getString("_UI_PropertyDescriptor_description", "_UI_Nameable_name_feature", "_UI_Nameable_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
-				 BasePackage.Literals.NAMEABLE__NAME,
+				 getString("_UI_CurrencyElement_currency_feature"), //$NON-NLS-1$
+				 getString("_UI_PropertyDescriptor_description", "_UI_CurrencyElement_currency_feature", "_UI_CurrencyElement_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+				 CostsPackage.Literals.CURRENCY_ELEMENT__CURRENCY,
 				 true,
 				 false,
 				 false,
@@ -161,17 +113,6 @@ public class CategoryItemProvider
 	}
 
 	/**
-	 * This returns Category.gif.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/Category")); //$NON-NLS-1$
-	}
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -185,14 +126,14 @@ public class CategoryItemProvider
 	 * This returns the label text for the adapted class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated NOT
+	 * @generated
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Category)object).getName();
+		String label = ((CurrencyElement)object).getCurrency();
 		return label == null || label.length() == 0 ?
-			getString("_UI_Category_type") : //$NON-NLS-1$
-			label; //$NON-NLS-1$ //$NON-NLS-2$
+			getString("_UI_CurrencyElement_type") : //$NON-NLS-1$
+			getString("_UI_CurrencyElement_type") + " " + label; //$NON-NLS-1$ //$NON-NLS-2$
 	}
 	
 
@@ -207,10 +148,8 @@ public class CategoryItemProvider
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(Category.class)) {
-			case CostsPackage.CATEGORY__DOCUMENTATION:
-			case CostsPackage.CATEGORY__ID:
-			case CostsPackage.CATEGORY__NAME:
+		switch (notification.getFeatureID(CurrencyElement.class)) {
+			case CostsPackage.CURRENCY_ELEMENT__CURRENCY:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

@@ -19,37 +19,32 @@ package fr.obeo.smartea.core.costs;
 
 public class Tester {
 
-	private static final String CATEGORY_1 = "First year";
-
-	private static Category cat;
-	static {
-		cat = CostsFactory.eINSTANCE.createCategory();
-		cat.setName(CATEGORY_1);
-	}
-
 	private static CostsContainer createModel() {
 		CostsContainer res = CostsFactory.eINSTANCE.createCostsContainer();
 		Cost cost1 = CostsFactory.eINSTANCE.createCost();
-		cost1.setValue(10000);
+		cost1.setValue(10);
 		cost1.setTimeUnit(TimeUnit.MONTH);
 		Cost cost2 = CostsFactory.eINSTANCE.createCost();
 		cost2.setValue(100);
 		cost1.setTimeUnit(TimeUnit.YEAR);
-		Cost cost3 = CostsFactory.eINSTANCE.createCost();
-		cost3.setValue(111);
+		InitialCost cost3 = CostsFactory.eINSTANCE.createInitialCost();
+		cost3.setValue(50);
 		cost3.setCurrency(CostUtils.EURO);
+		Issue cost4 = CostsFactory.eINSTANCE.createIssue();
+		cost4.setValue(5);
+		cost4.setTimeUnit(TimeUnit.MONTH);
+		cost4.setCount(6);
 
-		cost3.setCategory(cat);
 		res.getCosts().add(cost1);
 		res.getCosts().add(cost2);
 		res.getCosts().add(cost3);
+		res.getCosts().add(cost4);
 		return res;
 	}
 
 	public static void main(String[] args) {
 		CostsContainer model = createModel();
-		System.err.println(CostUtils.computeCosts(model));
-		System.err.println(CostUtils.computeCosts(model, cat));
+		System.err.println(CostUtils.computeRegularCosts(model));
 	}
 
 }

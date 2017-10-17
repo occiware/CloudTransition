@@ -17,27 +17,28 @@
  */
 package fr.obeo.smartea.core.costs.impl;
 
-import fr.obeo.smartea.core.costs.Cost;
 import fr.obeo.smartea.core.costs.CostsPackage;
+import fr.obeo.smartea.core.costs.Issue;
+
 import fr.obeo.smartea.core.costs.TimeElement;
 import fr.obeo.smartea.core.costs.TimeUnit;
-
 import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Cost</b></em>'.
+ * An implementation of the model object '<em><b>Issue</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link fr.obeo.smartea.core.costs.impl.CostImpl#getTimeUnit <em>Time Unit</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.IssueImpl#getTimeUnit <em>Time Unit</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.IssueImpl#getCount <em>Count</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class CostImpl extends AbstractCostImpl implements Cost {
+public class IssueImpl extends AbstractCostImpl implements Issue {
 	/**
 	 * The default value of the '{@link #getTimeUnit() <em>Time Unit</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -47,13 +48,22 @@ public class CostImpl extends AbstractCostImpl implements Cost {
 	 * @ordered
 	 */
 	protected static final TimeUnit TIME_UNIT_EDEFAULT = TimeUnit.YEAR;
+	/**
+	 * The default value of the '{@link #getCount() <em>Count</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCount()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int COUNT_EDEFAULT = 0;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CostImpl() {
+	protected IssueImpl() {
 		super();
 	}
 
@@ -64,7 +74,7 @@ public class CostImpl extends AbstractCostImpl implements Cost {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return CostsPackage.Literals.COST;
+		return CostsPackage.Literals.ISSUE;
 	}
 
 	/**
@@ -73,7 +83,7 @@ public class CostImpl extends AbstractCostImpl implements Cost {
 	 * @generated
 	 */
 	public TimeUnit getTimeUnit() {
-		return (TimeUnit)eDynamicGet(CostsPackage.COST__TIME_UNIT, CostsPackage.Literals.TIME_ELEMENT__TIME_UNIT, true, true);
+		return (TimeUnit)eDynamicGet(CostsPackage.ISSUE__TIME_UNIT, CostsPackage.Literals.TIME_ELEMENT__TIME_UNIT, true, true);
 	}
 
 	/**
@@ -82,7 +92,25 @@ public class CostImpl extends AbstractCostImpl implements Cost {
 	 * @generated
 	 */
 	public void setTimeUnit(TimeUnit newTimeUnit) {
-		eDynamicSet(CostsPackage.COST__TIME_UNIT, CostsPackage.Literals.TIME_ELEMENT__TIME_UNIT, newTimeUnit);
+		eDynamicSet(CostsPackage.ISSUE__TIME_UNIT, CostsPackage.Literals.TIME_ELEMENT__TIME_UNIT, newTimeUnit);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getCount() {
+		return (Integer)eDynamicGet(CostsPackage.ISSUE__COUNT, CostsPackage.Literals.ISSUE__COUNT, true, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setCount(int newCount) {
+		eDynamicSet(CostsPackage.ISSUE__COUNT, CostsPackage.Literals.ISSUE__COUNT, newCount);
 	}
 
 	/**
@@ -93,8 +121,10 @@ public class CostImpl extends AbstractCostImpl implements Cost {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case CostsPackage.COST__TIME_UNIT:
+			case CostsPackage.ISSUE__TIME_UNIT:
 				return getTimeUnit();
+			case CostsPackage.ISSUE__COUNT:
+				return getCount();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -107,8 +137,11 @@ public class CostImpl extends AbstractCostImpl implements Cost {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case CostsPackage.COST__TIME_UNIT:
+			case CostsPackage.ISSUE__TIME_UNIT:
 				setTimeUnit((TimeUnit)newValue);
+				return;
+			case CostsPackage.ISSUE__COUNT:
+				setCount((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -122,8 +155,11 @@ public class CostImpl extends AbstractCostImpl implements Cost {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case CostsPackage.COST__TIME_UNIT:
+			case CostsPackage.ISSUE__TIME_UNIT:
 				setTimeUnit(TIME_UNIT_EDEFAULT);
+				return;
+			case CostsPackage.ISSUE__COUNT:
+				setCount(COUNT_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -137,8 +173,10 @@ public class CostImpl extends AbstractCostImpl implements Cost {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case CostsPackage.COST__TIME_UNIT:
+			case CostsPackage.ISSUE__TIME_UNIT:
 				return getTimeUnit() != TIME_UNIT_EDEFAULT;
+			case CostsPackage.ISSUE__COUNT:
+				return getCount() != COUNT_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -152,7 +190,7 @@ public class CostImpl extends AbstractCostImpl implements Cost {
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
 		if (baseClass == TimeElement.class) {
 			switch (derivedFeatureID) {
-				case CostsPackage.COST__TIME_UNIT: return CostsPackage.TIME_ELEMENT__TIME_UNIT;
+				case CostsPackage.ISSUE__TIME_UNIT: return CostsPackage.TIME_ELEMENT__TIME_UNIT;
 				default: return -1;
 			}
 		}
@@ -168,11 +206,11 @@ public class CostImpl extends AbstractCostImpl implements Cost {
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
 		if (baseClass == TimeElement.class) {
 			switch (baseFeatureID) {
-				case CostsPackage.TIME_ELEMENT__TIME_UNIT: return CostsPackage.COST__TIME_UNIT;
+				case CostsPackage.TIME_ELEMENT__TIME_UNIT: return CostsPackage.ISSUE__TIME_UNIT;
 				default: return -1;
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
-} //CostImpl
+} //IssueImpl

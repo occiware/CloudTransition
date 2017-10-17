@@ -73,8 +73,9 @@ public class CostsFactoryImpl extends EFactoryImpl implements CostsFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case CostsPackage.COSTS_CONTAINER: return (EObject)createCostsContainer();
+			case CostsPackage.INITIAL_COST: return (EObject)createInitialCost();
 			case CostsPackage.COST: return (EObject)createCost();
-			case CostsPackage.CATEGORY: return (EObject)createCategory();
+			case CostsPackage.ISSUE: return (EObject)createIssue();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier"); //$NON-NLS-1$ //$NON-NLS-2$
 		}
@@ -125,6 +126,16 @@ public class CostsFactoryImpl extends EFactoryImpl implements CostsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public InitialCost createInitialCost() {
+		InitialCostImpl initialCost = new InitialCostImpl();
+		return initialCost;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Cost createCost() {
 		CostImpl cost = new CostImpl();
 		return cost;
@@ -135,9 +146,9 @@ public class CostsFactoryImpl extends EFactoryImpl implements CostsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Category createCategory() {
-		CategoryImpl category = new CategoryImpl();
-		return category;
+	public Issue createIssue() {
+		IssueImpl issue = new IssueImpl();
+		return issue;
 	}
 
 	/**

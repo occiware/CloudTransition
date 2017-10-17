@@ -17,8 +17,8 @@
  */
 package fr.obeo.smartea.core.costs.impl;
 
-import fr.obeo.smartea.core.costs.CostElement;
 import fr.obeo.smartea.core.costs.CostsPackage;
+import fr.obeo.smartea.core.costs.CurrencyElement;
 
 import org.eclipse.emf.ecore.EClass;
 
@@ -26,18 +26,18 @@ import org.eclipse.emf.internal.cdo.CDOObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Cost Element</b></em>'.
+ * An implementation of the model object '<em><b>Currency Element</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link fr.obeo.smartea.core.costs.impl.CostElementImpl#getCurrency <em>Currency</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.CurrencyElementImpl#getCurrency <em>Currency</em>}</li>
  * </ul>
  *
  * @generated
  */
-public abstract class CostElementImpl extends CDOObjectImpl implements CostElement {
+public abstract class CurrencyElementImpl extends CDOObjectImpl implements CurrencyElement {
 	/**
 	 * The default value of the '{@link #getCurrency() <em>Currency</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -53,7 +53,7 @@ public abstract class CostElementImpl extends CDOObjectImpl implements CostEleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CostElementImpl() {
+	protected CurrencyElementImpl() {
 		super();
 	}
 
@@ -64,7 +64,7 @@ public abstract class CostElementImpl extends CDOObjectImpl implements CostEleme
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return CostsPackage.Literals.COST_ELEMENT;
+		return CostsPackage.Literals.CURRENCY_ELEMENT;
 	}
 
 	/**
@@ -83,7 +83,7 @@ public abstract class CostElementImpl extends CDOObjectImpl implements CostEleme
 	 * @generated
 	 */
 	public String getCurrency() {
-		return (String)eDynamicGet(CostsPackage.COST_ELEMENT__CURRENCY, CostsPackage.Literals.COST_ELEMENT__CURRENCY, true, true);
+		return (String)eDynamicGet(CostsPackage.CURRENCY_ELEMENT__CURRENCY, CostsPackage.Literals.CURRENCY_ELEMENT__CURRENCY, true, true);
 	}
 
 	/**
@@ -92,7 +92,7 @@ public abstract class CostElementImpl extends CDOObjectImpl implements CostEleme
 	 * @generated
 	 */
 	public void setCurrency(String newCurrency) {
-		eDynamicSet(CostsPackage.COST_ELEMENT__CURRENCY, CostsPackage.Literals.COST_ELEMENT__CURRENCY, newCurrency);
+		eDynamicSet(CostsPackage.CURRENCY_ELEMENT__CURRENCY, CostsPackage.Literals.CURRENCY_ELEMENT__CURRENCY, newCurrency);
 	}
 
 	/**
@@ -103,7 +103,7 @@ public abstract class CostElementImpl extends CDOObjectImpl implements CostEleme
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case CostsPackage.COST_ELEMENT__CURRENCY:
+			case CostsPackage.CURRENCY_ELEMENT__CURRENCY:
 				return getCurrency();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -117,7 +117,7 @@ public abstract class CostElementImpl extends CDOObjectImpl implements CostEleme
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case CostsPackage.COST_ELEMENT__CURRENCY:
+			case CostsPackage.CURRENCY_ELEMENT__CURRENCY:
 				setCurrency((String)newValue);
 				return;
 		}
@@ -132,7 +132,7 @@ public abstract class CostElementImpl extends CDOObjectImpl implements CostEleme
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case CostsPackage.COST_ELEMENT__CURRENCY:
+			case CostsPackage.CURRENCY_ELEMENT__CURRENCY:
 				setCurrency(CURRENCY_EDEFAULT);
 				return;
 		}
@@ -147,10 +147,10 @@ public abstract class CostElementImpl extends CDOObjectImpl implements CostEleme
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case CostsPackage.COST_ELEMENT__CURRENCY:
+			case CostsPackage.CURRENCY_ELEMENT__CURRENCY:
 				return CURRENCY_EDEFAULT == null ? getCurrency() != null : !CURRENCY_EDEFAULT.equals(getCurrency());
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //CostElementImpl
+} //CurrencyElementImpl

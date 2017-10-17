@@ -3,30 +3,21 @@
   <ownedViewpoints name="costs">
     <ownedRepresentations xsi:type="description_1:EditionTableDescription" name="costs_table" label="Costs Table" domainClass="costs.CostsContainer">
       <metamodel href="http://www.obeo.fr/smartea/costs/2.0.0#/"/>
-      <ownedLineMappings name="cost" label="Cost" domainClass="costs.Cost" headerLabelExpression="feature:name">
-        <backgroundConditionalStyle predicateExpression="aql:self.category != null">
-          <style>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
-          </style>
-        </backgroundConditionalStyle>
-      </ownedLineMappings>
+      <ownedLineMappings name="cost" label="Cost" domainClass="costs.Cost" headerLabelExpression="feature:name"/>
+      <ownedLineMappings name="initialCost" label="Cost" domainClass="costs.InitialCost" headerLabelExpression="feature:name"/>
+      <ownedLineMappings name="issue" label="Cost" domainClass="costs.Issue" headerLabelExpression="feature:name"/>
       <ownedLineMappings name="Total" domainClass="CostsContainer" semanticCandidatesExpression="var:container" headerLabelExpression="Total">
         <defaultBackground>
           <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
         </defaultBackground>
       </ownedLineMappings>
-      <ownedLineMappings name="CategoryTotal" domainClass="costs.Category" headerLabelExpression="feature:name">
-        <defaultBackground>
-          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
-        </defaultBackground>
-      </ownedLineMappings>
       <ownedColumnMappings name="ref" headerLabelExpression="Attached to" featureName="ref"/>
-      <ownedColumnMappings name="documentation" headerLabelExpression="Documentation" featureName="documentation" labelExpression="feature:documentation"/>
-      <ownedColumnMappings name="category" headerLabelExpression="Category" featureName="category"/>
+      <ownedColumnMappings name="count" headerLabelExpression="Count" featureName="count"/>
       <ownedColumnMappings name="value" headerLabelExpression="Value" featureName="value"/>
+      <ownedColumnMappings name="cost" headerLabelExpression="Cost (in common currency)" featureName="id" labelExpression="service:computeCost()"/>
       <ownedColumnMappings name="currency" headerLabelExpression="Currency" featureName="currency"/>
       <ownedColumnMappings name="timeUnit" headerLabelExpression="Time Unit" featureName="timeUnit"/>
-      <ownedColumnMappings name="cost" headerLabelExpression="Cost (in common currency)" featureName="id" labelExpression="service:computeCost()"/>
+      <ownedColumnMappings name="documentation" headerLabelExpression="Documentation" featureName="documentation" labelExpression="feature:documentation"/>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="fr.obeo.smartea.core.costs.design.DesignServices"/>
   </ownedViewpoints>

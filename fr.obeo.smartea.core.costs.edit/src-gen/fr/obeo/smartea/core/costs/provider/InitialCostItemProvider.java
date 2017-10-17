@@ -18,8 +18,7 @@
 package fr.obeo.smartea.core.costs.provider;
 
 
-import fr.obeo.smartea.core.costs.CostElement;
-import fr.obeo.smartea.core.costs.CostsPackage;
+import fr.obeo.smartea.core.costs.InitialCost;
 
 import java.util.Collection;
 import java.util.List;
@@ -27,40 +26,22 @@ import java.util.List;
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
-import org.eclipse.emf.common.util.ResourceLocator;
-
-import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
-import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
-import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.IItemPropertySource;
-import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
-import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
-import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ItemProviderAdapter;
-import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
- * This is the item provider adapter for a {@link fr.obeo.smartea.core.costs.CostElement} object.
+ * This is the item provider adapter for a {@link fr.obeo.smartea.core.costs.InitialCost} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class CostElementItemProvider 
-	extends ItemProviderAdapter
-	implements
-		IEditingDomainItemProvider,
-		IStructuredItemContentProvider,
-		ITreeItemContentProvider,
-		IItemLabelProvider,
-		IItemPropertySource {
+public class InitialCostItemProvider extends AbstractCostItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CostElementItemProvider(AdapterFactory adapterFactory) {
+	public InitialCostItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -75,41 +56,19 @@ public class CostElementItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addCurrencyPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Currency feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addCurrencyPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_CostElement_currency_feature"), //$NON-NLS-1$
-				 getString("_UI_PropertyDescriptor_description", "_UI_CostElement_currency_feature", "_UI_CostElement_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
-				 CostsPackage.Literals.COST_ELEMENT__CURRENCY,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
+	 * This returns InitialCost.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean hasChildren(Object object) {
-		return hasChildren(object, true);
+	public Object getImage(Object object) {
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/InitialCost")); //$NON-NLS-1$
 	}
 
 	/**
@@ -130,10 +89,10 @@ public class CostElementItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((CostElement)object).getCurrency();
+		String label = ((InitialCost)object).getName();
 		return label == null || label.length() == 0 ?
-			getString("_UI_CostElement_type") : //$NON-NLS-1$
-			getString("_UI_CostElement_type") + " " + label; //$NON-NLS-1$ //$NON-NLS-2$
+			getString("_UI_InitialCost_type") : //$NON-NLS-1$
+			getString("_UI_InitialCost_type") + " " + label; //$NON-NLS-1$ //$NON-NLS-2$
 	}
 	
 
@@ -147,12 +106,6 @@ public class CostElementItemProvider
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
-
-		switch (notification.getFeatureID(CostElement.class)) {
-			case CostsPackage.COST_ELEMENT__CURRENCY:
-				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-				return;
-		}
 		super.notifyChanged(notification);
 	}
 
@@ -166,17 +119,6 @@ public class CostElementItemProvider
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-	}
-
-	/**
-	 * Return the resource locator for this item provider's resources.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ResourceLocator getResourceLocator() {
-		return CostsEditPlugin.INSTANCE;
 	}
 
 }

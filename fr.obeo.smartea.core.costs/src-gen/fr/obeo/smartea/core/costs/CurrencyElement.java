@@ -17,41 +17,51 @@
  */
 package fr.obeo.smartea.core.costs;
 
-import fr.obeo.smartea.core.basemm.Identified;
-
-import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.cdo.CDOObject;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Container</b></em>'.
+ * A representation of the model object '<em><b>Currency Element</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link fr.obeo.smartea.core.costs.CostsContainer#getCosts <em>Costs</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.CurrencyElement#getCurrency <em>Currency</em>}</li>
  * </ul>
  *
- * @see fr.obeo.smartea.core.costs.CostsPackage#getCostsContainer()
- * @model
+ * @see fr.obeo.smartea.core.costs.CostsPackage#getCurrencyElement()
+ * @model abstract="true"
+ * @extends CDOObject
  * @generated
  */
-public interface CostsContainer extends Identified, CurrencyElement, TimeElement {
+public interface CurrencyElement extends CDOObject {
 	/**
-	 * Returns the value of the '<em><b>Costs</b></em>' containment reference list.
-	 * The list contents are of type {@link fr.obeo.smartea.core.costs.AbstractCost}.
+	 * Returns the value of the '<em><b>Currency</b></em>' attribute.
+	 * The default value is <code>"euro"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Costs</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Currency</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Costs</em>' containment reference list.
-	 * @see fr.obeo.smartea.core.costs.CostsPackage#getCostsContainer_Costs()
-	 * @model containment="true"
+	 * @return the value of the '<em>Currency</em>' attribute.
+	 * @see #setCurrency(String)
+	 * @see fr.obeo.smartea.core.costs.CostsPackage#getCurrencyElement_Currency()
+	 * @model default="euro" required="true"
 	 * @generated
 	 */
-	EList<AbstractCost> getCosts();
+	String getCurrency();
 
-} // CostsContainer
+	/**
+	 * Sets the value of the '{@link fr.obeo.smartea.core.costs.CurrencyElement#getCurrency <em>Currency</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Currency</em>' attribute.
+	 * @see #getCurrency()
+	 * @generated
+	 */
+	void setCurrency(String value);
+
+} // CurrencyElement

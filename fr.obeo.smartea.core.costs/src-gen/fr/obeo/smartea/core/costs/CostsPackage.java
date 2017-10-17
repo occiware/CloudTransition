@@ -120,22 +120,159 @@ public interface CostsPackage extends EPackage {
 	int COSTS_CONTAINER__COSTS = BasePackage.IDENTIFIED_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>Categories</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COSTS_CONTAINER__CATEGORIES = BasePackage.IDENTIFIED_FEATURE_COUNT + 3;
-
-	/**
 	 * The number of structural features of the '<em>Container</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COSTS_CONTAINER_FEATURE_COUNT = BasePackage.IDENTIFIED_FEATURE_COUNT + 4;
+	int COSTS_CONTAINER_FEATURE_COUNT = BasePackage.IDENTIFIED_FEATURE_COUNT + 3;
+
+	/**
+	 * The meta object id for the '{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl <em>Abstract Cost</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see fr.obeo.smartea.core.costs.impl.AbstractCostImpl
+	 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getAbstractCost()
+	 * @generated
+	 */
+	int ABSTRACT_COST = 1;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABSTRACT_COST__DOCUMENTATION = BasePackage.DOCUMENTABLE__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABSTRACT_COST__ID = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABSTRACT_COST__NAME = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Currency</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABSTRACT_COST__CURRENCY = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Ref</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABSTRACT_COST__REF = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABSTRACT_COST__VALUE = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Abstract Cost</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABSTRACT_COST_FEATURE_COUNT = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 5;
+
+	/**
+	 * The meta object id for the '{@link fr.obeo.smartea.core.costs.impl.InitialCostImpl <em>Initial Cost</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see fr.obeo.smartea.core.costs.impl.InitialCostImpl
+	 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getInitialCost()
+	 * @generated
+	 */
+	int INITIAL_COST = 2;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITIAL_COST__DOCUMENTATION = ABSTRACT_COST__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITIAL_COST__ID = ABSTRACT_COST__ID;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITIAL_COST__NAME = ABSTRACT_COST__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Currency</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITIAL_COST__CURRENCY = ABSTRACT_COST__CURRENCY;
+
+	/**
+	 * The feature id for the '<em><b>Ref</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITIAL_COST__REF = ABSTRACT_COST__REF;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITIAL_COST__VALUE = ABSTRACT_COST__VALUE;
+
+	/**
+	 * The number of structural features of the '<em>Initial Cost</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITIAL_COST_FEATURE_COUNT = ABSTRACT_COST_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link fr.obeo.smartea.core.costs.impl.CostImpl <em>Cost</em>}' class.
@@ -145,7 +282,7 @@ public interface CostsPackage extends EPackage {
 	 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getCost()
 	 * @generated
 	 */
-	int COST = 1;
+	int COST = 3;
 
 	/**
 	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
@@ -154,7 +291,7 @@ public interface CostsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST__DOCUMENTATION = BasePackage.DOCUMENTABLE__DOCUMENTATION;
+	int COST__DOCUMENTATION = ABSTRACT_COST__DOCUMENTATION;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -163,7 +300,7 @@ public interface CostsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST__ID = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 0;
+	int COST__ID = ABSTRACT_COST__ID;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -172,7 +309,7 @@ public interface CostsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST__NAME = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 1;
+	int COST__NAME = ABSTRACT_COST__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Currency</b></em>' attribute.
@@ -181,16 +318,7 @@ public interface CostsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST__CURRENCY = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Time Unit</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COST__TIME_UNIT = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 3;
+	int COST__CURRENCY = ABSTRACT_COST__CURRENCY;
 
 	/**
 	 * The feature id for the '<em><b>Ref</b></em>' reference.
@@ -199,16 +327,7 @@ public interface CostsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST__REF = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Category</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COST__CATEGORY = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 5;
+	int COST__REF = ABSTRACT_COST__REF;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -217,7 +336,16 @@ public interface CostsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST__VALUE = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 6;
+	int COST__VALUE = ABSTRACT_COST__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Time Unit</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__TIME_UNIT = ABSTRACT_COST_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Cost</em>' class.
@@ -226,17 +354,44 @@ public interface CostsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_FEATURE_COUNT = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 7;
+	int COST_FEATURE_COUNT = ABSTRACT_COST_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link fr.obeo.smartea.core.costs.impl.CostElementImpl <em>Cost Element</em>}' class.
+	 * The meta object id for the '{@link fr.obeo.smartea.core.costs.impl.IssueImpl <em>Issue</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see fr.obeo.smartea.core.costs.impl.CostElementImpl
-	 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getCostElement()
+	 * @see fr.obeo.smartea.core.costs.impl.IssueImpl
+	 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getIssue()
 	 * @generated
 	 */
-	int COST_ELEMENT = 2;
+	int ISSUE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ISSUE__DOCUMENTATION = ABSTRACT_COST__DOCUMENTATION;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ISSUE__ID = ABSTRACT_COST__ID;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ISSUE__NAME = ABSTRACT_COST__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Currency</b></em>' attribute.
@@ -245,16 +400,80 @@ public interface CostsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_ELEMENT__CURRENCY = 0;
+	int ISSUE__CURRENCY = ABSTRACT_COST__CURRENCY;
 
 	/**
-	 * The number of structural features of the '<em>Cost Element</em>' class.
+	 * The feature id for the '<em><b>Ref</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COST_ELEMENT_FEATURE_COUNT = 1;
+	int ISSUE__REF = ABSTRACT_COST__REF;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ISSUE__VALUE = ABSTRACT_COST__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Time Unit</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ISSUE__TIME_UNIT = ABSTRACT_COST_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Count</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ISSUE__COUNT = ABSTRACT_COST_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Issue</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ISSUE_FEATURE_COUNT = ABSTRACT_COST_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link fr.obeo.smartea.core.costs.impl.CurrencyElementImpl <em>Currency Element</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see fr.obeo.smartea.core.costs.impl.CurrencyElementImpl
+	 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getCurrencyElement()
+	 * @generated
+	 */
+	int CURRENCY_ELEMENT = 5;
+
+	/**
+	 * The feature id for the '<em><b>Currency</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CURRENCY_ELEMENT__CURRENCY = 0;
+
+	/**
+	 * The number of structural features of the '<em>Currency Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CURRENCY_ELEMENT_FEATURE_COUNT = 1;
 
 	/**
 	 * The meta object id for the '{@link fr.obeo.smartea.core.costs.impl.TimeElementImpl <em>Time Element</em>}' class.
@@ -264,7 +483,7 @@ public interface CostsPackage extends EPackage {
 	 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getTimeElement()
 	 * @generated
 	 */
-	int TIME_ELEMENT = 3;
+	int TIME_ELEMENT = 6;
 
 	/**
 	 * The feature id for the '<em><b>Time Unit</b></em>' attribute.
@@ -285,52 +504,6 @@ public interface CostsPackage extends EPackage {
 	int TIME_ELEMENT_FEATURE_COUNT = 1;
 
 	/**
-	 * The meta object id for the '{@link fr.obeo.smartea.core.costs.impl.CategoryImpl <em>Category</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see fr.obeo.smartea.core.costs.impl.CategoryImpl
-	 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getCategory()
-	 * @generated
-	 */
-	int CATEGORY = 4;
-
-	/**
-	 * The feature id for the '<em><b>Documentation</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CATEGORY__DOCUMENTATION = BasePackage.DOCUMENTABLE__DOCUMENTATION;
-
-	/**
-	 * The feature id for the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CATEGORY__ID = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CATEGORY__NAME = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Category</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CATEGORY_FEATURE_COUNT = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 2;
-
-	/**
 	 * The meta object id for the '{@link fr.obeo.smartea.core.costs.TimeUnit <em>Time Unit</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -338,7 +511,7 @@ public interface CostsPackage extends EPackage {
 	 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getTimeUnit()
 	 * @generated
 	 */
-	int TIME_UNIT = 5;
+	int TIME_UNIT = 7;
 
 
 	/**
@@ -363,15 +536,46 @@ public interface CostsPackage extends EPackage {
 	EReference getCostsContainer_Costs();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link fr.obeo.smartea.core.costs.CostsContainer#getCategories <em>Categories</em>}'.
+	 * Returns the meta object for class '{@link fr.obeo.smartea.core.costs.AbstractCost <em>Abstract Cost</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Categories</em>'.
-	 * @see fr.obeo.smartea.core.costs.CostsContainer#getCategories()
-	 * @see #getCostsContainer()
+	 * @return the meta object for class '<em>Abstract Cost</em>'.
+	 * @see fr.obeo.smartea.core.costs.AbstractCost
 	 * @generated
 	 */
-	EReference getCostsContainer_Categories();
+	EClass getAbstractCost();
+
+	/**
+	 * Returns the meta object for the reference '{@link fr.obeo.smartea.core.costs.AbstractCost#getRef <em>Ref</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Ref</em>'.
+	 * @see fr.obeo.smartea.core.costs.AbstractCost#getRef()
+	 * @see #getAbstractCost()
+	 * @generated
+	 */
+	EReference getAbstractCost_Ref();
+
+	/**
+	 * Returns the meta object for the attribute '{@link fr.obeo.smartea.core.costs.AbstractCost#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see fr.obeo.smartea.core.costs.AbstractCost#getValue()
+	 * @see #getAbstractCost()
+	 * @generated
+	 */
+	EAttribute getAbstractCost_Value();
+
+	/**
+	 * Returns the meta object for class '{@link fr.obeo.smartea.core.costs.InitialCost <em>Initial Cost</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Initial Cost</em>'.
+	 * @see fr.obeo.smartea.core.costs.InitialCost
+	 * @generated
+	 */
+	EClass getInitialCost();
 
 	/**
 	 * Returns the meta object for class '{@link fr.obeo.smartea.core.costs.Cost <em>Cost</em>}'.
@@ -384,58 +588,46 @@ public interface CostsPackage extends EPackage {
 	EClass getCost();
 
 	/**
-	 * Returns the meta object for the reference '{@link fr.obeo.smartea.core.costs.Cost#getRef <em>Ref</em>}'.
+	 * Returns the meta object for class '{@link fr.obeo.smartea.core.costs.Issue <em>Issue</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Ref</em>'.
-	 * @see fr.obeo.smartea.core.costs.Cost#getRef()
-	 * @see #getCost()
+	 * @return the meta object for class '<em>Issue</em>'.
+	 * @see fr.obeo.smartea.core.costs.Issue
 	 * @generated
 	 */
-	EReference getCost_Ref();
+	EClass getIssue();
 
 	/**
-	 * Returns the meta object for the attribute '{@link fr.obeo.smartea.core.costs.Cost#getValue <em>Value</em>}'.
+	 * Returns the meta object for the attribute '{@link fr.obeo.smartea.core.costs.Issue#getCount <em>Count</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Value</em>'.
-	 * @see fr.obeo.smartea.core.costs.Cost#getValue()
-	 * @see #getCost()
+	 * @return the meta object for the attribute '<em>Count</em>'.
+	 * @see fr.obeo.smartea.core.costs.Issue#getCount()
+	 * @see #getIssue()
 	 * @generated
 	 */
-	EAttribute getCost_Value();
+	EAttribute getIssue_Count();
 
 	/**
-	 * Returns the meta object for the reference '{@link fr.obeo.smartea.core.costs.Cost#getCategory <em>Category</em>}'.
+	 * Returns the meta object for class '{@link fr.obeo.smartea.core.costs.CurrencyElement <em>Currency Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Category</em>'.
-	 * @see fr.obeo.smartea.core.costs.Cost#getCategory()
-	 * @see #getCost()
+	 * @return the meta object for class '<em>Currency Element</em>'.
+	 * @see fr.obeo.smartea.core.costs.CurrencyElement
 	 * @generated
 	 */
-	EReference getCost_Category();
+	EClass getCurrencyElement();
 
 	/**
-	 * Returns the meta object for class '{@link fr.obeo.smartea.core.costs.CostElement <em>Cost Element</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Cost Element</em>'.
-	 * @see fr.obeo.smartea.core.costs.CostElement
-	 * @generated
-	 */
-	EClass getCostElement();
-
-	/**
-	 * Returns the meta object for the attribute '{@link fr.obeo.smartea.core.costs.CostElement#getCurrency <em>Currency</em>}'.
+	 * Returns the meta object for the attribute '{@link fr.obeo.smartea.core.costs.CurrencyElement#getCurrency <em>Currency</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Currency</em>'.
-	 * @see fr.obeo.smartea.core.costs.CostElement#getCurrency()
-	 * @see #getCostElement()
+	 * @see fr.obeo.smartea.core.costs.CurrencyElement#getCurrency()
+	 * @see #getCurrencyElement()
 	 * @generated
 	 */
-	EAttribute getCostElement_Currency();
+	EAttribute getCurrencyElement_Currency();
 
 	/**
 	 * Returns the meta object for class '{@link fr.obeo.smartea.core.costs.TimeElement <em>Time Element</em>}'.
@@ -457,16 +649,6 @@ public interface CostsPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getTimeElement_TimeUnit();
-
-	/**
-	 * Returns the meta object for class '{@link fr.obeo.smartea.core.costs.Category <em>Category</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Category</em>'.
-	 * @see fr.obeo.smartea.core.costs.Category
-	 * @generated
-	 */
-	EClass getCategory();
 
 	/**
 	 * Returns the meta object for enum '{@link fr.obeo.smartea.core.costs.TimeUnit <em>Time Unit</em>}'.
@@ -519,12 +701,40 @@ public interface CostsPackage extends EPackage {
 		EReference COSTS_CONTAINER__COSTS = eINSTANCE.getCostsContainer_Costs();
 
 		/**
-		 * The meta object literal for the '<em><b>Categories</b></em>' containment reference list feature.
+		 * The meta object literal for the '{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl <em>Abstract Cost</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see fr.obeo.smartea.core.costs.impl.AbstractCostImpl
+		 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getAbstractCost()
+		 * @generated
+		 */
+		EClass ABSTRACT_COST = eINSTANCE.getAbstractCost();
+
+		/**
+		 * The meta object literal for the '<em><b>Ref</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference COSTS_CONTAINER__CATEGORIES = eINSTANCE.getCostsContainer_Categories();
+		EReference ABSTRACT_COST__REF = eINSTANCE.getAbstractCost_Ref();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ABSTRACT_COST__VALUE = eINSTANCE.getAbstractCost_Value();
+
+		/**
+		 * The meta object literal for the '{@link fr.obeo.smartea.core.costs.impl.InitialCostImpl <em>Initial Cost</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see fr.obeo.smartea.core.costs.impl.InitialCostImpl
+		 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getInitialCost()
+		 * @generated
+		 */
+		EClass INITIAL_COST = eINSTANCE.getInitialCost();
 
 		/**
 		 * The meta object literal for the '{@link fr.obeo.smartea.core.costs.impl.CostImpl <em>Cost</em>}' class.
@@ -537,38 +747,32 @@ public interface CostsPackage extends EPackage {
 		EClass COST = eINSTANCE.getCost();
 
 		/**
-		 * The meta object literal for the '<em><b>Ref</b></em>' reference feature.
+		 * The meta object literal for the '{@link fr.obeo.smartea.core.costs.impl.IssueImpl <em>Issue</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see fr.obeo.smartea.core.costs.impl.IssueImpl
+		 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getIssue()
 		 * @generated
 		 */
-		EReference COST__REF = eINSTANCE.getCost_Ref();
+		EClass ISSUE = eINSTANCE.getIssue();
 
 		/**
-		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Count</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute COST__VALUE = eINSTANCE.getCost_Value();
+		EAttribute ISSUE__COUNT = eINSTANCE.getIssue_Count();
 
 		/**
-		 * The meta object literal for the '<em><b>Category</b></em>' reference feature.
+		 * The meta object literal for the '{@link fr.obeo.smartea.core.costs.impl.CurrencyElementImpl <em>Currency Element</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see fr.obeo.smartea.core.costs.impl.CurrencyElementImpl
+		 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getCurrencyElement()
 		 * @generated
 		 */
-		EReference COST__CATEGORY = eINSTANCE.getCost_Category();
-
-		/**
-		 * The meta object literal for the '{@link fr.obeo.smartea.core.costs.impl.CostElementImpl <em>Cost Element</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see fr.obeo.smartea.core.costs.impl.CostElementImpl
-		 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getCostElement()
-		 * @generated
-		 */
-		EClass COST_ELEMENT = eINSTANCE.getCostElement();
+		EClass CURRENCY_ELEMENT = eINSTANCE.getCurrencyElement();
 
 		/**
 		 * The meta object literal for the '<em><b>Currency</b></em>' attribute feature.
@@ -576,7 +780,7 @@ public interface CostsPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute COST_ELEMENT__CURRENCY = eINSTANCE.getCostElement_Currency();
+		EAttribute CURRENCY_ELEMENT__CURRENCY = eINSTANCE.getCurrencyElement_Currency();
 
 		/**
 		 * The meta object literal for the '{@link fr.obeo.smartea.core.costs.impl.TimeElementImpl <em>Time Element</em>}' class.
@@ -595,16 +799,6 @@ public interface CostsPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute TIME_ELEMENT__TIME_UNIT = eINSTANCE.getTimeElement_TimeUnit();
-
-		/**
-		 * The meta object literal for the '{@link fr.obeo.smartea.core.costs.impl.CategoryImpl <em>Category</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see fr.obeo.smartea.core.costs.impl.CategoryImpl
-		 * @see fr.obeo.smartea.core.costs.impl.CostsPackageImpl#getCategory()
-		 * @generated
-		 */
-		EClass CATEGORY = eINSTANCE.getCategory();
 
 		/**
 		 * The meta object literal for the '{@link fr.obeo.smartea.core.costs.TimeUnit <em>Time Unit</em>}' enum.

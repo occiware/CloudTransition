@@ -12,27 +12,42 @@ import org.eclipse.ui.plugin.AbstractUIPlugin;
 
 import fr.obeo.smartea.core.basemm.BaseFactory;
 import fr.obeo.smartea.core.basemm.Folder;
+import fr.obeo.smartea.core.costs.AbstractCost;
 import fr.obeo.smartea.core.costs.Cost;
 import fr.obeo.smartea.core.costs.CostsContainer;
 import fr.obeo.smartea.core.costs.CostsFactory;
 import fr.obeo.smartea.core.costs.CostsPackage;
+import fr.obeo.smartea.core.costs.InitialCost;
+import fr.obeo.smartea.core.costs.Issue;
 
 public class CostsServices extends AbstractUIPlugin {
 
 	private static final String COSTS_FOLDER_NAME = "Costs";
 
-	public Collection<Cost> getCosts(EObject context) {
-		List<Cost> res = new ArrayList<Cost>();
+	public Collection<AbstractCost> getCosts(EObject context) {
+		List<AbstractCost> res = new ArrayList<AbstractCost>();
 		for (Setting setting : EcoreUtil.UsageCrossReferencer.find(context, context.eResource())) {
-			if (setting.getEStructuralFeature().equals(CostsPackage.eINSTANCE.getCost_Ref())) {
-				res.add((Cost) setting.getEObject());
+			if (setting.getEStructuralFeature().equals(CostsPackage.eINSTANCE.getAbstractCost_Ref())) {
+				res.add((AbstractCost) setting.getEObject());
 			}
 		}
 		return res;
 	}
 
-	public void createCost(EObject context) {
+	public void createInitialCost(EObject context) {
+		InitialCost cost = CostsFactory.eINSTANCE.createInitialCost();
+		cost.setRef(context);
+		getCostsContainer(context).getCosts().add(cost);
+	}
+
+	public void createRegularCost(EObject context) {
 		Cost cost = CostsFactory.eINSTANCE.createCost();
+		cost.setRef(context);
+		getCostsContainer(context).getCosts().add(cost);
+	}
+
+	public void createIssue(EObject context) {
+		Issue cost = CostsFactory.eINSTANCE.createIssue();
 		cost.setRef(context);
 		getCostsContainer(context).getCosts().add(cost);
 	}

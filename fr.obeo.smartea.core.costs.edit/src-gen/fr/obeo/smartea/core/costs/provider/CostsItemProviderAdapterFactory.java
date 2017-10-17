@@ -110,6 +110,29 @@ public class CostsItemProviderAdapterFactory extends CostsAdapterFactory impleme
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link fr.obeo.smartea.core.costs.InitialCost} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InitialCostItemProvider initialCostItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link fr.obeo.smartea.core.costs.InitialCost}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createInitialCostAdapter() {
+		if (initialCostItemProvider == null) {
+			initialCostItemProvider = new InitialCostItemProvider(this);
+		}
+
+		return initialCostItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link fr.obeo.smartea.core.costs.Cost} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -133,26 +156,26 @@ public class CostsItemProviderAdapterFactory extends CostsAdapterFactory impleme
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link fr.obeo.smartea.core.costs.Category} instances.
+	 * This keeps track of the one adapter used for all {@link fr.obeo.smartea.core.costs.Issue} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CategoryItemProvider categoryItemProvider;
+	protected IssueItemProvider issueItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link fr.obeo.smartea.core.costs.Category}.
+	 * This creates an adapter for a {@link fr.obeo.smartea.core.costs.Issue}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createCategoryAdapter() {
-		if (categoryItemProvider == null) {
-			categoryItemProvider = new CategoryItemProvider(this);
+	public Adapter createIssueAdapter() {
+		if (issueItemProvider == null) {
+			issueItemProvider = new IssueItemProvider(this);
 		}
 
-		return categoryItemProvider;
+		return issueItemProvider;
 	}
 
 	/**
@@ -255,8 +278,9 @@ public class CostsItemProviderAdapterFactory extends CostsAdapterFactory impleme
 	 */
 	public void dispose() {
 		if (costsContainerItemProvider != null) costsContainerItemProvider.dispose();
+		if (initialCostItemProvider != null) initialCostItemProvider.dispose();
 		if (costItemProvider != null) costItemProvider.dispose();
-		if (categoryItemProvider != null) categoryItemProvider.dispose();
+		if (issueItemProvider != null) issueItemProvider.dispose();
 	}
 
 }

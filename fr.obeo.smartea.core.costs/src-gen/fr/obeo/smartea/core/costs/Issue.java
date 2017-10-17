@@ -17,51 +17,48 @@
  */
 package fr.obeo.smartea.core.costs;
 
-import org.eclipse.emf.cdo.CDOObject;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Cost Element</b></em>'.
+ * A representation of the model object '<em><b>Issue</b></em>'.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link fr.obeo.smartea.core.costs.CostElement#getCurrency <em>Currency</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.Issue#getCount <em>Count</em>}</li>
  * </ul>
  *
- * @see fr.obeo.smartea.core.costs.CostsPackage#getCostElement()
- * @model abstract="true"
- * @extends CDOObject
+ * @see fr.obeo.smartea.core.costs.CostsPackage#getIssue()
+ * @model
  * @generated
  */
-public interface CostElement extends CDOObject {
+public interface Issue extends AbstractCost, TimeElement {
 	/**
-	 * Returns the value of the '<em><b>Currency</b></em>' attribute.
-	 * The default value is <code>"euro"</code>.
+	 * Returns the value of the '<em><b>Count</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Currency</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Count</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Currency</em>' attribute.
-	 * @see #setCurrency(String)
-	 * @see fr.obeo.smartea.core.costs.CostsPackage#getCostElement_Currency()
-	 * @model default="euro" required="true"
+	 * @return the value of the '<em>Count</em>' attribute.
+	 * @see #setCount(int)
+	 * @see fr.obeo.smartea.core.costs.CostsPackage#getIssue_Count()
+	 * @model
 	 * @generated
 	 */
-	String getCurrency();
+	int getCount();
 
 	/**
-	 * Sets the value of the '{@link fr.obeo.smartea.core.costs.CostElement#getCurrency <em>Currency</em>}' attribute.
+	 * Sets the value of the '{@link fr.obeo.smartea.core.costs.Issue#getCount <em>Count</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Currency</em>' attribute.
-	 * @see #getCurrency()
+	 * @param value the new value of the '<em>Count</em>' attribute.
+	 * @see #getCount()
 	 * @generated
 	 */
-	void setCurrency(String value);
+	void setCount(int value);
 
-} // CostElement
+} // Issue

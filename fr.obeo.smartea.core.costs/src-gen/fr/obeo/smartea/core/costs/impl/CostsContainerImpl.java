@@ -18,11 +18,10 @@
 package fr.obeo.smartea.core.costs.impl;
 
 import fr.obeo.smartea.core.basemm.BasePackage;
-import fr.obeo.smartea.core.costs.Category;
-import fr.obeo.smartea.core.costs.Cost;
-import fr.obeo.smartea.core.costs.CostElement;
+import fr.obeo.smartea.core.costs.AbstractCost;
 import fr.obeo.smartea.core.costs.CostsContainer;
 import fr.obeo.smartea.core.costs.CostsPackage;
+import fr.obeo.smartea.core.costs.CurrencyElement;
 import fr.obeo.smartea.core.costs.TimeElement;
 import fr.obeo.smartea.core.costs.TimeUnit;
 
@@ -43,20 +42,19 @@ import org.eclipse.emf.internal.cdo.CDOObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getId <em>Id</em>}</li>
- *   <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getCurrency <em>Currency</em>}</li>
- *   <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getTimeUnit <em>Time Unit</em>}</li>
- *   <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getCosts <em>Costs</em>}</li>
- *   <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getCategories <em>Categories</em>}</li>
+ * <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getId <em>Id</em>}</li>
+ * <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getCurrency <em>Currency</em>}</li>
+ * <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getTimeUnit <em>Time Unit</em>}</li>
+ * <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getCosts <em>Costs</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer {
 	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc --> <!--
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
+	 * 
 	 * @see #getId()
 	 * @generated
 	 * @ordered
@@ -64,9 +62,9 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 	protected static final String ID_EDEFAULT = null;
 
 	/**
-	 * The default value of the '{@link #getCurrency() <em>Currency</em>}' attribute.
-	 * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getCurrency() <em>Currency</em>}' attribute. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #getCurrency()
 	 * @generated
 	 * @ordered
@@ -74,9 +72,9 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 	protected static final String CURRENCY_EDEFAULT = "euro"; //$NON-NLS-1$
 
 	/**
-	 * The default value of the '{@link #getTimeUnit() <em>Time Unit</em>}' attribute.
-	 * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getTimeUnit() <em>Time Unit</em>}' attribute. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #getTimeUnit()
 	 * @generated
 	 * @ordered
@@ -95,6 +93,7 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -104,6 +103,7 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -113,14 +113,17 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getId() {
-		return (String)eDynamicGet(CostsPackage.COSTS_CONTAINER__ID, BasePackage.Literals.IDENTIFIED__ID, true, true);
+		return (String)eDynamicGet(CostsPackage.COSTS_CONTAINER__ID, BasePackage.Literals.IDENTIFIED__ID,
+				true, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void setId(String newId) {
@@ -129,57 +132,58 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getCurrency() {
-		return (String)eDynamicGet(CostsPackage.COSTS_CONTAINER__CURRENCY, CostsPackage.Literals.COST_ELEMENT__CURRENCY, true, true);
+		return (String)eDynamicGet(CostsPackage.COSTS_CONTAINER__CURRENCY,
+				CostsPackage.Literals.CURRENCY_ELEMENT__CURRENCY, true, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void setCurrency(String newCurrency) {
-		eDynamicSet(CostsPackage.COSTS_CONTAINER__CURRENCY, CostsPackage.Literals.COST_ELEMENT__CURRENCY, newCurrency);
+		eDynamicSet(CostsPackage.COSTS_CONTAINER__CURRENCY, CostsPackage.Literals.CURRENCY_ELEMENT__CURRENCY,
+				newCurrency);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public TimeUnit getTimeUnit() {
-		return (TimeUnit)eDynamicGet(CostsPackage.COSTS_CONTAINER__TIME_UNIT, CostsPackage.Literals.TIME_ELEMENT__TIME_UNIT, true, true);
+		return (TimeUnit)eDynamicGet(CostsPackage.COSTS_CONTAINER__TIME_UNIT,
+				CostsPackage.Literals.TIME_ELEMENT__TIME_UNIT, true, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void setTimeUnit(TimeUnit newTimeUnit) {
-		eDynamicSet(CostsPackage.COSTS_CONTAINER__TIME_UNIT, CostsPackage.Literals.TIME_ELEMENT__TIME_UNIT, newTimeUnit);
+		eDynamicSet(CostsPackage.COSTS_CONTAINER__TIME_UNIT, CostsPackage.Literals.TIME_ELEMENT__TIME_UNIT,
+				newTimeUnit);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public EList<Cost> getCosts() {
-		return (EList<Cost>)eDynamicGet(CostsPackage.COSTS_CONTAINER__COSTS, CostsPackage.Literals.COSTS_CONTAINER__COSTS, true, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public EList<Category> getCategories() {
-		return (EList<Category>)eDynamicGet(CostsPackage.COSTS_CONTAINER__CATEGORIES, CostsPackage.Literals.COSTS_CONTAINER__CATEGORIES, true, true);
+	public EList<AbstractCost> getCosts() {
+		return (EList<AbstractCost>)eDynamicGet(CostsPackage.COSTS_CONTAINER__COSTS,
+				CostsPackage.Literals.COSTS_CONTAINER__COSTS, true, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -187,14 +191,13 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 		switch (featureID) {
 			case CostsPackage.COSTS_CONTAINER__COSTS:
 				return ((InternalEList<?>)getCosts()).basicRemove(otherEnd, msgs);
-			case CostsPackage.COSTS_CONTAINER__CATEGORIES:
-				return ((InternalEList<?>)getCategories()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -208,14 +211,13 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 				return getTimeUnit();
 			case CostsPackage.COSTS_CONTAINER__COSTS:
 				return getCosts();
-			case CostsPackage.COSTS_CONTAINER__CATEGORIES:
-				return getCategories();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -233,11 +235,7 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 				return;
 			case CostsPackage.COSTS_CONTAINER__COSTS:
 				getCosts().clear();
-				getCosts().addAll((Collection<? extends Cost>)newValue);
-				return;
-			case CostsPackage.COSTS_CONTAINER__CATEGORIES:
-				getCategories().clear();
-				getCategories().addAll((Collection<? extends Category>)newValue);
+				getCosts().addAll((Collection<? extends AbstractCost>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -245,6 +243,7 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -262,15 +261,13 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 			case CostsPackage.COSTS_CONTAINER__COSTS:
 				getCosts().clear();
 				return;
-			case CostsPackage.COSTS_CONTAINER__CATEGORIES:
-				getCategories().clear();
-				return;
 		}
 		super.eUnset(featureID);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -279,33 +276,37 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 			case CostsPackage.COSTS_CONTAINER__ID:
 				return ID_EDEFAULT == null ? getId() != null : !ID_EDEFAULT.equals(getId());
 			case CostsPackage.COSTS_CONTAINER__CURRENCY:
-				return CURRENCY_EDEFAULT == null ? getCurrency() != null : !CURRENCY_EDEFAULT.equals(getCurrency());
+				return CURRENCY_EDEFAULT == null ? getCurrency() != null
+						: !CURRENCY_EDEFAULT.equals(getCurrency());
 			case CostsPackage.COSTS_CONTAINER__TIME_UNIT:
 				return getTimeUnit() != TIME_UNIT_EDEFAULT;
 			case CostsPackage.COSTS_CONTAINER__COSTS:
 				return !getCosts().isEmpty();
-			case CostsPackage.COSTS_CONTAINER__CATEGORIES:
-				return !getCategories().isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
-		if (baseClass == CostElement.class) {
+		if (baseClass == CurrencyElement.class) {
 			switch (derivedFeatureID) {
-				case CostsPackage.COSTS_CONTAINER__CURRENCY: return CostsPackage.COST_ELEMENT__CURRENCY;
-				default: return -1;
+				case CostsPackage.COSTS_CONTAINER__CURRENCY:
+					return CostsPackage.CURRENCY_ELEMENT__CURRENCY;
+				default:
+					return -1;
 			}
 		}
 		if (baseClass == TimeElement.class) {
 			switch (derivedFeatureID) {
-				case CostsPackage.COSTS_CONTAINER__TIME_UNIT: return CostsPackage.TIME_ELEMENT__TIME_UNIT;
-				default: return -1;
+				case CostsPackage.COSTS_CONTAINER__TIME_UNIT:
+					return CostsPackage.TIME_ELEMENT__TIME_UNIT;
+				default:
+					return -1;
 			}
 		}
 		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
@@ -313,20 +314,25 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
-		if (baseClass == CostElement.class) {
+		if (baseClass == CurrencyElement.class) {
 			switch (baseFeatureID) {
-				case CostsPackage.COST_ELEMENT__CURRENCY: return CostsPackage.COSTS_CONTAINER__CURRENCY;
-				default: return -1;
+				case CostsPackage.CURRENCY_ELEMENT__CURRENCY:
+					return CostsPackage.COSTS_CONTAINER__CURRENCY;
+				default:
+					return -1;
 			}
 		}
 		if (baseClass == TimeElement.class) {
 			switch (baseFeatureID) {
-				case CostsPackage.TIME_ELEMENT__TIME_UNIT: return CostsPackage.COSTS_CONTAINER__TIME_UNIT;
-				default: return -1;
+				case CostsPackage.TIME_ELEMENT__TIME_UNIT:
+					return CostsPackage.COSTS_CONTAINER__TIME_UNIT;
+				default:
+					return -1;
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);

@@ -89,40 +89,65 @@ public class CostsSwitch<T> extends Switch<T> {
 				CostsContainer costsContainer = (CostsContainer)theEObject;
 				T result = caseCostsContainer(costsContainer);
 				if (result == null) result = caseIdentified(costsContainer);
-				if (result == null) result = caseCostElement(costsContainer);
+				if (result == null) result = caseCurrencyElement(costsContainer);
 				if (result == null) result = caseTimeElement(costsContainer);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CostsPackage.ABSTRACT_COST: {
+				AbstractCost abstractCost = (AbstractCost)theEObject;
+				T result = caseAbstractCost(abstractCost);
+				if (result == null) result = caseDocumentable(abstractCost);
+				if (result == null) result = caseIdentified(abstractCost);
+				if (result == null) result = caseNameable(abstractCost);
+				if (result == null) result = caseCurrencyElement(abstractCost);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CostsPackage.INITIAL_COST: {
+				InitialCost initialCost = (InitialCost)theEObject;
+				T result = caseInitialCost(initialCost);
+				if (result == null) result = caseAbstractCost(initialCost);
+				if (result == null) result = caseDocumentable(initialCost);
+				if (result == null) result = caseIdentified(initialCost);
+				if (result == null) result = caseNameable(initialCost);
+				if (result == null) result = caseCurrencyElement(initialCost);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case CostsPackage.COST: {
 				Cost cost = (Cost)theEObject;
 				T result = caseCost(cost);
+				if (result == null) result = caseAbstractCost(cost);
+				if (result == null) result = caseTimeElement(cost);
 				if (result == null) result = caseDocumentable(cost);
 				if (result == null) result = caseIdentified(cost);
 				if (result == null) result = caseNameable(cost);
-				if (result == null) result = caseCostElement(cost);
-				if (result == null) result = caseTimeElement(cost);
+				if (result == null) result = caseCurrencyElement(cost);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case CostsPackage.COST_ELEMENT: {
-				CostElement costElement = (CostElement)theEObject;
-				T result = caseCostElement(costElement);
+			case CostsPackage.ISSUE: {
+				Issue issue = (Issue)theEObject;
+				T result = caseIssue(issue);
+				if (result == null) result = caseAbstractCost(issue);
+				if (result == null) result = caseTimeElement(issue);
+				if (result == null) result = caseDocumentable(issue);
+				if (result == null) result = caseIdentified(issue);
+				if (result == null) result = caseNameable(issue);
+				if (result == null) result = caseCurrencyElement(issue);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CostsPackage.CURRENCY_ELEMENT: {
+				CurrencyElement currencyElement = (CurrencyElement)theEObject;
+				T result = caseCurrencyElement(currencyElement);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
 			case CostsPackage.TIME_ELEMENT: {
 				TimeElement timeElement = (TimeElement)theEObject;
 				T result = caseTimeElement(timeElement);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case CostsPackage.CATEGORY: {
-				Category category = (Category)theEObject;
-				T result = caseCategory(category);
-				if (result == null) result = caseDocumentable(category);
-				if (result == null) result = caseIdentified(category);
-				if (result == null) result = caseNameable(category);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -146,6 +171,36 @@ public class CostsSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Abstract Cost</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Abstract Cost</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAbstractCost(AbstractCost object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Initial Cost</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Initial Cost</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseInitialCost(InitialCost object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Cost</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -161,17 +216,32 @@ public class CostsSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Cost Element</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Issue</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Cost Element</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Issue</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCostElement(CostElement object) {
+	public T caseIssue(Issue object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Currency Element</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Currency Element</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseCurrencyElement(CurrencyElement object) {
 		return null;
 	}
 
@@ -187,21 +257,6 @@ public class CostsSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseTimeElement(TimeElement object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Category</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Category</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseCategory(Category object) {
 		return null;
 	}
 

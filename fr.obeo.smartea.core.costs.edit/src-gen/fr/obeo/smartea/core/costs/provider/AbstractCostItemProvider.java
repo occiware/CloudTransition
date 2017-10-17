@@ -20,8 +20,7 @@ package fr.obeo.smartea.core.costs.provider;
 
 import fr.obeo.smartea.core.basemm.BasePackage;
 
-import fr.obeo.smartea.core.costs.CostsContainer;
-import fr.obeo.smartea.core.costs.CostsFactory;
+import fr.obeo.smartea.core.costs.AbstractCost;
 import fr.obeo.smartea.core.costs.CostsPackage;
 
 import java.util.Collection;
@@ -31,8 +30,6 @@ import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.ResourceLocator;
-
-import org.eclipse.emf.ecore.EStructuralFeature;
 
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
@@ -46,12 +43,12 @@ import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
- * This is the item provider adapter for a {@link fr.obeo.smartea.core.costs.CostsContainer} object.
+ * This is the item provider adapter for a {@link fr.obeo.smartea.core.costs.AbstractCost} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class CostsContainerItemProvider 
+public class AbstractCostItemProvider 
 	extends ItemProviderAdapter
 	implements
 		IEditingDomainItemProvider,
@@ -65,7 +62,7 @@ public class CostsContainerItemProvider
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CostsContainerItemProvider(AdapterFactory adapterFactory) {
+	public AbstractCostItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -80,11 +77,36 @@ public class CostsContainerItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
+			addDocumentationPropertyDescriptor(object);
 			addIdPropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 			addCurrencyPropertyDescriptor(object);
-			addTimeUnitPropertyDescriptor(object);
+			addRefPropertyDescriptor(object);
+			addValuePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
+	}
+
+	/**
+	 * This adds a property descriptor for the Documentation feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addDocumentationPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Documentable_documentation_feature"), //$NON-NLS-1$
+				 getString("_UI_PropertyDescriptor_description", "_UI_Documentable_documentation_feature", "_UI_Documentable_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+				 BasePackage.Literals.DOCUMENTABLE__DOCUMENTATION,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
 	}
 
 	/**
@@ -101,6 +123,28 @@ public class CostsContainerItemProvider
 				 getString("_UI_Identified_id_feature"), //$NON-NLS-1$
 				 getString("_UI_PropertyDescriptor_description", "_UI_Identified_id_feature", "_UI_Identified_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 				 BasePackage.Literals.IDENTIFIED__ID,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Name feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNamePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Nameable_name_feature"), //$NON-NLS-1$
+				 getString("_UI_PropertyDescriptor_description", "_UI_Nameable_name_feature", "_UI_Nameable_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+				 BasePackage.Literals.NAMEABLE__NAME,
 				 true,
 				 false,
 				 false,
@@ -132,55 +176,47 @@ public class CostsContainerItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Time Unit feature.
+	 * This adds a property descriptor for the Ref feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addTimeUnitPropertyDescriptor(Object object) {
+	protected void addRefPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_TimeElement_timeUnit_feature"), //$NON-NLS-1$
-				 getString("_UI_PropertyDescriptor_description", "_UI_TimeElement_timeUnit_feature", "_UI_TimeElement_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
-				 CostsPackage.Literals.TIME_ELEMENT__TIME_UNIT,
+				 getString("_UI_AbstractCost_ref_feature"), //$NON-NLS-1$
+				 getString("_UI_PropertyDescriptor_description", "_UI_AbstractCost_ref_feature", "_UI_AbstractCost_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+				 CostsPackage.Literals.ABSTRACT_COST__REF,
 				 true,
 				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 true,
+				 null,
 				 null,
 				 null));
 	}
 
 	/**
-	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
-	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
-	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * This adds a property descriptor for the Value feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
-		if (childrenFeatures == null) {
-			super.getChildrenFeatures(object);
-			childrenFeatures.add(CostsPackage.Literals.COSTS_CONTAINER__COSTS);
-		}
-		return childrenFeatures;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected EStructuralFeature getChildFeature(Object object, Object child) {
-		// Check the type of the specified child object and return the proper feature to use for
-		// adding (see {@link AddCommand}) it as a child.
-
-		return super.getChildFeature(object, child);
+	protected void addValuePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_AbstractCost_value_feature"), //$NON-NLS-1$
+				 getString("_UI_PropertyDescriptor_description", "_UI_AbstractCost_value_feature", "_UI_AbstractCost_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+				 CostsPackage.Literals.ABSTRACT_COST__VALUE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
 	}
 
 	/**
@@ -191,17 +227,6 @@ public class CostsContainerItemProvider
 	@Override
 	public boolean hasChildren(Object object) {
 		return hasChildren(object, true);
-	}
-
-	/**
-	 * This returns CostsContainer.gif.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/CostsContainer")); //$NON-NLS-1$
 	}
 
 	/**
@@ -222,10 +247,10 @@ public class CostsContainerItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((CostsContainer)object).getId();
+		String label = ((AbstractCost)object).getName();
 		return label == null || label.length() == 0 ?
-			getString("_UI_CostsContainer_type") : //$NON-NLS-1$
-			getString("_UI_CostsContainer_type") + " " + label; //$NON-NLS-1$ //$NON-NLS-2$
+			getString("_UI_AbstractCost_type") : //$NON-NLS-1$
+			getString("_UI_AbstractCost_type") + " " + label; //$NON-NLS-1$ //$NON-NLS-2$
 	}
 	
 
@@ -240,14 +265,13 @@ public class CostsContainerItemProvider
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(CostsContainer.class)) {
-			case CostsPackage.COSTS_CONTAINER__ID:
-			case CostsPackage.COSTS_CONTAINER__CURRENCY:
-			case CostsPackage.COSTS_CONTAINER__TIME_UNIT:
+		switch (notification.getFeatureID(AbstractCost.class)) {
+			case CostsPackage.ABSTRACT_COST__DOCUMENTATION:
+			case CostsPackage.ABSTRACT_COST__ID:
+			case CostsPackage.ABSTRACT_COST__NAME:
+			case CostsPackage.ABSTRACT_COST__CURRENCY:
+			case CostsPackage.ABSTRACT_COST__VALUE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-				return;
-			case CostsPackage.COSTS_CONTAINER__COSTS:
-				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
 		super.notifyChanged(notification);
@@ -263,21 +287,6 @@ public class CostsContainerItemProvider
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-
-		newChildDescriptors.add
-			(createChildParameter
-				(CostsPackage.Literals.COSTS_CONTAINER__COSTS,
-				 CostsFactory.eINSTANCE.createInitialCost()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(CostsPackage.Literals.COSTS_CONTAINER__COSTS,
-				 CostsFactory.eINSTANCE.createCost()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(CostsPackage.Literals.COSTS_CONTAINER__COSTS,
-				 CostsFactory.eINSTANCE.createIssue()));
 	}
 
 	/**

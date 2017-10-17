@@ -15,21 +15,38 @@
  * Should you not agree with these terms, you must stop to use this software and give it back to its legitimate owner.
  * 
  */
-package fr.obeo.smartea.core.costs;
+package fr.obeo.smartea.core.costs.impl;
 
-import fr.obeo.smartea.core.basemm.Documentable;
-import fr.obeo.smartea.core.basemm.Identified;
-import fr.obeo.smartea.core.basemm.Nameable;
+import fr.obeo.smartea.core.costs.CostsPackage;
+import fr.obeo.smartea.core.costs.InitialCost;
+
+import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Category</b></em>'.
+ * An implementation of the model object '<em><b>Initial Cost</b></em>'.
  * <!-- end-user-doc -->
  *
- *
- * @see fr.obeo.smartea.core.costs.CostsPackage#getCategory()
- * @model
  * @generated
  */
-public interface Category extends Documentable, Identified, Nameable {
-} // Category
+public class InitialCostImpl extends AbstractCostImpl implements InitialCost {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InitialCostImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return CostsPackage.Literals.INITIAL_COST;
+	}
+
+} //InitialCostImpl

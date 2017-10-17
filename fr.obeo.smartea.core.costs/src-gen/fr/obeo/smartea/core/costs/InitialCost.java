@@ -20,13 +20,13 @@ package fr.obeo.smartea.core.costs;
 
 /**
  * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Cost</b></em>'.
+ * A representation of the model object '<em><b>Initial Cost</b></em>'.
  * <!-- end-user-doc -->
  *
  *
- * @see fr.obeo.smartea.core.costs.CostsPackage#getCost()
+ * @see fr.obeo.smartea.core.costs.CostsPackage#getInitialCost()
  * @model
  * @generated
  */
-public interface Cost extends AbstractCost, TimeElement {
-} // Cost
+public interface InitialCost extends AbstractCost {
+} // InitialCost

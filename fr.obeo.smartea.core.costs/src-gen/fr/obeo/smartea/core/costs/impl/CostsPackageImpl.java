@@ -19,12 +19,14 @@ package fr.obeo.smartea.core.costs.impl;
 
 import fr.obeo.smartea.core.basemm.BasePackage;
 
-import fr.obeo.smartea.core.costs.Category;
+import fr.obeo.smartea.core.costs.AbstractCost;
 import fr.obeo.smartea.core.costs.Cost;
-import fr.obeo.smartea.core.costs.CostElement;
 import fr.obeo.smartea.core.costs.CostsContainer;
 import fr.obeo.smartea.core.costs.CostsFactory;
 import fr.obeo.smartea.core.costs.CostsPackage;
+import fr.obeo.smartea.core.costs.CurrencyElement;
+import fr.obeo.smartea.core.costs.InitialCost;
+import fr.obeo.smartea.core.costs.Issue;
 import fr.obeo.smartea.core.costs.TimeElement;
 import fr.obeo.smartea.core.costs.TimeUnit;
 
@@ -56,6 +58,20 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass abstractCostEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass initialCostEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass costEClass = null;
 
 	/**
@@ -63,7 +79,14 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass costElementEClass = null;
+	private EClass issueEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass currencyElementEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -71,13 +94,6 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 * @generated
 	 */
 	private EClass timeElementEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass categoryEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,8 +189,35 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCostsContainer_Categories() {
-		return (EReference)costsContainerEClass.getEStructuralFeatures().get(1);
+	public EClass getAbstractCost() {
+		return abstractCostEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAbstractCost_Ref() {
+		return (EReference)abstractCostEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAbstractCost_Value() {
+		return (EAttribute)abstractCostEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getInitialCost() {
+		return initialCostEClass;
 	}
 
 	/**
@@ -191,8 +234,8 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCost_Ref() {
-		return (EReference)costEClass.getEStructuralFeatures().get(0);
+	public EClass getIssue() {
+		return issueEClass;
 	}
 
 	/**
@@ -200,8 +243,8 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCost_Value() {
-		return (EAttribute)costEClass.getEStructuralFeatures().get(2);
+	public EAttribute getIssue_Count() {
+		return (EAttribute)issueEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -209,8 +252,8 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCost_Category() {
-		return (EReference)costEClass.getEStructuralFeatures().get(1);
+	public EClass getCurrencyElement() {
+		return currencyElementEClass;
 	}
 
 	/**
@@ -218,17 +261,8 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getCostElement() {
-		return costElementEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getCostElement_Currency() {
-		return (EAttribute)costElementEClass.getEStructuralFeatures().get(0);
+	public EAttribute getCurrencyElement_Currency() {
+		return (EAttribute)currencyElementEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -247,15 +281,6 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 */
 	public EAttribute getTimeElement_TimeUnit() {
 		return (EAttribute)timeElementEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getCategory() {
-		return categoryEClass;
 	}
 
 	/**
@@ -297,20 +322,23 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 		// Create classes and their features
 		costsContainerEClass = createEClass(COSTS_CONTAINER);
 		createEReference(costsContainerEClass, COSTS_CONTAINER__COSTS);
-		createEReference(costsContainerEClass, COSTS_CONTAINER__CATEGORIES);
+
+		abstractCostEClass = createEClass(ABSTRACT_COST);
+		createEReference(abstractCostEClass, ABSTRACT_COST__REF);
+		createEAttribute(abstractCostEClass, ABSTRACT_COST__VALUE);
+
+		initialCostEClass = createEClass(INITIAL_COST);
 
 		costEClass = createEClass(COST);
-		createEReference(costEClass, COST__REF);
-		createEReference(costEClass, COST__CATEGORY);
-		createEAttribute(costEClass, COST__VALUE);
 
-		costElementEClass = createEClass(COST_ELEMENT);
-		createEAttribute(costElementEClass, COST_ELEMENT__CURRENCY);
+		issueEClass = createEClass(ISSUE);
+		createEAttribute(issueEClass, ISSUE__COUNT);
+
+		currencyElementEClass = createEClass(CURRENCY_ELEMENT);
+		createEAttribute(currencyElementEClass, CURRENCY_ELEMENT__CURRENCY);
 
 		timeElementEClass = createEClass(TIME_ELEMENT);
 		createEAttribute(timeElementEClass, TIME_ELEMENT__TIME_UNIT);
-
-		categoryEClass = createEClass(CATEGORY);
 
 		// Create enums
 		timeUnitEEnum = createEEnum(TIME_UNIT);
@@ -349,34 +377,38 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 
 		// Add supertypes to classes
 		costsContainerEClass.getESuperTypes().add(theBasePackage.getIdentified());
-		costsContainerEClass.getESuperTypes().add(this.getCostElement());
+		costsContainerEClass.getESuperTypes().add(this.getCurrencyElement());
 		costsContainerEClass.getESuperTypes().add(this.getTimeElement());
-		costEClass.getESuperTypes().add(theBasePackage.getDocumentable());
-		costEClass.getESuperTypes().add(theBasePackage.getIdentified());
-		costEClass.getESuperTypes().add(theBasePackage.getNameable());
-		costEClass.getESuperTypes().add(this.getCostElement());
+		abstractCostEClass.getESuperTypes().add(theBasePackage.getDocumentable());
+		abstractCostEClass.getESuperTypes().add(theBasePackage.getIdentified());
+		abstractCostEClass.getESuperTypes().add(theBasePackage.getNameable());
+		abstractCostEClass.getESuperTypes().add(this.getCurrencyElement());
+		initialCostEClass.getESuperTypes().add(this.getAbstractCost());
+		costEClass.getESuperTypes().add(this.getAbstractCost());
 		costEClass.getESuperTypes().add(this.getTimeElement());
-		categoryEClass.getESuperTypes().add(theBasePackage.getDocumentable());
-		categoryEClass.getESuperTypes().add(theBasePackage.getIdentified());
-		categoryEClass.getESuperTypes().add(theBasePackage.getNameable());
+		issueEClass.getESuperTypes().add(this.getAbstractCost());
+		issueEClass.getESuperTypes().add(this.getTimeElement());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(costsContainerEClass, CostsContainer.class, "CostsContainer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEReference(getCostsContainer_Costs(), this.getCost(), null, "costs", null, 0, -1, CostsContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
-		initEReference(getCostsContainer_Categories(), this.getCategory(), null, "categories", null, 0, -1, CostsContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
+		initEReference(getCostsContainer_Costs(), this.getAbstractCost(), null, "costs", null, 0, -1, CostsContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(abstractCostEClass, AbstractCost.class, "AbstractCost", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEReference(getAbstractCost_Ref(), theEcorePackage.getEObject(), null, "ref", null, 1, 1, AbstractCost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getAbstractCost_Value(), theEcorePackage.getEInt(), "value", "1", 1, 1, AbstractCost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$ //$NON-NLS-2$
+
+		initEClass(initialCostEClass, InitialCost.class, "InitialCost", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 
 		initEClass(costEClass, Cost.class, "Cost", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEReference(getCost_Ref(), theEcorePackage.getEObject(), null, "ref", null, 1, 1, Cost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
-		initEReference(getCost_Category(), this.getCategory(), null, "category", null, 0, 1, Cost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
-		initEAttribute(getCost_Value(), theEcorePackage.getEInt(), "value", "1", 1, 1, Cost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$ //$NON-NLS-2$
 
-		initEClass(costElementEClass, CostElement.class, "CostElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
-		initEAttribute(getCostElement_Currency(), theEcorePackage.getEString(), "currency", "euro", 1, 1, CostElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$ //$NON-NLS-2$
+		initEClass(issueEClass, Issue.class, "Issue", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getIssue_Count(), theEcorePackage.getEInt(), "count", null, 0, 1, Issue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
+
+		initEClass(currencyElementEClass, CurrencyElement.class, "CurrencyElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
+		initEAttribute(getCurrencyElement_Currency(), theEcorePackage.getEString(), "currency", "euro", 1, 1, CurrencyElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$ //$NON-NLS-2$
 
 		initEClass(timeElementEClass, TimeElement.class, "TimeElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 		initEAttribute(getTimeElement_TimeUnit(), this.getTimeUnit(), "timeUnit", "YEAR", 0, 1, TimeElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$ //$NON-NLS-2$
-
-		initEClass(categoryEClass, Category.class, "Category", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 
 		// Initialize enums and add enum literals
 		initEEnum(timeUnitEEnum, TimeUnit.class, "TimeUnit"); //$NON-NLS-1$

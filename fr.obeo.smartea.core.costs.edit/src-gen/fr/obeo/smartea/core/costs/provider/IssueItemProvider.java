@@ -18,8 +18,8 @@
 package fr.obeo.smartea.core.costs.provider;
 
 
-import fr.obeo.smartea.core.costs.Cost;
 import fr.obeo.smartea.core.costs.CostsPackage;
+import fr.obeo.smartea.core.costs.Issue;
 
 import java.util.Collection;
 import java.util.List;
@@ -33,19 +33,19 @@ import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
- * This is the item provider adapter for a {@link fr.obeo.smartea.core.costs.Cost} object.
+ * This is the item provider adapter for a {@link fr.obeo.smartea.core.costs.Issue} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class CostItemProvider extends AbstractCostItemProvider {
+public class IssueItemProvider extends AbstractCostItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CostItemProvider(AdapterFactory adapterFactory) {
+	public IssueItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -61,6 +61,7 @@ public class CostItemProvider extends AbstractCostItemProvider {
 			super.getPropertyDescriptors(object);
 
 			addTimeUnitPropertyDescriptor(object);
+			addCountPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -88,14 +89,36 @@ public class CostItemProvider extends AbstractCostItemProvider {
 	}
 
 	/**
-	 * This returns Cost.gif.
+	 * This adds a property descriptor for the Count feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addCountPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Issue_count_feature"), //$NON-NLS-1$
+				 getString("_UI_PropertyDescriptor_description", "_UI_Issue_count_feature", "_UI_Issue_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+				 CostsPackage.Literals.ISSUE__COUNT,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This returns Issue.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/Cost")); //$NON-NLS-1$
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/Issue")); //$NON-NLS-1$
 	}
 
 	/**
@@ -116,10 +139,10 @@ public class CostItemProvider extends AbstractCostItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Cost)object).getName();
+		String label = ((Issue)object).getName();
 		return label == null || label.length() == 0 ?
-			getString("_UI_Cost_type") : //$NON-NLS-1$
-			getString("_UI_Cost_type") + " " + label; //$NON-NLS-1$ //$NON-NLS-2$
+			getString("_UI_Issue_type") : //$NON-NLS-1$
+			getString("_UI_Issue_type") + " " + label; //$NON-NLS-1$ //$NON-NLS-2$
 	}
 	
 
@@ -134,8 +157,9 @@ public class CostItemProvider extends AbstractCostItemProvider {
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(Cost.class)) {
-			case CostsPackage.COST__TIME_UNIT:
+		switch (notification.getFeatureID(Issue.class)) {
+			case CostsPackage.ISSUE__TIME_UNIT:
+			case CostsPackage.ISSUE__COUNT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

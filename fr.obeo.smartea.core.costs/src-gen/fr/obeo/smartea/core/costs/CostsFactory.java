@@ -46,6 +46,15 @@ public interface CostsFactory extends EFactory {
 	CostsContainer createCostsContainer();
 
 	/**
+	 * Returns a new object of class '<em>Initial Cost</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Initial Cost</em>'.
+	 * @generated
+	 */
+	InitialCost createInitialCost();
+
+	/**
 	 * Returns a new object of class '<em>Cost</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -55,13 +64,13 @@ public interface CostsFactory extends EFactory {
 	Cost createCost();
 
 	/**
-	 * Returns a new object of class '<em>Category</em>'.
+	 * Returns a new object of class '<em>Issue</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Category</em>'.
+	 * @return a new object of class '<em>Issue</em>'.
 	 * @generated
 	 */
-	Category createCategory();
+	Issue createIssue();
 
 	/**
 	 * Returns the package supported by this factory.

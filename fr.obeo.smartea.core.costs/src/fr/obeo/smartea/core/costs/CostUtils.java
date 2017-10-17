@@ -25,31 +25,43 @@ public final class CostUtils {
 
 	private static final double CONVERSION_RATE = 1.12;
 
-	public static double computeCost(Cost cost) {
+	public static double computeCost(AbstractCost cost) {
 		CostsContainer container = (CostsContainer)cost.eContainer();
 		return CostUtils.computeCost(cost, container.getCurrency(), container.getTimeUnit());
 	}
 
-	public static double computeCost(Cost cost, String currency, TimeUnit timeUnit) {
+	public static double computeCost(AbstractCost cost, String currency, TimeUnit timeUnit) {
 		double res = cost.getValue();
 		if (!cost.getCurrency().equals(currency)) {
 			res = convert(res, cost.getCurrency(), currency);
 		}
-		if (!cost.getTimeUnit().equals(timeUnit)) {
-			res = convert(res, cost.getTimeUnit(), timeUnit);
+		if (cost instanceof TimeElement) {
+			TimeElement timeElement = (TimeElement)cost;
+			if (!timeElement.getTimeUnit().equals(timeUnit)) {
+				res = convert(res, timeElement.getTimeUnit(), timeUnit);
+			}
+			if (cost instanceof Issue) {
+				Issue issue = (Issue)cost;
+				res = res * issue.getCount();
+			}
 		}
 		return res;
 	}
 
-	public static double computeCosts(CostsContainer costContainer) {
-		return computeCosts(costContainer, null);
+	public static double computeInitialCosts(CostsContainer costContainer) {
+		double res = 0;
+		for (AbstractCost cost : costContainer.getCosts()) {
+			if (cost instanceof InitialCost) {
+				res += computeCost(cost, costContainer.getCurrency(), costContainer.getTimeUnit());
+			}
+		}
+		return res;
 	}
 
-	public static double computeCosts(CostsContainer costContainer, Category category) {
+	public static double computeRegularCosts(CostsContainer costContainer) {
 		double res = 0;
-		for (Cost cost : costContainer.getCosts()) {
-			if ((category == null && cost.getCategory() == null)
-					|| (category != null && category.equals(cost.getCategory()))) {
+		for (AbstractCost cost : costContainer.getCosts()) {
+			if (cost instanceof TimeElement) {
 				res += computeCost(cost, costContainer.getCurrency(), costContainer.getTimeUnit());
 			}
 		}
