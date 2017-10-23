@@ -83,6 +83,7 @@ public class AbstractCostItemProvider
 			addCurrencyPropertyDescriptor(object);
 			addRefPropertyDescriptor(object);
 			addValuePropertyDescriptor(object);
+			addCostPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -220,6 +221,28 @@ public class AbstractCostItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Cost feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addCostPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_AbstractCost_cost_feature"), //$NON-NLS-1$
+				 getString("_UI_PropertyDescriptor_description", "_UI_AbstractCost_cost_feature", "_UI_AbstractCost_type"), //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+				 CostsPackage.Literals.ABSTRACT_COST__COST,
+				 false,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -271,6 +294,7 @@ public class AbstractCostItemProvider
 			case CostsPackage.ABSTRACT_COST__NAME:
 			case CostsPackage.ABSTRACT_COST__CURRENCY:
 			case CostsPackage.ABSTRACT_COST__VALUE:
+			case CostsPackage.ABSTRACT_COST__COST:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

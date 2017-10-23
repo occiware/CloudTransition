@@ -19,6 +19,7 @@ package fr.obeo.smartea.core.costs.impl;
 
 import fr.obeo.smartea.core.basemm.BasePackage;
 import fr.obeo.smartea.core.costs.AbstractCost;
+import fr.obeo.smartea.core.costs.CostUtils;
 import fr.obeo.smartea.core.costs.CostsContainer;
 import fr.obeo.smartea.core.costs.CostsPackage;
 import fr.obeo.smartea.core.costs.CurrencyElement;
@@ -46,6 +47,8 @@ import org.eclipse.emf.internal.cdo.CDOObjectImpl;
  * <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getCurrency <em>Currency</em>}</li>
  * <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getTimeUnit <em>Time Unit</em>}</li>
  * <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getCosts <em>Costs</em>}</li>
+ * <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getRegularCost <em>Regular Cost</em>}</li>
+ * <li>{@link fr.obeo.smartea.core.costs.impl.CostsContainerImpl#getInitialCost <em>Initial Cost</em>}</li>
  * </ul>
  *
  * @generated
@@ -80,6 +83,26 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 	 * @ordered
 	 */
 	protected static final TimeUnit TIME_UNIT_EDEFAULT = TimeUnit.YEAR;
+
+	/**
+	 * The default value of the '{@link #getRegularCost() <em>Regular Cost</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getRegularCost()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double REGULAR_COST_EDEFAULT = 0.0;
+
+	/**
+	 * The default value of the '{@link #getInitialCost() <em>Initial Cost</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @see #getInitialCost()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double INITIAL_COST_EDEFAULT = 0.0;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -184,6 +207,24 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
+	 * @generated NOT
+	 */
+	public double getRegularCost() {
+		return CostUtils.computeRegularCosts(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated NOT
+	 */
+	public double getInitialCost() {
+		return CostUtils.computeInitialCosts(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -211,6 +252,10 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 				return getTimeUnit();
 			case CostsPackage.COSTS_CONTAINER__COSTS:
 				return getCosts();
+			case CostsPackage.COSTS_CONTAINER__REGULAR_COST:
+				return getRegularCost();
+			case CostsPackage.COSTS_CONTAINER__INITIAL_COST:
+				return getInitialCost();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -282,6 +327,10 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 				return getTimeUnit() != TIME_UNIT_EDEFAULT;
 			case CostsPackage.COSTS_CONTAINER__COSTS:
 				return !getCosts().isEmpty();
+			case CostsPackage.COSTS_CONTAINER__REGULAR_COST:
+				return getRegularCost() != REGULAR_COST_EDEFAULT;
+			case CostsPackage.COSTS_CONTAINER__INITIAL_COST:
+				return getInitialCost() != INITIAL_COST_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

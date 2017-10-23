@@ -22,10 +22,13 @@
     </genEnums>
     <genClasses ecoreClass="costs.ecore#//CostsContainer">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference costs.ecore#//CostsContainer/costs"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute costs.ecore#//CostsContainer/regularCost"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute costs.ecore#//CostsContainer/initialCost"/>
     </genClasses>
     <genClasses image="false" ecoreClass="costs.ecore#//AbstractCost">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference costs.ecore#//AbstractCost/ref"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute costs.ecore#//AbstractCost/value"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute costs.ecore#//AbstractCost/cost"/>
     </genClasses>
     <genClasses ecoreClass="costs.ecore#//InitialCost"/>
     <genClasses ecoreClass="costs.ecore#//Cost"/>

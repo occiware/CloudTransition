@@ -189,6 +189,24 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getCostsContainer_RegularCost() {
+		return (EAttribute)costsContainerEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCostsContainer_InitialCost() {
+		return (EAttribute)costsContainerEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getAbstractCost() {
 		return abstractCostEClass;
 	}
@@ -209,6 +227,15 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 	 */
 	public EAttribute getAbstractCost_Value() {
 		return (EAttribute)abstractCostEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAbstractCost_Cost() {
+		return (EAttribute)abstractCostEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -322,10 +349,13 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 		// Create classes and their features
 		costsContainerEClass = createEClass(COSTS_CONTAINER);
 		createEReference(costsContainerEClass, COSTS_CONTAINER__COSTS);
+		createEAttribute(costsContainerEClass, COSTS_CONTAINER__REGULAR_COST);
+		createEAttribute(costsContainerEClass, COSTS_CONTAINER__INITIAL_COST);
 
 		abstractCostEClass = createEClass(ABSTRACT_COST);
 		createEReference(abstractCostEClass, ABSTRACT_COST__REF);
 		createEAttribute(abstractCostEClass, ABSTRACT_COST__VALUE);
+		createEAttribute(abstractCostEClass, ABSTRACT_COST__COST);
 
 		initialCostEClass = createEClass(INITIAL_COST);
 
@@ -392,10 +422,13 @@ public class CostsPackageImpl extends EPackageImpl implements CostsPackage {
 		// Initialize classes and features; add operations and parameters
 		initEClass(costsContainerEClass, CostsContainer.class, "CostsContainer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 		initEReference(getCostsContainer_Costs(), this.getAbstractCost(), null, "costs", null, 0, -1, CostsContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getCostsContainer_RegularCost(), ecorePackage.getEDouble(), "regularCost", null, 0, 1, CostsContainer.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
+		initEAttribute(getCostsContainer_InitialCost(), ecorePackage.getEDouble(), "initialCost", null, 0, 1, CostsContainer.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(abstractCostEClass, AbstractCost.class, "AbstractCost", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 		initEReference(getAbstractCost_Ref(), theEcorePackage.getEObject(), null, "ref", null, 1, 1, AbstractCost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
 		initEAttribute(getAbstractCost_Value(), theEcorePackage.getEInt(), "value", "1", 1, 1, AbstractCost.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED); //$NON-NLS-1$ //$NON-NLS-2$
+		initEAttribute(getAbstractCost_Cost(), ecorePackage.getEDouble(), "cost", null, 0, 1, AbstractCost.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED); //$NON-NLS-1$
 
 		initEClass(initialCostEClass, InitialCost.class, "InitialCost", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS); //$NON-NLS-1$
 

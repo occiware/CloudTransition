@@ -8,21 +8,21 @@
         <nodeMappings name="SystemSoftware" domainClass="archimate.SystemSoftware">
           <borderedNodeMappings name="SystemSoftwareCost" labelDirectEdit="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit']" semanticCandidatesExpression="service:getCosts()" domainClass="costs.AbstractCost">
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Cost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::InitialCost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Issue)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -145,21 +145,21 @@
         <nodeMappings name="Device" domainClass="archimate.Device">
           <borderedNodeMappings name="DeviceCost" labelDirectEdit="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit']" semanticCandidatesExpression="service:getCosts()" domainClass="costs.AbstractCost">
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Cost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::InitialCost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Issue)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -192,21 +192,21 @@
         <nodeMappings name="Network" domainClass="archimate.CommunicationNetwork">
           <borderedNodeMappings name="NetworkCost" labelDirectEdit="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit']" semanticCandidatesExpression="service:getCosts()" domainClass="costs.AbstractCost">
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Cost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::InitialCost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Issue)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -221,21 +221,21 @@
         <nodeMappings name="Path" domainClass="archimate.Path">
           <borderedNodeMappings name="PathCost" labelDirectEdit="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit']" semanticCandidatesExpression="service:getCosts()" domainClass="costs.AbstractCost">
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Cost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::InitialCost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Issue)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -250,21 +250,21 @@
         <nodeMappings name="Service" domainClass="archimate.TechnologyService">
           <borderedNodeMappings name="ServiceCost" labelDirectEdit="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit']" semanticCandidatesExpression="service:getCosts()" domainClass="costs.AbstractCost">
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Cost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::InitialCost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Issue)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -279,21 +279,21 @@
         <nodeMappings name="Function" domainClass="archimate.TechnologyFunction">
           <borderedNodeMappings name="FunctionCost" labelDirectEdit="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit']" semanticCandidatesExpression="service:getCosts()" domainClass="costs.AbstractCost">
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Cost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::InitialCost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Issue)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -308,21 +308,21 @@
         <nodeMappings name="Interface" domainClass="archimate.TechnologyInterface">
           <borderedNodeMappings name="InterfaceCost" labelDirectEdit="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit']" semanticCandidatesExpression="service:getCosts()" domainClass="costs.AbstractCost">
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Cost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::InitialCost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Issue)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -332,6 +332,13 @@
           <style xsi:type="style:WorkspaceImageDescription" showIcon="false" resizeKind="NSEW" workspacePath="/fr.obeo.smartea.archimate.infrastructure.design/images/Interface.svg">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="costsContainer" domainClass="costs.CostsContainer">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostContainerLabel()" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/CostsContainer.gif">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <labelFormat>italic</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </nodeMappings>
         <edgeMappings name="Association" sourceMapping="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Path'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Device'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Function'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Service'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Network'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='SystemSoftware'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Interface']" targetMapping="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Path'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Device'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Function'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Interface'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Network'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='Service'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@nodeMappings[name='SystemSoftware']" targetFinderExpression="aql:self.getTargetElement()" sourceFinderExpression="aql:self.getSourceElement()" domainClass="archimate.AssociationRelationship" useDomainElement="true">
@@ -385,21 +392,21 @@
         <containerMappings name="Node" preconditionExpression="aql:self.oclIsTypeOf(archimate::Node)" semanticCandidatesExpression="aql:self.getSemanticCandidates()" domainClass="archimate.Node" reusedContainerMappings="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact'] //@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Node']">
           <subNodeMappings name="NodeCost" labelDirectEdit="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit']" semanticCandidatesExpression="service:getCosts()" domainClass="costs.AbstractCost">
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Cost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::InitialCost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Issue)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -416,21 +423,21 @@
         <containerMappings name="Artifact" semanticCandidatesExpression="aql:self.getSemanticCandidates()" domainClass="archimate.Artifact" reusedContainerMappings="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@containerMappings[name='Artifact']">
           <subNodeMappings name="ArtifactCost" labelDirectEdit="//@ownedViewpoints[name='infrastructure']/@ownedRepresentations[name='infrastructure.view']/@defaultLayer/@toolSections.0/@ownedTools[name='Edit']" semanticCandidatesExpression="service:getCosts()" domainClass="costs.AbstractCost">
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Cost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Cost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::InitialCost)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/InitialCost.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.oclIsTypeOf(costs::Issue)">
-              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
+              <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="service:getCostLabel()" sizeComputationExpression="-1" workspacePath="/fr.obeo.smartea.core.costs.edit/icons/full/obj16/Issue.gif">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelFormat>italic</labelFormat>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -445,7 +452,7 @@
           </style>
         </containerMappings>
         <toolSections name="tools">
-          <ownedTools xsi:type="tool:DirectEditLabel" name="Edit">
+          <ownedTools xsi:type="tool:DirectEditLabel" name="Edit" inputLabelExpression="feature:name">
             <mask mask="{0}"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:arg0"/>

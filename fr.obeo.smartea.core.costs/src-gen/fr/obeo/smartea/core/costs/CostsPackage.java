@@ -120,13 +120,31 @@ public interface CostsPackage extends EPackage {
 	int COSTS_CONTAINER__COSTS = BasePackage.IDENTIFIED_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Regular Cost</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COSTS_CONTAINER__REGULAR_COST = BasePackage.IDENTIFIED_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Initial Cost</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COSTS_CONTAINER__INITIAL_COST = BasePackage.IDENTIFIED_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Container</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COSTS_CONTAINER_FEATURE_COUNT = BasePackage.IDENTIFIED_FEATURE_COUNT + 3;
+	int COSTS_CONTAINER_FEATURE_COUNT = BasePackage.IDENTIFIED_FEATURE_COUNT + 5;
 
 	/**
 	 * The meta object id for the '{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl <em>Abstract Cost</em>}' class.
@@ -193,13 +211,22 @@ public interface CostsPackage extends EPackage {
 	int ABSTRACT_COST__VALUE = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 4;
 
 	/**
+	 * The feature id for the '<em><b>Cost</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ABSTRACT_COST__COST = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 5;
+
+	/**
 	 * The number of structural features of the '<em>Abstract Cost</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ABSTRACT_COST_FEATURE_COUNT = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 5;
+	int ABSTRACT_COST_FEATURE_COUNT = BasePackage.DOCUMENTABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link fr.obeo.smartea.core.costs.impl.InitialCostImpl <em>Initial Cost</em>}' class.
@@ -264,6 +291,15 @@ public interface CostsPackage extends EPackage {
 	 * @ordered
 	 */
 	int INITIAL_COST__VALUE = ABSTRACT_COST__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Cost</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INITIAL_COST__COST = ABSTRACT_COST__COST;
 
 	/**
 	 * The number of structural features of the '<em>Initial Cost</em>' class.
@@ -337,6 +373,15 @@ public interface CostsPackage extends EPackage {
 	 * @ordered
 	 */
 	int COST__VALUE = ABSTRACT_COST__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Cost</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COST__COST = ABSTRACT_COST__COST;
 
 	/**
 	 * The feature id for the '<em><b>Time Unit</b></em>' attribute.
@@ -419,6 +464,15 @@ public interface CostsPackage extends EPackage {
 	 * @ordered
 	 */
 	int ISSUE__VALUE = ABSTRACT_COST__VALUE;
+
+	/**
+	 * The feature id for the '<em><b>Cost</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ISSUE__COST = ABSTRACT_COST__COST;
 
 	/**
 	 * The feature id for the '<em><b>Time Unit</b></em>' attribute.
@@ -536,6 +590,28 @@ public interface CostsPackage extends EPackage {
 	EReference getCostsContainer_Costs();
 
 	/**
+	 * Returns the meta object for the attribute '{@link fr.obeo.smartea.core.costs.CostsContainer#getRegularCost <em>Regular Cost</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Regular Cost</em>'.
+	 * @see fr.obeo.smartea.core.costs.CostsContainer#getRegularCost()
+	 * @see #getCostsContainer()
+	 * @generated
+	 */
+	EAttribute getCostsContainer_RegularCost();
+
+	/**
+	 * Returns the meta object for the attribute '{@link fr.obeo.smartea.core.costs.CostsContainer#getInitialCost <em>Initial Cost</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Initial Cost</em>'.
+	 * @see fr.obeo.smartea.core.costs.CostsContainer#getInitialCost()
+	 * @see #getCostsContainer()
+	 * @generated
+	 */
+	EAttribute getCostsContainer_InitialCost();
+
+	/**
 	 * Returns the meta object for class '{@link fr.obeo.smartea.core.costs.AbstractCost <em>Abstract Cost</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -566,6 +642,17 @@ public interface CostsPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getAbstractCost_Value();
+
+	/**
+	 * Returns the meta object for the attribute '{@link fr.obeo.smartea.core.costs.AbstractCost#getCost <em>Cost</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Cost</em>'.
+	 * @see fr.obeo.smartea.core.costs.AbstractCost#getCost()
+	 * @see #getAbstractCost()
+	 * @generated
+	 */
+	EAttribute getAbstractCost_Cost();
 
 	/**
 	 * Returns the meta object for class '{@link fr.obeo.smartea.core.costs.InitialCost <em>Initial Cost</em>}'.
@@ -701,6 +788,22 @@ public interface CostsPackage extends EPackage {
 		EReference COSTS_CONTAINER__COSTS = eINSTANCE.getCostsContainer_Costs();
 
 		/**
+		 * The meta object literal for the '<em><b>Regular Cost</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COSTS_CONTAINER__REGULAR_COST = eINSTANCE.getCostsContainer_RegularCost();
+
+		/**
+		 * The meta object literal for the '<em><b>Initial Cost</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COSTS_CONTAINER__INITIAL_COST = eINSTANCE.getCostsContainer_InitialCost();
+
+		/**
 		 * The meta object literal for the '{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl <em>Abstract Cost</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -725,6 +828,14 @@ public interface CostsPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ABSTRACT_COST__VALUE = eINSTANCE.getAbstractCost_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Cost</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ABSTRACT_COST__COST = eINSTANCE.getAbstractCost_Cost();
 
 		/**
 		 * The meta object literal for the '{@link fr.obeo.smartea.core.costs.impl.InitialCostImpl <em>Initial Cost</em>}' class.

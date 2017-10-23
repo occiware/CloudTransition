@@ -17,6 +17,8 @@
  *******************************************************************************/
 package fr.obeo.smartea.core.costs;
 
+import java.math.BigDecimal;
+
 public final class CostUtils {
 
 	public static final String DOLLAR = "dollar";
@@ -105,4 +107,49 @@ public final class CostUtils {
 		return res;
 	}
 
+	public static String formatCost(CostsContainer element) {
+		String res = null;
+		String currency = getPrettyCurrency(element);
+		String timeUnit = element.getTimeUnit().toString().toLowerCase();
+		double initial = element.getInitialCost();
+		double regular = element.getRegularCost();
+		if (initial != 0 && regular != 0) {
+			res = CostUtils.format(initial) + currency + " + " + CostUtils.format(regular) + currency + " / "
+					+ timeUnit + " = " + CostUtils.format(initial + regular) + currency + " (First "
+					+ timeUnit + ")";
+		} else if (initial != 0 && regular == 0) {
+			res = CostUtils.format(initial) + currency;
+		} else if (initial == 0 && regular != 0) {
+			res = CostUtils.format(regular) + currency + " / " + timeUnit;
+		}
+		return res;
+	}
+
+	public static String getPrettyCurrency(CurrencyElement element) {
+		String currency = element.getCurrency();
+		if ("euro".equals(currency)) {
+			currency = "€";
+		} else if ("dollar".equals(currency)) {
+			currency = "$";
+		}
+		return currency;
+	}
+
+	public static String formatCost(AbstractCost cost) {
+		String res = format(cost.getCost()) + getPrettyCurrency((CurrencyElement)cost.eContainer());
+		if (cost instanceof TimeElement) {
+			res += " / " + ((CostsContainer)cost.eContainer()).getTimeUnit().toString().toLowerCase();
+		}
+		return res;
+	}
+
+	public static String format(double value) {
+		BigDecimal rounded = BigDecimal.ZERO;
+		if (value > 0) {
+			rounded = new BigDecimal(String.valueOf(value)).setScale(2, BigDecimal.ROUND_FLOOR);
+		} else {
+			rounded = new BigDecimal(String.valueOf(value)).setScale(2, BigDecimal.ROUND_CEILING);
+		}
+		return rounded.toString().replaceAll("\\.0*$", "");
+	}
 }

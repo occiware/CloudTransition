@@ -34,6 +34,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link fr.obeo.smartea.core.costs.AbstractCost#getRef <em>Ref</em>}</li>
  *   <li>{@link fr.obeo.smartea.core.costs.AbstractCost#getValue <em>Value</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.AbstractCost#getCost <em>Cost</em>}</li>
  * </ul>
  *
  * @see fr.obeo.smartea.core.costs.CostsPackage#getAbstractCost()
@@ -93,5 +94,20 @@ public interface AbstractCost extends Documentable, Identified, Nameable, Curren
 	 * @generated
 	 */
 	void setValue(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Cost</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Cost</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Cost</em>' attribute.
+	 * @see fr.obeo.smartea.core.costs.CostsPackage#getAbstractCost_Cost()
+	 * @model changeable="false" derived="true"
+	 * @generated
+	 */
+	double getCost();
 
 } // AbstractCost

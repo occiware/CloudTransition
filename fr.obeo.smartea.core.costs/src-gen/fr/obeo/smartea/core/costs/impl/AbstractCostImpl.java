@@ -21,6 +21,7 @@ import fr.obeo.smartea.core.basemm.BasePackage;
 import fr.obeo.smartea.core.basemm.Identified;
 import fr.obeo.smartea.core.basemm.Nameable;
 import fr.obeo.smartea.core.costs.AbstractCost;
+import fr.obeo.smartea.core.costs.CostUtils;
 import fr.obeo.smartea.core.costs.CostsPackage;
 import fr.obeo.smartea.core.costs.CurrencyElement;
 
@@ -42,6 +43,7 @@ import org.eclipse.emf.internal.cdo.CDOObjectImpl;
  * <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getCurrency <em>Currency</em>}</li>
  * <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getRef <em>Ref</em>}</li>
  * <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getValue <em>Value</em>}</li>
+ * <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getCost <em>Cost</em>}</li>
  * </ul>
  *
  * @generated
@@ -96,6 +98,16 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 	 * @ordered
 	 */
 	protected static final int VALUE_EDEFAULT = 1;
+
+	/**
+	 * The default value of the '{@link #getCost() <em>Cost</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @see #getCost()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final double COST_EDEFAULT = 0.0;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -256,6 +268,15 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
+	 * @generated NOT
+	 */
+	public double getCost() {
+		return CostUtils.computeCost(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -275,6 +296,8 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 				return basicGetRef();
 			case CostsPackage.ABSTRACT_COST__VALUE:
 				return getValue();
+			case CostsPackage.ABSTRACT_COST__COST:
+				return getCost();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -361,6 +384,8 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 				return basicGetRef() != null;
 			case CostsPackage.ABSTRACT_COST__VALUE:
 				return getValue() != VALUE_EDEFAULT;
+			case CostsPackage.ABSTRACT_COST__COST:
+				return getCost() != COST_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}

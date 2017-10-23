@@ -31,6 +31,8 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  * <ul>
  *   <li>{@link fr.obeo.smartea.core.costs.CostsContainer#getCosts <em>Costs</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.CostsContainer#getRegularCost <em>Regular Cost</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.CostsContainer#getInitialCost <em>Initial Cost</em>}</li>
  * </ul>
  *
  * @see fr.obeo.smartea.core.costs.CostsPackage#getCostsContainer()
@@ -53,5 +55,35 @@ public interface CostsContainer extends Identified, CurrencyElement, TimeElement
 	 * @generated
 	 */
 	EList<AbstractCost> getCosts();
+
+	/**
+	 * Returns the value of the '<em><b>Regular Cost</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Regular Cost</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Regular Cost</em>' attribute.
+	 * @see fr.obeo.smartea.core.costs.CostsPackage#getCostsContainer_RegularCost()
+	 * @model changeable="false" derived="true"
+	 * @generated
+	 */
+	double getRegularCost();
+
+	/**
+	 * Returns the value of the '<em><b>Initial Cost</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Initial Cost</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Initial Cost</em>' attribute.
+	 * @see fr.obeo.smartea.core.costs.CostsPackage#getCostsContainer_InitialCost()
+	 * @model changeable="false" derived="true"
+	 * @generated
+	 */
+	double getInitialCost();
 
 } // CostsContainer

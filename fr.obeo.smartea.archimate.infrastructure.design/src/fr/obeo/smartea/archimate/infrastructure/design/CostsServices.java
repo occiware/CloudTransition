@@ -14,6 +14,7 @@ import fr.obeo.smartea.core.basemm.BaseFactory;
 import fr.obeo.smartea.core.basemm.Folder;
 import fr.obeo.smartea.core.costs.AbstractCost;
 import fr.obeo.smartea.core.costs.Cost;
+import fr.obeo.smartea.core.costs.CostUtils;
 import fr.obeo.smartea.core.costs.CostsContainer;
 import fr.obeo.smartea.core.costs.CostsFactory;
 import fr.obeo.smartea.core.costs.CostsPackage;
@@ -69,5 +70,13 @@ public class CostsServices extends AbstractUIPlugin {
 		costsFolder.getElements().add(res);
 		resource.getContents().add(costsFolder);
 		return res;
+	}
+
+	public String getCostContainerLabel(CostsContainer element) {
+		return "Cost Analysis: " + CostUtils.formatCost(element);
+	}
+
+	public String getCostLabel(AbstractCost cost) {
+		return cost.getName() + ": " + CostUtils.formatCost(cost);
 	}
 }

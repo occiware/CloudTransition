@@ -4,21 +4,21 @@
     <ownedRepresentations xsi:type="description_1:EditionTableDescription" name="costs_table" label="Costs Table" domainClass="costs.CostsContainer">
       <metamodel href="http://www.obeo.fr/smartea/costs/2.0.0#/"/>
       <ownedLineMappings name="cost" label="Cost" domainClass="costs.Cost" headerLabelExpression="feature:name"/>
-      <ownedLineMappings name="initialCost" label="Cost" domainClass="costs.InitialCost" headerLabelExpression="feature:name"/>
-      <ownedLineMappings name="issue" label="Cost" domainClass="costs.Issue" headerLabelExpression="feature:name"/>
+      <ownedLineMappings name="initialCost" label="Initial Cost" domainClass="costs.InitialCost" headerLabelExpression="feature:name"/>
+      <ownedLineMappings name="issue" label="Regular Cost" domainClass="costs.Issue" headerLabelExpression="feature:name"/>
       <ownedLineMappings name="Total" domainClass="CostsContainer" semanticCandidatesExpression="var:container" headerLabelExpression="Total">
         <defaultBackground>
           <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
         </defaultBackground>
       </ownedLineMappings>
       <ownedColumnMappings name="ref" headerLabelExpression="Attached to" featureName="ref"/>
-      <ownedColumnMappings name="count" headerLabelExpression="Count" featureName="count"/>
+      <ownedColumnMappings name="count" headerLabelExpression="Issues" featureName="count"/>
       <ownedColumnMappings name="value" headerLabelExpression="Value" featureName="value"/>
-      <ownedColumnMappings name="cost" headerLabelExpression="Cost (in common currency)" featureName="id" labelExpression="service:computeCost()"/>
-      <ownedColumnMappings name="currency" headerLabelExpression="Currency" featureName="currency"/>
-      <ownedColumnMappings name="timeUnit" headerLabelExpression="Time Unit" featureName="timeUnit"/>
-      <ownedColumnMappings name="documentation" headerLabelExpression="Documentation" featureName="documentation" labelExpression="feature:documentation"/>
+      <ownedColumnMappings name="currency" headerLabelExpression="Currency" featureName="currency" labelExpression="service:getPrettyCurrency()"/>
+      <ownedColumnMappings name="timeUnit" headerLabelExpression="Time Unit" featureName="timeUnit" labelExpression="aql:self.timeUnit.toString().toLower()"/>
+      <ownedColumnMappings name="cost" headerLabelExpression="Cost (in common currency/period)" featureName="id" labelExpression="service:formatCost()"/>
+      <ownedColumnMappings name="documentation" headerLabelExpression="Notes" featureName="documentation" labelExpression="feature:documentation"/>
     </ownedRepresentations>
-    <ownedJavaExtensions qualifiedClassName="fr.obeo.smartea.core.costs.design.DesignServices"/>
+    <ownedJavaExtensions qualifiedClassName="fr.obeo.smartea.core.costs.CostUtils"/>
   </ownedViewpoints>
 </description:Group>
