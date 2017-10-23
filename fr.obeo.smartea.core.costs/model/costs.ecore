@@ -5,16 +5,16 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="costs" upperBound="-1"
         eType="#//AbstractCost" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="regularCost" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"
-        changeable="false" derived="true"/>
+        changeable="false"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="initialCost" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"
-        changeable="false" derived="true"/>
+        changeable="false"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AbstractCost" abstract="true" eSuperTypes="../../fr.obeo.smartea.core.basemm/model/basemm.ecore#//Documentable ../../fr.obeo.smartea.core.basemm/model/basemm.ecore#//Identified ../../fr.obeo.smartea.core.basemm/model/basemm.ecore#//Nameable #//CurrencyElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="ref" lowerBound="1" eType="ecore:EClass ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EObject"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EInt"
         defaultValueLiteral="1"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="cost" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"
-        changeable="false" derived="true"/>
+        changeable="false"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InitialCost" eSuperTypes="#//AbstractCost"/>
   <eClassifiers xsi:type="ecore:EClass" name="Cost" eSuperTypes="#//AbstractCost #//TimeElement"/>

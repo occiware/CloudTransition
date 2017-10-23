@@ -37,13 +37,13 @@ import org.eclipse.emf.internal.cdo.CDOObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getDocumentation <em>Documentation</em>}</li>
- * <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getId <em>Id</em>}</li>
- * <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getName <em>Name</em>}</li>
- * <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getCurrency <em>Currency</em>}</li>
- * <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getRef <em>Ref</em>}</li>
- * <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getValue <em>Value</em>}</li>
- * <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getCost <em>Cost</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getDocumentation <em>Documentation</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getId <em>Id</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getName <em>Name</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getCurrency <em>Currency</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getRef <em>Ref</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link fr.obeo.smartea.core.costs.impl.AbstractCostImpl#getCost <em>Cost</em>}</li>
  * </ul>
  *
  * @generated
@@ -60,9 +60,9 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 	protected static final String DOCUMENTATION_EDEFAULT = ""; //$NON-NLS-1$
 
 	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @see #getId()
 	 * @generated
 	 * @ordered
@@ -70,9 +70,9 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 	protected static final String ID_EDEFAULT = null;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @see #getName()
 	 * @generated
 	 * @ordered
@@ -80,9 +80,9 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 	protected static final String NAME_EDEFAULT = ""; //$NON-NLS-1$
 
 	/**
-	 * The default value of the '{@link #getCurrency() <em>Currency</em>}' attribute. <!-- begin-user-doc -->
+	 * The default value of the '{@link #getCurrency() <em>Currency</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
 	 * @see #getCurrency()
 	 * @generated
 	 * @ordered
@@ -90,9 +90,9 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 	protected static final String CURRENCY_EDEFAULT = "euro"; //$NON-NLS-1$
 
 	/**
-	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @see #getValue()
 	 * @generated
 	 * @ordered
@@ -100,9 +100,9 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 	protected static final int VALUE_EDEFAULT = 1;
 
 	/**
-	 * The default value of the '{@link #getCost() <em>Cost</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * The default value of the '{@link #getCost() <em>Cost</em>}' attribute.
+	 * <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
 	 * @see #getCost()
 	 * @generated
 	 * @ordered
@@ -121,7 +121,6 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -131,7 +130,6 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -141,37 +139,30 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public String getDocumentation() {
-		return (String)eDynamicGet(CostsPackage.ABSTRACT_COST__DOCUMENTATION,
-				BasePackage.Literals.DOCUMENTABLE__DOCUMENTATION, true, true);
+		return (String)eDynamicGet(CostsPackage.ABSTRACT_COST__DOCUMENTATION, BasePackage.Literals.DOCUMENTABLE__DOCUMENTATION, true, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setDocumentation(String newDocumentation) {
-		eDynamicSet(CostsPackage.ABSTRACT_COST__DOCUMENTATION,
-				BasePackage.Literals.DOCUMENTABLE__DOCUMENTATION, newDocumentation);
+		eDynamicSet(CostsPackage.ABSTRACT_COST__DOCUMENTATION, BasePackage.Literals.DOCUMENTABLE__DOCUMENTATION, newDocumentation);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public String getId() {
-		return (String)eDynamicGet(CostsPackage.ABSTRACT_COST__ID, BasePackage.Literals.IDENTIFIED__ID, true,
-				true);
+		return (String)eDynamicGet(CostsPackage.ABSTRACT_COST__ID, BasePackage.Literals.IDENTIFIED__ID, true, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setId(String newId) {
@@ -180,17 +171,14 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public String getName() {
-		return (String)eDynamicGet(CostsPackage.ABSTRACT_COST__NAME, BasePackage.Literals.NAMEABLE__NAME,
-				true, true);
+		return (String)eDynamicGet(CostsPackage.ABSTRACT_COST__NAME, BasePackage.Literals.NAMEABLE__NAME, true, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setName(String newName) {
@@ -199,47 +187,38 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public String getCurrency() {
-		return (String)eDynamicGet(CostsPackage.ABSTRACT_COST__CURRENCY,
-				CostsPackage.Literals.CURRENCY_ELEMENT__CURRENCY, true, true);
+		return (String)eDynamicGet(CostsPackage.ABSTRACT_COST__CURRENCY, CostsPackage.Literals.CURRENCY_ELEMENT__CURRENCY, true, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setCurrency(String newCurrency) {
-		eDynamicSet(CostsPackage.ABSTRACT_COST__CURRENCY, CostsPackage.Literals.CURRENCY_ELEMENT__CURRENCY,
-				newCurrency);
+		eDynamicSet(CostsPackage.ABSTRACT_COST__CURRENCY, CostsPackage.Literals.CURRENCY_ELEMENT__CURRENCY, newCurrency);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public EObject getRef() {
-		return (EObject)eDynamicGet(CostsPackage.ABSTRACT_COST__REF, CostsPackage.Literals.ABSTRACT_COST__REF,
-				true, true);
+		return (EObject)eDynamicGet(CostsPackage.ABSTRACT_COST__REF, CostsPackage.Literals.ABSTRACT_COST__REF, true, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public EObject basicGetRef() {
-		return (EObject)eDynamicGet(CostsPackage.ABSTRACT_COST__REF, CostsPackage.Literals.ABSTRACT_COST__REF,
-				false, true);
+		return (EObject)eDynamicGet(CostsPackage.ABSTRACT_COST__REF, CostsPackage.Literals.ABSTRACT_COST__REF, false, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setRef(EObject newRef) {
@@ -248,17 +227,14 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public int getValue() {
-		return (Integer)eDynamicGet(CostsPackage.ABSTRACT_COST__VALUE,
-				CostsPackage.Literals.ABSTRACT_COST__VALUE, true, true);
+		return (Integer)eDynamicGet(CostsPackage.ABSTRACT_COST__VALUE, CostsPackage.Literals.ABSTRACT_COST__VALUE, true, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public void setValue(int newValue) {
@@ -276,7 +252,6 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -291,8 +266,7 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 			case CostsPackage.ABSTRACT_COST__CURRENCY:
 				return getCurrency();
 			case CostsPackage.ABSTRACT_COST__REF:
-				if (resolve)
-					return getRef();
+				if (resolve) return getRef();
 				return basicGetRef();
 			case CostsPackage.ABSTRACT_COST__VALUE:
 				return getValue();
@@ -304,7 +278,6 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -334,7 +307,6 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -364,22 +336,19 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case CostsPackage.ABSTRACT_COST__DOCUMENTATION:
-				return DOCUMENTATION_EDEFAULT == null ? getDocumentation() != null
-						: !DOCUMENTATION_EDEFAULT.equals(getDocumentation());
+				return DOCUMENTATION_EDEFAULT == null ? getDocumentation() != null : !DOCUMENTATION_EDEFAULT.equals(getDocumentation());
 			case CostsPackage.ABSTRACT_COST__ID:
 				return ID_EDEFAULT == null ? getId() != null : !ID_EDEFAULT.equals(getId());
 			case CostsPackage.ABSTRACT_COST__NAME:
 				return NAME_EDEFAULT == null ? getName() != null : !NAME_EDEFAULT.equals(getName());
 			case CostsPackage.ABSTRACT_COST__CURRENCY:
-				return CURRENCY_EDEFAULT == null ? getCurrency() != null
-						: !CURRENCY_EDEFAULT.equals(getCurrency());
+				return CURRENCY_EDEFAULT == null ? getCurrency() != null : !CURRENCY_EDEFAULT.equals(getCurrency());
 			case CostsPackage.ABSTRACT_COST__REF:
 				return basicGetRef() != null;
 			case CostsPackage.ABSTRACT_COST__VALUE:
@@ -392,33 +361,26 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
 		if (baseClass == Identified.class) {
 			switch (derivedFeatureID) {
-				case CostsPackage.ABSTRACT_COST__ID:
-					return BasePackage.IDENTIFIED__ID;
-				default:
-					return -1;
+				case CostsPackage.ABSTRACT_COST__ID: return BasePackage.IDENTIFIED__ID;
+				default: return -1;
 			}
 		}
 		if (baseClass == Nameable.class) {
 			switch (derivedFeatureID) {
-				case CostsPackage.ABSTRACT_COST__NAME:
-					return BasePackage.NAMEABLE__NAME;
-				default:
-					return -1;
+				case CostsPackage.ABSTRACT_COST__NAME: return BasePackage.NAMEABLE__NAME;
+				default: return -1;
 			}
 		}
 		if (baseClass == CurrencyElement.class) {
 			switch (derivedFeatureID) {
-				case CostsPackage.ABSTRACT_COST__CURRENCY:
-					return CostsPackage.CURRENCY_ELEMENT__CURRENCY;
-				default:
-					return -1;
+				case CostsPackage.ABSTRACT_COST__CURRENCY: return CostsPackage.CURRENCY_ELEMENT__CURRENCY;
+				default: return -1;
 			}
 		}
 		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
@@ -426,33 +388,26 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
 		if (baseClass == Identified.class) {
 			switch (baseFeatureID) {
-				case BasePackage.IDENTIFIED__ID:
-					return CostsPackage.ABSTRACT_COST__ID;
-				default:
-					return -1;
+				case BasePackage.IDENTIFIED__ID: return CostsPackage.ABSTRACT_COST__ID;
+				default: return -1;
 			}
 		}
 		if (baseClass == Nameable.class) {
 			switch (baseFeatureID) {
-				case BasePackage.NAMEABLE__NAME:
-					return CostsPackage.ABSTRACT_COST__NAME;
-				default:
-					return -1;
+				case BasePackage.NAMEABLE__NAME: return CostsPackage.ABSTRACT_COST__NAME;
+				default: return -1;
 			}
 		}
 		if (baseClass == CurrencyElement.class) {
 			switch (baseFeatureID) {
-				case CostsPackage.CURRENCY_ELEMENT__CURRENCY:
-					return CostsPackage.ABSTRACT_COST__CURRENCY;
-				default:
-					return -1;
+				case CostsPackage.CURRENCY_ELEMENT__CURRENCY: return CostsPackage.ABSTRACT_COST__CURRENCY;
+				default: return -1;
 			}
 		}
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);

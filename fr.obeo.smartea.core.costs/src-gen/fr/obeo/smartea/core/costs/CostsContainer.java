@@ -66,7 +66,7 @@ public interface CostsContainer extends Identified, CurrencyElement, TimeElement
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Regular Cost</em>' attribute.
 	 * @see fr.obeo.smartea.core.costs.CostsPackage#getCostsContainer_RegularCost()
-	 * @model changeable="false" derived="true"
+	 * @model changeable="false"
 	 * @generated
 	 */
 	double getRegularCost();
@@ -81,7 +81,7 @@ public interface CostsContainer extends Identified, CurrencyElement, TimeElement
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Initial Cost</em>' attribute.
 	 * @see fr.obeo.smartea.core.costs.CostsPackage#getCostsContainer_InitialCost()
-	 * @model changeable="false" derived="true"
+	 * @model changeable="false"
 	 * @generated
 	 */
 	double getInitialCost();

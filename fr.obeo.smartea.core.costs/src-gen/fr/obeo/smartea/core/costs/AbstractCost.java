@@ -105,7 +105,7 @@ public interface AbstractCost extends Documentable, Identified, Nameable, Curren
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Cost</em>' attribute.
 	 * @see fr.obeo.smartea.core.costs.CostsPackage#getAbstractCost_Cost()
-	 * @model changeable="false" derived="true"
+	 * @model changeable="false"
 	 * @generated
 	 */
 	double getCost();
