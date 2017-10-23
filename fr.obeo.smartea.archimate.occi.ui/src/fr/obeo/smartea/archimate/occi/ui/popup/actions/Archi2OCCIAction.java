@@ -9,6 +9,7 @@ import org.eclipse.core.resources.IFile;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Status;
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
@@ -66,13 +67,23 @@ public class Archi2OCCIAction implements IObjectActionDelegate {
 		ResourceSet resourceSet = new ResourceSetImpl();
 		Resource resource = resourceSet.getResource(URI.createFileURI(archiFile.getLocation().toString()), true);
 
-		Folder folder = (Folder) resource.getContents().get(2);
-		Configuration configuration = new Archi2OCCI().convert(folder, mapping);
-		Resource output = resourceSet.createResource(
-				URI.createFileURI(archiFile.getLocation().removeFileExtension().addFileExtension("occic").toString()));
-		output.getContents().add(configuration);
+		Folder folder = getFolder(resource);
+		if (folder != null) {
+			Configuration configuration = new Archi2OCCI().convert(folder, mapping);
+			Resource output = resourceSet.createResource(URI
+					.createFileURI(archiFile.getLocation().removeFileExtension().addFileExtension("occic").toString()));
+			output.getContents().add(configuration);
+			output.save(Collections.EMPTY_MAP);
+		}
+	}
 
-		output.save(Collections.EMPTY_MAP);
+	private Folder getFolder(Resource resource) {
+		for (EObject content : resource.getContents()) {
+			if (content instanceof Folder) {
+				return (Folder) content;
+			}
+		}
+		return null;
 	}
 
 	/**
