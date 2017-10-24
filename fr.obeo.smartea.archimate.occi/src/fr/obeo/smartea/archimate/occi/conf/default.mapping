@@ -1,9 +1,9 @@
-#Archi EClass name = OCCI Kind scheme
+#OCCI Kind scheme=Archi EClass name
 
 # Infrastructure default mapping
 http\://schemas.ogf.org/occi/core#link=CompositionRelationship
 http\://schemas.ogf.org/occi/core#resource=Artifact
 http\://schemas.ogf.org/occi/infrastructure#compute=Node
-http\://schemas.ogf.org/occi/infrastructure#network=Network
+http\://schemas.ogf.org/occi/infrastructure#network=Device
 
 

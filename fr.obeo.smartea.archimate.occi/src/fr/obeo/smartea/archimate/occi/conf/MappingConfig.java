@@ -1,5 +1,7 @@
 package fr.obeo.smartea.archimate.occi.conf;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -14,6 +16,7 @@ import org.eclipse.emf.ecore.EClass;
 import fr.obeo.smartea.archimate.ArchimateComponent;
 import fr.obeo.smartea.archimate.ArchimatePackage;
 import fr.obeo.smartea.archimate.Relationship;
+import fr.obeo.smartea.archimate.occi.OCCI2Archi;
 
 public class MappingConfig {
 
@@ -75,6 +78,23 @@ public class MappingConfig {
 			EClass type = (EClass) ArchimatePackage.eINSTANCE.getEClassifier(typeName);
 			mapping.put(String.valueOf(entry.getKey()), type);
 		}
+	}
+
+	public MappingConfig(Properties properties) {
+		load(properties);
+	}
+
+	public MappingConfig() {
+		Properties props = new Properties();
+		InputStream is = getClass().getResourceAsStream("default.mapping");
+		try {
+			props.load(is);
+			is.close();
+		} catch (IOException e) {
+			// should not happen
+			throw new IllegalStateException();
+		}
+		load(props);
 	}
 
 }

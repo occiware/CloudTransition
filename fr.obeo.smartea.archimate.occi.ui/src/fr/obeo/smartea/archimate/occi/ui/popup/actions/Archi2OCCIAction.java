@@ -1,10 +1,9 @@
 package fr.obeo.smartea.archimate.occi.ui.popup.actions;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Collections;
-import java.util.Properties;
 
+import org.eclipse.cmf.occi.core.Configuration;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Status;
@@ -19,11 +18,8 @@ import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.ui.IActionDelegate;
 import org.eclipse.ui.IObjectActionDelegate;
 import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.cmf.occi.core.Configuration;
 
 import fr.obeo.smartea.archimate.occi.Archi2OCCI;
-import fr.obeo.smartea.archimate.occi.OCCI2Archi;
-import fr.obeo.smartea.archimate.occi.conf.MappingConfig;
 import fr.obeo.smartea.archimate.occi.ui.Activator;
 import fr.obeo.smartea.core.basemm.Folder;
 
@@ -57,19 +53,12 @@ public class Archi2OCCIAction implements IObjectActionDelegate {
 	}
 
 	private void convertToOCCI(IFile archiFile) throws IOException {
-		MappingConfig mapping = new MappingConfig();
-		Properties props = new Properties();
-		InputStream is = OCCI2Archi.class.getResourceAsStream("OCCI2Archi.mapping");
-		props.load(is);
-		mapping.load(props);
-		is.close();
-
 		ResourceSet resourceSet = new ResourceSetImpl();
 		Resource resource = resourceSet.getResource(URI.createFileURI(archiFile.getLocation().toString()), true);
 
 		Folder folder = getFolder(resource);
 		if (folder != null) {
-			Configuration configuration = new Archi2OCCI().convert(folder, mapping);
+			Configuration configuration = new Archi2OCCI().convert(folder);
 			Resource output = resourceSet.createResource(URI
 					.createFileURI(archiFile.getLocation().removeFileExtension().addFileExtension("occic").toString()));
 			output.getContents().add(configuration);

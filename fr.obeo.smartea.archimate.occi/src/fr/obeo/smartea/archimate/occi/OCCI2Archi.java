@@ -35,15 +35,11 @@ public class OCCI2Archi {
 		Folder techFolder = BaseFactory.eINSTANCE.createFolder();
 		techFolder.setName(ModelUtils.TECHNOLOGY_FOLDER_NAME);
 
-		Folder nodesFolder = BaseFactory.eINSTANCE.createFolder();
-		nodesFolder.setName(ModelUtils.NODES_FOLDER_NAME);
-		techFolder.getFolders().add(nodesFolder);
-
 		// NOTE unused: configuration.use
 		for (Resource resource : configuration.getResources()) {
 			EClass elementType = mappingConfig.getArchiType(resource.getKind());
 			ArchimateElement element = (ArchimateElement) createArchimateComponentFrom(resource, elementType);
-			ModelUtils.getFolderFor(techFolder, element).getElements().add(element);
+			techFolder.getElements().add(element);
 			resourcesTraces.put(resource, element);
 			for (AttributeState attributeState : resource.getAttributes()) {
 				convertAttributeState(element, attributeState);

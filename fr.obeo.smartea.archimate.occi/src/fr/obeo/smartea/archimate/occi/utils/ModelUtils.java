@@ -12,7 +12,6 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
-import fr.obeo.smartea.archimate.Node;
 import fr.obeo.smartea.core.basemm.Folder;
 import fr.obeo.smartea.core.basemm.Identified;
 
@@ -22,12 +21,6 @@ public class ModelUtils {
 	public static final String OCCI_ID_ATTR_NAME = "occi.core.id";
 	public static final String NODES_FOLDER_NAME = "Logical Technology Components";
 
-	public static Folder getFolderFor(Folder targetTechFolder, EObject element) {
-		if (element instanceof Node) {
-			return getSubFolder(targetTechFolder, NODES_FOLDER_NAME);
-		}
-		return targetTechFolder;
-	}
 
 	public static String getId(EObject element) {
 		if (element instanceof Entity) {

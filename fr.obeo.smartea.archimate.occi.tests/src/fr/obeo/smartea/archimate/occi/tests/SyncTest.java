@@ -58,7 +58,7 @@ public class SyncTest extends TestCase implements ITestsConstants {
 	}
 
 	private void addArchimateElement(ArchimateElement newElement) {
-		ModelUtils.getFolderFor(targetFolder, newElement).getElements().add(newElement);
+		targetFolder.getElements().add(newElement);
 	}
 
 	private ArchimateElement createArchimateElement() {
