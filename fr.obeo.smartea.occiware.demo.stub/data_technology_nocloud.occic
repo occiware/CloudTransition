@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="ASCII"?>
+<occi:Configuration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:occi="http://schemas.ogf.org/occi/core/ecore">
+  <resources id="5a5352f0" title="Sage">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <attributes name="occi.core.id" value="5a5352f0"/>
+    <attributes name="occi.core.title" value="Sage"/>
+    <links id="urn:uuid:27be7775-7a3d-4fda-8d83-49ae40378fc0" title="" target="//@resources.11">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:27be7775-7a3d-4fda-8d83-49ae40378fc0"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+  </resources>
+  <resources id="bfdc7d62" title="Offers Mgt System" rlinks="//@resources.12/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <attributes name="occi.core.id" value="bfdc7d62"/>
+    <attributes name="occi.core.title" value="Offers Mgt System"/>
+    <links id="urn:uuid:3c369b95-3451-4840-aa76-ff03db625d95" title="" target="//@resources.4">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:3c369b95-3451-4840-aa76-ff03db625d95"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+    <links id="urn:uuid:7d9f1f80-5e09-4685-8aa5-c8bad3e0e4a3" title="" target="//@resources.5">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:7d9f1f80-5e09-4685-8aa5-c8bad3e0e4a3"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+  </resources>
+  <resources id="1706be6b" title="Trips Mgt System" rlinks="//@resources.14/@links.1 //@resources.13/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <attributes name="occi.core.id" value="1706be6b"/>
+    <attributes name="occi.core.title" value="Trips Mgt System"/>
+    <links id="urn:uuid:46a820ef-9240-473c-9e7e-ba676ef0f97a" title="" target="//@resources.6">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:46a820ef-9240-473c-9e7e-ba676ef0f97a"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+    <links id="urn:uuid:bb5d8659-f597-4225-8491-b0ab88eb50ba" title="" target="//@resources.7">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:bb5d8659-f597-4225-8491-b0ab88eb50ba"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+  </resources>
+  <resources id="ec6626d8" title="Sugar CRM">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <attributes name="occi.core.id" value="ec6626d8"/>
+    <attributes name="occi.core.title" value="Sugar CRM"/>
+    <links id="urn:uuid:9481e3b4-96f6-4619-8957-d5825cd292e9" title="" target="//@resources.10">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:9481e3b4-96f6-4619-8957-d5825cd292e9"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+  </resources>
+  <resources id="56adc47c" title="Offers Mgt System - EJB" rlinks="//@resources.15/@links.1 //@resources.1/@links.0 //@resources.5/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <attributes name="occi.core.id" value="56adc47c"/>
+    <attributes name="occi.core.title" value="Offers Mgt System - EJB"/>
+    <links id="urn:uuid:0e6c61df-e616-41a0-8c0f-2e941ad972db" title="" target="//@resources.9">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:0e6c61df-e616-41a0-8c0f-2e941ad972db"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+  </resources>
+  <resources id="2121ed04" title="Offers Mgt System - Website" rlinks="//@resources.1/@links.1">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <attributes name="occi.core.id" value="2121ed04"/>
+    <attributes name="occi.core.title" value="Offers Mgt System - Website"/>
+    <links id="urn:uuid:10e2b7f4-1ecd-476a-af51-d3e952663ce9" title="" target="//@resources.4">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:10e2b7f4-1ecd-476a-af51-d3e952663ce9"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+  </resources>
+  <resources id="7585c61b" title="Trips Mgt System - Website" rlinks="//@resources.2/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <attributes name="occi.core.id" value="7585c61b"/>
+    <attributes name="occi.core.title" value="Trips Mgt System - Website"/>
+    <links id="urn:uuid:52e28737-21fd-4a1d-afb3-e751bb695847" title="" target="//@resources.7">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:52e28737-21fd-4a1d-afb3-e751bb695847"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+  </resources>
+  <resources id="ab119d93" title="Trips Mgt System - EJB" rlinks="//@resources.2/@links.1 //@resources.6/@links.0 //@resources.14/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <attributes name="occi.core.id" value="ab119d93"/>
+    <attributes name="occi.core.title" value="Trips Mgt System - EJB"/>
+    <links id="urn:uuid:2fa585a5-638e-410b-be23-44b5fafb4fbc" title="" target="//@resources.8">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:2fa585a5-638e-410b-be23-44b5fafb4fbc"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+  </resources>
+  <resources id="604acf86" title="Trip database" rlinks="//@resources.7/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <attributes name="occi.core.id" value="604acf86"/>
+    <attributes name="occi.core.title" value="Trip database"/>
+  </resources>
+  <resources id="2add7178" title="Offers database" rlinks="//@resources.4/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <attributes name="occi.core.id" value="2add7178"/>
+    <attributes name="occi.core.title" value="Offers database"/>
+  </resources>
+  <resources id="2a23eeb5" title="Sugar CRM database" rlinks="//@resources.3/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <attributes name="occi.core.id" value="2a23eeb5"/>
+    <attributes name="occi.core.title" value="Sugar CRM database"/>
+  </resources>
+  <resources id="d17674cd" title="Sage database" rlinks="//@resources.0/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <attributes name="occi.core.id" value="d17674cd"/>
+    <attributes name="occi.core.title" value="Sage database"/>
+  </resources>
+  <resources id="_b7MfQKzKEeaGGNpad20Csw" title="Offers VM" rlinks="//@resources.15/@links.0">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
+    <attributes name="occi.core.id" value="_b7MfQKzKEeaGGNpad20Csw"/>
+    <attributes name="occi.core.title" value="Offers VM"/>
+    <links id="urn:uuid:8162a776-0342-4823-8a19-a42d6b282fa9" title="" target="//@resources.1">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:8162a776-0342-4823-8a19-a42d6b282fa9"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+  </resources>
+  <resources id="_b_nPwKzLEeaGGNpad20Csw" title="Trips VM">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
+    <attributes name="occi.core.id" value="_b_nPwKzLEeaGGNpad20Csw"/>
+    <attributes name="occi.core.title" value="Trips VM"/>
+    <links id="urn:uuid:176c7916-db6b-4a03-9ed5-3df10c80098e" title="" target="//@resources.2">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:176c7916-db6b-4a03-9ed5-3df10c80098e"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+  </resources>
+  <resources id="_SCQT0KvQEeaUQPSGShOftg" title="Server HP-L12">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <attributes name="occi.core.id" value="_SCQT0KvQEeaUQPSGShOftg"/>
+    <attributes name="occi.core.title" value="Server HP-L12"/>
+    <links id="urn:uuid:e55b98d7-48f9-4081-84be-b5b3e846e846" title="" target="//@resources.7">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:e55b98d7-48f9-4081-84be-b5b3e846e846"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+    <links id="urn:uuid:30fee5ee-4f53-458b-bc16-d25642ff925a" title="" target="//@resources.2">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:30fee5ee-4f53-458b-bc16-d25642ff925a"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+  </resources>
+  <resources id="_UGrpsKvQEeaUQPSGShOftg" title="Server Dell-T16">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <attributes name="occi.core.id" value="_UGrpsKvQEeaUQPSGShOftg"/>
+    <attributes name="occi.core.title" value="Server Dell-T16"/>
+    <links id="urn:uuid:1450eafa-43d8-469e-8c5d-b3eb0fa0e7fa" title="" target="//@resources.12">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:1450eafa-43d8-469e-8c5d-b3eb0fa0e7fa"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+    <links id="urn:uuid:4dfa220d-a0fd-4f1c-bb1a-94abfea4e515" title="" target="//@resources.4">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:4dfa220d-a0fd-4f1c-bb1a-94abfea4e515"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+  </resources>
+</occi:Configuration>

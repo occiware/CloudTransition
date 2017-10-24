@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ASCII"?>
+<occi:Configuration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:occi="http://schemas.ogf.org/occi/core/ecore">
+  <resources id="_SbJh0KzJEeaGGNpad20Csw" title="Google Cloud">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
+    <attributes name="occi.core.id" value="_SbJh0KzJEeaGGNpad20Csw"/>
+    <attributes name="occi.core.title" value="Google Cloud"/>
+    <attributes name="hostname" value="googlecloud"/>
+    <links id="urn:uuid:5b7c52ad-2518-4a6c-a778-a3404466b189" title="" target="//@resources.1">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes name="occi.core.id" value="urn:uuid:5b7c52ad-2518-4a6c-a778-a3404466b189"/>
+      <attributes name="occi.core.title" value=""/>
+    </links>
+  </resources>
+  <resources id="_Tib6AKzJEeaGGNpad20Csw" title="VD Deploy Instance 1" rlinks="//@resources.0/@links.0">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
+    <attributes name="occi.core.id" value="_Tib6AKzJEeaGGNpad20Csw"/>
+    <attributes name="occi.core.title" value="VD Deploy Instance 1"/>
+    <attributes name="hostname" value="vdinstance1"/>
+  </resources>
+</occi:Configuration>
