@@ -24,7 +24,7 @@ public class ImportFromSmartEAAction extends AbstractSmartEAAction {
 	protected void work(Configuration configuration, Resource semanticResource) {
 		Folder targetTechFolder = ModelUtils.getSubFolder(semanticResource, ModelUtils.TECHNOLOGY_FOLDER_NAME);
 		Configuration converted = new Archi2OCCI().convert(targetTechFolder);
-		new OCCIReconciler().reconcile(converted, configuration);
+		new OCCIReconciler().reconcile(converted, configuration, null);
 		try {
 			configuration.eResource().save(Collections.EMPTY_MAP);
 		} catch (IOException e) {

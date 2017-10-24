@@ -17,7 +17,6 @@ import fr.obeo.smartea.core.basemm.Identified;
 
 public class ModelUtils {
 	public static final String TECHNOLOGY_FOLDER_NAME = "Technology";
-	public static final String OCCI_KIND_SCHEME = "occi.core.kind";
 
 	public static String getId(EObject element) {
 		if (element instanceof Entity) {

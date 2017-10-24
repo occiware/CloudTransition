@@ -9,18 +9,22 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
 
 import fr.obeo.smartea.archimate.ArchimateComponent;
 import fr.obeo.smartea.archimate.Relationship;
+import fr.obeo.smartea.archimate.occi.conf.MappingConfig;
 import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
 import fr.obeo.smartea.core.basemm.Nameable;
 import fr.obeo.smartea.core.basemm.PropertiesContainer;
 import fr.obeo.smartea.core.basemm.Property;
+import fr.obeo.smartea.core.basemm.util.PropertiesUtil;
 
 public class ArchiReconciler extends AbstractReconciler {
 
 	@Override
-	protected boolean isManagedElement(EObject element) {
+	protected boolean isManagedElement(EObject element, String sourceId) {
 		if (element instanceof ArchimateComponent) {
-			for (Property property : ((PropertiesContainer) element).getProperties()) {
-				if (property.getName().equals(ModelUtils.OCCI_KIND_SCHEME)) {
+			if (PropertiesUtil.getProperty((PropertiesContainer) element, MappingConfig.OCCI_KIND_SCHEME) != null) {
+				Property sourceProperty = PropertiesUtil.getProperty((PropertiesContainer) element,
+						MappingConfig.OCCI_SOURCE_ID_KEY);
+				if (sourceProperty != null && sourceProperty.getValue().equals(sourceId)) {
 					return true;
 				}
 			}

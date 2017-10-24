@@ -1,14 +1,14 @@
 package fr.obeo.smartea.archimate.occi.tests;
 
+import org.eclipse.cmf.occi.core.Configuration;
+import org.eclipse.cmf.occi.core.Link;
+import org.eclipse.cmf.occi.core.OCCIFactory;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.junit.Test;
-import org.eclipse.cmf.occi.core.Configuration;
-import org.eclipse.cmf.occi.core.Link;
-import org.eclipse.cmf.occi.core.OCCIFactory;
 
 import fr.obeo.smartea.archimate.ArchimateComponent;
 import fr.obeo.smartea.archimate.ArchimateElement;
@@ -20,7 +20,6 @@ import fr.obeo.smartea.archimate.occi.reconciler.ArchiReconciler;
 import fr.obeo.smartea.archimate.occi.reconciler.OCCIReconciler;
 import fr.obeo.smartea.archimate.occi.tests.utils.ITestsConstants;
 import fr.obeo.smartea.archimate.occi.tests.utils.TestUtils;
-import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
 import fr.obeo.smartea.core.basemm.Folder;
 import junit.framework.TestCase;
 
@@ -49,12 +48,12 @@ public class SyncTest extends TestCase implements ITestsConstants {
 
 	private void synchronize() {
 		Folder conversionResult = new OCCI2Archi().convert(sourceConfig);
-		new ArchiReconciler().reconcile(conversionResult, targetFolder);
+		new ArchiReconciler().reconcile(conversionResult, targetFolder, "default");
 	}
 
 	private void synchronizeBackwards() {
 		Configuration conversionResult = new Archi2OCCI().convert(targetFolder);
-		new OCCIReconciler().reconcile(conversionResult, sourceConfig);
+		new OCCIReconciler().reconcile(conversionResult, sourceConfig, "default");
 	}
 
 	private void addArchimateElement(ArchimateElement newElement) {

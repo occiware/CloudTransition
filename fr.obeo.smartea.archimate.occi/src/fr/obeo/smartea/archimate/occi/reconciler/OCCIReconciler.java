@@ -3,19 +3,19 @@ package fr.obeo.smartea.archimate.occi.reconciler;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.cmf.occi.core.AttributeState;
 import org.eclipse.cmf.occi.core.Entity;
 import org.eclipse.cmf.occi.core.Link;
 import org.eclipse.cmf.occi.core.Resource;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 
 import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
 
 public class OCCIReconciler extends AbstractReconciler {
 
 	@Override
-	protected boolean isManagedElement(EObject element) {
+	protected boolean isManagedElement(EObject element, String sourceId) {
 		return element instanceof Entity;
 	}
 

@@ -20,6 +20,9 @@ import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
 import fr.obeo.smartea.core.basemm.Property;
 
 public class MappingConfig {
+	
+	public static final String OCCI_KIND_SCHEME = "occi.core.kind";
+	public static final String OCCI_SOURCE_ID_KEY = "occi.core.sourceid";
 
 	private Map<String, EClass> mapping = new HashMap<String, EClass>();
 
@@ -28,7 +31,7 @@ public class MappingConfig {
 
 		// 1) lookup in the element properties
 		for (Property property : element.getProperties()) {
-			if (ModelUtils.OCCI_KIND_SCHEME.equals(property.getName())) {
+			if (OCCI_KIND_SCHEME.equals(property.getName())) {
 				kindScheme = property.getValue();
 				break;
 			}

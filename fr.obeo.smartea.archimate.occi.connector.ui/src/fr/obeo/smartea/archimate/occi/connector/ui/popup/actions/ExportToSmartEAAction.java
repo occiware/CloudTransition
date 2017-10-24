@@ -18,7 +18,7 @@ public class ExportToSmartEAAction extends AbstractSmartEAAction {
 	protected void work(Configuration configuration, Resource semanticResource) {
 		Folder targetTechFolder = ModelUtils.getSubFolder(semanticResource, ModelUtils.TECHNOLOGY_FOLDER_NAME);
 		Folder converted = new OCCI2Archi().convert(configuration);
-		new ArchiReconciler().reconcile(converted, targetTechFolder);
+		new ArchiReconciler().reconcile(converted, targetTechFolder, configuration.getDescription());
 	}
 
 }

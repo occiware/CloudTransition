@@ -12,12 +12,12 @@ import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
 
 public abstract class AbstractReconciler {
 
-	public void reconcile(EObject source, EObject target) {
+	public void reconcile(EObject source, EObject target, String sourceId) {
 		// delete managed elements no more in source
 		List<EObject> toDelete = new ArrayList<EObject>();
 		for (Iterator<EObject> iterator = target.eAllContents(); iterator.hasNext();) {
 			EObject targetElement = (EObject) iterator.next();
-			if (isManagedElement(targetElement)) {
+			if (isManagedElement(targetElement, sourceId)) {
 				EObject sourceElement = ModelUtils.findExisting(source, targetElement);
 				if (sourceElement == null) {
 					toDelete.add(targetElement);
@@ -25,15 +25,14 @@ public abstract class AbstractReconciler {
 			}
 		}
 		for (EObject eObject : toDelete) {
-			System.err.println("DELETING " + eObject);
-//			delete(eObject);
+			delete(eObject);
 		}
 
 		// add managed elements not yet in target, updates if existing
 		List<EObject> toAdd = new ArrayList<EObject>();
 		for (Iterator<EObject> iterator = source.eAllContents(); iterator.hasNext();) {
 			EObject sourceElement = (EObject) iterator.next();
-			if (isManagedElement(sourceElement)) {
+			if (isManagedElement(sourceElement, sourceId)) {
 				EObject targetElement = ModelUtils.findExisting(target, sourceElement);
 				if (targetElement == null) {
 					toAdd.add(sourceElement);
@@ -49,7 +48,7 @@ public abstract class AbstractReconciler {
 		// resolve links
 		for (Iterator<EObject> iterator = target.eAllContents(); iterator.hasNext();) {
 			EObject targetElement = (EObject) iterator.next();
-			if (isManagedElement(targetElement)) {
+			if (isManagedElement(targetElement, sourceId)) {
 				EObject sourceElement = ModelUtils.findExisting(source, targetElement);
 				if (isManagedRelationship(sourceElement)) {
 					updateRelationship(sourceElement, targetElement);
@@ -71,7 +70,7 @@ public abstract class AbstractReconciler {
 
 	protected abstract void delete(EObject eObject);
 
-	protected abstract boolean isManagedElement(EObject targetElement);
+	protected abstract boolean isManagedElement(EObject targetElement, String sourceId);
 
 	protected abstract void updateElement(EObject sourceElement, EObject targetElement);
 

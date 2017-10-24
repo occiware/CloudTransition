@@ -31,6 +31,7 @@ public class OCCI2Archi {
 	}
 
 	public Folder convert(Configuration configuration, MappingConfig mappingConfig) {
+		String sourceId = configuration.getDescription();
 		Map<Resource, ArchimateElement> resourcesTraces = new HashMap<>();
 		Map<Link, Relationship> linksTraces = new HashMap<>();
 
@@ -40,7 +41,7 @@ public class OCCI2Archi {
 		// NOTE unused: configuration.use
 		for (Resource resource : configuration.getResources()) {
 			EClass elementType = mappingConfig.getArchiType(resource.getKind());
-			ArchimateElement element = (ArchimateElement) createArchimateComponentFrom(resource, elementType);
+			ArchimateElement element = (ArchimateElement) createArchimateComponentFrom(resource, elementType, sourceId);
 			techFolder.getElements().add(element);
 			resourcesTraces.put(resource, element);
 			for (AttributeState attributeState : resource.getAttributes()) {
@@ -51,7 +52,8 @@ public class OCCI2Archi {
 				if (relationshipType == null) {
 					throw new UnsupportedOperationException(link.getKind().getTerm());
 				}
-				Relationship relationship = (Relationship) createArchimateComponentFrom(link, relationshipType);
+				Relationship relationship = (Relationship) createArchimateComponentFrom(link, relationshipType,
+						sourceId);
 				linksTraces.put(link, relationship);
 				for (AttributeState attributeState : link.getAttributes()) {
 					convertAttributeState(relationship, attributeState);
@@ -76,17 +78,23 @@ public class OCCI2Archi {
 		return techFolder;
 	}
 
-	private ArchimateComponent createArchimateComponentFrom(Entity entity, EClass elementType) {
+	private ArchimateComponent createArchimateComponentFrom(Entity entity, EClass elementType, String sourceId) {
 		ArchimateComponent element = (ArchimateComponent) ArchimateFactory.eINSTANCE.create(elementType);
 		element.setName(entity.getTitle());
 		element.setId(entity.getId());
 
-		Property property = BaseFactory.eINSTANCE.createProperty();
-		element.getProperties().add(property);
-		property.setName(ModelUtils.OCCI_KIND_SCHEME);
-		property.setValue(entity.getKind().getScheme() + entity.getKind().getTerm());
-		element.getProperties().add(property);
+		Property kindProperty = BaseFactory.eINSTANCE.createProperty();
+		element.getProperties().add(kindProperty);
+		kindProperty.setName(MappingConfig.OCCI_KIND_SCHEME);
+		kindProperty.setValue(entity.getKind().getScheme() + entity.getKind().getTerm());
+		element.getProperties().add(kindProperty);
 
+		Property sourceProperty = BaseFactory.eINSTANCE.createProperty();
+		element.getProperties().add(sourceProperty);
+		sourceProperty.setName(MappingConfig.OCCI_SOURCE_ID_KEY);
+		sourceProperty.setValue(sourceId);
+		element.getProperties().add(sourceProperty);
+		
 		return element;
 	}
 
