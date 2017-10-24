@@ -93,7 +93,7 @@ public class SyncTest extends TestCase implements ITestsConstants {
 	@Test
 	public void testOCCIAttributeChange() {
 		org.eclipse.cmf.occi.core.Resource occiResource = TestUtils.getOCCIResource(sourceConfig, RESOURCE1_ID);
-		TestUtils.changeAttribute(occiResource, ModelUtils.OCCI_TITLE_ATTR_NAME, NEW_TITLE);
+		TestUtils.changeAttribute(occiResource, "occi.core.title", NEW_TITLE);
 		synchronize();
 		assertEquals(NEW_TITLE, getArchimateComponent(RESOURCE1_ID).getName());
 	}

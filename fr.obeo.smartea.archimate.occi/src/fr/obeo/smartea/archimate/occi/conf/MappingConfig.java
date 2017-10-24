@@ -16,34 +16,30 @@ import org.eclipse.emf.ecore.EClass;
 import fr.obeo.smartea.archimate.ArchimateComponent;
 import fr.obeo.smartea.archimate.ArchimatePackage;
 import fr.obeo.smartea.archimate.Relationship;
-import fr.obeo.smartea.archimate.occi.OCCI2Archi;
+import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
+import fr.obeo.smartea.core.basemm.Property;
 
 public class MappingConfig {
 
-	private static final String LINK_SCHEME = "http://schemas.ogf.org/occi/core#link";
-	private static final String RESOURCE_SCHEME = "http://schemas.ogf.org/occi/core#resource";
 	private Map<String, EClass> mapping = new HashMap<String, EClass>();
-
-	{
-		mapping.put(RESOURCE_SCHEME, ArchimatePackage.eINSTANCE.getNode());
-		mapping.put(LINK_SCHEME, ArchimatePackage.eINSTANCE.getAssociationRelationship());
-	}
 
 	public Kind getOCCIKind(ArchimateComponent element) {
 		String kindScheme = null;
 
-		// TODO get metadata, otherwise get the first value
-		for (Entry<String, EClass> entry : mapping.entrySet()) {
-			if (element.eClass().equals(entry.getValue())) {
-				kindScheme = entry.getKey();
+		// 1) lookup in the element properties
+		for (Property property : element.getProperties()) {
+			if (ModelUtils.OCCI_KIND_SCHEME.equals(property.getName())) {
+				kindScheme = property.getValue();
 				break;
 			}
 		}
+		// 2) lookup in the mapping config
 		if (kindScheme == null) {
-			if (element instanceof Relationship) {
-				kindScheme = LINK_SCHEME;
-			} else {
-				kindScheme = RESOURCE_SCHEME;
+			for (Entry<String, EClass> entry : mapping.entrySet()) {
+				if (element.eClass().equals(entry.getValue())) {
+					kindScheme = entry.getKey();
+					break;
+				}
 			}
 		}
 		String term = kindScheme.split("#")[1];

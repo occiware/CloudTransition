@@ -5,9 +5,9 @@
     <attributes name="occi.core.id" value="_SbJh0KzJEeaGGNpad20Csw"/>
     <attributes name="occi.core.title" value="Google Cloud"/>
     <attributes name="hostname" value="googlecloud"/>
-    <links id="urn:uuid:5b7c52ad-2518-4a6c-a778-a3404466b189" title="" target="//@resources.1">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-      <attributes name="occi.core.id" value="urn:uuid:5b7c52ad-2518-4a6c-a778-a3404466b189"/>
+    <links id="_UZNxAKzJEeaGGNpad20Csw" title="" target="//@resources.1">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='storagelink']"/>
+      <attributes name="occi.core.id" value="_UZNxAKzJEeaGGNpad20Csw"/>
       <attributes name="occi.core.title" value=""/>
     </links>
   </resources>

@@ -25,7 +25,8 @@ public abstract class AbstractReconciler {
 			}
 		}
 		for (EObject eObject : toDelete) {
-			delete(eObject);
+			System.err.println("DELETING " + eObject);
+//			delete(eObject);
 		}
 
 		// add managed elements not yet in target, updates if existing

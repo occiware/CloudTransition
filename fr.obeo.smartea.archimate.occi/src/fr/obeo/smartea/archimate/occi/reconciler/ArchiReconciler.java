@@ -20,7 +20,7 @@ public class ArchiReconciler extends AbstractReconciler {
 	protected boolean isManagedElement(EObject element) {
 		if (element instanceof ArchimateComponent) {
 			for (Property property : ((PropertiesContainer) element).getProperties()) {
-				if (property.getName().equals(ModelUtils.OCCI_ID_ATTR_NAME)) {
+				if (property.getName().equals(ModelUtils.OCCI_KIND_SCHEME)) {
 					return true;
 				}
 			}

@@ -3,12 +3,12 @@ package fr.obeo.smartea.archimate.occi;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.emf.ecore.EClass;
 import org.eclipse.cmf.occi.core.AttributeState;
 import org.eclipse.cmf.occi.core.Configuration;
 import org.eclipse.cmf.occi.core.Entity;
 import org.eclipse.cmf.occi.core.Link;
 import org.eclipse.cmf.occi.core.Resource;
+import org.eclipse.emf.ecore.EClass;
 
 import fr.obeo.smartea.archimate.ArchimateComponent;
 import fr.obeo.smartea.archimate.ArchimateElement;
@@ -23,6 +23,8 @@ import fr.obeo.smartea.core.basemm.Folder;
 import fr.obeo.smartea.core.basemm.Property;
 
 public class OCCI2Archi {
+
+	private static final String[] IGNORED_PROPERTY_KEYS = new String[] { "occi.core.id", "occi.core.title", };
 
 	public Folder convert(Configuration configuration) {
 		return convert(configuration, new MappingConfig());
@@ -76,13 +78,24 @@ public class OCCI2Archi {
 
 	private ArchimateComponent createArchimateComponentFrom(Entity entity, EClass elementType) {
 		ArchimateComponent element = (ArchimateComponent) ArchimateFactory.eINSTANCE.create(elementType);
-		element.setDocumentation(entity.getKind().getScheme() + entity.getKind().getTerm());
 		element.setName(entity.getTitle());
 		element.setId(entity.getId());
+
+		Property property = BaseFactory.eINSTANCE.createProperty();
+		element.getProperties().add(property);
+		property.setName(ModelUtils.OCCI_KIND_SCHEME);
+		property.setValue(entity.getKind().getScheme() + entity.getKind().getTerm());
+		element.getProperties().add(property);
+
 		return element;
 	}
 
 	private void convertAttributeState(ArchimateComponent component, AttributeState attributeState) {
+		for (String ignoredProperty : IGNORED_PROPERTY_KEYS) {
+			if (attributeState.getName().equals(ignoredProperty)) {
+				return;
+			}
+		}
 		Property property = BaseFactory.eINSTANCE.createProperty();
 		String key = attributeState.getName();
 		component.getProperties().add(property);
