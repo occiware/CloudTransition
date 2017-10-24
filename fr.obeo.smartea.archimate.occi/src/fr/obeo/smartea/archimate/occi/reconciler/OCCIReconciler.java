@@ -20,7 +20,7 @@ public class OCCIReconciler extends AbstractReconciler {
 	}
 
 	@Override
-	protected boolean isManagedRelationship(EObject element) {
+	protected boolean isManagedRelationship(EObject element,String sourceId) {
 		return element instanceof Link && ((Link) element).getSource() != null && ((Link) element).getTarget() != null;
 	}
 

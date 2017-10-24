@@ -9,6 +9,8 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
 import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
+import fr.obeo.smartea.core.basemm.Folder;
+import fr.obeo.smartea.core.basemm.Identified;
 
 public abstract class AbstractReconciler {
 
@@ -50,7 +52,7 @@ public abstract class AbstractReconciler {
 			EObject targetElement = (EObject) iterator.next();
 			if (isManagedElement(targetElement, sourceId)) {
 				EObject sourceElement = ModelUtils.findExisting(source, targetElement);
-				if (isManagedRelationship(sourceElement)) {
+				if (isManagedRelationship(sourceElement, sourceId)) {
 					updateRelationship(sourceElement, targetElement);
 				}
 			}
@@ -58,15 +60,27 @@ public abstract class AbstractReconciler {
 	}
 
 	protected void add(EObject sourceElement, EObject target) {
+		System.err.println("adding " + sourceElement + " to " + target);
 		EObject container = sourceElement.eContainer();
 		EStructuralFeature feature = sourceElement.eContainingFeature();
 		EObject copy = EcoreUtil.copy(sourceElement);
+		if (target instanceof Folder) {
+			System.err.println(((Folder) target).getName());
+		}
+		if (container instanceof Folder) {
+			System.err.println(((Folder) container).getName());
+		}
 		EObject findExisting = ModelUtils.findExisting(target, container);
+		if (findExisting == null) {
+			findExisting = target;
+		}
+		System.err.println("existing " + findExisting);
 		List list = (List) findExisting.eGet(feature);
 		list.add(copy);
+		System.err.println("ok");
 	}
 
-	protected abstract boolean isManagedRelationship(EObject element);
+	protected abstract boolean isManagedRelationship(EObject element,String sourceId);
 
 	protected abstract void delete(EObject eObject);
 

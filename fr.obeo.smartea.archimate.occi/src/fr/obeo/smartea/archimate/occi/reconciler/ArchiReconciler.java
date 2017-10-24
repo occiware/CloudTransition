@@ -8,6 +8,7 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
 import fr.obeo.smartea.archimate.ArchimateComponent;
+import fr.obeo.smartea.archimate.ArchimateElement;
 import fr.obeo.smartea.archimate.Relationship;
 import fr.obeo.smartea.archimate.occi.conf.MappingConfig;
 import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
@@ -33,8 +34,9 @@ public class ArchiReconciler extends AbstractReconciler {
 	}
 
 	@Override
-	protected boolean isManagedRelationship(EObject element) {
-		return element instanceof Relationship && ((Relationship) element).getSourceElement() != null
+	protected boolean isManagedRelationship(EObject element, String sourceId) {
+		return isManagedElement(element, sourceId) && element instanceof Relationship
+				&& ((Relationship) element).getSourceElement() != null
 				&& ((Relationship) element).getTargetElement() != null;
 	}
 
@@ -76,6 +78,13 @@ public class ArchiReconciler extends AbstractReconciler {
 			for (Property property : toAdd) {
 				((PropertiesContainer) targetElement).getProperties().add(EcoreUtil.copy(property));
 			}
+		}
+	}
+
+	@Override
+	protected void add(EObject sourceElement, EObject target) {
+		if (sourceElement instanceof ArchimateElement) {
+			super.add(sourceElement, target);
 		}
 	}
 
