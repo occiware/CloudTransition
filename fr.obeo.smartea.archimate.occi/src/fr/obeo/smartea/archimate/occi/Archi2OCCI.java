@@ -51,6 +51,7 @@ public class Archi2OCCI {
 				for (UnidirectionalRelationship relationship : archimateElement.getOwnedUnidirectionalRelationships()) {
 					Kind linkKind = mappingConfig.getOCCIKind(relationship);
 					Link link = (Link) OCCIFactory.eINSTANCE.createLink();
+					link.setId(relationship.getId());
 					link.setKind(linkKind);
 					link.setTitle(relationship.getName());
 					resource.getLinks().add(link);
@@ -62,6 +63,7 @@ public class Archi2OCCI {
 				for (BidirectionalRelationship relationship : archimateElement.getOwnedBidirectionalRelationships()) {
 					Kind linkKind = mappingConfig.getOCCIKind(relationship);
 					Link link = (Link) OCCIFactory.eINSTANCE.createLink();
+					link.setId(relationship.getId());
 					link.setKind(linkKind);
 					link.setTitle(relationship.getName());
 					resource.getLinks().add(link);

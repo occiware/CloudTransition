@@ -85,7 +85,7 @@ public class OCCI2Archi {
 
 		Property kindProperty = BaseFactory.eINSTANCE.createProperty();
 		element.getProperties().add(kindProperty);
-		kindProperty.setName(MappingConfig.OCCI_KIND_SCHEME);
+		kindProperty.setName(MappingConfig.OCCI_KIND_SCHEME_KEY);
 		kindProperty.setValue(entity.getKind().getScheme() + entity.getKind().getTerm());
 		element.getProperties().add(kindProperty);
 

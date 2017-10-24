@@ -16,12 +16,14 @@ import org.eclipse.emf.ecore.EClass;
 import fr.obeo.smartea.archimate.ArchimateComponent;
 import fr.obeo.smartea.archimate.ArchimatePackage;
 import fr.obeo.smartea.archimate.Relationship;
-import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
 import fr.obeo.smartea.core.basemm.Property;
 
 public class MappingConfig {
 	
-	public static final String OCCI_KIND_SCHEME = "occi.core.kind";
+	private static final String LINK_SCHEME = "http://schemas.ogf.org/occi/core#link";
+	private static final String RESOURCE_SCHEME = "http://schemas.ogf.org/occi/core#resource";
+
+	public static final String OCCI_KIND_SCHEME_KEY = "occi.core.kind";
 	public static final String OCCI_SOURCE_ID_KEY = "occi.core.sourceid";
 
 	private Map<String, EClass> mapping = new HashMap<String, EClass>();
@@ -31,7 +33,7 @@ public class MappingConfig {
 
 		// 1) lookup in the element properties
 		for (Property property : element.getProperties()) {
-			if (OCCI_KIND_SCHEME.equals(property.getName())) {
+			if (OCCI_KIND_SCHEME_KEY.equals(property.getName())) {
 				kindScheme = property.getValue();
 				break;
 			}
@@ -43,6 +45,14 @@ public class MappingConfig {
 					kindScheme = entry.getKey();
 					break;
 				}
+			}
+		}
+		// 3) default
+		if (kindScheme == null) {
+			if (element instanceof Relationship) {
+				kindScheme = LINK_SCHEME;
+			} else {
+				kindScheme = RESOURCE_SCHEME;
 			}
 		}
 		String term = kindScheme.split("#")[1];

@@ -22,7 +22,7 @@ public class ArchiReconciler extends AbstractReconciler {
 	@Override
 	protected boolean isManagedElement(EObject element, String sourceId) {
 		if (element instanceof ArchimateComponent) {
-			if (PropertiesUtil.getProperty((PropertiesContainer) element, MappingConfig.OCCI_KIND_SCHEME) != null) {
+			if (PropertiesUtil.getProperty((PropertiesContainer) element, MappingConfig.OCCI_KIND_SCHEME_KEY) != null) {
 				Property sourceProperty = PropertiesUtil.getProperty((PropertiesContainer) element,
 						MappingConfig.OCCI_SOURCE_ID_KEY);
 				if (sourceProperty != null && sourceProperty.getValue().equals(sourceId)) {
