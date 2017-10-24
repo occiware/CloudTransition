@@ -5,10 +5,10 @@ import java.util.List;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.occiware.clouddesigner.occi.AttributeState;
-import org.occiware.clouddesigner.occi.Entity;
-import org.occiware.clouddesigner.occi.Link;
-import org.occiware.clouddesigner.occi.Resource;
+import org.eclipse.cmf.occi.core.AttributeState;
+import org.eclipse.cmf.occi.core.Entity;
+import org.eclipse.cmf.occi.core.Link;
+import org.eclipse.cmf.occi.core.Resource;
 
 import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
 

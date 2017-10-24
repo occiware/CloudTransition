@@ -1,7 +1,7 @@
 package fr.obeo.smartea.archimate.occi.connector.ui.popup.actions;
 
 import org.eclipse.emf.ecore.resource.Resource;
-import org.occiware.clouddesigner.occi.Configuration;
+import org.eclipse.cmf.occi.core.Configuration;
 
 import fr.obeo.smartea.archimate.occi.OCCI2Archi;
 import fr.obeo.smartea.archimate.occi.reconciler.ArchiReconciler;

@@ -6,13 +6,13 @@ import java.util.Map;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.occiware.clouddesigner.occi.AttributeState;
-import org.occiware.clouddesigner.occi.Configuration;
-import org.occiware.clouddesigner.occi.Entity;
-import org.occiware.clouddesigner.occi.Kind;
-import org.occiware.clouddesigner.occi.Link;
-import org.occiware.clouddesigner.occi.OCCIFactory;
-import org.occiware.clouddesigner.occi.Resource;
+import org.eclipse.cmf.occi.core.AttributeState;
+import org.eclipse.cmf.occi.core.Configuration;
+import org.eclipse.cmf.occi.core.Entity;
+import org.eclipse.cmf.occi.core.Kind;
+import org.eclipse.cmf.occi.core.Link;
+import org.eclipse.cmf.occi.core.OCCIFactory;
+import org.eclipse.cmf.occi.core.Resource;
 
 import fr.obeo.smartea.archimate.ArchimateElement;
 import fr.obeo.smartea.archimate.BidirectionalRelationship;

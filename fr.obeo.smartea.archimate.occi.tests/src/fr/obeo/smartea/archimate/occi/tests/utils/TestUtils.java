@@ -10,16 +10,16 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.occiware.clouddesigner.occi.AttributeState;
-import org.occiware.clouddesigner.occi.Configuration;
-import org.occiware.clouddesigner.occi.Link;
+import org.eclipse.cmf.occi.core.AttributeState;
+import org.eclipse.cmf.occi.core.Configuration;
+import org.eclipse.cmf.occi.core.Link;
 
 import fr.obeo.smartea.archimate.ArchimateComponent;
 import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
 
 public class TestUtils {
 
-	public static void changeAttribute(org.occiware.clouddesigner.occi.Resource occiResource, String name,
+	public static void changeAttribute(org.eclipse.cmf.occi.core.Resource occiResource, String name,
 			String value) {
 		for (AttributeState attributeState : occiResource.getAttributes()) {
 			if (attributeState.getName().equals(name)) {
@@ -40,8 +40,8 @@ public class TestUtils {
 		return null;
 	}
 
-	public static org.occiware.clouddesigner.occi.Resource getOCCIResource(Configuration configuration, String id) {
-		for (org.occiware.clouddesigner.occi.Resource resource : configuration.getResources()) {
+	public static org.eclipse.cmf.occi.core.Resource getOCCIResource(Configuration configuration, String id) {
+		for (org.eclipse.cmf.occi.core.Resource resource : configuration.getResources()) {
 			if (resource.getId().equals(id)) {
 				return resource;
 			}

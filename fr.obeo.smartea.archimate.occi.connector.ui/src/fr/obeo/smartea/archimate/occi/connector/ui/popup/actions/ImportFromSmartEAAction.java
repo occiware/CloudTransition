@@ -7,7 +7,7 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
-import org.occiware.clouddesigner.occi.Configuration;
+import org.eclipse.cmf.occi.core.Configuration;
 
 import fr.obeo.smartea.archimate.occi.Archi2OCCI;
 import fr.obeo.smartea.archimate.occi.reconciler.OCCIReconciler;

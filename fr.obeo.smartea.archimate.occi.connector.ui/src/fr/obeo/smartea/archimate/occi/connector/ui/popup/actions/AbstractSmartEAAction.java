@@ -8,7 +8,7 @@ import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.ui.IActionDelegate;
 import org.eclipse.ui.IObjectActionDelegate;
 import org.eclipse.ui.IWorkbenchPart;
-import org.occiware.clouddesigner.occi.Configuration;
+import org.eclipse.cmf.occi.core.Configuration;
 
 import fr.obeo.smartea.archimate.occi.connector.ui.wizard.ConnectionWizard;
 import fr.obeo.smartea.archimate.occi.connector.ui.wizard.ConnectionWizardDialog;

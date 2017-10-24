@@ -6,9 +6,9 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.junit.Test;
-import org.occiware.clouddesigner.occi.Configuration;
-import org.occiware.clouddesigner.occi.Link;
-import org.occiware.clouddesigner.occi.OCCIFactory;
+import org.eclipse.cmf.occi.core.Configuration;
+import org.eclipse.cmf.occi.core.Link;
+import org.eclipse.cmf.occi.core.OCCIFactory;
 
 import fr.obeo.smartea.archimate.ArchimateComponent;
 import fr.obeo.smartea.archimate.ArchimateElement;
@@ -92,7 +92,7 @@ public class SyncTest extends TestCase implements ITestsConstants {
 	 */
 	@Test
 	public void testOCCIAttributeChange() {
-		org.occiware.clouddesigner.occi.Resource occiResource = TestUtils.getOCCIResource(sourceConfig, RESOURCE1_ID);
+		org.eclipse.cmf.occi.core.Resource occiResource = TestUtils.getOCCIResource(sourceConfig, RESOURCE1_ID);
 		TestUtils.changeAttribute(occiResource, ModelUtils.OCCI_TITLE_ATTR_NAME, NEW_TITLE);
 		synchronize();
 		assertEquals(NEW_TITLE, getArchimateComponent(RESOURCE1_ID).getName());
@@ -103,7 +103,7 @@ public class SyncTest extends TestCase implements ITestsConstants {
 	 */
 	@Test
 	public void testOCCIDeleteResource() {
-		org.occiware.clouddesigner.occi.Resource occiResource = TestUtils.getOCCIResource(sourceConfig, RESOURCE1_ID);
+		org.eclipse.cmf.occi.core.Resource occiResource = TestUtils.getOCCIResource(sourceConfig, RESOURCE1_ID);
 		EcoreUtil.delete(occiResource);
 		synchronize();
 		assertNull(getArchimateComponent(RESOURCE1_ID));
@@ -114,8 +114,8 @@ public class SyncTest extends TestCase implements ITestsConstants {
 	 */
 	@Test
 	public void testOCCILinkBetweenResources() {
-		org.occiware.clouddesigner.occi.Resource occiResource1 = TestUtils.getOCCIResource(sourceConfig, RESOURCE1_ID);
-		org.occiware.clouddesigner.occi.Resource occiResource2 = TestUtils.getOCCIResource(sourceConfig, RESOURCE2_ID);
+		org.eclipse.cmf.occi.core.Resource occiResource1 = TestUtils.getOCCIResource(sourceConfig, RESOURCE1_ID);
+		org.eclipse.cmf.occi.core.Resource occiResource2 = TestUtils.getOCCIResource(sourceConfig, RESOURCE2_ID);
 		Link link = OCCIFactory.eINSTANCE.createLink();
 		link.setSource(occiResource1);
 		link.setTarget(occiResource2);
@@ -133,8 +133,8 @@ public class SyncTest extends TestCase implements ITestsConstants {
 	 */
 	@Test
 	public void testOCCIAdd2LinkedResources() {
-		org.occiware.clouddesigner.occi.Resource new1 = OCCIFactory.eINSTANCE.createResource();
-		org.occiware.clouddesigner.occi.Resource new2 = OCCIFactory.eINSTANCE.createResource();
+		org.eclipse.cmf.occi.core.Resource new1 = OCCIFactory.eINSTANCE.createResource();
+		org.eclipse.cmf.occi.core.Resource new2 = OCCIFactory.eINSTANCE.createResource();
 		sourceConfig.getResources().add(new1);
 		sourceConfig.getResources().add(new2);
 		Link occiLink = OCCIFactory.eINSTANCE.createLink();

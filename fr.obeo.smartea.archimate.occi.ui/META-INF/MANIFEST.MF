@@ -5,9 +5,6 @@ Bundle-SymbolicName: fr.obeo.smartea.archimate.occi.ui;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.resources,
- fr.obeo.smartea.archimate.occi;bundle-version="1.0.0",
- org.occiware.clouddesigner.occi.emfgen.ui;bundle-version="0.1.0",
- org.occiware.clouddesigner.occi.emfgen;bundle-version="0.1.0",
- org.occiware.clouddesigner.occi
+ fr.obeo.smartea.archimate.occi;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-Activator: fr.obeo.smartea.archimate.occi.ui.Activator

@@ -5,11 +5,11 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
 
+import org.eclipse.cmf.occi.core.Extension;
+import org.eclipse.cmf.occi.core.Kind;
+import org.eclipse.cmf.occi.core.util.OcciRegistry;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
-import org.occiware.clouddesigner.occi.Extension;
-import org.occiware.clouddesigner.occi.Kind;
-import org.occiware.clouddesigner.occi.OCCIRegistry;
 
 import fr.obeo.smartea.archimate.ArchimateComponent;
 import fr.obeo.smartea.archimate.ArchimatePackage;
@@ -44,7 +44,7 @@ public class MappingConfig {
 			}
 		}
 		String term = kindScheme.split("#")[1];
-		String extensionURI = OCCIRegistry.getInstance().getExtensionURI(kindScheme.split("#")[0] + "#");
+		String extensionURI = OcciRegistry.getInstance().getExtensionURI(kindScheme.split("#")[0] + "#");
 		final org.eclipse.emf.ecore.resource.Resource extensionResource = element.eResource().getResourceSet()
 				.getResource(URI.createURI(extensionURI, true), true);
 		final Extension extension = (Extension) extensionResource.getContents().get(0);

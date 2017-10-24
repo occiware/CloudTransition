@@ -25,7 +25,6 @@
       </objectContribution>
       <objectContribution
             id="fr.obeo.smartea.archimate.occi.ui.contribution2"
-            nameFilter="*.archi"
             objectClass="org.eclipse.core.resources.IFile">
          <menu
                id="fr.obeo.smartea.archimate.occi.ui.menu2"
