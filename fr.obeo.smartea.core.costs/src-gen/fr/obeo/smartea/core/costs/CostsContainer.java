@@ -65,11 +65,22 @@ public interface CostsContainer extends Identified, CurrencyElement, TimeElement
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Regular Cost</em>' attribute.
+	 * @see #setRegularCost(double)
 	 * @see fr.obeo.smartea.core.costs.CostsPackage#getCostsContainer_RegularCost()
-	 * @model changeable="false"
+	 * @model
 	 * @generated
 	 */
 	double getRegularCost();
+
+	/**
+	 * Sets the value of the '{@link fr.obeo.smartea.core.costs.CostsContainer#getRegularCost <em>Regular Cost</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Regular Cost</em>' attribute.
+	 * @see #getRegularCost()
+	 * @generated
+	 */
+	void setRegularCost(double value);
 
 	/**
 	 * Returns the value of the '<em><b>Initial Cost</b></em>' attribute.
@@ -80,10 +91,21 @@ public interface CostsContainer extends Identified, CurrencyElement, TimeElement
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Initial Cost</em>' attribute.
+	 * @see #setInitialCost(double)
 	 * @see fr.obeo.smartea.core.costs.CostsPackage#getCostsContainer_InitialCost()
-	 * @model changeable="false"
+	 * @model
 	 * @generated
 	 */
 	double getInitialCost();
+
+	/**
+	 * Sets the value of the '{@link fr.obeo.smartea.core.costs.CostsContainer#getInitialCost <em>Initial Cost</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Initial Cost</em>' attribute.
+	 * @see #getInitialCost()
+	 * @generated
+	 */
+	void setInitialCost(double value);
 
 } // CostsContainer

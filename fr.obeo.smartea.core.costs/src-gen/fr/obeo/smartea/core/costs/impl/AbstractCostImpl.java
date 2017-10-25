@@ -251,6 +251,15 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setCost(double newCost) {
+		eDynamicSet(CostsPackage.ABSTRACT_COST__COST, CostsPackage.Literals.ABSTRACT_COST__COST, newCost);
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -301,6 +310,9 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 			case CostsPackage.ABSTRACT_COST__VALUE:
 				setValue((Integer)newValue);
 				return;
+			case CostsPackage.ABSTRACT_COST__COST:
+				setCost((Double)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -329,6 +341,9 @@ public abstract class AbstractCostImpl extends CDOObjectImpl implements Abstract
 				return;
 			case CostsPackage.ABSTRACT_COST__VALUE:
 				setValue(VALUE_EDEFAULT);
+				return;
+			case CostsPackage.ABSTRACT_COST__COST:
+				setCost(COST_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);

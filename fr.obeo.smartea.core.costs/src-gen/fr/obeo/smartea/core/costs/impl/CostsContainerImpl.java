@@ -199,12 +199,30 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setRegularCost(double newRegularCost) {
+		eDynamicSet(CostsPackage.COSTS_CONTAINER__REGULAR_COST, CostsPackage.Literals.COSTS_CONTAINER__REGULAR_COST, newRegularCost);
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated NOT
 	 */
 	public double getInitialCost() {
 		return CostUtils.computeInitialCosts(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setInitialCost(double newInitialCost) {
+		eDynamicSet(CostsPackage.COSTS_CONTAINER__INITIAL_COST, CostsPackage.Literals.COSTS_CONTAINER__INITIAL_COST, newInitialCost);
 	}
 
 	/**
@@ -264,6 +282,12 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 				getCosts().clear();
 				getCosts().addAll((Collection<? extends AbstractCost>)newValue);
 				return;
+			case CostsPackage.COSTS_CONTAINER__REGULAR_COST:
+				setRegularCost((Double)newValue);
+				return;
+			case CostsPackage.COSTS_CONTAINER__INITIAL_COST:
+				setInitialCost((Double)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -286,6 +310,12 @@ public class CostsContainerImpl extends CDOObjectImpl implements CostsContainer 
 				return;
 			case CostsPackage.COSTS_CONTAINER__COSTS:
 				getCosts().clear();
+				return;
+			case CostsPackage.COSTS_CONTAINER__REGULAR_COST:
+				setRegularCost(REGULAR_COST_EDEFAULT);
+				return;
+			case CostsPackage.COSTS_CONTAINER__INITIAL_COST:
+				setInitialCost(INITIAL_COST_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
