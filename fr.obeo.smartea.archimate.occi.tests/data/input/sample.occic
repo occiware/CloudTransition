@@ -1,28 +1,62 @@
 <?xml version="1.0" encoding="ASCII"?>
-<occi:Configuration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:occi="http://schemas.ogf.org/occi/core/ecore">
+<occi:Configuration
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:occi="http://schemas.ogf.org/occi/core/ecore"
+    description="input_sample_occic">
   <use href="http://schemas.ogf.org/occi/infrastructure#/"/>
   <use href="http://schemas.ogf.org/occi/platform#/"/>
   <use href="http://schemas.ogf.org/occi/core#/"/>
-  <resources id="_Tib6AKzJEeaGGNpad20Csw" title="VD Deploy Instance 1">
+  <resources
+      id="_Tib6AKzJEeaGGNpad20Csw"
+      title="VD Deploy Instance 1"
+      rlinks="//@resources.1/@links.0">
     <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
-    <attributes name="occi.core.id" value="_Tib6AKzJEeaGGNpad20Csw"/>
-    <attributes name="occi.core.title" value="VD Instance 1"/>
-    <attributes name="hostname" value="vdinstance1"/>
+    <attributes
+        name="occi.core.id"
+        value="_Tib6AKzJEeaGGNpad20Csw"/>
+    <attributes
+        name="occi.core.title"
+        value="VD Instance 1"/>
+    <attributes
+        name="hostname"
+        value="vdinstance1"/>
   </resources>
-  <resources id="_SbJh0KzJEeaGGNpad20Csw" title="Google Cloud">
+  <resources
+      id="_SbJh0KzJEeaGGNpad20Csw"
+      title="Google Cloud">
     <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
-    <attributes name="occi.core.id" value="_SbJh0KzJEeaGGNpad20Csw"/>
-    <attributes name="occi.core.title" value="Google Cloud"/>
-    <attributes name="hostname" value="googlecloud"/>
-    <links id="_UZNxAKzJEeaGGNpad20Csw" title="link1" target="//@resources.0">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-      <attributes name="occi.core.id" value="_UZNxAKzJEeaGGNpad20Csw"/>
-      <attributes name="occi.core.title" value="link1"/>
+    <attributes
+        name="occi.core.id"
+        value="_SbJh0KzJEeaGGNpad20Csw"/>
+    <attributes
+        name="occi.core.title"
+        value="Google Cloud"/>
+    <attributes
+        name="hostname"
+        value="googlecloud"/>
+    <links id="_UZNxAKzJEeaGGNpad20Csw"
+        title="link1"
+        target="//@resources.0">
+      <kind
+          href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+      <attributes
+          name="occi.core.id"
+          value="_UZNxAKzJEeaGGNpad20Csw"/>
+      <attributes
+          name="occi.core.title"
+          value="link1"/>
     </links>
   </resources>
-  <resources id="169fc822-290b-48a3-adf2-c7ccc110f340" title="VD instance 2">
+  <resources
+      id="169fc822-290b-48a3-adf2-c7ccc110f340"
+      title="VD instance 2">
     <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
-    <attributes name="occi.core.id" value="169fc822-290b-48a3-adf2-c7ccc110f340"/>
-    <attributes name="occi.core.title" value="VD instance 2"/>
+    <attributes
+        name="occi.core.id"
+        value="169fc822-290b-48a3-adf2-c7ccc110f340"/>
+    <attributes
+        name="occi.core.title"
+        value="VD instance 2"/>
   </resources>
 </occi:Configuration>

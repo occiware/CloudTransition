@@ -6,43 +6,16 @@
     description="data_technology_cloud.occic">
   <resources
       id="_SbJh0KzJEeaGGNpad20Csw"
-      title="Google Cloud">
+      title="Google Cloudzzz">
     <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
     <attributes
         name="occi.core.id"
         value="_SbJh0KzJEeaGGNpad20Csw"/>
     <attributes
         name="occi.core.title"
-        value="Google Cloud"/>
+        value="Google Cloudzzz"/>
     <attributes
         name="hostname"
         value="googlecloud"/>
-    <links id="_UZNxAKzJEeaGGNpad20Csw"
-        title=""
-        target="//@resources.1">
-      <kind
-          href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='storagelink']"/>
-      <attributes
-          name="occi.core.id"
-          value="_UZNxAKzJEeaGGNpad20Csw"/>
-      <attributes
-          name="occi.core.title"
-          value=""/>
-    </links>
-  </resources>
-  <resources
-      id="_Tib6AKzJEeaGGNpad20Csw"
-      title="VD Deploy Instance 1"
-      rlinks="//@resources.0/@links.0">
-    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
-    <attributes
-        name="occi.core.id"
-        value="_Tib6AKzJEeaGGNpad20Csw"/>
-    <attributes
-        name="occi.core.title"
-        value="VD Deploy Instance 1"/>
-    <attributes
-        name="hostname"
-        value="vdinstance1"/>
   </resources>
 </occi:Configuration>

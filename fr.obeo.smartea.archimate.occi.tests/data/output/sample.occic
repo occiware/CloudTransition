@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="ASCII"?>
 <occi:Configuration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:occi="http://schemas.ogf.org/occi/core/ecore">
-  <resources id="ec6626d8" title="Voyage Discount Sugar CRM configuration">
+  <resources id="ec6626d8" title="Voyage Discount Sugar CRM configuration" rlinks="//@resources.34/@links.5 //@resources.55/@links.1 //@resources.67/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
-  <resources id="2121ed04" title="Offers Mgt System - War">
+  <resources id="2121ed04" title="Offers Mgt System - War" rlinks="//@resources.45/@links.7 //@resources.55/@links.0 //@resources.58/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="7d60c031-7ab4-4b18-91fb-16885ce8a7c3" title="" target="//@resources.68">
+    <links id="_uYwagnXGEea2X4upo99BTg" title="" target="//@resources.68">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="b7324e6d-07df-42e5-ba1f-b134b51d4b8d" title="" target="//@resources.8">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    <links id="_zPAGcAV-EeexEa8m-v4sDQ" title="" target="//@resources.8">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='storagelink']"/>
     </links>
   </resources>
-  <resources id="7585c61b" title="Trips Mgt System - War">
+  <resources id="7585c61b" title="Trips Mgt System - War" rlinks="//@resources.44/@links.4 //@resources.51/@links.0 //@resources.59/@links.0 //@resources.55/@links.3 //@resources.72/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="b67e299c-3bc1-451e-a43c-82bb4001fccb" title="" target="//@resources.7">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    <links id="_yNBFAAV-EeexEa8m-v4sDQ" title="" target="//@resources.7">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='storagelink']"/>
     </links>
-    <links id="320761e9-7ced-4dbc-aafe-cb1f8cdddaa7" title="" target="//@resources.31">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-  </resources>
-  <resources id="_A-rCoK1zEeaG0cy0fb0b9w" title="Trips Mgt System - APK">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-  </resources>
-  <resources id="_AvGwIASoEeeUv86BV4VDWQ" title="Trips Mgt System - Desktop">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-  </resources>
-  <resources id="_Lg3aII4mEeadNs2DCuzLFA" title="LDAP Setup.sh">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="9e4ed010-3c18-432c-b5f6-018082e3b036" title="" target="//@resources.71">
+    <links id="_D2otQAfTEeexEa8m-v4sDQ" title="" target="//@resources.31">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_S9HJQI4mEeadNs2DCuzLFA" title="Fileserver Setup.sh">
+  <resources id="_A-rCoK1zEeaG0cy0fb0b9w" title="Trips Mgt System - APK" rlinks="//@resources.31/@links.1 //@resources.50/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="9d320c80-b9d9-468c-b470-73d61479962f" title="" target="//@resources.69">
+  </resources>
+  <resources id="_AvGwIASoEeeUv86BV4VDWQ" title="Trips Mgt System - Desktop" rlinks="//@resources.35/@links.3 //@resources.61/@links.0 //@resources.65/@links.1 //@resources.55/@links.2">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+  </resources>
+  <resources id="_Lg3aII4mEeadNs2DCuzLFA" title="LDAP Setup.sh" rlinks="//@resources.76/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <links id="_dtQ5II4mEeadNs2DCuzLFA" title="" target="//@resources.71">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="604acf86" title="Trip database schema">
+  <resources id="_S9HJQI4mEeadNs2DCuzLFA" title="Fileserver Setup.sh" rlinks="//@resources.76/@links.1">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <links id="_FavT8I4nEeadNs2DCuzLFA" title="" target="//@resources.69">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    </links>
+  </resources>
+  <resources id="604acf86" title="Trip database schema" rlinks="//@resources.57/@links.0 //@resources.44/@links.5 //@resources.2/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
-  <resources id="2add7178" title="Offers database schema">
+  <resources id="2add7178" title="Offers database schema" rlinks="//@resources.45/@links.6 //@resources.1/@links.1 //@resources.56/@links.1">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
-  <resources id="_O2UOcAWEEeexEa8m-v4sDQ" title="Trips Mgt System - iOS App">
+  <resources id="_O2UOcAWEEeexEa8m-v4sDQ" title="Trips Mgt System - iOS App" rlinks="//@resources.53/@links.0 //@resources.31/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
-  <resources id="_coNvsAWSEeexEa8m-v4sDQ" title="VD Joomla Archive">
+  <resources id="_coNvsAWSEeexEa8m-v4sDQ" title="VD Joomla Archive" rlinks="//@resources.36/@links.6 //@resources.80/@links.1">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
-  <resources id="_pcqEsASkEeeUv86BV4VDWQ" title="Cloud">
+  <resources id="_pcqEsASkEeeUv86BV4VDWQ" title="Cloud" rlinks="//@resources.13/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
   <resources id="_Q8IqUASmEeeUv86BV4VDWQ" title="Internal IT">
@@ -59,431 +59,431 @@
   </resources>
   <resources id="_-TfewASmEeeUv86BV4VDWQ" title="External IT">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="bfd81950-7b4a-4522-88d6-7c9ac26be13f" title="" target="//@resources.11">
+    <links id="_DRYVEASnEeeUv86BV4VDWQ" title="" target="//@resources.11">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="_cxtrMAToEeeYd6m2jy02EA" title="VD Server">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="bb0fb509-02b2-42f3-8a52-1caee105b3d6" title="" target="//@resources.34">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
+    <links id="_QSffgATqEeeYd6m2jy02EA" title="" target="//@resources.34">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="e8ae30c8-c765-40ac-9fec-dbdd30149eb6" title="" target="//@resources.45">
+    <links id="_QrnxMATqEeeYd6m2jy02EA" title="" target="//@resources.45">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="435e2bd5-b8a0-49e4-9432-f9711a467b66" title="" target="//@resources.79">
+    <links id="_mNSZEAV9EeexEa8m-v4sDQ" title="" target="//@resources.79">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="_F-GpIATrEeeYd6m2jy02EA" title="Agency Desktop">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="75c59561-185f-4bfd-b5e2-984309b2829b" title="" target="//@resources.35">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
+    <links id="_HbfNIATrEeeYd6m2jy02EA" title="" target="//@resources.35">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="_e5ea8AWCEeexEa8m-v4sDQ" title="iPhone">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="34f97268-b333-419a-a51b-093d6e11621c" title="" target="//@resources.83">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
+    <links id="_i-iL0AWCEeexEa8m-v4sDQ" title="" target="//@resources.83">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="_YZlUcAWEEeexEa8m-v4sDQ" title="iPad">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="000aacfd-fe4c-40c8-b187-7be0f839eb12" title="" target="//@resources.83">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
+    <links id="_a-_QcAWEEeexEa8m-v4sDQ" title="" target="//@resources.83">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="_Mjr38AWZEeexEa8m-v4sDQ" title="Office Desktop">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="1730a616-e8f3-4588-9c70-0c7f8c396b6a" title="" target="//@resources.33">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
+    <links id="_fVejAAWZEeexEa8m-v4sDQ" title="" target="//@resources.33">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="_F-KeoK13EeaG0cy0fb0b9w" title="Android Smartphone">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="e87fba33-17af-424f-a840-40bcead6e798" title="" target="//@resources.73">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
+    <links id="_O_BlsK14EeaG0cy0fb0b9w" title="" target="//@resources.73">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="_1VK2oK13EeaG0cy0fb0b9w" title="Android Tablet">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="cc637079-e8b2-46d2-9a2c-eab4cd9c9d4e" title="" target="//@resources.73">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
+    <links id="_PoYEsK14EeaG0cy0fb0b9w" title="" target="//@resources.73">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="_nkaPc7YdEeaL2OecCIhakg" title="Server HP-L10">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
   </resources>
   <resources id="_SCQT0KvQEeaUQPSGShOftg" title="Server HP-L12">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
   </resources>
   <resources id="_UGrpsKvQEeaUQPSGShOftg" title="Server Dell-T16">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="76c7016b-0485-4a4a-b59b-f299106a0dcb" title="" target="//@resources.45">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
+    <links id="_M5jpwKvSEeaUQPSGShOftg" title="" target="//@resources.45">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
     </links>
   </resources>
   <resources id="_0KNSULYdEeaL2OecCIhakg" title="Server IBM-A05">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
   </resources>
   <resources id="_7pB0U7YdEeaL2OecCIhakg" title="Server IBM-A06">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
   </resources>
   <resources id="_-kjx4KzIEeaGGNpad20Csw" title="Internet">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="0bd5cd9b-13bb-4a1b-b5ad-6e22ae3c369c" title="" target="//@resources.27">
+    <links id="_kKAo4KzMEeaGGNpad20Csw" title="" target="//@resources.27">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_f55ekKzMEeaGGNpad20Csw" title="Gb Network">
+  <resources id="_f55ekKzMEeaGGNpad20Csw" title="Gb Network" rlinks="//@resources.26/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="41b72318-2ad0-4af1-8ad5-22f897a59636" title="" target="//@resources.43">
+    <links id="_ozofYKzMEeaGGNpad20Csw" title="" target="//@resources.43">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="58f41bc3-5d89-45d0-a808-21197e6c95bf" title="" target="//@resources.45">
+    <links id="_sGFoELGBEea0WcweEUsbGA" title="" target="//@resources.45">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="_FQrZsKzLEeaGGNpad20Csw" title="Secure connexions">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="20f34e9b-bf47-4232-b159-6c0f929f43c7" title="" target="//@resources.30">
+    <links id="_XPX-cKzMEeaGGNpad20Csw" title="" target="//@resources.30">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="_iylGcKzNEeaGGNpad20Csw" title="Search Plain Text in heterogeouns datasource">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="4a21b619-cec5-405c-aff6-132bf0618ef4" title="" target="//@resources.72">
+    <links id="_pW9ZcKzNEeaGGNpad20Csw" title="" target="//@resources.72">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_xQoj0K1vEeaG0cy0fb0b9w" title="LDAP">
+  <resources id="_xQoj0K1vEeaG0cy0fb0b9w" title="LDAP" rlinks="//@resources.71/@links.0 //@resources.28/@links.0 //@resources.45/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="56ea037b-63ee-49b5-a17a-45bb883ade91" title="" target="//@resources.49">
+    <links id="_iHBuIK10EeaG0cy0fb0b9w" title="" target="//@resources.49">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_rMl1YAfSEeexEa8m-v4sDQ" title="VD RESTful API">
+  <resources id="_rMl1YAfSEeexEa8m-v4sDQ" title="VD RESTful API" rlinks="//@resources.2/@links.1">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="de2548a5-ee16-464f-b202-b27cea406868" title="" target="//@resources.9">
+    <links id="_HvgcQAfTEeexEa8m-v4sDQ" title="" target="//@resources.9">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
+    </links>
+    <links id="_Ia90EAfTEeexEa8m-v4sDQ" title="" target="//@resources.3">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
+    </links>
+  </resources>
+  <resources id="_Ox9LUAfTEeexEa8m-v4sDQ" title="VPN Interface" rlinks="//@resources.79/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+  </resources>
+  <resources id="_Ij9N4ATnEeeYd6m2jy02EA" title="Office desktop configuration" rlinks="//@resources.35/@links.2 //@resources.18/@links.0">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
+    <links id="_LwA6MATnEeeYd6m2jy02EA" title="" target="//@resources.66">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="52a4ab86-1520-4bd2-b860-8c0322c8b2a6" title="" target="//@resources.3">
+    <links id="_Mrec4ATnEeeYd6m2jy02EA" title="" target="//@resources.62">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    </links>
+    <links id="_sz444ATpEeeYd6m2jy02EA" title="" target="//@resources.63">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_Ox9LUAfTEeexEa8m-v4sDQ" title="VPN Interface">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-  </resources>
-  <resources id="_Ij9N4ATnEeeYd6m2jy02EA" title="Office desktop configuration">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="6aa27383-21c9-4d58-aa42-45d528326a78" title="" target="//@resources.66">
+  <resources id="_y_ua8ATnEeeYd6m2jy02EA" title="Sugar CRM VM" rlinks="//@resources.14/@links.0">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
+    <links id="_0i4PwATnEeeYd6m2jy02EA" title="" target="//@resources.67">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="36af3d63-f8a8-4ab1-a151-dfe9d9231779" title="" target="//@resources.62">
+    <links id="_0x_CwATnEeeYd6m2jy02EA" title="" target="//@resources.64">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='storagelink']"/>
+    </links>
+    <links id="_025_AATnEeeYd6m2jy02EA" title="" target="//@resources.85">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='storagelink']"/>
+    </links>
+    <links id="_xq3XAAV6EeexEa8m-v4sDQ" title="" target="//@resources.60">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="1491a41f-03e8-409e-844b-999bcc661431" title="" target="//@resources.63">
+    <links id="_RAbrsAV7EeexEa8m-v4sDQ" title="" target="//@resources.77">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-  </resources>
-  <resources id="_y_ua8ATnEeeYd6m2jy02EA" title="Sugar CRM VM">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="059af281-325e-495e-905b-23b9fd2bb11f" title="" target="//@resources.67">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-    <links id="393e2760-cac8-4160-9fe0-a67114bae04b" title="" target="//@resources.64">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-    <links id="ffcbbd8a-b379-4fa4-b66b-a24c29d5d3b1" title="" target="//@resources.85">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-    <links id="57f90f21-0d16-49fd-af69-e1733db2f0de" title="" target="//@resources.60">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-    <links id="ea966687-50c9-4176-92b2-9f6f926f4bdd" title="" target="//@resources.77">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-    <links id="b3da6514-8cf2-4128-a43b-08535602df17" title="" target="//@resources.0">
+    <links id="_2_Da8AsAEeedCKrWYNTuUQ" title="" target="//@resources.0">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_ohcW0ATqEeeYd6m2jy02EA" title="Agency Desktop Configuration">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="80b33bd7-e841-4305-80f3-9272e622ce5b" title="" target="//@resources.65">
+  <resources id="_ohcW0ATqEeeYd6m2jy02EA" title="Agency Desktop Configuration" rlinks="//@resources.15/@links.0">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
+    <links id="_xFIPIATqEeeYd6m2jy02EA" title="" target="//@resources.65">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="69b4fcbd-bfd6-43b4-9413-c2c5b78a219f" title="" target="//@resources.78">
+    <links id="_HTR_AAV9EeexEa8m-v4sDQ" title="" target="//@resources.78">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="9088fa34-88be-4229-9793-0b6cc13ca026" title="" target="//@resources.33">
+    <links id="_SnGtYAfSEeexEa8m-v4sDQ" title="" target="//@resources.33">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="0d597182-d8af-4c25-9ebd-c0dd6b6ff7f7" title="" target="//@resources.4">
+    <links id="_zKbSwAsAEeedCKrWYNTuUQ" title="" target="//@resources.4">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="_AuPSwAV_EeexEa8m-v4sDQ" title="Web Hosting Cloud">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="fb2b714e-ce75-44b3-bef8-3e35290d684d" title="" target="//@resources.80">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
+    <links id="_EhIVkAV_EeexEa8m-v4sDQ" title="" target="//@resources.80">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="2c7d823d-73fb-44a8-a8f7-71a2cebee313" title="" target="//@resources.81">
+    <links id="_XaCVQAV_EeexEa8m-v4sDQ" title="" target="//@resources.81">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="717cbe58-0d85-4547-8570-5f469df72b88" title="" target="//@resources.82">
+    <links id="_bx6UcAV_EeexEa8m-v4sDQ" title="" target="//@resources.82">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="8a6fa723-a63a-44f9-96d4-4732a8a691c3" title="" target="//@resources.88">
+    <links id="_gsL2EAV_EeexEa8m-v4sDQ" title="" target="//@resources.88">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="b8765f35-1c67-40e8-a610-314615826819" title="" target="//@resources.89">
+    <links id="_FGACkAWSEeexEa8m-v4sDQ" title="" target="//@resources.89">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="3cb10c7d-05e3-4570-9274-66863c92a49d" title="" target="//@resources.84">
+    <links id="_Qs6bUAWSEeexEa8m-v4sDQ" title="" target="//@resources.84">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="ba84fc17-af40-4947-a1e2-fa79ecda0609" title="" target="//@resources.10">
+    <links id="_6IaYkAsAEeedCKrWYNTuUQ" title="" target="//@resources.10">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="109e37fc" title="Relational Database">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
   </resources>
   <resources id="3c12853b" title="Application Server">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
   </resources>
   <resources id="bb21e530" title="Desktop OS">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
   </resources>
   <resources id="ce989029" title="Java Runtime Environment (JRE)">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
   </resources>
   <resources id="f8e4df29" title="Server OS">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
   </resources>
   <resources id="dee8ac2a" title="Web Browser">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
   </resources>
-  <resources id="_SbJh0KzJEeaGGNpad20Csw" title="Private Cloud">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="0280efed-2e68-4320-98bf-23c38c6cc005" title="" target="//@resources.44">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-  </resources>
-  <resources id="_Tib6AKzJEeaGGNpad20Csw" title="VD Instance">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="8bc6585a-7635-43f1-8690-5c2633bd7f95" title="" target="//@resources.59">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-    <links id="5556eeb7-dd84-45b8-bfae-bb6f17a04aa7" title="" target="//@resources.57">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-    <links id="4b5f5494-186f-4066-a0af-a9d8fcb5ae5a" title="" target="//@resources.72">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-    <links id="0f77c89b-8db2-42e1-b421-760c8b40b6ae" title="" target="//@resources.86">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-    <links id="d60d92c6-e788-4982-9183-669623416442" title="" target="//@resources.2">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-    <links id="aafa9565-2b0d-4bed-aa5e-484c2cfc5e8b" title="" target="//@resources.7">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+  <resources id="_SbJh0KzJEeaGGNpad20Csw" title="Private Cloud" rlinks="//@resources.27/@links.0">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
+    <links id="_UZNxAKzJEeaGGNpad20Csw" title="" target="//@resources.44">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='storagelink']"/>
     </links>
   </resources>
-  <resources id="_b7MfQKzKEeaGGNpad20Csw" title="Offers VM">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="a17f58c5-56a6-4b3e-b758-f2b5824ea489" title="" target="//@resources.30">
+  <resources id="_Tib6AKzJEeaGGNpad20Csw" title="VD Instance" rlinks="//@resources.43/@links.0">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
+    <links id="_kQ-Q0AWSEeexEa8m-v4sDQ" title="" target="//@resources.59">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="8ef82bbe-43ca-42e1-8e9f-17ceae0c6df4" title="" target="//@resources.71">
+    <links id="_n_6nwAWSEeexEa8m-v4sDQ" title="" target="//@resources.57">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="ab9db2d6-8454-4ee1-a2a1-c890ee64e8f9" title="" target="//@resources.58">
+    <links id="_rwqDkAWUEeexEa8m-v4sDQ" title="" target="//@resources.72">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="e869a993-7c48-415d-bd45-2c2176ddb669" title="" target="//@resources.56">
+    <links id="_GzKx4AlqEeepkc1WQGRSzA" title="" target="//@resources.86">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="d74147ae-947e-43dd-9e7d-ec00d3ab0fae" title="" target="//@resources.61">
+    <links id="_8f7CgAsAEeedCKrWYNTuUQ" title="" target="//@resources.2">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="5f76db93-b1dd-4925-bdde-e2744bd40712" title="" target="//@resources.87">
+    <links id="_73z5oAsAEeedCKrWYNTuUQ" title="" target="//@resources.7">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="2afa7aa8-39f9-4471-a24f-7beb953c01cc" title="" target="//@resources.8">
+  </resources>
+  <resources id="_b7MfQKzKEeaGGNpad20Csw" title="Offers VM" rlinks="//@resources.14/@links.1 //@resources.23/@links.0 //@resources.27/@links.1">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
+    <links id="_14LWsK1vEeaG0cy0fb0b9w" title="" target="//@resources.30">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='storagelink']"/>
+    </links>
+    <links id="_KvPsMK1wEeaG0cy0fb0b9w" title="" target="//@resources.71">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='storagelink']"/>
+    </links>
+    <links id="_ZbT6oATpEeeYd6m2jy02EA" title="" target="//@resources.58">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="dddbde48-5810-4c26-b5bb-b7e2594c962d" title="" target="//@resources.1">
+    <links id="_b53nwATpEeeYd6m2jy02EA" title="" target="//@resources.56">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    </links>
+    <links id="_lCziMATpEeeYd6m2jy02EA" title="" target="//@resources.61">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    </links>
+    <links id="_7oh3sAlkEeepkc1WQGRSzA" title="" target="//@resources.87">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    </links>
+    <links id="_sU920AsAEeedCKrWYNTuUQ" title="" target="//@resources.8">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    </links>
+    <links id="_vORmQAsAEeedCKrWYNTuUQ" title="" target="//@resources.1">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="_to7NkAfVEeexEa8m-v4sDQ" title="Satisfaction Saas">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="e10395e6-b44e-4953-b299-5d7eb9fef7a9" title="" target="//@resources.54">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
+    <links id="_S8hm8AfWEeexEa8m-v4sDQ" title="" target="//@resources.54">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="_1ZqmAAfVEeexEa8m-v4sDQ" title="Accounting Saas">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="8ad11ef3-f7b7-440c-a8a8-6fe7cab380fd" title="" target="//@resources.52">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
+    <links id="_QA6KYAfWEeexEa8m-v4sDQ" title="" target="//@resources.52">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
   <resources id="_iyzUQAlkEeepkc1WQGRSzA" title="LDAP">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="338dad9a-fc75-4c3c-baf6-9b3b648952fb" title="" target="//@resources.86">
+    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
+    <links id="_vPcbIAlkEeepkc1WQGRSzA" title="" target="//@resources.86">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="3722500c-42a8-477e-9723-949397bf3860" title="" target="//@resources.60">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-  </resources>
-  <resources id="_h4JkoK10EeaG0cy0fb0b9w" title="Authentification">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-  </resources>
-  <resources id="_YageIK13EeaG0cy0fb0b9w" title="PlayStore">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="56e78c42-29b2-4be6-a54e-709120b6cc38" title="" target="//@resources.3">
+    <links id="_8nsOoAlkEeepkc1WQGRSzA" title="" target="//@resources.60">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_TTM7MK15EeaG0cy0fb0b9w" title="Trips Search">
+  <resources id="_h4JkoK10EeaG0cy0fb0b9w" title="Authentification" rlinks="//@resources.30/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="6d2a1177-a507-44ab-85c2-e62c9a8cd2b5" title="" target="//@resources.2">
+  </resources>
+  <resources id="_YageIK13EeaG0cy0fb0b9w" title="PlayStore" rlinks="//@resources.73/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <links id="_92Eg4AWAEeexEa8m-v4sDQ" title="" target="//@resources.3">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
+    </links>
+  </resources>
+  <resources id="_TTM7MK15EeaG0cy0fb0b9w" title="Trips Search" rlinks="//@resources.72/@links.1">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <links id="_vd0cEAlpEeepkc1WQGRSzA" title="" target="//@resources.2">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_BiC-AAVuEeefls8NENXj2Q" title="Online Accounting Solution">
+  <resources id="_BiC-AAVuEeefls8NENXj2Q" title="Online Accounting Solution" rlinks="//@resources.47/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
-  <resources id="_lXlG0AWCEeexEa8m-v4sDQ" title="iTunes Store">
+  <resources id="_lXlG0AWCEeexEa8m-v4sDQ" title="iTunes Store" rlinks="//@resources.83/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="97d3b5e6-03cc-46dc-88b1-a5be1a0b4117" title="" target="//@resources.9">
+    <links id="_SqY9AAWEEeexEa8m-v4sDQ" title="" target="//@resources.9">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_kq8l8AfVEeexEa8m-v4sDQ" title="Online Satisfaction Tracker Solution">
+  <resources id="_kq8l8AfVEeexEa8m-v4sDQ" title="Online Satisfaction Tracker Solution" rlinks="//@resources.46/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
-  <resources id="_GHXOEAllEeepkc1WQGRSzA" title="User Authentication">
+  <resources id="_GHXOEAllEeepkc1WQGRSzA" title="User Authentication" rlinks="//@resources.86/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="090ae180-d680-4685-aba3-2fc1b03461f2" title="" target="//@resources.1">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    <links id="_0iKfsAlpEeepkc1WQGRSzA" title="" target="//@resources.1">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
     </links>
-    <links id="687e7c00-5408-48bb-bfbb-2e4c5ed4800e" title="" target="//@resources.0">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    <links id="_5cqDwAlpEeepkc1WQGRSzA" title="" target="//@resources.0">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
     </links>
-    <links id="0e407df1-c922-4dd2-9c36-9d8f91952b8a" title="" target="//@resources.4">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    <links id="_6_SUIAlpEeepkc1WQGRSzA" title="" target="//@resources.4">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
     </links>
-    <links id="42de8feb-8c89-49ba-af94-4e5f1beb8d70" title="" target="//@resources.2">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    <links id="_NOWsoAlqEeepkc1WQGRSzA" title="" target="//@resources.2">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
     </links>
   </resources>
-  <resources id="52c68a12" title="Oracle 10 G">
+  <resources id="52c68a12" title="Oracle 10 G" rlinks="//@resources.45/@links.3">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="e8f1f526-b066-405d-bcc7-eae1248f4a84" title="" target="//@resources.70">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    <links id="_wMuzMI4oEeadNs2DCuzLFA" title="" target="//@resources.70">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
     </links>
-    <links id="b55766a3-d6a6-4747-823a-150e1dc5de66" title="" target="//@resources.8">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-  </resources>
-  <resources id="e487be34" title="Oracle 12.1">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="4a898a88-fa6a-44fe-9898-d75bc671e14b" title="" target="//@resources.7">
+    <links id="_c09-EATpEeeYd6m2jy02EA" title="" target="//@resources.8">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="c53f4bcd" title="Apache Tomcat 7">
+  <resources id="e487be34" title="Oracle 12.1" rlinks="//@resources.44/@links.1">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="f36422ef-1e63-4be7-8b96-8e38459abd46" title="" target="//@resources.1">
+    <links id="_DQzmEAWTEeexEa8m-v4sDQ" title="" target="//@resources.7">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="8fa0c972" title="WebSphere AS 7">
+  <resources id="c53f4bcd" title="Apache Tomcat 7" rlinks="//@resources.45/@links.2 //@resources.61/@links.1">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="5fc43d8e-aab1-42ab-989d-3b0c82611975" title="" target="//@resources.2">
+    <links id="_5CHwUATpEeeYd6m2jy02EA" title="" target="//@resources.1">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="80416b89" title="Linux RedHat ES 4.3">
+  <resources id="8fa0c972" title="WebSphere AS 7" rlinks="//@resources.44/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-  </resources>
-  <resources id="11f676a3" title="Java 7">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="05bf503a-b7fd-4a7e-8e44-a36087c34e2f" title="" target="//@resources.4">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-    <links id="e2be6c38-8fd3-4e99-a5b8-122651530417" title="" target="//@resources.58">
+    <links id="_qZkrMATsEeeYd6m2jy02EA" title="" target="//@resources.2">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="68bff7e5" title="Windows 10">
+  <resources id="80416b89" title="Linux RedHat ES 4.3" rlinks="//@resources.48/@links.1 //@resources.34/@links.3">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
-  <resources id="3b309569" title="Chrome">
+  <resources id="11f676a3" title="Java 7" rlinks="//@resources.45/@links.4">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-  </resources>
-  <resources id="17dc6d24" title="MySQL 5.0">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="b796f3bf-a008-4b78-bef4-7c20958a617f" title="" target="//@resources.67">
+    <links id="_e2q-0ATjEeeYd6m2jy02EA" title="" target="//@resources.4">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    </links>
+    <links id="_R3CHEAV8EeexEa8m-v4sDQ" title="" target="//@resources.58">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="2c77e02" title="Java 6">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="1c385192-2d64-4c37-86c4-7a6eb2ab0929" title="" target="//@resources.70">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-    <links id="e17709bb-ce0a-49b7-9c21-a7da282e0a14" title="" target="//@resources.4">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-  </resources>
-  <resources id="1db3b931" title="Office">
+  <resources id="68bff7e5" title="Windows 10" rlinks="//@resources.33/@links.1">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
-  <resources id="d1a36629" title="Sugar CRM 6.5">
+  <resources id="3b309569" title="Chrome" rlinks="//@resources.33/@links.2">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="cc286bd1-a3df-4bd9-8c6c-868c2a902e67" title="" target="//@resources.0">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+  </resources>
+  <resources id="17dc6d24" title="MySQL 5.0" rlinks="//@resources.34/@links.1">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <links id="_wdgyUATmEeeYd6m2jy02EA" title="" target="//@resources.67">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
     </links>
   </resources>
-  <resources id="433b08e0" title="Windows 7">
+  <resources id="2c77e02" title="Java 6" rlinks="//@resources.35/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="bcfb9f45-d06c-4d60-8854-65ce8c4febca" title="" target="//@resources.74">
+    <links id="_0konkI4oEeadNs2DCuzLFA" title="" target="//@resources.70">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
+    </links>
+    <links id="_79zo4ATqEeeYd6m2jy02EA" title="" target="//@resources.4">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_CsQ7gI4nEeadNs2DCuzLFA" title="OwnCloud">
+  <resources id="1db3b931" title="Office" rlinks="//@resources.33/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
-  <resources id="_dlWoYI4oEeadNs2DCuzLFA" title="VD IT Check">
+  <resources id="d1a36629" title="Sugar CRM 6.5" rlinks="//@resources.85/@links.0 //@resources.64/@links.0 //@resources.34/@links.0 //@resources.77/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-  </resources>
-  <resources id="_3kub0I4lEeadNs2DCuzLFA" title="OpenLDAP">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="33bebec3-c490-4415-913a-00fc0f7c9be3" title="" target="//@resources.30">
+    <links id="_RDeicAToEeeYd6m2jy02EA" title="" target="//@resources.0">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_oMYqMK1xEeaG0cy0fb0b9w" title="Elastic Search">
+  <resources id="433b08e0" title="Windows 7" rlinks="//@resources.1/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="f6239db2-ca86-46cf-b58f-db5eb24a73ad" title="" target="//@resources.2">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    <links id="_vQqXMIyhEea5AaeaY4nyjA" title="" target="//@resources.74">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
     </links>
-    <links id="fddc17db-e4db-4de0-ae77-6995e5dfc20d" title="" target="//@resources.51">
+  </resources>
+  <resources id="_CsQ7gI4nEeadNs2DCuzLFA" title="OwnCloud" rlinks="//@resources.6/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+  </resources>
+  <resources id="_dlWoYI4oEeadNs2DCuzLFA" title="VD IT Check" rlinks="//@resources.56/@links.0 //@resources.65/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+  </resources>
+  <resources id="_3kub0I4lEeadNs2DCuzLFA" title="OpenLDAP" rlinks="//@resources.45/@links.1 //@resources.5/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <links id="_G9an8LZFEeaL2OecCIhakg" title="" target="//@resources.30">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_Pz_UQK13EeaG0cy0fb0b9w" title="Android">
+  <resources id="_oMYqMK1xEeaG0cy0fb0b9w" title="Elastic Search" rlinks="//@resources.44/@links.2 //@resources.29/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="0014fb7a-721e-4f37-86b6-ab44d033f3f7" title="" target="//@resources.50">
+    <links id="_FNPWMAWWEeexEa8m-v4sDQ" title="" target="//@resources.2">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    </links>
+    <links id="_aGArwK15EeaG0cy0fb0b9w" title="" target="//@resources.51">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_esmvAIyhEea5AaeaY4nyjA" title="VD TripSellor">
+  <resources id="_Pz_UQK13EeaG0cy0fb0b9w" title="Android" rlinks="//@resources.20/@links.0 //@resources.19/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <links id="_Ym2RAK13EeaG0cy0fb0b9w" title="" target="//@resources.50">
+      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    </links>
+  </resources>
+  <resources id="_esmvAIyhEea5AaeaY4nyjA" title="VD TripSellor" rlinks="//@resources.68/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
     <attributes name="occi.core.id" value="_esmvAIyhEea5AaeaY4nyjA"/>
     <attributes name="Version" value="4.3"/>
@@ -495,71 +495,71 @@
   </resources>
   <resources id="_EdpPAI4mEeadNs2DCuzLFA" title="Bash">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="ca7b730e-d847-4bb9-8ae2-7eb12b7eb608" title="" target="//@resources.5">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    <links id="_kR7gAI4mEeadNs2DCuzLFA" title="" target="//@resources.5">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
     </links>
-    <links id="c1abd021-5082-4237-b56b-69364f2f1770" title="" target="//@resources.6">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-  </resources>
-  <resources id="_QdkPMAV7EeexEa8m-v4sDQ" title="Apache 2.4">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="6522b7f5-c3e4-48e6-a0df-7a11a322131a" title="" target="//@resources.67">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
+    <links id="_k-sfYI4mEeadNs2DCuzLFA" title="" target="//@resources.6">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
     </links>
   </resources>
-  <resources id="_G7lQsAV9EeexEa8m-v4sDQ" title="VPN Client">
+  <resources id="_QdkPMAV7EeexEa8m-v4sDQ" title="Apache 2.4" rlinks="//@resources.34/@links.4">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-  </resources>
-  <resources id="_XGDUMAV9EeexEa8m-v4sDQ" title="VPN Server">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="da0a34c3-5dfa-4ac3-99d8-6ab1d46862a5" title="" target="//@resources.32">
+    <links id="_88hcAAV7EeexEa8m-v4sDQ" title="" target="//@resources.67">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_EFqhkAV_EeexEa8m-v4sDQ" title="Joomla 3">
+  <resources id="_G7lQsAV9EeexEa8m-v4sDQ" title="VPN Client" rlinks="//@resources.35/@links.1">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="d1b5d7d1-7e8d-44dc-a65d-325763afdc84" title="" target="//@resources.84">
+  </resources>
+  <resources id="_XGDUMAV9EeexEa8m-v4sDQ" title="VPN Server" rlinks="//@resources.14/@links.2">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <links id="_ROp3QAfTEeexEa8m-v4sDQ" title="" target="//@resources.32">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='storagelink']"/>
+    </links>
+  </resources>
+  <resources id="_EFqhkAV_EeexEa8m-v4sDQ" title="Joomla 3" rlinks="//@resources.36/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <links id="_UJ6tsAWSEeexEa8m-v4sDQ" title="" target="//@resources.84">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
-    <links id="5aa39e26-730f-4cb6-971e-e4687c0699b9" title="" target="//@resources.10">
-      <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
-    </links>
-  </resources>
-  <resources id="_W_UvMAV_EeexEa8m-v4sDQ" title="Apache 2.2">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-  </resources>
-  <resources id="_bV0OUAV_EeexEa8m-v4sDQ" title="PostgreSQL 9.1">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-  </resources>
-  <resources id="_gr0iUAWCEeexEa8m-v4sDQ" title="iOS">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="1860155c-2161-40f7-aa30-8ac1cd85613f" title="" target="//@resources.53">
+    <links id="_hKg2MAWSEeexEa8m-v4sDQ" title="" target="//@resources.10">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_PzWWEAWSEeexEa8m-v4sDQ" title="Booking Joomla Plugin">
+  <resources id="_W_UvMAV_EeexEa8m-v4sDQ" title="Apache 2.2" rlinks="//@resources.36/@links.1">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
-  <resources id="_HLFoYATlEeeYd6m2jy02EA" title="PHP 5.2">
+  <resources id="_bV0OUAV_EeexEa8m-v4sDQ" title="PostgreSQL 9.1" rlinks="//@resources.36/@links.2">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="e7f746ca-d891-48cb-adc7-76cf8fc83d5d" title="" target="//@resources.67">
+  </resources>
+  <resources id="_gr0iUAWCEeexEa8m-v4sDQ" title="iOS" rlinks="//@resources.17/@links.0 //@resources.16/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <links id="_TiV4sAWEEeexEa8m-v4sDQ" title="" target="//@resources.53">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_uZNWsAlkEeepkc1WQGRSzA" title="OpenLDAP">
+  <resources id="_PzWWEAWSEeexEa8m-v4sDQ" title="Booking Joomla Plugin" rlinks="//@resources.36/@links.5 //@resources.80/@links.0">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <links id="e229d87f-d408-4612-b551-10cf98d047dd" title="" target="//@resources.55">
+  </resources>
+  <resources id="_HLFoYATlEeeYd6m2jy02EA" title="PHP 5.2" rlinks="//@resources.34/@links.2">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <links id="_x9bF4ATmEeeYd6m2jy02EA" title="" target="//@resources.67">
+      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
+    </links>
+  </resources>
+  <resources id="_uZNWsAlkEeepkc1WQGRSzA" title="OpenLDAP" rlinks="//@resources.44/@links.3 //@resources.48/@links.0">
+    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
+    <links id="_IaHT0AllEeepkc1WQGRSzA" title="" target="//@resources.55">
       <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='link']"/>
     </links>
   </resources>
-  <resources id="_ymWskAlkEeepkc1WQGRSzA" title="LinuxRedHat ES 6">
+  <resources id="_ymWskAlkEeepkc1WQGRSzA" title="LinuxRedHat ES 6" rlinks="//@resources.45/@links.5">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
-  <resources id="_gTgQUAV_EeexEa8m-v4sDQ" title="PHP 5.6">
+  <resources id="_gTgQUAV_EeexEa8m-v4sDQ" title="PHP 5.6" rlinks="//@resources.36/@links.3">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
-  <resources id="_EhUoMAWSEeexEa8m-v4sDQ" title="Angular JS">
+  <resources id="_EhUoMAWSEeexEa8m-v4sDQ" title="Angular JS" rlinks="//@resources.36/@links.4">
     <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
   </resources>
 </occi:Configuration>

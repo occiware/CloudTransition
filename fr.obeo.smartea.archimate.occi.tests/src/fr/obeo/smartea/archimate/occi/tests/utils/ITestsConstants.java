@@ -20,8 +20,4 @@ public interface ITestsConstants {
 	String RESOURCE2_ID = "_SbJh0KzJEeaGGNpad20Csw";
 	String LINK_ID = "_UZNxAKzJEeaGGNpad20Csw";
 
-	// modifications
-
-	String NEW_TITLE = "newTitle";
-
 }

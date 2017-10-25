@@ -13,7 +13,8 @@ import org.junit.Test;
 import fr.obeo.smartea.archimate.ArchimateComponent;
 import fr.obeo.smartea.archimate.ArchimateElement;
 import fr.obeo.smartea.archimate.ArchimateFactory;
-import fr.obeo.smartea.archimate.AssociationRelationship;
+import fr.obeo.smartea.archimate.AssignmentRelationship;
+import fr.obeo.smartea.archimate.Relationship;
 import fr.obeo.smartea.archimate.occi.Archi2OCCI;
 import fr.obeo.smartea.archimate.occi.OCCI2Archi;
 import fr.obeo.smartea.archimate.occi.reconciler.ArchiReconciler;
@@ -21,10 +22,12 @@ import fr.obeo.smartea.archimate.occi.reconciler.OCCIReconciler;
 import fr.obeo.smartea.archimate.occi.tests.utils.ITestsConstants;
 import fr.obeo.smartea.archimate.occi.tests.utils.TestUtils;
 import fr.obeo.smartea.core.basemm.Folder;
+import fr.obeo.smartea.core.basemm.util.PropertiesUtil;
 import junit.framework.TestCase;
 
 public class SyncTest extends TestCase implements ITestsConstants {
 
+	// TODO test link related issues, get through incorrect impleme of archimate derived methods ?
 	/*
 	 * Convenience variables, reset before each test & initialized by setup:
 	 */
@@ -48,12 +51,12 @@ public class SyncTest extends TestCase implements ITestsConstants {
 
 	private void synchronize() {
 		Folder conversionResult = new OCCI2Archi().convert(sourceConfig);
-		new ArchiReconciler().reconcile(conversionResult, targetFolder, "default");
+		new ArchiReconciler().reconcile(conversionResult, targetFolder, sourceConfig.getDescription());
 	}
 
 	private void synchronizeBackwards() {
 		Configuration conversionResult = new Archi2OCCI().convert(targetFolder);
-		new OCCIReconciler().reconcile(conversionResult, sourceConfig, "default");
+		new OCCIReconciler().reconcile(conversionResult, sourceConfig, sourceConfig.getDescription());
 	}
 
 	private void addArchimateElement(ArchimateElement newElement) {
@@ -72,12 +75,12 @@ public class SyncTest extends TestCase implements ITestsConstants {
 		return unmanaged;
 	}
 
-	private AssociationRelationship createArchimateLink(String end1ID, String end2ID) {
-		AssociationRelationship link = ArchimateFactory.eINSTANCE.createAssociationRelationship();
-		ArchimateComponent end1 = getArchimateComponent(end1ID);
+	private Relationship createArchimateLink(String end1ID, String end2ID) {
+		AssignmentRelationship link = ArchimateFactory.eINSTANCE.createAssignmentRelationship();
+		ArchimateElement end1 = (ArchimateElement) getArchimateComponent(end1ID);
 		link.setSourceElement(end1);
 		link.setTargetElement(getArchimateComponent(end2ID));
-		end1.getOwnedBidirectionalRelationships().add(link);
+		end1.getOwnedUnidirectionalRelationships().add(link);
 		return link;
 	}
 
@@ -92,9 +95,9 @@ public class SyncTest extends TestCase implements ITestsConstants {
 	@Test
 	public void testOCCIAttributeChange() {
 		org.eclipse.cmf.occi.core.Resource occiResource = TestUtils.getOCCIResource(sourceConfig, RESOURCE1_ID);
-		TestUtils.changeAttribute(occiResource, "occi.core.title", NEW_TITLE);
+		TestUtils.changeAttribute(occiResource, "hostname", "newHost");
 		synchronize();
-		assertEquals(NEW_TITLE, getArchimateComponent(RESOURCE1_ID).getName());
+		assertEquals("newHost", PropertiesUtil.getProperty(getArchimateComponent(RESOURCE1_ID), "hostname").getValue());
 	}
 
 	/**
@@ -106,25 +109,6 @@ public class SyncTest extends TestCase implements ITestsConstants {
 		EcoreUtil.delete(occiResource);
 		synchronize();
 		assertNull(getArchimateComponent(RESOURCE1_ID));
-	}
-
-	/**
-	 * The link must be added to Archi.
-	 */
-	@Test
-	public void testOCCILinkBetweenResources() {
-		org.eclipse.cmf.occi.core.Resource occiResource1 = TestUtils.getOCCIResource(sourceConfig, RESOURCE1_ID);
-		org.eclipse.cmf.occi.core.Resource occiResource2 = TestUtils.getOCCIResource(sourceConfig, RESOURCE2_ID);
-		Link link = OCCIFactory.eINSTANCE.createLink();
-		link.setSource(occiResource1);
-		link.setTarget(occiResource2);
-		occiResource1.getLinks().add(link);
-		synchronize();
-		AssociationRelationship archiLink = (AssociationRelationship) getArchimateComponent(link.getId());
-		assertNotNull(archiLink);
-		assertEquals(archiLink.getSourceElement(), getArchimateComponent(RESOURCE1_ID));
-		assertEquals(archiLink.getTargetElement(), getArchimateComponent(RESOURCE2_ID));
-
 	}
 
 	/**
@@ -145,7 +129,7 @@ public class SyncTest extends TestCase implements ITestsConstants {
 		assertNotNull(archiNew1);
 		ArchimateComponent archiNew2 = getArchimateComponent(new2.getId());
 		assertNotNull(archiNew2);
-		AssociationRelationship archiLink = (AssociationRelationship) getArchimateComponent(occiLink.getId());
+		AssignmentRelationship archiLink = (AssignmentRelationship) getArchimateComponent(occiLink.getId());
 		assertNotNull(archiLink);
 		assertEquals(archiLink.getSourceElement(), archiNew1);
 		assertEquals(archiLink.getTargetElement(), archiNew2);
@@ -161,21 +145,6 @@ public class SyncTest extends TestCase implements ITestsConstants {
 		assertNull(getArchimateComponent(LINK_ID));
 	}
 
-	/**
-	 * The element & the link must be deleted in archi.
-	 */
-	@Test
-	public void testOCCIDeleteResourceWLinkFromUnmanagedElement() {
-		ArchimateElement unmanaged = createArchimateElement();
-		String unmanagedId = unmanaged.getId();
-		AssociationRelationship link = createArchimateLink(unmanagedId, RESOURCE1_ID);
-		String linkId = link.getId();
-		EcoreUtil.delete(TestUtils.getOCCIResource(sourceConfig, RESOURCE1_ID));
-		synchronize();
-		assertNull(getArchimateComponent(RESOURCE1_ID));
-		assertNotNull(getArchimateComponent(unmanagedId));
-		assertNull(getArchimateComponent(linkId));
-	}
 
 	/**
 	 * An addition in ARCHI, which is not present in OCCI must be kept after
@@ -195,7 +164,7 @@ public class SyncTest extends TestCase implements ITestsConstants {
 	 */
 	@Test
 	public void testArchiLinkBetweenManagedElements() {
-		AssociationRelationship link = createArchimateLink(RESOURCE1_ID, RESOURCE2_ID);
+		Relationship link = createArchimateLink(RESOURCE1_ID, RESOURCE2_ID);
 		String linkId = link.getId();
 		synchronize();
 		assertNotNull(getArchimateComponent(linkId));
@@ -208,10 +177,10 @@ public class SyncTest extends TestCase implements ITestsConstants {
 	public void testArchiLinkFromUnmanagedToManaged() {
 		ArchimateElement unmanaged = createArchimateElement();
 		String unmanagedId = unmanaged.getId();
-		AssociationRelationship link = createArchimateLink(unmanagedId, RESOURCE1_ID);
+		Relationship link = createArchimateLink(unmanagedId, RESOURCE1_ID);
 		String linkId = link.getId();
 		synchronize();
-		AssociationRelationship archiLink = (AssociationRelationship) getArchimateComponent(linkId);
+		Relationship archiLink = (Relationship) getArchimateComponent(linkId);
 		assertNotNull(archiLink);
 		assertEquals(archiLink.getSourceElement(), unmanaged);
 		assertEquals(archiLink.getTargetElement(), getArchimateComponent(RESOURCE1_ID));
@@ -226,7 +195,7 @@ public class SyncTest extends TestCase implements ITestsConstants {
 		node1.setName("node1");
 		ArchimateElement node2 = createArchimateNode();
 		node2.setName("node2");
-		AssociationRelationship link = createArchimateLink(node1.getId(), node2.getId());
+		createArchimateLink(node1.getId(), node2.getId());
 		synchronizeBackwards();
 		TestUtils.display(sourceConfig);
 	}

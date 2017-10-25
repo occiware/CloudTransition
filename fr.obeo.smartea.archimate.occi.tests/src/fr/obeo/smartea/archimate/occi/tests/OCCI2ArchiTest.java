@@ -5,15 +5,15 @@ import static org.junit.Assert.assertNotNull;
 
 import java.util.Collections;
 
+import org.eclipse.cmf.occi.core.Configuration;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.junit.Test;
-import org.eclipse.cmf.occi.core.Configuration;
 
 import fr.obeo.smartea.archimate.ArchimateComponent;
-import fr.obeo.smartea.archimate.AssociationRelationship;
+import fr.obeo.smartea.archimate.Relationship;
 import fr.obeo.smartea.archimate.occi.OCCI2Archi;
 import fr.obeo.smartea.archimate.occi.tests.utils.ITestsConstants;
 import fr.obeo.smartea.archimate.occi.tests.utils.TestUtils;
@@ -41,10 +41,10 @@ public class OCCI2ArchiTest implements ITestsConstants {
 		assertNotNull(object1);
 		ArchimateComponent object2 = TestUtils.getArchimateComponent(output, RESOURCE2_ID);
 		assertNotNull(object2);
-		AssociationRelationship link = (AssociationRelationship) TestUtils.getArchimateComponent(output, LINK_ID);
+		Relationship link = (Relationship) TestUtils.getArchimateComponent(output, LINK_ID);
 		assertNotNull(link);
-		assertEquals(link.getSourceElement(), object2);
-		assertEquals(link.getTargetElement(), object1);
+		assertEquals(object2, link.getSourceElement());
+		assertEquals(object1, link.getTargetElement());
 	}
 
 }

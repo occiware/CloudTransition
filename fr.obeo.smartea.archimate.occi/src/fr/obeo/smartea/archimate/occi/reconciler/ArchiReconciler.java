@@ -45,8 +45,9 @@ public class ArchiReconciler extends AbstractReconciler {
 		List<EObject> toDelete = new ArrayList<EObject>();
 		toDelete.add(eObject);
 		if (eObject instanceof ArchimateComponent) {
-			toDelete.addAll(((ArchimateComponent) eObject).getIncomingRelationships());
-			toDelete.addAll(((ArchimateComponent) eObject).getOutgoingRelationships());
+			ArchimateComponent component = (ArchimateComponent) eObject;
+			toDelete.addAll(component.getIncomingRelationships());
+			toDelete.addAll(component.getOutgoingRelationships());
 		}
 		for (EObject eo : toDelete) {
 			EcoreUtil.delete(eo);
@@ -86,6 +87,7 @@ public class ArchiReconciler extends AbstractReconciler {
 		if (sourceElement instanceof ArchimateElement) {
 			super.add(sourceElement, target);
 		}
+		// relationship containment is managed by the update relationship
 	}
 
 	@Override

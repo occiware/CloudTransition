@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="ASCII"?>
-<basemm:Folder xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.obeo.fr/smartea/archimate/3.0" xmlns:basemm="http://www.obeo.fr/smartea/basemm/2.0.0" name="Technical Layer">
-  <folders name="Nodes">
-    <elements xsi:type="archimate:Node" id="_Tib6AKzJEeaGGNpad20Csw" name="VD Deploy Instance 1" documentation="http://schemas.ogf.org/occi/infrastructure#compute" foreignBidirectionalRelationships="_UZNxAKzJEeaGGNpad20Csw">
-      <properties name="occi.core.id" id="__nRWQSaREeeVe8r3ZSC8bQ" value="_Tib6AKzJEeaGGNpad20Csw"/>
-      <properties name="occi.core.title" id="__nRWQiaREeeVe8r3ZSC8bQ" value="VD Deploy Instance 1"/>
-      <properties name="hostname" id="__nRWQyaREeeVe8r3ZSC8bQ" value="vdinstance1"/>
-    </elements>
-    <elements xsi:type="archimate:Node" id="_SbJh0KzJEeaGGNpad20Csw" name="Google Cloud" documentation="http://schemas.ogf.org/occi/infrastructure#compute">
-      <properties name="occi.core.id" id="__nRWRSaREeeVe8r3ZSC8bQ" value="_SbJh0KzJEeaGGNpad20Csw"/>
-      <properties name="occi.core.title" id="__nRWRiaREeeVe8r3ZSC8bQ" value="Google Cloud"/>
-      <properties name="hostname" id="__nRWRyaREeeVe8r3ZSC8bQ" value="googlecloud"/>
-      <ownedBidirectionalRelationships xsi:type="archimate:AssociationRelationship" id="_UZNxAKzJEeaGGNpad20Csw" name="link1" documentation="http://schemas.ogf.org/occi/core#link" end2="_Tib6AKzJEeaGGNpad20Csw">
-        <properties name="occi.core.id" id="__nRWSSaREeeVe8r3ZSC8bQ" value="_UZNxAKzJEeaGGNpad20Csw"/>
-        <properties name="occi.core.title" id="__nRWSiaREeeVe8r3ZSC8bQ" value="link1"/>
-      </ownedBidirectionalRelationships>
-    </elements>
-    <elements xsi:type="archimate:Node" id="169fc822-290b-48a3-adf2-c7ccc110f340" name="VD instance 2" documentation="http://schemas.ogf.org/occi/infrastructure#compute">
-      <properties name="occi.core.id" id="__nRWTCaREeeVe8r3ZSC8bQ" value="169fc822-290b-48a3-adf2-c7ccc110f340"/>
-      <properties name="occi.core.title" id="__nRWTSaREeeVe8r3ZSC8bQ" value="VD instance 2"/>
-    </elements>
-  </folders>
+<basemm:Folder xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.obeo.fr/smartea/archimate/3.0" xmlns:basemm="http://www.obeo.fr/smartea/basemm/2.0.0" name="Technology">
+  <elements xsi:type="archimate:Node" id="_Tib6AKzJEeaGGNpad20Csw" name="VD Deploy Instance 1">
+    <properties name="occi.core.kind" id="_1Af4UblvEeeDTf6ETLxBGQ" value="http://schemas.ogf.org/occi/infrastructure#compute"/>
+    <properties name="occi.core.sourceid" id="_1Af4UrlvEeeDTf6ETLxBGQ" value="input_sample_occic"/>
+    <properties name="hostname" id="_1Af4U7lvEeeDTf6ETLxBGQ" value="vdinstance1"/>
+  </elements>
+  <elements xsi:type="archimate:Node" id="_SbJh0KzJEeaGGNpad20Csw" name="Google Cloud">
+    <properties name="occi.core.kind" id="_1Af4VblvEeeDTf6ETLxBGQ" value="http://schemas.ogf.org/occi/infrastructure#compute"/>
+    <properties name="occi.core.sourceid" id="_1Af4VrlvEeeDTf6ETLxBGQ" value="input_sample_occic"/>
+    <properties name="hostname" id="_1Af4V7lvEeeDTf6ETLxBGQ" value="googlecloud"/>
+    <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_UZNxAKzJEeaGGNpad20Csw" name="link1" target="_Tib6AKzJEeaGGNpad20Csw">
+      <properties name="occi.core.kind" id="_1Af4WblvEeeDTf6ETLxBGQ" value="http://schemas.ogf.org/occi/core#link"/>
+      <properties name="occi.core.sourceid" id="_1Af4WrlvEeeDTf6ETLxBGQ" value="input_sample_occic"/>
+    </ownedUnidirectionalRelationships>
+  </elements>
+  <elements xsi:type="archimate:Node" id="169fc822-290b-48a3-adf2-c7ccc110f340" name="VD instance 2">
+    <properties name="occi.core.kind" id="_1Af4XLlvEeeDTf6ETLxBGQ" value="http://schemas.ogf.org/occi/infrastructure#compute"/>
+    <properties name="occi.core.sourceid" id="_1Af4XblvEeeDTf6ETLxBGQ" value="input_sample_occic"/>
+  </elements>
 </basemm:Folder>
