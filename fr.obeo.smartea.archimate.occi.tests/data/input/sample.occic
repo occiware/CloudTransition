@@ -5,7 +5,6 @@
     xmlns:occi="http://schemas.ogf.org/occi/core/ecore"
     description="input_sample_occic">
   <use href="http://schemas.ogf.org/occi/infrastructure#/"/>
-  <use href="http://schemas.ogf.org/occi/platform#/"/>
   <use href="http://schemas.ogf.org/occi/core#/"/>
   <resources
       id="_Tib6AKzJEeaGGNpad20Csw"
@@ -17,7 +16,7 @@
         value="_Tib6AKzJEeaGGNpad20Csw"/>
     <attributes
         name="occi.core.title"
-        value="VD Instance 1"/>
+        value="VD Deploy Instance 1"/>
     <attributes
         name="hostname"
         value="vdinstance1"/>

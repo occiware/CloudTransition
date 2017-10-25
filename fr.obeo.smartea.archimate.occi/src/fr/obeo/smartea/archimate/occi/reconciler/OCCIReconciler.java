@@ -46,7 +46,7 @@ public class OCCIReconciler extends AbstractReconciler {
 				}
 			}
 			if (!found) {
-				toAdd.add(sourceProperty);
+				toAdd.add(EcoreUtil.copy(sourceProperty));
 			}
 		}
 		((Entity) targetElement).getAttributes().addAll(toAdd);

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="ASCII"?>
 <basemm:Folder xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.obeo.fr/smartea/archimate/3.0" xmlns:basemm="http://www.obeo.fr/smartea/basemm/2.0.0" name="Technology">
   <elements xsi:type="archimate:Node" id="_Tib6AKzJEeaGGNpad20Csw" name="VD Deploy Instance 1">
-    <properties name="occi.core.kind" id="_1Af4UblvEeeDTf6ETLxBGQ" value="http://schemas.ogf.org/occi/infrastructure#compute"/>
-    <properties name="occi.core.sourceid" id="_1Af4UrlvEeeDTf6ETLxBGQ" value="input_sample_occic"/>
-    <properties name="hostname" id="_1Af4U7lvEeeDTf6ETLxBGQ" value="vdinstance1"/>
+    <properties name="occi.core.kind" id="_UPWVcbl6EeeT85F41_H7Tg" value="http://schemas.ogf.org/occi/infrastructure#compute"/>
+    <properties name="occi.core.sourceid" id="_UPWVcrl6EeeT85F41_H7Tg" value="input_sample_occic"/>
+    <properties name="hostname" id="_UPWVc7l6EeeT85F41_H7Tg" value="vdinstance1"/>
   </elements>
   <elements xsi:type="archimate:Node" id="_SbJh0KzJEeaGGNpad20Csw" name="Google Cloud">
-    <properties name="occi.core.kind" id="_1Af4VblvEeeDTf6ETLxBGQ" value="http://schemas.ogf.org/occi/infrastructure#compute"/>
-    <properties name="occi.core.sourceid" id="_1Af4VrlvEeeDTf6ETLxBGQ" value="input_sample_occic"/>
-    <properties name="hostname" id="_1Af4V7lvEeeDTf6ETLxBGQ" value="googlecloud"/>
+    <properties name="occi.core.kind" id="_UPWVdbl6EeeT85F41_H7Tg" value="http://schemas.ogf.org/occi/infrastructure#compute"/>
+    <properties name="occi.core.sourceid" id="_UPWVdrl6EeeT85F41_H7Tg" value="input_sample_occic"/>
+    <properties name="hostname" id="_UPWVd7l6EeeT85F41_H7Tg" value="googlecloud"/>
     <ownedUnidirectionalRelationships xsi:type="archimate:AssignmentRelationship" id="_UZNxAKzJEeaGGNpad20Csw" name="link1" target="_Tib6AKzJEeaGGNpad20Csw">
-      <properties name="occi.core.kind" id="_1Af4WblvEeeDTf6ETLxBGQ" value="http://schemas.ogf.org/occi/core#link"/>
-      <properties name="occi.core.sourceid" id="_1Af4WrlvEeeDTf6ETLxBGQ" value="input_sample_occic"/>
+      <properties name="occi.core.kind" id="_UPWVebl6EeeT85F41_H7Tg" value="http://schemas.ogf.org/occi/core#link"/>
+      <properties name="occi.core.sourceid" id="_UPWVerl6EeeT85F41_H7Tg" value="input_sample_occic"/>
     </ownedUnidirectionalRelationships>
   </elements>
   <elements xsi:type="archimate:Node" id="169fc822-290b-48a3-adf2-c7ccc110f340" name="VD instance 2">
-    <properties name="occi.core.kind" id="_1Af4XLlvEeeDTf6ETLxBGQ" value="http://schemas.ogf.org/occi/infrastructure#compute"/>
-    <properties name="occi.core.sourceid" id="_1Af4XblvEeeDTf6ETLxBGQ" value="input_sample_occic"/>
+    <properties name="occi.core.kind" id="_UPWVfLl6EeeT85F41_H7Tg" value="http://schemas.ogf.org/occi/infrastructure#compute"/>
+    <properties name="occi.core.sourceid" id="_UPWVfbl6EeeT85F41_H7Tg" value="input_sample_occic"/>
   </elements>
 </basemm:Folder>

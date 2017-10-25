@@ -73,11 +73,11 @@ public class ArchiReconciler extends AbstractReconciler {
 					}
 				}
 				if (!found) {
-					toAdd.add(sourceProperty);
+					toAdd.add(EcoreUtil.copy(sourceProperty));
 				}
 			}
 			for (Property property : toAdd) {
-				((PropertiesContainer) targetElement).getProperties().add(EcoreUtil.copy(property));
+				((PropertiesContainer) targetElement).getProperties().add(property);
 			}
 		}
 	}
