@@ -100,10 +100,10 @@
       <attributes name="occi.core.title" value=""/>
     </links>
   </resources>
-  <resources id="_SCQT0KvQEeaUQPSGShOftg" title="Server HP-L12_RENAMED">
+  <resources id="_SCQT0KvQEeaUQPSGShOftg" title="Server HP-L12">
     <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
     <attributes name="occi.core.id" value="_SCQT0KvQEeaUQPSGShOftg"/>
-    <attributes name="occi.core.title" value="Server HP-L12_RENAMED"/>
+    <attributes name="occi.core.title" value="Server HP-L12"/>
     <links id="_JaHHYKvSEeaUQPSGShOftg" title="" target="//@resources.5">
       <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
       <attributes name="occi.core.id" value="_JaHHYKvSEeaUQPSGShOftg"/>
@@ -115,7 +115,7 @@
       <attributes name="occi.core.title" value=""/>
     </links>
   </resources>
-  <resources id="_UGrpsKvQEeaUQPSGShOftg" title="Server Dell-T16" rlinks="//@resources.14/@links.0">
+  <resources id="_UGrpsKvQEeaUQPSGShOftg" title="Server Dell-T16">
     <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
     <attributes name="occi.core.id" value="_UGrpsKvQEeaUQPSGShOftg"/>
     <attributes name="occi.core.title" value="Server Dell-T16"/>
@@ -128,16 +128,6 @@
       <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
       <attributes name="occi.core.id" value="_sca7MK2hEeaG0cy0fb0b9w"/>
       <attributes name="occi.core.title" value=""/>
-    </links>
-  </resources>
-  <resources id="urn:uuid:f9bf63bd-d39c-4ec7-8cf5-ef484874f29e" title="MyNewVM">
-    <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='compute']"/>
-    <attributes name="occi.core.id" value="urn:uuid:f9bf63bd-d39c-4ec7-8cf5-ef484874f29e"/>
-    <attributes name="occi.core.title" value="MyNewVM"/>
-    <links id="urn:uuid:69f2e03e-7666-4228-8a99-abe1459ae884" title="MyServingLink" target="//@resources.13">
-      <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='networkinterface']"/>
-      <attributes name="occi.core.id" value="urn:uuid:69f2e03e-7666-4228-8a99-abe1459ae884"/>
-      <attributes name="occi.core.title" value="MyServingLink"/>
     </links>
   </resources>
 </occi:Configuration>
