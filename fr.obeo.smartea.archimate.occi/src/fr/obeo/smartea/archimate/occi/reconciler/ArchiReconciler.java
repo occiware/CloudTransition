@@ -8,7 +8,6 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
 import fr.obeo.smartea.archimate.ArchimateComponent;
-import fr.obeo.smartea.archimate.ArchimateElement;
 import fr.obeo.smartea.archimate.Relationship;
 import fr.obeo.smartea.archimate.occi.conf.MappingConfig;
 import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
@@ -21,7 +20,7 @@ public class ArchiReconciler extends AbstractReconciler {
 
 	@Override
 	protected boolean isManagedElement(EObject element, String sourceId) {
-		if (element instanceof ArchimateComponent) {
+		if (element instanceof PropertiesContainer) {
 			if (PropertiesUtil.getProperty((PropertiesContainer) element, MappingConfig.OCCI_KIND_SCHEME_KEY) != null) {
 				Property sourceProperty = PropertiesUtil.getProperty((PropertiesContainer) element,
 						MappingConfig.OCCI_SOURCE_ID_KEY);
@@ -80,14 +79,6 @@ public class ArchiReconciler extends AbstractReconciler {
 				((PropertiesContainer) targetElement).getProperties().add(property);
 			}
 		}
-	}
-
-	@Override
-	protected void add(EObject sourceElement, EObject target) {
-		if (sourceElement instanceof ArchimateElement) {
-			super.add(sourceElement, target);
-		}
-		// relationship containment is managed by the update relationship
 	}
 
 	@Override
