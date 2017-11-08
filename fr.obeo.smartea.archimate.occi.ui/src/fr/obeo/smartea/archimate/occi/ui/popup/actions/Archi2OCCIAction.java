@@ -58,6 +58,7 @@ public class Archi2OCCIAction implements IObjectActionDelegate {
 
 		Folder folder = getFolder(resource);
 		if (folder != null) {
+			// TODO get local mapping file CF OCCI2ArchiAction
 			Configuration configuration = new Archi2OCCI().convert(folder);
 			Resource output = resourceSet.createResource(URI
 					.createFileURI(archiFile.getLocation().removeFileExtension().addFileExtension("occic").toString()));

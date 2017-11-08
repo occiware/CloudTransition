@@ -8,6 +8,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
+import fr.obeo.smartea.archimate.ArchimateElement;
 import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
 
 public abstract class AbstractReconciler {
@@ -61,6 +62,11 @@ public abstract class AbstractReconciler {
 		EObject container = sourceElement.eContainer();
 		EStructuralFeature feature = sourceElement.eContainingFeature();
 		EObject copy = EcoreUtil.copy(sourceElement);
+		if (copy instanceof ArchimateElement) {
+			ArchimateElement ac = (ArchimateElement) copy;
+			ac.getOwnedBidirectionalRelationships().clear();
+			ac.getOwnedUnidirectionalRelationships().clear();
+		}
 		EObject findExisting = ModelUtils.findExisting(target, container);
 		if (findExisting == null) {
 			findExisting = target;

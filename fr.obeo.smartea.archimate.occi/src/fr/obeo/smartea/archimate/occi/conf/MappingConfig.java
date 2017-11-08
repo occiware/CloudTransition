@@ -19,7 +19,7 @@ import fr.obeo.smartea.archimate.Relationship;
 import fr.obeo.smartea.core.basemm.Property;
 
 public class MappingConfig {
-	
+
 	private static final String LINK_SCHEME = "http://schemas.ogf.org/occi/core#link";
 	private static final String RESOURCE_SCHEME = "http://schemas.ogf.org/occi/core#resource";
 
@@ -27,6 +27,10 @@ public class MappingConfig {
 	public static final String OCCI_SOURCE_ID_KEY = "occi.core.sourceid";
 
 	private Map<String, EClass> mapping = new HashMap<String, EClass>();
+	{
+		mapping.put(RESOURCE_SCHEME, ArchimatePackage.eINSTANCE.getNode());
+		mapping.put(LINK_SCHEME, ArchimatePackage.eINSTANCE.getAssociationRelationship());
+	}
 
 	public Kind getOCCIKind(ArchimateComponent element) {
 		String kindScheme = null;
