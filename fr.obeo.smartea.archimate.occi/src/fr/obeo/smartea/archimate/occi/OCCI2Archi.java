@@ -81,7 +81,7 @@ public class OCCI2Archi {
 	private ArchimateComponent createArchimateComponentFrom(Entity entity, EClass elementType, String sourceId) {
 		ArchimateComponent element = (ArchimateComponent) ArchimateFactory.eINSTANCE.create(elementType);
 		element.setName(entity.getTitle());
-		element.setId(entity.getId());
+		element.setId(entity.getId().replaceFirst(ModelUtils.OCCI_ID_PREFIX, ""));
 
 		Property kindProperty = BaseFactory.eINSTANCE.createProperty();
 		element.getProperties().add(kindProperty);
@@ -94,7 +94,7 @@ public class OCCI2Archi {
 		sourceProperty.setName(MappingConfig.OCCI_SOURCE_ID_KEY);
 		sourceProperty.setValue(sourceId);
 		element.getProperties().add(sourceProperty);
-		
+
 		return element;
 	}
 

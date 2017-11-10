@@ -19,6 +19,7 @@ import fr.obeo.smartea.archimate.BidirectionalRelationship;
 import fr.obeo.smartea.archimate.Relationship;
 import fr.obeo.smartea.archimate.UnidirectionalRelationship;
 import fr.obeo.smartea.archimate.occi.conf.MappingConfig;
+import fr.obeo.smartea.archimate.occi.utils.ModelUtils;
 import fr.obeo.smartea.core.basemm.Folder;
 import fr.obeo.smartea.core.basemm.Property;
 
@@ -44,14 +45,14 @@ public class Archi2OCCI {
 				for (Property property : archimateElement.getProperties()) {
 					convertProperty(resource, property);
 				}
-				resource.setId(archimateElement.getId());
+				resource.setId(ModelUtils.OCCI_ID_PREFIX + archimateElement.getId());
 				resource.setTitle(archimateElement.getName());
 				configuration.getResources().add(resource);
 				elementsTraces.put(archimateElement, resource);
 				for (UnidirectionalRelationship relationship : archimateElement.getOwnedUnidirectionalRelationships()) {
 					Kind linkKind = mappingConfig.getOCCIKind(relationship);
 					Link link = (Link) OCCIFactory.eINSTANCE.createLink();
-					link.setId(relationship.getId());
+					link.setId(ModelUtils.OCCI_ID_PREFIX + relationship.getId());
 					link.setKind(linkKind);
 					link.setTitle(relationship.getName());
 					resource.getLinks().add(link);
@@ -63,7 +64,7 @@ public class Archi2OCCI {
 				for (BidirectionalRelationship relationship : archimateElement.getOwnedBidirectionalRelationships()) {
 					Kind linkKind = mappingConfig.getOCCIKind(relationship);
 					Link link = (Link) OCCIFactory.eINSTANCE.createLink();
-					link.setId(relationship.getId());
+					link.setId(ModelUtils.OCCI_ID_PREFIX + relationship.getId());
 					link.setKind(linkKind);
 					link.setTitle(relationship.getName());
 					resource.getLinks().add(link);
@@ -78,7 +79,7 @@ public class Archi2OCCI {
 			Link link = relationshipsTraces.get(relationship);
 			Resource target = elementsTraces.get(relationship.getTargetElement());
 			if (target != null) {
-				link.setTarget(target);	
+				link.setTarget(target);
 			} else {
 				EcoreUtil.delete(link);
 			}

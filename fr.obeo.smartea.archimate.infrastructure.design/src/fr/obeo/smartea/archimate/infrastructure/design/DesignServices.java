@@ -7,10 +7,13 @@ import java.util.Set;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 
+import fr.obeo.smartea.archimate.ArchimateComponent;
 import fr.obeo.smartea.archimate.ArchimateElement;
+import fr.obeo.smartea.archimate.Artifact;
 import fr.obeo.smartea.archimate.AssignmentRelationship;
 import fr.obeo.smartea.archimate.BidirectionalRelationship;
 import fr.obeo.smartea.archimate.CompositionRelationship;
+import fr.obeo.smartea.archimate.Node;
 import fr.obeo.smartea.archimate.Relationship;
 import fr.obeo.smartea.archimate.UnidirectionalRelationship;
 import fr.obeo.smartea.core.basemm.Folder;
@@ -56,11 +59,19 @@ public class DesignServices extends AbstractUIPlugin {
 
 	private boolean isPartOfComposition(ArchimateElement eObject) {
 		for (Relationship relationship : eObject.getIncomingRelationships()) {
-			if (isContainment(relationship)) {
+			if (isContainment(relationship) && isContainer(relationship.getSourceElement())) {
 				return true;
 			}
 		}
 		return false;
+	}
+
+	/**
+	 * @param component
+	 * @return true if the given component is a container in the diagram
+	 */
+	private boolean isContainer(ArchimateComponent component) {
+		return component instanceof Node || component instanceof Artifact;
 	}
 
 	private boolean isContainment(Relationship relationship) {
