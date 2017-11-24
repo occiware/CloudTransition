@@ -119,10 +119,10 @@
       <attributes name="occi.core.id" value="urn:uuid:2cffc427-6e1b-4289-bd9e-343c7ae82588"/>
       <attributes name="occi.core.title" value=""/>
     </links>
-    <links id="urn:uuid:c26aa6ba-a5ae-43c7-a301-e9afddaa0d1c" title="" target="//@resources.14">
+    <links id="urn:uuid:02126b15-153b-4234-bdb7-99ac41d046bb" title="link4" target="//@resources.14">
       <kind href="http://obeo.fr/occi/demoinfrastructure#//@kinds[term='serves']"/>
-      <attributes name="occi.core.id" value="urn:uuid:c26aa6ba-a5ae-43c7-a301-e9afddaa0d1c"/>
-      <attributes name="occi.core.title" value=""/>
+      <attributes name="occi.core.id" value="urn:uuid:02126b15-153b-4234-bdb7-99ac41d046bb"/>
+      <attributes name="occi.core.title" value="link4"/>
     </links>
   </resources>
   <resources id="_UGrpsKvQEeaUQPSGShOftg" title="Server Dell-T16">
@@ -140,9 +140,9 @@
       <attributes name="occi.core.title" value=""/>
     </links>
   </resources>
-  <resources id="urn:uuid:f5a3c2b5-1f99-40d0-8c98-1e856342b9ee" title="MyNewVM" rlinks="//@resources.12/@links.3">
-    <kind href="http://schemas.ogf.org/occi/core#//@kinds[term='resource']"/>
-    <attributes name="occi.core.id" value="urn:uuid:f5a3c2b5-1f99-40d0-8c98-1e856342b9ee"/>
+  <resources id="urn:uuid:1bd4386b-17d1-4927-be3f-9af629b35aef" title="MyNewVM" rlinks="//@resources.12/@links.3">
+    <kind href="http://obeo.fr/occi/demoinfrastructure#//@kinds[term='virtualmachine']"/>
+    <attributes name="occi.core.id" value="urn:uuid:1bd4386b-17d1-4927-be3f-9af629b35aef"/>
     <attributes name="occi.core.title" value="MyNewVM"/>
   </resources>
 </occi:Configuration>

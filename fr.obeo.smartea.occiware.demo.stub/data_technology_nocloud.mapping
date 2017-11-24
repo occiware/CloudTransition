@@ -1,0 +1,10 @@
+#OCCI Kind scheme=Archi EClass name
+
+http\://schemas.ogf.org/occi/infrastructure#storagelink=CompositionRelationship
+http\://schemas.ogf.org/occi/infrastructure#storage=Artifact
+http\://obeo.fr/occi/demoinfrastructure#contains=CompositionRelationship
+http\://obeo.fr/occi/demoinfrastructure#node=Artifact
+http\://obeo.fr/occi/demoinfrastructure#virtualmachine=Node
+http\://obeo.fr/occi/demoinfrastructure#assigns=AssignmentRelationship
+http\://obeo.fr/occi/demoinfrastructure#server=Device
+http\://obeo.fr/occi/demoinfrastructure#serves=ServingRelationship
