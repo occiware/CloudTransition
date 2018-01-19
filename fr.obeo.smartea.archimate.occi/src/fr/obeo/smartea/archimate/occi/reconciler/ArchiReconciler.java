@@ -41,13 +41,18 @@ public class ArchiReconciler extends AbstractReconciler {
 
 	@Override
 	protected void delete(EObject eObject) {
+		StringBuffer log = new StringBuffer();
+		log.append("Deletion");
 		List<EObject> toDelete = new ArrayList<EObject>();
 		toDelete.add(eObject);
 		if (eObject instanceof ArchimateComponent) {
 			ArchimateComponent component = (ArchimateComponent) eObject;
+			log.append(" ");
+			log.append(component.getName());
 			toDelete.addAll(component.getIncomingRelationships());
 			toDelete.addAll(component.getOutgoingRelationships());
 		}
+		System.err.println(log);
 		for (EObject eo : toDelete) {
 			EcoreUtil.delete(eo);
 		}
@@ -67,6 +72,9 @@ public class ArchiReconciler extends AbstractReconciler {
 					if (sourceProperty.getName().equals(targetProperty.getName())) {
 						found = true;
 						if (!targetProperty.getValue().equals(sourceProperty.getValue())) {
+							System.err.println("Update " + ((Nameable) targetElement).getName() + " : "
+									+ targetProperty.getName() + " was " + targetProperty.getValue() + " and is now "
+									+ sourceProperty.getValue());
 							targetProperty.setValue(sourceProperty.getValue());
 						}
 					}

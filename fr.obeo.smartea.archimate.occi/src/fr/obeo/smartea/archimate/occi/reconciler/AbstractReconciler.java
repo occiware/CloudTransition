@@ -59,11 +59,15 @@ public abstract class AbstractReconciler {
 	}
 
 	protected void add(EObject sourceElement, EObject target) {
+		StringBuffer log = new StringBuffer();
+		log.append("Addition");
 		EObject container = sourceElement.eContainer();
 		EStructuralFeature feature = sourceElement.eContainingFeature();
 		EObject copy = EcoreUtil.copy(sourceElement);
 		if (copy instanceof ArchimateElement) {
 			ArchimateElement ac = (ArchimateElement) copy;
+			log.append(" ");
+			log.append(ac.getName());
 			ac.getOwnedBidirectionalRelationships().clear();
 			ac.getOwnedUnidirectionalRelationships().clear();
 		}
@@ -73,6 +77,7 @@ public abstract class AbstractReconciler {
 		}
 		List list = (List) findExisting.eGet(feature);
 		list.add(copy);
+		System.err.println(log);
 	}
 
 	protected abstract boolean isManagedRelationship(EObject element, String sourceId);
